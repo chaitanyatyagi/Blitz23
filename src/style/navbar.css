@@ -1,0 +1,81 @@
+.navbar {
+    display: flex;
+    width: 100vw;
+    height: 8vh;
+    background: black;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    position: fixed;
+    opacity: 0.7;
+}
+
+.leftlogo {
+    display: flex;
+    width: 20%;
+    height: 100%;
+    /* border: 1px solid white; */
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.leftlogoins {
+    width: 70%;
+    height: 100%;
+    background-image: url("../images/Blitz_Logo_23.png");
+    background-size: 100% 100%;
+}
+
+.register {
+    display: flex;
+    width: 15%;
+    height: 100%;
+    /* border: 1px solid white; */
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.login {
+    display: flex;
+    width: 15%;
+    height: 100%;
+    /* border: 1px solid white; */
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.centertabs {
+    display: flex;
+    width: 10%;
+    height: 100%;
+    /* border: 1px solid white; */
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+}
