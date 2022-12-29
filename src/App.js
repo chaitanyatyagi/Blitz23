@@ -1,13 +1,15 @@
 import './App.css';
 // import Navbar from './components/Navbar';
 import MainPage from './components/MainPage';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Contact from './components/Contact';
+import { BrowserRouter } from 'react-router-dom';
 
 function App() {
   return (
     <BrowserRouter>
       <div className="App">
         <MainPage />
+        <Contact />
       </div>
     </BrowserRouter>
   );
