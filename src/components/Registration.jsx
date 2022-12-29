@@ -4,7 +4,7 @@ import React from "react";
 import blitz from "../images/IMG-8305.PNG";
 // import close from "../images/Vector.png";
 import formCorner from "../images/image76.png";
-import axios from "axios"
+// import axios from "axios"
 import { useState } from "react";
 
 export default function Registration() {
