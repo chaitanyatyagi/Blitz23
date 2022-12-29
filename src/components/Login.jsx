@@ -2,7 +2,7 @@ import "../style/login.css";
 import Navbar from "./Navbar";
 import React from "react";
 import blitz from "../images/IMG-8305.PNG";
-import close from "../images/Vector.png";
+// import close from "../images/Vector.png";
 import formCorner from "../images/image76.png";
 import axios from "axios";
 
@@ -68,7 +68,7 @@ export default function Registration() {
                             type="password"
                             onChange={(e) => handleChange(e)}>
                         </input>
-                        <a href="#" className="forgot-pass">Forgot Password?</a>
+                        <a href="/" className="forgot-pass">Forgot Password?</a>
                     </div>
                     <button className="form-submit" onClick={(e) => handleSubmit(e)}>Login</button>
                 </div>
