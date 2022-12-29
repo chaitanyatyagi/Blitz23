@@ -1,8 +1,12 @@
 import "../style/navbar.css"
 import { FaBars, FaWindowClose } from 'react-icons/fa'
 import { Link } from "react-router-dom"
+<<<<<<< HEAD
 import React, { useState } from "react"
 
+=======
+import React from "react"
+>>>>>>> 36c741b5b42ef29dca1e2df23ffcd039d5903247
 
 function Navbar() {
     const [IsMobile, SetIsMobile] = useState(false);

@@ -1,6 +1,7 @@
 import "../style/mainpage.css"
 import Navbar from "./Navbar"
 import { useRef } from "react"
+import React from "react"
 
 
 function MainPage() {
