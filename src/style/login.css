@@ -51,13 +51,13 @@
     font-size: 2.5rem;
 }
 
-.form-inputs{
+.form-inputs {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width:100%;
+    width: 100%;
     justify-content: space-around;
-    margin:0%;
+    margin: 0%;
     margin-left: 10%;
 }
 
@@ -73,15 +73,15 @@
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
-    margin:0px;
+    margin: 0px;
 }
 
-.forgot-pass{
+.forgot-pass {
     font-size: 1rem;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
-    color:#FFFFFF;
+    color: #FFFFFF;
     text-decoration: none;
     display: flex;
     align-items: flex-start;
@@ -138,16 +138,16 @@
     color: white;
 }
 
-.seprator{
-    width:90%;
-    background: rgba(255, 255, 255,0.8);
+.seprator {
+    width: 90%;
+    background: rgba(255, 255, 255, 0.8);
     border: 1px solid rgba(255, 255, 255, 0.8);
     border-radius: 5px;
     margin-top: 1em;
     margin-bottom: 0rem;
 }
 
-.login-options{
+.login-options {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -155,33 +155,39 @@
     margin: 0px;
     width: 100%;
 }
-.options-head{
+
+.options-head {
     font-size: 1rem;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
     color: #FFFFFF;
 }
-.icons{
-    display:flex;
+
+.icons {
+    display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
     width: 100%;
 }
-.icon{
-    height:35px;
-    width:35px;
+
+.icon {
+    height: 35px;
+    width: 35px;
     background-color: white;
     border-radius: 50px;
 }
-.facebook{
+
+.facebook {
     background-image: url("../images/image\ 81.png");
 }
-.google{
+
+.google {
     background-image: url("../images/image\ 79.png");
 }
-.twitter{
+
+.twitter {
     background-image: url("../images/image\ 80.png");
 }
 
@@ -202,17 +208,19 @@
     .image {
         width: 80%;
         margin-top: 100px;
-        order:1;
+        order: 1;
     }
 
     .form {
         width: 80%;
         margin-bottom: 50px;
-        order:2;
+        order: 2;
     }
-    .form-inputs{
+
+    .form-inputs {
         margin-left: 20%;
     }
+
     .form-submit {
         margin-bottom: 2em;
     }

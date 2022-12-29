@@ -2,25 +2,27 @@
 @import url('https://fonts.googleapis.com/css?family=Henny+Penny');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
 
-.body{
-    background-image:url("../images/image60.png");
+.body {
+    background-image: url("../images/image60.png");
     font-family: 'Inter';
 }
-.container{
-    display:flex;
+
+.container {
+    display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
 }
-.image{
-    color:white;
-    height:80vh;
-    width:40%;
+
+.image {
+    color: white;
+    height: 80vh;
+    width: 40%;
     background: black;
     border: 1px solid #565656;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(7.5px);
-    display:flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     background-image: url("../images/image\ 78.png");
@@ -28,8 +30,9 @@
     background-repeat: no-repeat;
     background-position: center;
 }
-.form{
-    color:white;
+
+.form {
+    color: white;
     height: 80vh;
     width: 40%;
     background: #0E0E0E;
@@ -41,104 +44,118 @@
     justify-content: center;
     padding: 0px;
 }
-.form-heading{
+
+.form-heading {
     font-family: 'Henny Penny';
     font-style: normal;
     font-weight: 400;
     font-size: 2.5rem;
 }
-.form-feilds{
+
+.form-feilds {
     background: rgba(255, 255, 255, 0.2);
     border: 1px solid #FFFFFF;
     border-radius: 5px;
     margin-bottom: 2em;
-    height:1.2em;
-    width:80%;
-    color:#D5D5D5;
-    padding:10px;
+    height: 1.2em;
+    width: 80%;
+    color: #D5D5D5;
+    padding: 10px;
     font-size: 1rem;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
 }
-.form-submit{
+
+.form-submit {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     border: 1px solid #FFFFFF;
-    height:2.2em;
-    font-size:1rem;
+    height: 2.2em;
+    font-size: 1rem;
     background-color: #0E0E0E;
     color: white;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
-    width:10em;
+    width: 10em;
 }
-.form-close{
-    position:absolute;
+
+.form-close {
+    position: absolute;
     top: 10px;
     right: 10px;
     background: rgba(255, 255, 255, 0.1);
-    border:none;
-    height:30px;
-    width:30px;
+    border: none;
+    height: 30px;
+    width: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.close-img{
-    height:22px;
-    width:22px;
+
+.close-img {
+    height: 22px;
+    width: 22px;
 }
-.top-right{
+
+.top-right {
     position: absolute;
-    top:0px;
-    right:0px;
-    color:white;
+    top: 0px;
+    right: 0px;
+    color: white;
 }
+
 .bottom-left {
     position: absolute;
     bottom: 0px;
     left: 0px;
-    color:white;
+    color: white;
 }
 
-@media (max-width:900px){
+@media (max-width:900px) {
     .body::-webkit-scrollbar {
         display: none;
     }
-    .body{
+
+    .body {
         -ms-overflow-style: none;
         scrollbar-width: none;
     }
-    .container{
+
+    .container {
         flex-direction: column;
     }
-    .image{
-        width:80%;
+
+    .image {
+        width: 80%;
         margin-top: 100px;
     }
-    .form{
-        width:80%;
+
+    .form {
+        width: 80%;
         margin-bottom: 50px;
     }
-    .form-feilds{
+
+    .form-feilds {
         width: 70%;
     }
-    .form-submit{
+
+    .form-submit {
         margin-bottom: 2em;
     }
 }
 
-@media (min-width:901px){
-    .body{
+@media (min-width:901px) {
+    .body {
         overflow: hidden;
         height: 100vh;
         width: 100%;
     }
-    .container{
+
+    .container {
         height: 100vh;
         width: 100%;
     }
