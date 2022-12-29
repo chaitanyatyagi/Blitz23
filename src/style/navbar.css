@@ -1,30 +1,56 @@
 .navbar {
     display: flex;
-    width: 100vw;
-    height: 8vh;
-    background: black;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin: 0;
-    position: fixed;
+    margin-right: 45px;
+    height: 100%;
+    /* transition: all ease-in-out 2s; */
+}
+
+.navbar a {
+    margin-left: 45px;
+}
+
+.navbar a:hover{
+    scale: 1.2;
+    color: grey;
+}
+
+.main_nav {
+    width: 100%;
+    height: 65px;
+    background: black;
     opacity: 0.7;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+}
+
+.menubar {
+    display: none;
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    background-color: #ffffff;
+    border-radius: 7px;
+
+}
+
+.btn {
+    padding: 5px;
+    font-size: 20px;
+    border-radius: 7px;
 }
 
 .leftlogo {
-    display: flex;
     width: 20%;
-    height: 100%;
-    /* border: 1px solid white; */
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    color: white;
 }
 
 .leftlogoins {
-    width: 70%;
-    height: 100%;
+    width: 100%;
+    height: 65px;
     background-image: url("../images/Blitz_Logo_23.png");
     background-size: 100% 100%;
 }
@@ -78,4 +104,50 @@
     font-weight: 500;
     font-size: 18px;
     line-height: 30px;
+}
+
+@media(max-width: 1000px) {
+
+    .navbar {
+        position: fixed;
+        /* left: 10000px; */
+        flex-direction: column;
+
+    }
+
+    .mobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-right: 45px;
+        position: fixed;
+        top: 65px;
+        background-color: black;
+        right: 0;
+        transition: all ease-in-out 1s;
+        padding-left: 15px;
+        padding-right: 55px;
+    }
+
+    .mobile a{
+        margin: 22px 0;
+    }
+
+    .nav_links {
+        margin-top: 20px;
+    }
+
+    .register {
+        width: auto;
+    }
+
+    .navbar a {
+        margin-top: 20px;
+    }
+
+
+    .menubar {
+        display: block;
+    }
 }

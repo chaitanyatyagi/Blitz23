@@ -5,6 +5,7 @@
     display: flex;
     flex-direction: column;
     scroll-snap-type: y mandatory;
+
 }
 
 .landingPg1 {
@@ -21,14 +22,16 @@
 }
 
 .landingPg1ins {
-    height: 80%;
-    width: 94%;
     background-image: url("../images/Blitz_Logo_23.png");
-    background-size: 100% 100%;
+    height: 100vh;
+    width: 100%;
+    background-size: 100% 100vh;
+    background-position: center;
+    background-size: cover;
 }
 
 .landingPg2 {
-    height: 100vh;
+    height: 110vh;
     width: 100%;
     background-image: url("../images/landingpg2-bg.png");
     background-size: 100% 100vh;
@@ -114,7 +117,7 @@
 }
 
 .landingPg3left {
-    width: 50%;
+    width: 70%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -200,4 +203,43 @@
     width: 50%;
     background-image: url("../images/landingpg4-right.png");
     background-size: 100% 100vh;
+}
+
+@media(max-width: 1200px) {
+    .landingPg1ins {
+        background-size: inherit;
+        background-image: url("../images/Blitz_Logo_23.png");
+        height: 70vh;
+        width: 100%;
+
+        background-position: center;
+    }
+
+    .landingPg2leftcontent {
+        height: 400px;
+        overflow-y: scroll;
+        scroll-behavior: smooth;
+        text-align: left;
+    }
+
+    .landingPg3content {
+        height: 400px;
+        overflow-y: scroll;
+        scroll-behavior: smooth;
+        text-align: left;
+        width: 80%;
+    }
+
+    .landingPg2lefthead {
+        height: 18%;
+    }
+
+    .landingPg2 {
+        height: 90vh;
+    }
+
+    .landingPg3right {
+        width: 30%;
+        height: 70%;
+    }
 }
