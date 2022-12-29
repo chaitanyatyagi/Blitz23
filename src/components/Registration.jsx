@@ -12,21 +12,22 @@ export default function Registration() {
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
 
-    // async function handleSubmit(e) {
-    //     let payload = {
-    //         name, email, password
-    //     }
-    //     const res = await axios({
-    //         method: 'POST',
-    //         url: "http://127.0.0.1:2080/users/register",
-    //         payload
-    //     }).then(() => {
-    //         if (res.status === "success") {
-    //             window.open("/profile")
-    //         }
-    //     }).catch(error => console.log(error))
+    async function handleSubmit(e) {
+        //     let payload = {
+        //         name, email, password
+        //     }
+        //     const res = await axios({
+        //         method: 'POST',
+        //         url: "http://127.0.0.1:2080/users/register",
+        //         payload
+        //     }).then(() => {
+        //         if (res.status === "success") {
+        //             window.open("/profile")
+        //         }
+        //     }).catch(error => console.log(error))
+        console.log("hi")
 
-    // }
+    }
 
     return (
         <div className="body">
