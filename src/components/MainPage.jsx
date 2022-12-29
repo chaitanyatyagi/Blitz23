@@ -1,11 +1,9 @@
 import "../style/mainpage.css"
 import Navbar from "./Navbar"
-import { useRef } from "react"
+// import { useRef } from "react"
 import React from "react"
 
 function MainPage() {
-
-    const scrollToRef = useRef()
 
     return (
         <div className="mainpage">
@@ -34,7 +32,7 @@ function MainPage() {
                         <div className="landingPg3b2">62+ EVENTS</div>
                         <div className="landingPg3b3">25+ COLLEGES</div>
                     </div>
-                    <div className="landingPg3right"> gdgcg</div>
+                    <div className="landingPg3right"></div>
                 </div>
             </section>
             <section className="landingPg4">

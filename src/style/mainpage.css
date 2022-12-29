@@ -4,12 +4,7 @@
 .mainpage {
     display: flex;
     flex-direction: column;
-    overflow-y: scroll;
     scroll-snap-type: y mandatory;
-}
-
-section {
-    scroll-snap-align: start;
 }
 
 .landingPg1 {
@@ -21,6 +16,8 @@ section {
     justify-content: center;
     align-items: center;
     flex-direction: row;
+    scroll-snap-align: start;
+
 }
 
 .landingPg1ins {
