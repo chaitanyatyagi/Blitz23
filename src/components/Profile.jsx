@@ -17,7 +17,11 @@ export default function Profile() {
 
     return (
         <div className="body">
+<<<<<<< HEAD
             <Navbar />
+=======
+            <Navbar/>
+>>>>>>> b31d0d4434e391ed035b2516b67cc36065fc9579
             <div className="containerprof">
                 <div className="head-div">
                     <h1 className="heading">&lt; User Profile &gt;</h1>

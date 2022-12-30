@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import '../style/contact.css'
 import Contactdetails from './ContactApi'
+import Navbar from './Navbar';
 import { FaRegWindowClose, FaWhatsappSquare, FaInstagramSquare, FaVoicemail, FaLinkedinIn } from 'react-icons/fa';
 import Navbar from './Navbar';
 
@@ -105,17 +106,17 @@ export default function Contact() {
                     </div>
                 </div>
             }
-
+            <Navbar/>
             <div className='maincontainer'>
                 <div className='headline'>
                     CONTACT TO
                 </div>
-                <div className='content'>
+                <div className='contentcont'>
                     {
                         Contactdetails.map((e) => {
 
                             return (
-                                <div className='container' key={e.id} onClick={elm => showcontact(elm, e.id)}>
+                                <div className='containercont' key={e.id} onClick={elm => showcontact(elm, e.id)}>
                                     <div className='contimg'>
                                         <img className='img' src={e.image} alt="tech" />
                                     </div>

@@ -2,6 +2,9 @@ import "../style/navbar.css"
 import { FaBars, FaWindowClose } from 'react-icons/fa'
 import { Link } from "react-router-dom"
 import React, { useState } from "react"
+import '../../node_modules/bootstrap/dist/css/bootstrap.min.css'
+import '../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js'
+
 
 
 
@@ -29,13 +32,33 @@ function Navbar() {
                     <div className="menubar" id="menu">
                         <button className='btn' onClick={() => shownavlinks()}>{cancleButton ? <FaBars /> : <FaWindowClose />}</button>
                     </div>
-                    <div className={IsMobile ? "mobile" : "navbar"}>
+                    <div className={IsMobile ? "mobile" : "laptop"}>
 
                         <Link to="/" className="centertabs">HOME</Link>
                         <Link to="/pronites" className="centertabs">PRONITES</Link>
                         <Link to="/announcements" className="centertabs">RESULTS</Link>
-                        <Link to="/events" className="centertabs">EVENTS</Link>
+                        
+                        <div className="navdrop">
+                            <button className="dropbtn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                EVENTS
+                            </button>
+                            <ul className="dropdown-menu bg-dark">
+                                <li className="dropdown-item text-white">FLAGSHIP EVENTS</li>
+                                <li className="dropdown-item text-white">EVENTS</li>
+                            </ul>
+                        </div>
                         <Link to="/contactus" className="centertabs">TEAM</Link>
+                        <div className="dropdown">
+                            <button className="dropbtn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                MORE
+                            </button>
+                            <ul className="dropdown-menu bg-dark">
+                                <li className="dropdown-item text-white">HOSPITALITY</li>
+                                <li className="dropdown-item text-white">SPONSORS</li>
+                                <li className="dropdown-item text-white">MERCHANDISE</li>
+                                <li className="dropdown-item text-white">OUT TEAM</li>
+                            </ul>
+                        </div>
                         <Link to="/register" className="register">REGISTER</Link>
                         <Link to="/login" className="login">LOGIN</Link>
                     </div>

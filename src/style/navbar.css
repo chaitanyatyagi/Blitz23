@@ -1,4 +1,4 @@
-.navbar {
+.laptop {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -9,11 +9,19 @@
     /* transition: all ease-in-out 2s; */
 }
 
-.navbar a {
+.laptop a {
     margin-left: 45px;
+    font-weight: 500;
+    font-size: 21px;
+    font-family: 'Inter';
+    font-style: normal;
 }
 
+<<<<<<< HEAD
 .navbar a:hover {
+=======
+.laptop a:hover{
+>>>>>>> b31d0d4434e391ed035b2516b67cc36065fc9579
     scale: 1.2;
     color: grey;
 }
@@ -108,9 +116,19 @@
     line-height: 30px;
 }
 
+
+
+.dropbtn{
+    font-weight: 500;
+    font-size: 21px;
+    margin-left: 45px;
+    background-color: transparent;
+    color: white;
+}
+
 @media(max-width: 1000px) {
 
-    .navbar {
+    .laptop {
         position: fixed;
         /* left: 10000px; */
         flex-direction: column;
@@ -146,7 +164,7 @@
         width: auto;
     }
 
-    .navbar a {
+    .laptop a {
         margin-top: 20px;
     }
 
