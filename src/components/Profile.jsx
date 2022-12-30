@@ -18,11 +18,11 @@ export default function Profile(){
     return(
         <div className="body">
             <Navbar/>
-            <div className="container">
+            <div className="containerprof">
                 <div className="head-div">
                     <h1 className="heading">&lt; User Profile &gt;</h1>
                 </div>
-                <div className="content">
+                <div className="contentprof">
                     <div className="user-side">
                         <div className="user-profile">
                             <div className="user-img"></div>

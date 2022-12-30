@@ -16,7 +16,7 @@
     scrollbar-width: none;
 }
 
-.container {
+.containerprof {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -43,7 +43,7 @@
     color: #FFFFFF;
 }
 
-.content {
+.contentprof {
     width: 90%;
     min-height: 80vh;
     background: #1A1919;

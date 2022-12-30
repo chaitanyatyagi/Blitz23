@@ -19,6 +19,7 @@ font-family: 'Satisfy', cursive; */
 .maincontainer {
     width: 100%;
     min-height: 100vh;
+    padding-top: 25px;
     background-size: cover;
     background-position: center;
     background: linear-gradient(rgba(22, 21, 21, 0.75), rgba(16, 14, 14, 0.75)), url('../images/concbg.webp');
@@ -34,13 +35,13 @@ font-family: 'Satisfy', cursive; */
     /* text-shadow: 4px 4px 4px #aaa; */
 }   
 
-.content {
+.contentcont {
     /* margin: auto; */
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    padding: 50px;
+    padding: 20px;
 }
 
 .contDetails {
@@ -116,12 +117,14 @@ font-family: 'Satisfy', cursive; */
     color: white;
 }
 
-.container {
+.containercont {
     border: 0.5px solid grey;
     padding: 10px;
     cursor: pointer;
     box-shadow: 5px 5px 5px 5px rgba(10, 9, 9, 0.3);
     margin: 8px 12px;
+    height: 300px;
+    width: 300px;
 }
 
 .cancel {
