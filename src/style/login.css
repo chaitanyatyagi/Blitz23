@@ -7,7 +7,7 @@
     font-family: 'Inter';
 }
 
-.container {
+.containerlog {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -29,6 +29,7 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    z-index: 2;
 }
 
 .form {
@@ -201,7 +202,7 @@
         scrollbar-width: none;
     }
 
-    .container {
+    .containerlog {
         flex-direction: column;
     }
 
@@ -233,7 +234,7 @@
         width: 100%;
     }
 
-    .container {
+    .containerlog {
         height: 100vh;
         width: 100%;
     }

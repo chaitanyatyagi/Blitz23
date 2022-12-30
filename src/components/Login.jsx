@@ -43,7 +43,7 @@ export default function Registration() {
     return (
         <div className="body">
             <Navbar />
-            <div className="container">
+            <div className="containerlog">
                 <div className="image">
                     <image src={blitz} />
                 </div>

@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import '../style/contact.css'
 import Contactdetails from './ContactApi'
 import { FaRegWindowClose, FaWhatsappSquare, FaInstagramSquare, FaVoicemail, FaLinkedinIn } from 'react-icons/fa';
+import Navbar from './Navbar';
 
 export default function Contact() {
 
@@ -39,6 +40,7 @@ export default function Contact() {
 
     return (
         <>
+            <Navbar />
             {showpopup &&
                 <div className='contDetails'>
                     <div className='detailsaling'>

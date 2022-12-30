@@ -7,7 +7,7 @@
     font-family: 'Inter';
 }
 
-.container {
+.containerreg {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -125,7 +125,7 @@
         scrollbar-width: none;
     }
 
-    .container {
+    .containerreg {
         flex-direction: column;
     }
 
@@ -155,7 +155,7 @@
         width: 100%;
     }
 
-    .container {
+    .containerreg {
         height: 100vh;
         width: 100%;
     }

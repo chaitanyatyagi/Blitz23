@@ -5,24 +5,24 @@ import React from "react";
 import userInfo from "../userData";
 import eventInfo from "../eventData";
 
-export default function Profile(){
-    const eventData = eventInfo.map(x=>{
-        return <EventCard 
+export default function Profile() {
+    const eventData = eventInfo.map(x => {
+        return <EventCard
             name={x.name}
             teamName={x.teamName}
             nMembers={x.nMembers}
             link={x.link}
         />
     })
-    
-    return(
+
+    return (
         <div className="body">
-            <Navbar/>
-            <div className="container">
+            <Navbar />
+            <div className="containerprof">
                 <div className="head-div">
                     <h1 className="heading">&lt; User Profile &gt;</h1>
                 </div>
-                <div className="content">
+                <div className="contentprof">
                     <div className="user-side">
                         <div className="user-profile">
                             <div className="user-img"></div>

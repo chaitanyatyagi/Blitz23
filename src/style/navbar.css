@@ -5,6 +5,7 @@
     align-items: center;
     margin-right: 45px;
     height: 100%;
+    z-index: 999000;
     /* transition: all ease-in-out 2s; */
 }
 
@@ -12,7 +13,7 @@
     margin-left: 45px;
 }
 
-.navbar a:hover{
+.navbar a:hover {
     scale: 1.2;
     color: grey;
 }
@@ -26,6 +27,7 @@
     display: flex;
     justify-content: space-between;
     top: 0;
+    z-index: 999000;
 }
 
 .menubar {
@@ -112,6 +114,7 @@
         position: fixed;
         /* left: 10000px; */
         flex-direction: column;
+        z-index: 999000;
 
     }
 
@@ -128,9 +131,10 @@
         transition: all ease-in-out 1s;
         padding-left: 15px;
         padding-right: 55px;
+        z-index: 999000;
     }
 
-    .mobile a{
+    .mobile a {
         margin: 22px 0;
     }
 
