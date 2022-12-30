@@ -1,12 +1,13 @@
-@import url('https://fonts.googleapis.com/css?family=Inter');
-@import url('https://fonts.googleapis.com/css?family=Henny+Penny');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Inter");
+@import url("https://fonts.googleapis.com/css?family=Henny+Penny");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
 
 .body {
-    background-image: url("../images/image60.png");
-    font-family: 'Inter';
+	background-image: url("../images/image60.png");
+	font-family: "Inter";
 }
 
+<<<<<<< HEAD
 .containerlog {
     display: flex;
     flex-direction: row;
@@ -30,165 +31,190 @@
     background-repeat: no-repeat;
     background-position: center;
     z-index: 2;
+=======
+.container {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+.image {
+	color: white;
+	height: 90vh;
+	width: 40%;
+	background: black;
+	border: 1px solid #565656;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+	backdrop-filter: blur(7.5px);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-image: url("../images/image\ 78.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+>>>>>>> 3ada0a45aa3461483c9df665e1bdcfa97263290c
 }
 
 .form {
-    color: white;
-    height: 90vh;
-    width: 40%;
-    background: #0E0E0E;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
-    backdrop-filter: blur(7.5px);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+	color: white;
+	height: 90vh;
+	width: 40%;
+	background: #0e0e0e;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+	backdrop-filter: blur(7.5px);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
 .form-heading {
-    font-family: 'Henny Penny';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 2.5rem;
+	font-family: "Henny Penny";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 2.5rem;
 }
 
 .form-inputs {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 100%;
-    justify-content: space-around;
-    margin: 0%;
-    margin-left: 10%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	width: 100%;
+	justify-content: space-around;
+	margin: 0%;
+	margin-left: 10%;
 }
 
 .form-feilds {
-    background: rgba(255, 255, 255, 0.2);
-    border: 1px solid #FFFFFF;
-    border-radius: 5px;
-    height: 1.2em;
-    width: 100%;
-    color: #D5D5D5;
-    padding: 10px;
-    font-size: 1rem;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 600;
-    margin: 0px;
+	background: rgba(255, 255, 255, 0.2);
+	border: 1px solid #ffffff;
+	border-radius: 5px;
+	height: 1.2em;
+	width: 100%;
+	color: #d5d5d5;
+	padding: 10px;
+	font-size: 1rem;
+	font-family: "Poppins";
+	font-style: normal;
+	font-weight: 600;
+	margin: 0px;
 }
 
 .forgot-pass {
-    font-size: 1rem;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 600;
-    color: #FFFFFF;
-    text-decoration: none;
-    display: flex;
-    align-items: flex-start;
-    padding: 0px;
-    font-size: 1rem;
-    margin-bottom: 2em;
+	font-size: 1rem;
+	font-family: "Poppins";
+	font-style: normal;
+	font-weight: 600;
+	color: #ffffff;
+	text-decoration: none;
+	display: flex;
+	align-items: flex-start;
+	padding: 0px;
+	font-size: 1rem;
+	margin-bottom: 2em;
 }
 
 .form-submit {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid #FFFFFF;
-    height: 2.2em;
-    font-size: 1rem;
-    background-color: #0E0E0E;
-    color: white;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 500;
-    width: 10em;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid #ffffff;
+	height: 2.2em;
+	font-size: 1rem;
+	background-color: #0e0e0e;
+	color: white;
+	font-family: "Inter";
+	font-style: normal;
+	font-weight: 500;
+	width: 10em;
 }
 
 .form-close {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background: rgba(255, 255, 255, 0.1);
-    border: none;
-    height: 30px;
-    width: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	background: rgba(255, 255, 255, 0.1);
+	border: none;
+	height: 30px;
+	width: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .close-img {
-    height: 22px;
-    width: 22px;
+	height: 22px;
+	width: 22px;
 }
 
 .top-right {
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    color: white;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	color: white;
 }
 
 .bottom-left {
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    color: white;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	color: white;
 }
 
 .seprator {
-    width: 90%;
-    background: rgba(255, 255, 255, 0.8);
-    border: 1px solid rgba(255, 255, 255, 0.8);
-    border-radius: 5px;
-    margin-top: 1em;
-    margin-bottom: 0rem;
+	width: 90%;
+	background: rgba(255, 255, 255, 0.8);
+	border: 1px solid rgba(255, 255, 255, 0.8);
+	border-radius: 5px;
+	margin-top: 1em;
+	margin-bottom: 0rem;
 }
 
 .login-options {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin: 0px;
-    width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	margin: 0px;
+	width: 100%;
 }
 
 .options-head {
-    font-size: 1rem;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 600;
-    color: #FFFFFF;
+	font-size: 1rem;
+	font-family: "Poppins";
+	font-style: normal;
+	font-weight: 600;
+	color: #ffffff;
 }
 
 .icons {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-evenly;
+	width: 100%;
 }
 
 .icon {
-    height: 35px;
-    width: 35px;
-    background-color: white;
-    border-radius: 50px;
+	height: 35px;
+	width: 35px;
+	background-color: white;
+	border-radius: 50px;
 }
 
 .facebook {
-    background-image: url("../images/image\ 81.png");
+	background-image: url("../images/image\ 81.png");
 }
 
 .google {
-    background-image: url("../images/image\ 79.png");
+	background-image: url("../images/image\ 79.png");
 }
 
 .twitter {
+<<<<<<< HEAD
     background-image: url("../images/image\ 80.png");
 }
 
@@ -239,3 +265,55 @@
         width: 100%;
     }
 }
+=======
+	background-image: url("../images/image\ 80.png");
+}
+
+@media (max-width: 900px) {
+	.body::-webkit-scrollbar {
+		display: none;
+	}
+
+	.body {
+		-ms-overflow-style: none;
+		scrollbar-width: none;
+	}
+
+	.container {
+		flex-direction: column;
+	}
+
+	.image {
+		width: 80%;
+		margin-top: 100px;
+		order: 1;
+	}
+
+	.form {
+		width: 80%;
+		margin-bottom: 50px;
+		order: 2;
+	}
+
+	.form-inputs {
+		margin-left: 20%;
+	}
+
+	.form-submit {
+		margin-bottom: 2em;
+	}
+}
+
+@media (min-width: 901px) {
+	.body {
+		overflow: hidden;
+		height: 100vh;
+		width: 100%;
+	}
+
+	.container {
+		height: 100vh;
+		width: 100%;
+	}
+}
+>>>>>>> 3ada0a45aa3461483c9df665e1bdcfa97263290c

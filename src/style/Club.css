@@ -1,0 +1,188 @@
+.club-remove-decor {
+	text-decoration: none;
+	color: black;
+}
+.club-background {
+	min-height: 100vh;
+	width: 100vw;
+	background-image: url("../images/ClubBackground.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-top: 0px;
+}
+.club-contanier {
+	width: 100vw;
+	min-height: 100vh;
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-evenly;
+}
+.club-side-bar {
+	width: 20vw;
+	min-height: 100vh;
+	height: 100%;
+	background-image: url("../images/clubsidebar.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.club-info {
+	width: 80vw;
+	min-height: 100vh;
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+.club-info-card {
+	background: #eeeeee;
+	border: 1px solid #000000;
+	min-height: 60vh;
+	min-width: 60vw;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-evenly;
+}
+.club-info-image-container {
+	height: 60vh;
+	width: 20vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.club-info-image {
+	height: 50vh;
+	max-width: 20vw;
+}
+.club-info-text {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+	width: 35vw;
+	height: 60vh;
+}
+.club-info-title {
+	font-family: "Henny Penny";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1.3rem;
+	text-align: center;
+	letter-spacing: 0.1em;
+	color: #000000;
+}
+.club-info-body {
+	font-family: "Inter";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 1rem;
+	text-align: justify;
+	color: #000000;
+}
+.club-info-link {
+	text-decoration: none;
+	border: 2px solid #000000;
+	padding: 10px;
+	font-family: "Inter";
+	font-style: normal;
+	font-weight: 500;
+}
+.club-bar {
+	position: fixed;
+	width: 100vw;
+	height: 60px;
+	background: #111111;
+	box-shadow: 0px -5px 10px rgba(255, 255, 255, 0.15);
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-evenly;
+}
+.club-bar-card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 10px;
+}
+.club-bar-card-name {
+	background: #ffffff;
+	border: 1px solid #000000;
+	box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.25);
+	border-radius: 5px;
+	font-family: "Henny Penny";
+	font-style: normal;
+	font-weight: 400;
+	color: #000000;
+	font-size: 1rem;
+	padding: 2px;
+}
+.club-bar-card-inactive {
+	color: #fdfdfd;
+	background: rgba(0, 0, 0, 0.3);
+	border: 1px solid #ffffff;
+	font-family: "Henny Penny";
+	font-style: normal;
+	font-weight: 400;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-bottom: 10px;
+	max-height: 60px;
+}
+.club-bar-card-inactive:hover {
+	background: #ffffff;
+	border: 1px solid #ffffff;
+	color: #000000;
+}
+.club-bar-card-active {
+	background: #ffffff;
+	border: 1px solid #ffffff;
+	box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.25);
+	color: #000000;
+	font-family: "Henny Penny";
+	font-style: normal;
+	font-weight: 400;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-bottom: 10px;
+	max-height: 60px;
+}
+@media (max-width: 1000px) {
+	.club-info-card {
+		flex-direction: column;
+		height: 70vh;
+	}
+	.club-info-image {
+		height: 30vh;
+		max-width: fit-content;
+	}
+	.club-info-title {
+		margin-bottom: 10px;
+		font-size: 1rem;
+	}
+	.club-info-body {
+		font-size: 0.6rem;
+		margin-bottom: 10px;
+		margin-left: 5px;
+		margin-right: 5px;
+	}
+	.club-info-text {
+		height: 65vh;
+		width: 60vw;
+	}
+	.club-info-link {
+		font-size: 0.7rem;
+	}
+}
+@media (max-width: 600px) {
+	.club-side-bar {
+		display: none;
+	}
+}
