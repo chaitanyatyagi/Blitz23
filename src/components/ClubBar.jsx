@@ -3,19 +3,11 @@ import "../style/Club.css";
 import ClubBarCards from "./ClubBarCards";
 
 export default function ClubBar(props) {
-	let i = 9;
-	let small = window.matchMedia("(max-width: 1000px)").matches;
-	let dec = -1;
+	let i = 0;
 	let arr = [];
-	while (i <= 9) {
+	while (i <= 18) {
 		arr.push(i);
-		if (small && i === 0) {
-			break;
-		}
-		if (i === 0) {
-			dec = 1;
-		}
-		i += dec;
+		i += 1;
 	}
 	const dispCard = arr.map((x) => {
 		return <ClubBarCards text={x} active={props.active} onChange={props.onChange} />;

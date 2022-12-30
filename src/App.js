@@ -7,6 +7,7 @@ import Profile from "./components/Profile";
 import Registration from "./components/Registration";
 import Contact from "./components/Contact";
 import Club from "./components/Club";
+import Events from "./components/Events";
 
 function App() {
 	return (
@@ -19,6 +20,7 @@ function App() {
 					<Route path="/profile" element={<Profile />} />
 					<Route path="/contactus" element={<Contact />} />
 					<Route path="/clubs" element={<Club />} />
+					<Route path="/events" element={<Events club={0} />} />
 				</Routes>
 			</div>
 		</BrowserRouter>
