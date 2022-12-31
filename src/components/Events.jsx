@@ -1,13 +1,29 @@
 import React from "react";
 import "../style/Events.css";
 import Navbar from "./Navbar";
+import axios from "axios";
 import eventimage from "../images/EventTile.png";
 import shift from "../images/eventshift.png";
 import clubData from "../TestData/clubData";
 import EventsNav from "./EventsNav";
-import { Link } from "react-router-dom";
+import { Link,useNavigate } from "react-router-dom";
 
 export default function Events(props) {
+	const navigate=useNavigate();
+	const pay=(amount)=>{
+		axios.get(`http://127.0.0.1:2080/paywithpaytm?amount=${amount}`,)
+			.then(function (response) {
+				console.log(response.data);
+				props.setresultData(response.data.resultData);
+				props.setpaytmFinalUrl(response.data.paytmFinalUrl);
+				navigate("/initiatePayment");
+				// window.open('/profile', "_self");
+			})
+			.catch(function (error) {
+				console.log(error);
+			});
+
+	}
 	const [activeEvent, setActiveEvent] = React.useState(1);
 	let event = clubData[props.club].events[activeEvent - 1];
 	let rulesDisp = event.rules.map((x, i) => {
@@ -49,7 +65,7 @@ export default function Events(props) {
 								</div>
 							)}
 							<div className="event-card-text-register">
-								<Link className="event-link-remover event-card-register-link">
+								<Link className="event-link-remover event-card-register-link" onClick={()=>pay(10)} >
 									REGISTER
 								</Link>
 							</div>
