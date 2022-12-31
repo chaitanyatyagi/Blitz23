@@ -28,40 +28,10 @@ export default function Registration() {
 		console.log("hi");
 	}
 
-<<<<<<< HEAD
-    }
-
-    return (
-        <div className="body">
-            <Navbar />
-            <div className="containerreg">
-                <div className="image">
-                    <image src={blitz} />
-                </div>
-                <div className="form">
-                    <image src={formCorner} className="top-right"></image>
-                    <image src={formCorner} className="bottom-left"></image>
-                    <h1 className="form-heading">Registration</h1>
-                    <input
-                        className='form-feilds' placeholder='name' event={name} onChange={(e) => setName(e.target.value)}>
-                    </input>
-                    <input
-                        className='form-feilds' placeholder='email' event={email} onChange={(e) => setEmail(e.target.value)}>
-                    </input>
-                    <input
-                        className='form-feilds' placeholder='password' type="password" event={password} onChange={(e) => setPassword(e.target.value)}>
-                    </input>
-                    <button className="form-submit" onClick={handleSubmit}>Register</button>
-                </div>
-            </div>
-        </div>
-    )
-}
-=======
 	return (
 		<div className="body">
 			<Navbar />
-			<div className="container">
+			<div className="containerreg">
 				<div className="image">
 					<image src={blitz} />
 				</div>
@@ -70,30 +40,18 @@ export default function Registration() {
 					<image src={formCorner} className="bottom-left"></image>
 					<h1 className="form-heading">Registration</h1>
 					<input
-						className="form-feilds"
-						placeholder="name"
-						event={name}
-						onChange={(e) => setName(e.target.value)}
-					></input>
+						className='form-feilds' placeholder='name' event={name} onChange={(e) => setName(e.target.value)}>
+					</input>
 					<input
-						className="form-feilds"
-						placeholder="email"
-						event={email}
-						onChange={(e) => setEmail(e.target.value)}
-					></input>
+						className='form-feilds' placeholder='email' event={email} onChange={(e) => setEmail(e.target.value)}>
+					</input>
 					<input
-						className="form-feilds"
-						placeholder="password"
-						type="password"
-						event={password}
-						onChange={(e) => setPassword(e.target.value)}
-					></input>
-					<button className="form-submit" onClick={handleSubmit}>
-						Register
-					</button>
+						className='form-feilds' placeholder='password' type="password" event={password} onChange={(e) => setPassword(e.target.value)}>
+					</input>
+					<button className="form-submit" onClick={handleSubmit}>Register</button>
 				</div>
 			</div>
 		</div>
-	);
+	)
 }
->>>>>>> 3ada0a45aa3461483c9df665e1bdcfa97263290c
+

@@ -6,7 +6,6 @@ import userInfo from "../TestData/userData";
 import eventInfo from "../TestData/eventData";
 
 export default function Profile() {
-<<<<<<< HEAD
     const eventData = eventInfo.map(x => {
         return <EventCard
             name={x.name}
@@ -18,11 +17,7 @@ export default function Profile() {
 
     return (
         <div className="body">
-<<<<<<< HEAD
             <Navbar />
-=======
-            <Navbar/>
->>>>>>> b31d0d4434e391ed035b2516b67cc36065fc9579
             <div className="containerprof">
                 <div className="head-div">
                     <h1 className="heading">&lt; User Profile &gt;</h1>
@@ -59,54 +54,3 @@ export default function Profile() {
         </div>
     )
 }
-=======
-	const eventData = eventInfo.map((x) => {
-		return (
-			<EventCard name={x.name} teamName={x.teamName} nMembers={x.nMembers} link={x.link} />
-		);
-	});
-
-	return (
-		<div className="body">
-			<Navbar />
-			<div className="container">
-				<div className="head-div">
-					<h1 className="heading">&lt; User Profile &gt;</h1>
-				</div>
-				<div className="content">
-					<div className="user-side">
-						<div className="user-profile">
-							<div className="user-img"></div>
-							<div className="user-details">
-								<div className="user-name">{userInfo.fullName}</div>
-								<div className="user-contact">
-									<div className="details-holder">
-										<div className="user-icons-username"></div>
-										<h3 className="user-contact-details">
-											{" "}
-											: {userInfo.username}
-										</h3>
-									</div>
-									<div className="details-holder">
-										<div className="user-icons-email"></div>
-										<h3 className="user-contact-details">
-											{" "}
-											: {userInfo.email}
-										</h3>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div className="blitz-logo"></div>
-					</div>
-					<div className="separator"></div>
-					<div className="event-side">
-						<h1 className="event-head">Registered Events</h1>
-						<div className="event-list">{eventData}</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	);
-}
->>>>>>> 3ada0a45aa3461483c9df665e1bdcfa97263290c

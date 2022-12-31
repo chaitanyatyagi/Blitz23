@@ -40,48 +40,10 @@ export default function Registration() {
 		}
 	}
 
-<<<<<<< HEAD
-    return (
-        <div className="body">
-            <Navbar />
-            <div className="containerlog">
-                <div className="image">
-                    <image src={blitz} />
-                </div>
-                <div className="form">
-                    <image src={formCorner} className="top-right"></image>
-                    <image src={formCorner} className="bottom-left"></image>
-                    <h1 className="form-heading">Login</h1>
-                    <div className="form-inputs">
-                        <input
-                            name="emailId"
-                            className="form-feilds"
-                            placeholder="Email-ID / Username"
-                            value={formData.emailId}
-                            type="email"
-                            onChange={(e) => handleChange(e)}>
-                        </input>
-                        <input
-                            name="password"
-                            className="form-feilds"
-                            placeholder="Password"
-                            value={formData.password}
-                            type="password"
-                            onChange={(e) => handleChange(e)}>
-                        </input>
-                        <a href="/" className="forgot-pass">Forgot Password?</a>
-                    </div>
-                    <button className="form-submit" onClick={(e) => handleSubmit(e)}>Login</button>
-                </div>
-            </div>
-        </div>
-    )
-}
-=======
 	return (
 		<div className="body">
 			<Navbar />
-			<div className="container">
+			<div className="containerlog">
 				<div className="image">
 					<image src={blitz} />
 				</div>
@@ -96,26 +58,21 @@ export default function Registration() {
 							placeholder="Email-ID / Username"
 							value={formData.emailId}
 							type="email"
-							onChange={(e) => handleChange(e)}
-						></input>
+							onChange={(e) => handleChange(e)}>
+						</input>
 						<input
 							name="password"
 							className="form-feilds"
 							placeholder="Password"
 							value={formData.password}
 							type="password"
-							onChange={(e) => handleChange(e)}
-						></input>
-						<a href="/" className="forgot-pass">
-							Forgot Password?
-						</a>
+							onChange={(e) => handleChange(e)}>
+						</input>
+						<a href="/" className="forgot-pass">Forgot Password?</a>
 					</div>
-					<button className="form-submit" onClick={(e) => handleSubmit(e)}>
-						Login
-					</button>
+					<button className="form-submit" onClick={(e) => handleSubmit(e)}>Login</button>
 				</div>
 			</div>
 		</div>
-	);
+	)
 }
->>>>>>> 3ada0a45aa3461483c9df665e1bdcfa97263290c

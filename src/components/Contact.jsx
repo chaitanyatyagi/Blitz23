@@ -3,7 +3,7 @@ import '../style/contact.css'
 import Contactdetails from './ContactApi'
 import Navbar from './Navbar';
 import { FaRegWindowClose, FaWhatsappSquare, FaInstagramSquare, FaVoicemail, FaLinkedinIn } from 'react-icons/fa';
-import Navbar from './Navbar';
+// import Navbar from './Navbar';
 
 export default function Contact() {
 
@@ -106,7 +106,7 @@ export default function Contact() {
                     </div>
                 </div>
             }
-            <Navbar/>
+            <Navbar />
             <div className='maincontainer'>
                 <div className='headline'>
                     CONTACT TO

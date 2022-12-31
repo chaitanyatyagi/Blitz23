@@ -7,32 +7,7 @@
 	font-family: "Inter";
 }
 
-<<<<<<< HEAD
 .containerlog {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-
-.image {
-    color: white;
-    height: 90vh;
-    width: 40%;
-    background: black;
-    border: 1px solid #565656;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
-    backdrop-filter: blur(7.5px);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-image: url("../images/image\ 78.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    z-index: 2;
-=======
-.container {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -54,7 +29,7 @@
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
->>>>>>> 3ada0a45aa3461483c9df665e1bdcfa97263290c
+	z-index: 2;
 }
 
 .form {
@@ -214,62 +189,10 @@
 }
 
 .twitter {
-<<<<<<< HEAD
-    background-image: url("../images/image\ 80.png");
-}
-
-@media (max-width:900px) {
-    .body::-webkit-scrollbar {
-        display: none;
-    }
-
-    .body {
-        -ms-overflow-style: none;
-        scrollbar-width: none;
-    }
-
-    .containerlog {
-        flex-direction: column;
-    }
-
-    .image {
-        width: 80%;
-        margin-top: 100px;
-        order: 1;
-    }
-
-    .form {
-        width: 80%;
-        margin-bottom: 50px;
-        order: 2;
-    }
-
-    .form-inputs {
-        margin-left: 20%;
-    }
-
-    .form-submit {
-        margin-bottom: 2em;
-    }
-}
-
-@media (min-width:901px) {
-    .body {
-        overflow: hidden;
-        height: 100vh;
-        width: 100%;
-    }
-
-    .containerlog {
-        height: 100vh;
-        width: 100%;
-    }
-}
-=======
 	background-image: url("../images/image\ 80.png");
 }
 
-@media (max-width: 900px) {
+@media (max-width:900px) {
 	.body::-webkit-scrollbar {
 		display: none;
 	}
@@ -279,7 +202,7 @@
 		scrollbar-width: none;
 	}
 
-	.container {
+	.containerlog {
 		flex-direction: column;
 	}
 
@@ -304,16 +227,15 @@
 	}
 }
 
-@media (min-width: 901px) {
+@media (min-width:901px) {
 	.body {
 		overflow: hidden;
 		height: 100vh;
 		width: 100%;
 	}
 
-	.container {
+	.containerlog {
 		height: 100vh;
 		width: 100%;
 	}
 }
->>>>>>> 3ada0a45aa3461483c9df665e1bdcfa97263290c

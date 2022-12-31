@@ -37,26 +37,26 @@ function Navbar() {
                         <Link to="/" className="centertabs">HOME</Link>
                         <Link to="/pronites" className="centertabs">PRONITES</Link>
                         <Link to="/announcements" className="centertabs">RESULTS</Link>
-                        
+
                         <div className="navdrop">
                             <button className="dropbtn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                                 EVENTS
                             </button>
                             <ul className="dropdown-menu bg-dark">
-                                <li className="dropdown-item text-white">FLAGSHIP EVENTS</li>
-                                <li className="dropdown-item text-white">EVENTS</li>
+                                <li className="dropdown-item text-white"><Link to="/flagship-events" className="dropdown-item text-white">FLAGSHIP EVENTS</Link></li>
+                                <li className="dropdown-item text-white"><Link to="/events" className="dropdown-item text-white">EVENTS</Link></li>
                             </ul>
                         </div>
-                        <Link to="/contactus" className="centertabs">TEAM</Link>
+                        {/* <Link to="/contactus" className="centertabs">TEAM</Link> */}
                         <div className="dropdown">
                             <button className="dropbtn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                                 MORE
                             </button>
                             <ul className="dropdown-menu bg-dark">
-                                <li className="dropdown-item text-white">HOSPITALITY</li>
-                                <li className="dropdown-item text-white">SPONSORS</li>
-                                <li className="dropdown-item text-white">MERCHANDISE</li>
-                                <li className="dropdown-item text-white">OUT TEAM</li>
+                                <li className="dropdown-item text-white"><Link to="/hospitality" className="dropdown-item text-white">HOSPITALITY</Link></li>
+                                <li className="dropdown-item text-white"><Link to="/sponsors" className="dropdown-item text-white">SPONSORS</Link></li>
+                                <li className="dropdown-item text-white"><Link to="/merchandise" className="dropdown-item text-white">MERCHANDISE</Link></li>
+                                <li className="dropdown-item text-white"><Link to="/team" className="dropdown-item text-white">OUT TEAM</Link></li>
                             </ul>
                         </div>
                         <Link to="/register" className="register">REGISTER</Link>
