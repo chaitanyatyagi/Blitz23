@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 import "../style/Club.css";
 
 export default function Club() {
-	const [clubIndex, setClubIndex] = React.useState(9);
+	const [clubIndex, setClubIndex] = React.useState(0);
 	return (
 		<div className="club-background">
 			<Navbar />
