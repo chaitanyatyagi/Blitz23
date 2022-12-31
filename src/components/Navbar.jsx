@@ -43,20 +43,20 @@ function Navbar() {
                                 EVENTS
                             </button>
                             <ul className="dropdown-menu bg-dark">
-                                <li className="dropdown-item text-white">FLAGSHIP EVENTS</li>
-                                <li className="dropdown-item text-white">EVENTS</li>
+                                <li className="dropdown-item"><Link className="text-white">FLAGSHIP EVENTS</Link></li>
+                                <li className="dropdown-item"><Link className="text-white">EVENTS</Link></li>
                             </ul>
                         </div>
                         <Link to="/contactus" className="centertabs">TEAM</Link>
-                        <div className="dropdown">
+                        <div className="dropdown navdrop">
                             <button className="dropbtn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                                 MORE
                             </button>
                             <ul className="dropdown-menu bg-dark">
-                                <li className="dropdown-item text-white">HOSPITALITY</li>
-                                <li className="dropdown-item text-white">SPONSORS</li>
-                                <li className="dropdown-item text-white">MERCHANDISE</li>
-                                <li className="dropdown-item text-white">OUT TEAM</li>
+                                <li className="dropdown-item"><Link className="text-white">HOSPITALITY</Link></li>
+                                <li className="dropdown-item"><Link className="text-white">SPONSORS</Link></li>
+                                <li className="dropdown-item"><Link className="text-white">MERCHANDISE</Link></li>
+                                <li className="dropdown-item"><Link className="text-white">OUT TEAM</Link></li>
                             </ul>
                         </div>
                         <Link to="/register" className="register">REGISTER</Link>

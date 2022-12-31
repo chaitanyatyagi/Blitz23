@@ -1,0 +1,37 @@
+.containerspon{
+    position: fixed;
+    width: calc(250px * 22);
+    height: 120px;
+    background:linear-gradient(90deg, rgb(95, 92, 92), rgb(254, 254, 254));
+    bottom: 0;
+}
+.contentspon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 150%;
+    overflow: hidden;
+    animation: scrolx 15s linear infinite;
+
+}
+
+.contentspon h1{
+    padding: 20px;
+    color: white;
+}
+
+@keyframes scrolx {
+    0%{
+        transform: translateX(0);
+    }
+
+    100%{
+        transform: translateX(calc(-250px*22));
+    }
+}
+
+.contentspon:hover{
+    animation-play-state:paused;
+}
+

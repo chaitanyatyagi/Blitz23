@@ -6,6 +6,7 @@ import React from "react";
 import Profile from './components/Profile';
 import Registration from './components/Registration';
 import Contact from './components/Contact'
+import Sponsars from './components/Sponsars';
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
           <Route path='/profile' element={<Profile />} />
           <Route path='/contactus' element={<Contact />} />
         </Routes>
+        <Sponsars/>
       </div>
     </BrowserRouter>
   );
