@@ -26,7 +26,6 @@ export default function Registration() {
                 if (response.data.status === "error")
                     window.alert(response.data.message)
                 else {
-                    //successfull registration
                     window.alert("Account Created. Login Now ");
                 }
             })

@@ -56,7 +56,8 @@
     width: 100%;
     height: 65px;
     background-image: url("../images/Blitz_Logo_23.png");
-    background-size: 100% 100%;
+    background-size: 60% 100%;
+    background-repeat: no-repeat;
 }
 
 .register {

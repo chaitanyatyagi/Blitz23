@@ -6,7 +6,10 @@ import blitz from "../images/IMG-8305.PNG";
 import formCorner from "../images/image76.png";
 import axios from "axios";
 
-export default function Registration() {
+export default function Registration(props) {
+	const {
+		setLogin
+	} = props
 	const [formData, setFormData] = React.useState({
 		fullName: "",
 		emailId: "",
@@ -22,6 +25,7 @@ export default function Registration() {
 		})
 	}
 	async function handleSubmit(e) {
+		setLogin(true)
 		e.preventDefault();
 		let payload = {
 			email: e.target[0].value,
@@ -71,7 +75,7 @@ export default function Registration() {
 						</input>
 						<a href="/" className="forgot-pass">Forgot Password?</a>
 					</div>
-					<button className="form-submit" >Login</button>
+					<button className="form-submit" onClick={() => setLogin(true)}>Login</button>
 				</form>
 			</div>
 		</div>

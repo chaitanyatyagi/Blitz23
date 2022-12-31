@@ -8,7 +8,11 @@ import '../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js'
 
 
 
-function Navbar() {
+function Navbar(props) {
+    const {
+        login,
+        setLogin
+    } = props
     const [IsMobile, SetIsMobile] = useState(false);
     const [cancleButton, setCanclebutton] = useState(true)
     const shownavlinks = () => {
@@ -44,7 +48,7 @@ function Navbar() {
                             </button>
                             <ul className="dropdown-menu bg-dark">
                                 <li className="dropdown-item text-white"><Link to="/flagship-events" className="dropdown-item text-white">FLAGSHIP EVENTS</Link></li>
-                                <li className="dropdown-item text-white"><Link to="/events" className="dropdown-item text-white">EVENTS</Link></li>
+                                <li className="dropdown-item text-white"><Link to="/clubs" className="dropdown-item text-white">EVENTS</Link></li>
                             </ul>
                         </div>
                         {/* <Link to="/contactus" className="centertabs">TEAM</Link> */}
@@ -60,7 +64,9 @@ function Navbar() {
                             </ul>
                         </div>
                         <Link to="/register" className="register">REGISTER</Link>
-                        <Link to="/login" className="login">LOGIN</Link>
+                        {
+                            login ? <Link to="/login" className="login" onClick={() => setLogin(false)}>LOGOUT</Link> : <Link to="/login" className="login">LOGIN</Link>
+                        }
                     </div>
                 </div>
             </div>
