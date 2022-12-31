@@ -14,30 +14,32 @@ export default function Registration() {
 	});
 
 	function handleChange(e) {
-		setFormData((prev) => {
+		setFormData(prev => {
 			return {
 				...prev,
-				[e.target.name]: e.target.value,
-			};
-		});
+				[e.target.name]: e.target.value
+			}
+		})
 	}
 	async function handleSubmit(e) {
-		setFormData({
-			emailId: "",
-			password: "",
-		});
+		e.preventDefault();
 		let payload = {
-			email: formData.emailId,
-			password: formData.password,
-		};
-		const res = await axios({
-			method: "POST",
-			url: "http://127.0.0.1:2080/users/login",
-			payload,
-		});
-		if (res.status === "success") {
-			window.open("/profile");
+			email: e.target[0].value,
+			password: e.target[1].value
 		}
+		axios.post('http://127.0.0.1:2080/users/login', payload)
+			.then(function (response) {
+				console.log(response);
+				if (response.data.status === "error")
+					window.alert(response.data.message)
+				else {
+					//successfull registration
+					window.open('/profile', "_self");
+				}
+			})
+			.catch(function (error) {
+				console.log(error);
+			});
 	}
 
 	return (
@@ -47,31 +49,30 @@ export default function Registration() {
 				<div className="image">
 					<image src={blitz} />
 				</div>
-				<div className="form">
+				<form className="form" onSubmit={handleSubmit} >
 					<image src={formCorner} className="top-right"></image>
 					<image src={formCorner} className="bottom-left"></image>
 					<h1 className="form-heading">Login</h1>
 					<div className="form-inputs">
 						<input
-							name="emailId"
+							name="email"
 							className="form-feilds"
 							placeholder="Email-ID / Username"
-							value={formData.emailId}
 							type="email"
-							onChange={(e) => handleChange(e)}>
+						>
 						</input>
 						<input
 							name="password"
 							className="form-feilds"
 							placeholder="Password"
-							value={formData.password}
+
 							type="password"
-							onChange={(e) => handleChange(e)}>
+						>
 						</input>
 						<a href="/" className="forgot-pass">Forgot Password?</a>
 					</div>
-					<button className="form-submit" onClick={(e) => handleSubmit(e)}>Login</button>
-				</div>
+					<button className="form-submit" >Login</button>
+				</form>
 			</div>
 		</div>
 	)
