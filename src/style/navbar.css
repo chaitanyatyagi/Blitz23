@@ -1,153 +1,160 @@
-.navbar {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-right: 45px;
-    height: 100%;
-    /* transition: all ease-in-out 2s; */
+.laptop {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	margin-right: 45px;
+	height: 100%;
 }
 
-.navbar a {
-    margin-left: 45px;
+.laptop a {
+	margin-left: 45px;
+	font-weight: 500;
+	font-size: 21px;
+	font-family: "Inter";
+	font-style: normal;
 }
 
-.navbar a:hover{
-    scale: 1.2;
-    color: grey;
+.laptop a:hover {
+	scale: 1.2;
+	color: grey;
 }
 
 .main_nav {
-    width: 100%;
-    height: 65px;
-    background: black;
-    opacity: 0.7;
-    position: fixed;
-    display: flex;
-    justify-content: space-between;
-    top: 0;
+	width: 100%;
+	height: 65px;
+	background: black;
+	opacity: 0.7;
+	position: fixed;
+	display: flex;
+	justify-content: space-between;
+	top: 0;
 }
 
 .menubar {
-    display: none;
-    position: fixed;
-    top: 15px;
-    right: 15px;
-    background-color: #ffffff;
-    border-radius: 7px;
-
+	display: none;
+	position: fixed;
+	top: 15px;
+	right: 15px;
+	background-color: #ffffff;
+	border-radius: 7px;
 }
 
 .btn {
-    padding: 5px;
-    font-size: 20px;
-    border-radius: 7px;
+	padding: 5px;
+	font-size: 20px;
+	border-radius: 7px;
 }
 
 .leftlogo {
-    width: 20%;
+	width: 20%;
 }
 
 .leftlogoins {
-    width: 100%;
-    height: 65px;
-    background-image: url("../images/Blitz_Logo_23.png");
-    background-size: 100% 100%;
+	width: 100%;
+	height: 65px;
+	background-image: url("../images/Blitz_Logo_23.png");
+	background-size: 100% 100%;
 }
 
 .register {
-    display: flex;
-    width: 15%;
-    height: 100%;
-    /* border: 1px solid white; */
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-    color: white;
-    text-decoration: none;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 30px;
+	display: flex;
+	width: 15%;
+	height: 100%;
+	/* border: 1px solid white; */
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items: center;
+	color: white;
+	text-decoration: none;
+	font-family: "Inter";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 30px;
 }
 
 .login {
-    display: flex;
-    width: 15%;
-    height: 100%;
-    /* border: 1px solid white; */
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-decoration: none;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 30px;
+	display: flex;
+	width: 15%;
+	height: 100%;
+	/* border: 1px solid white; */
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	text-decoration: none;
+	font-family: "Inter";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 30px;
 }
 
 .centertabs {
-    display: flex;
-    width: 10%;
-    height: 100%;
-    /* border: 1px solid white; */
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-decoration: none;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 30px;
+	display: flex;
+	width: 10%;
+	height: 100%;
+	/* border: 1px solid white; */
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	text-decoration: none;
+	font-family: "Inter";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 30px;
 }
 
-@media(max-width: 1000px) {
+.dropbtn {
+	font-weight: 500;
+	font-size: 21px;
+	margin-left: 45px;
+	background-color: transparent;
+	color: white;
+}
 
-    .navbar {
-        position: fixed;
-        /* left: 10000px; */
-        flex-direction: column;
+@media (max-width: 1000px) {
+	.laptop {
+		position: fixed;
+		/* left: 10000px; */
+		flex-direction: column;
+	}
 
-    }
+	.mobile {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin-right: 45px;
+		position: fixed;
+		top: 65px;
+		background-color: black;
+		right: 0;
+		transition: all ease-in-out 1s;
+		padding-left: 15px;
+		padding-right: 55px;
+	}
 
-    .mobile {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-right: 45px;
-        position: fixed;
-        top: 65px;
-        background-color: black;
-        right: 0;
-        transition: all ease-in-out 1s;
-        padding-left: 15px;
-        padding-right: 55px;
-    }
+	.mobile a {
+		margin: 22px 0;
+	}
 
-    .mobile a{
-        margin: 22px 0;
-    }
+	.nav_links {
+		margin-top: 20px;
+	}
 
-    .nav_links {
-        margin-top: 20px;
-    }
+	.register {
+		width: auto;
+	}
 
-    .register {
-        width: auto;
-    }
+	.laptop a {
+		margin-top: 20px;
+	}
 
-    .navbar a {
-        margin-top: 20px;
-    }
-
-
-    .menubar {
-        display: block;
-    }
+	.menubar {
+		display: block;
+	}
 }

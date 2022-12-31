@@ -10,17 +10,19 @@ import Club from "./components/Club";
 import Events from "./components/Events";
 
 function App() {
+	const [club, setClub] = React.useState(1);
 	return (
 		<BrowserRouter>
 			<div className="App">
 				<Routes>
-					<Route path="/" element={<MainPage />} />
+					<Route exact path="/" element={<MainPage />} />
 					<Route path="/login" element={<Login />} />
 					<Route path="/register" element={<Registration />} />
 					<Route path="/profile" element={<Profile />} />
 					<Route path="/contactus" element={<Contact />} />
-					<Route path="/clubs" element={<Club />} />
-					<Route path="/events" element={<Events club={0} />} />
+					<Route path="/clubs" element={<Club active={club} change={setClub} />} />
+					<Route path="/flagship-events" element={<Events club={0} />} />
+					<Route path="/events" element={<Events club={club} />} />
 				</Routes>
 			</div>
 		</BrowserRouter>
