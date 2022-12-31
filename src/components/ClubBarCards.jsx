@@ -6,6 +6,7 @@ export default function ClubBarCards(props) {
 	const [over, setOver] = React.useState(false);
 	function handleClick() {
 		props.onChange(props.text);
+		console.log(over)
 	}
 
 	return (

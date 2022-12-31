@@ -41,7 +41,7 @@ export default function Contact() {
 
     return (
         <>
-            <Navbar />
+            {/* <Navbar /> */}
             {showpopup &&
                 <div className='contDetails'>
                     <div className='detailsaling'>

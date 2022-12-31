@@ -10,13 +10,13 @@ export default function Club() {
 	const [clubIndex, setClubIndex] = React.useState(0);
 	return (
 		<div className="club-background">
-			<Navbar />
+			{/* <Navbar /> */}
 			<div className="club-contanier">
 				<div className="club-side-bar"></div>
 				<div className="club-info">
 					<div className="club-info-card">
 						<div className="club-info-image-container">
-							<img src={DanceCover} className="club-info-image" />
+							<img alt="4" src={DanceCover} className="club-info-image" />
 						</div>
 						<div className="club-info-text">
 							<div className="club-info-title">{clubData[clubIndex].title}</div>

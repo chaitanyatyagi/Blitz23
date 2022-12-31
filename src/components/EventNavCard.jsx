@@ -1,5 +1,5 @@
 import React from "react";
-import clubData from "../TestData/clubData";
+// import clubData from "../TestData/clubData";
 import "../style/Events.css";
 
 export default function EventNavCards(props) {

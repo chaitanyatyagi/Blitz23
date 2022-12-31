@@ -2,30 +2,12 @@ import "../style/login.css";
 import Navbar from "./Navbar";
 import React from "react";
 import blitz from "../images/IMG-8305.PNG";
-// import close from "../images/Vector.png";
 import formCorner from "../images/image76.png";
 import axios from "axios";
+import { useState } from "react";
 
-export default function Registration(props) {
-	const {
-		setLogin
-	} = props
-	const [formData, setFormData] = React.useState({
-		fullName: "",
-		emailId: "",
-		teamName: "",
-	});
-
-	function handleChange(e) {
-		setFormData(prev => {
-			return {
-				...prev,
-				[e.target.name]: e.target.value
-			}
-		})
-	}
+export default function Registration() {
 	async function handleSubmit(e) {
-		setLogin(true)
 		e.preventDefault();
 		let payload = {
 			email: e.target[0].value,
@@ -37,7 +19,6 @@ export default function Registration(props) {
 				if (response.data.status === "error")
 					window.alert(response.data.message)
 				else {
-					//successfull registration
 					window.open('/profile', "_self");
 				}
 			})
@@ -48,7 +29,7 @@ export default function Registration(props) {
 
 	return (
 		<div className="body">
-			<Navbar />
+			{/* <Navbar /> */}
 			<div className="containerlog">
 				<div className="image">
 					<image src={blitz} />
@@ -75,7 +56,7 @@ export default function Registration(props) {
 						</input>
 						<a href="/" className="forgot-pass">Forgot Password?</a>
 					</div>
-					<button className="form-submit" onClick={() => setLogin(true)}>Login</button>
+					<button className="form-submit" >Login</button>
 				</form>
 			</div>
 		</div>

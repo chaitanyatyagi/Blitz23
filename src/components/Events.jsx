@@ -6,11 +6,12 @@ import eventimage from "../images/EventTile.png";
 import shift from "../images/eventshift.png";
 import clubData from "../TestData/clubData";
 import EventsNav from "./EventsNav";
-import { Link,useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { useState } from "react";
 
 export default function Events(props) {
-	const navigate=useNavigate();
-	const pay=(amount)=>{
+	const navigate = useNavigate();
+	const pay = (amount) => {
 		axios.get(`http://127.0.0.1:2080/paywithpaytm?amount=${amount}`,)
 			.then(function (response) {
 				console.log(response.data);
@@ -65,7 +66,7 @@ export default function Events(props) {
 								</div>
 							)}
 							<div className="event-card-text-register">
-								<Link className="event-link-remover event-card-register-link" onClick={()=>pay(10)} >
+								<Link className="event-link-remover event-card-register-link" onClick={() => pay(10)} >
 									REGISTER
 								</Link>
 							</div>
@@ -80,18 +81,18 @@ export default function Events(props) {
 							/>
 						</div>
 						<div className="events-card-img-container">
-							<img className="event-card-img" src={eventimage} />
+							<img alt="1" className="event-card-img" src={eventimage} />
 							<Link className="event-link-remover">
-								<img className="event-card-img-prev" src={shift}></img>
+								<img alt="2" className="event-card-img-prev" src={shift}></img>
 							</Link>
 							<Link className="event-link-remover">
-								<img className="event-card-img-next" src={shift}></img>
+								<img alt="3" className="event-card-img-next" src={shift}></img>
 							</Link>
 						</div>
 					</div>
 				</div>
 			</div>
-			<Navbar />
+			{/* <Navbar /> */}
 		</div>
 	);
 }

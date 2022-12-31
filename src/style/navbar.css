@@ -8,11 +8,12 @@
 }
 
 .laptop a {
-    margin-left: 45px;
+    /* margin-left: 45px; */
     font-weight: 500;
     font-size: 21px;
     font-family: 'Inter';
     font-style: normal;
+    margin: 0px 35px;
 }
 
 
@@ -22,6 +23,7 @@
 }
 
 .main_nav {
+    z-index: 10000;
     width: 100%;
     height: 65px;
     background: black;

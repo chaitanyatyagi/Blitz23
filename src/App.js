@@ -1,9 +1,8 @@
 import "./App.css";
-import { useState } from "react"
 import MainPage from "./components/MainPage";
 import Login from "./components/Login";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Profile from "./components/Profile";
 import Registration from "./components/Registration";
 import Contact from "./components/Contact";
@@ -12,20 +11,35 @@ import Sponsor from "./components/Sponsor";
 import Events from "./components/Events";
 import Navbar from "./components/Navbar";
 import PaytmRedirect from "./components/PaytmRedirect";
+import { Cookies } from "react-cookie"
 
 function App() {
+
 	const [isLoggedIn, setIsLoggedIn] = useState(false)
+	const cookies = new Cookies()
+	useEffect(() => {
+		const token = cookies.get('jwt')
+		if (!token) {
+			setIsLoggedIn(false)
+		}
+		else {
+			setIsLoggedIn(true)
+		}
+	})
+
 	const [paytmFinalUrl, setpaytmFinalUrl] = useState("");
 	const [resultData, setresultData] = useState({});
+
+
 	return (
 		<BrowserRouter>
 			<div className="App">
+				<Navbar isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />
 				<Routes>
-					<Route path="/none" element={<Navbar login={isLoggedIn} setLogin={setIsLoggedIn} />} />
 					<Route path="/" element={<MainPage />} />
-					<Route path="/login" element={<Login setLogin={setIsLoggedIn} />} />
+					<Route path="/login" element={<Login />} />
 					<Route path="/register" element={<Registration />} />
-					<Route path="/profile" element={<Profile setLogin={setIsLoggedIn} />} />
+					<Route path="/profile" element={<Profile isLoggedIn={isLoggedIn} />} />
 					<Route path="/contactus" element={<Contact />} />
 					<Route path="/clubs" element={<Club />} />
 					<Route path="/sponsors" element={<Sponsor />}></Route>

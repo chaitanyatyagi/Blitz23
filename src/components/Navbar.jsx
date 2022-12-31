@@ -4,15 +4,30 @@ import { Link } from "react-router-dom"
 import React, { useState } from "react"
 import '../../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import '../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js'
+import axios from "axios"
 
 
 
 
-function Navbar(props) {
-    const {
-        login,
-        setLogin
-    } = props
+function Navbar({ isLoggedIn }) {
+
+    const chngBtn = (e) => {
+        e.preventDefault();
+        axios.get('http://127.0.0.1:2080/users/logout')
+            .then(function (response) {
+                console.log(response);
+                if (response.data.status === "error")
+                    window.alert(response.data.message)
+                else {
+                    window.alert(response.data.message);
+                }
+            })
+            .catch(function (error) {
+                console.log(error);
+            });
+
+    }
+
     const [IsMobile, SetIsMobile] = useState(false);
     const [cancleButton, setCanclebutton] = useState(true)
     const shownavlinks = () => {
@@ -26,7 +41,6 @@ function Navbar(props) {
             setCanclebutton(false)
         }
     }
-
     return (
         <>
 
@@ -37,11 +51,12 @@ function Navbar(props) {
                         <button className='btn' onClick={() => shownavlinks()}>{cancleButton ? <FaBars /> : <FaWindowClose />}</button>
                     </div>
                     <div className={IsMobile ? "mobile" : "laptop"}>
-
+                        {
+                            isLoggedIn ? <Link to="/register" className="centertabs" onClick={() => chngBtn()}>LOGOUT</Link> : <Link to="/register" className="centertabs">REGISTER</Link>
+                        }
                         <Link to="/" className="centertabs">HOME</Link>
                         <Link to="/pronites" className="centertabs">PRONITES</Link>
                         <Link to="/announcements" className="centertabs">RESULTS</Link>
-
                         <div className="navdrop">
                             <button className="dropbtn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                                 EVENTS
@@ -51,7 +66,6 @@ function Navbar(props) {
                                 <li className="dropdown-item text-white"><Link to="/clubs" className="dropdown-item text-white">EVENTS</Link></li>
                             </ul>
                         </div>
-                        {/* <Link to="/contactus" className="centertabs">TEAM</Link> */}
                         <div className="dropdown">
                             <button className="dropbtn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                                 MORE
@@ -63,14 +77,9 @@ function Navbar(props) {
                                 <li className="dropdown-item text-white"><Link to="/team" className="dropdown-item text-white">OUT TEAM</Link></li>
                             </ul>
                         </div>
-                        <Link to="/register" className="register">REGISTER</Link>
-                        {
-                            login ? <Link to="/login" className="login" onClick={() => setLogin(false)}>LOGOUT</Link> : <Link to="/login" className="login">LOGIN</Link>
-                        }
                     </div>
                 </div>
             </div>
-
         </>
     )
 }
