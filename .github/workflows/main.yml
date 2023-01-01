@@ -16,9 +16,10 @@ jobs:
 
       - name: Updating our ENV variables
         run: nvm install 16.14.0
-        run: npm install -g npm@8.18.0
-        run: npm install
-        run: npm run build
+
+      - run: npm install -g npm@8.18.0
+      - run: npm install
+      - run: npm run build
       
       
       - name: Install SSH Key
