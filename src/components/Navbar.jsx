@@ -78,7 +78,7 @@ function Navbar({ isLoggedIn }) {
                                 {/* <li className="dropdown-item text-white"><Link to="/hospitality" className="dropdown-item text-white">HOSPITALITY</Link></li> */}
                                 <li className="dropdown-item text-white"><Link to="/sponsors" className="dropdown-item text-white">SPONSORS</Link></li>
                                 {/* <li className="dropdown-item text-white"><Link to="/merchandise" className="dropdown-item text-white">MERCHANDISE</Link></li> */}
-                                <li className="dropdown-item text-white"><Link to="/team" className="dropdown-item text-white">OUT TEAM</Link></li>
+                                <li className="dropdown-item text-white"><Link to="/contactus" className="dropdown-item text-white">OUT TEAM</Link></li>
                             </ul>
                         </div>
                     </div>

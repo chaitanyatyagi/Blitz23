@@ -15,7 +15,7 @@
 
 .sponsorhead {
     height: 19%;
-    width: 85%;
+    width: 85vw;
     font-family: 'Henny Penny';
     font-style: normal;
     font-weight: 400;
@@ -29,7 +29,7 @@
 
 .sponsorcontent {
     height: 15%;
-    width: 85%;
+    width: 85vw;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -42,5 +42,18 @@
 
 .sponsormain {
     height: 66%;
-    width: 85%;
+    width: 85vh;
+    display: flex;
+    justify-content: center;
+    overflow-y: auto;
+    flex: wrap;
+    flex-direction: column;
+}
+
+.sponsormainins {
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+    height: 20vh;
+    width: 21vw;
+    border: 2px solid white;
 }
