@@ -12,6 +12,7 @@ import { useState } from "react";
 export default function Events(props) {
 	const navigate = useNavigate();
 	const pay = (amount) => {
+		if(props.isLoggedIn){
 		axios.get(`http://127.0.0.1:2080/paywithpaytm?amount=${amount}`,)
 			.then(function (response) {
 				console.log(response.data);
@@ -23,6 +24,11 @@ export default function Events(props) {
 			.catch(function (error) {
 				console.log(error);
 			});
+		}
+		else{
+			window.alert("Please Log In ");
+			window.open("/login");
+		}
 
 	}
 	const [activeEvent, setActiveEvent] = React.useState(1);

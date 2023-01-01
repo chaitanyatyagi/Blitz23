@@ -5,8 +5,13 @@ import blitz from "../images/IMG-8305.PNG";
 import formCorner from "../images/image76.png";
 import axios from "axios";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import Cookies from 'universal-cookie';
+const cookies = new Cookies();
 
-export default function Registration() {
+
+export default function Registration(props) {
+	const navigate=useNavigate();
 	async function handleSubmit(e) {
 		e.preventDefault();
 		let payload = {
@@ -15,11 +20,13 @@ export default function Registration() {
 		}
 		axios.post('http://127.0.0.1:2080/users/login', payload)
 			.then(function (response) {
-				console.log(response);
+				console.log(response.data);
 				if (response.data.status === "error")
 					window.alert(response.data.message)
 				else {
-					window.open('/profile', "_self");
+					props.setIsLoggedIn(true);
+					cookies.set('jwt',response.data.token , { path: '/' });
+					navigate("/profile");
 				}
 			})
 			.catch(function (error) {

@@ -5,26 +5,27 @@ import React, { useState } from "react"
 import '../../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import '../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js'
 import axios from "axios"
-
+import Cookies from "universal-cookie"
 
 
 
 function Navbar({ isLoggedIn }) {
-
+    const cookies=new Cookies();
     const chngBtn = (e) => {
         e.preventDefault();
-        axios.get('http://127.0.0.1:2080/users/logout')
-            .then(function (response) {
-                console.log(response);
-                if (response.data.status === "error")
-                    window.alert(response.data.message)
-                else {
-                    window.alert(response.data.message);
-                }
-            })
-            .catch(function (error) {
-                console.log(error);
-            });
+        
+        // axios.get('http://127.0.0.1:2080/users/logout')
+        //     .then(function (response) {
+        //         console.log(response);
+        //         if (response.data.status === "error")
+        //             window.alert(response.data.message)
+        //         else {
+        //             window.alert(response.data.message);
+        //         }
+        //     })
+        //     .catch(function (error) {
+        //         console.log(error);
+        //     });
 
     }
 
@@ -52,7 +53,7 @@ function Navbar({ isLoggedIn }) {
                     </div>
                     <div className={IsMobile ? "mobile" : "laptop"}>
                         {
-                            isLoggedIn ? <Link to="/register" className="centertabs" onClick={() => chngBtn()}>LOGOUT</Link> : <Link to="/register" className="centertabs">REGISTER</Link>
+                            isLoggedIn ? <Link to="/register" className="centertabs" onClick={() => {cookies.remove('jwt',{ path: '/' });window.location.reload()}}>LOGOUT</Link> : <Link to="/register" className="centertabs">LOGIN</Link>
                         }
                         <Link to="/" className="centertabs">HOME</Link>
                         <Link to="/pronites" className="centertabs">PRONITES</Link>
