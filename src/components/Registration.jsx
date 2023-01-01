@@ -13,7 +13,7 @@ export default function Registration() {
         let name = e.target[0].value
         let email = e.target[1].value;
         let password = e.target[2].value;
-        axios.post('process.env.REACT_APP_SERVER/users/register', {
+        axios.post(`${process.env.REACT_APP_SERVER}/users/register`, {
             name, email, password
         })
             .then(function (response) {
