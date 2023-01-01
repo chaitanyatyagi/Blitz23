@@ -8,14 +8,11 @@ import { useState } from "react";
 import { Link } from "react-router-dom"
 
 export default function Registration() {
-    const [name, setName] = useState("");
-    const [email, setEmail] = useState("");
-    const [password, setPassword] = useState("");
     async function handleSubmit(e) {
         e.preventDefault();
-        // let name = e.target[0].value
-        // let email = e.target[1].value;
-        // let password = e.target[2].value;
+        let name = e.target[0].value
+        let email = e.target[1].value;
+        let password = e.target[2].value;
         axios.post('http://127.0.0.1:2080/users/register', {
             name, email, password
         })
@@ -40,22 +37,22 @@ export default function Registration() {
                 <div className="image">
                     <image src={blitz} />
                 </div>
-                <div className="form">
+                <form className="form" onSubmit={handleSubmit}>
                     <image src={formCorner} className="top-right"></image>
                     <image src={formCorner} className="bottom-left"></image>
                     <h1 className="form-heading">Registration</h1>
                     <input
-                        className='form-feilds' placeholder='name' event={name} onChange={(e) => setName(e.target.value)}>
+                        className='form-feilds' placeholder='name' name="name">
                     </input>
                     <input
-                        className='form-feilds' placeholder='email' event={email} onChange={(e) => setEmail(e.target.value)}>
+                        className='form-feilds' placeholder='email' type="email" name="email">
                     </input>
                     <input
-                        className='form-feilds' placeholder='password' type="password" event={password} onChange={(e) => setPassword(e.target.value)}>
+                        className='form-feilds' placeholder='password' type="password" name="password">
                     </input>
                     <Link to="/login" className="forgot-pass">Already Registered ? Login</Link>
-                    <button className="form-submit" onClick={handleSubmit}>Register</button>
-                </div>
+                    <button className="form-submit">Register</button>
+                </form>
             </div>
         </div>
     )

@@ -11,7 +11,7 @@ const cookies = new Cookies();
 
 
 export default function Registration(props) {
-	const navigate=useNavigate();
+	const navigate = useNavigate();
 	async function handleSubmit(e) {
 		e.preventDefault();
 		let payload = {
@@ -25,7 +25,7 @@ export default function Registration(props) {
 					window.alert(response.data.message)
 				else {
 					props.setIsLoggedIn(true);
-					cookies.set('jwt',response.data.token , { path: '/' });
+					cookies.set('jwt', response.data.token, { path: '/' });
 					navigate("/profile");
 				}
 			})
@@ -57,7 +57,6 @@ export default function Registration(props) {
 							name="password"
 							className="form-feilds"
 							placeholder="Password"
-
 							type="password"
 						>
 						</input>

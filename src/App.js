@@ -21,34 +21,37 @@ function App() {
 	useEffect(() => {
 		console.log(localStorage);
 		const token = cookies.get('jwt')
-		console.log(token,"token");
+		console.log(token, "token");
 		if (!token) {
 			setIsLoggedIn(false)
 		}
 		else {
 			setIsLoggedIn(true)
 		}
-	},[])
+	}, [])
 
 	const [paytmFinalUrl, setpaytmFinalUrl] = useState("");
 	const [resultData, setresultData] = useState({});
 
 
+	const [club, setClub] = React.useState(1);
 	return (
 		<BrowserRouter>
 			<div className="App">
 				<Navbar isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />
 				<Routes>
 					<Route path="/" element={<MainPage />} />
-					<Route path="/login" element={<Login setIsLoggedIn={setIsLoggedIn}/>} />
+					<Route path="/login" element={<Login setIsLoggedIn={setIsLoggedIn} />} />
 					<Route path="/register" element={<Registration setIsLoggedIn={setIsLoggedIn} />} />
 					<Route path="/profile" element={<Profile isLoggedIn={isLoggedIn} />} />
 					<Route path="/contactus" element={<Contact />} />
-					<Route path="/clubs" element={<Club />} />
 					<Route path="/sponsors" element={<Sponsor />}></Route>
-					<Route path="/flagship-events" element={<Events club={0} />} />
-					<Route path="/events" element={<Events club={0} setpaytmFinalUrl={setpaytmFinalUrl} setresultData={setresultData} isLoggedIn={isLoggedIn} />} />
+					<Route path="/flagship-events" element={<Events club={0} setpaytmFinalUrl={setpaytmFinalUrl} setresultData={setresultData} isLoggedIn={isLoggedIn} />} />
+					<Route path="/events" element={<Events club={club} setpaytmFinalUrl={setpaytmFinalUrl} setresultData={setresultData} isLoggedIn={isLoggedIn} />} />
 					<Route path="/initiatePayment" element={<PaytmRedirect resultData={resultData} paytmFinalUrl={paytmFinalUrl} />} />
+					<Route path="/clubs" element={<Club active={club} change={setClub} />} />
+
+					{/* <Route path="/events" element={<Events club={club} />} /> */}
 				</Routes>
 			</div>
 		</BrowserRouter>

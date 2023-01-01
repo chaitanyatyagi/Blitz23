@@ -10,10 +10,10 @@ import Cookies from "universal-cookie"
 
 
 function Navbar({ isLoggedIn }) {
-    const cookies=new Cookies();
+    const cookies = new Cookies();
     const chngBtn = (e) => {
         e.preventDefault();
-        
+
         // axios.get('http://127.0.0.1:2080/users/logout')
         //     .then(function (response) {
         //         console.log(response);
@@ -53,11 +53,14 @@ function Navbar({ isLoggedIn }) {
                     </div>
                     <div className={IsMobile ? "mobile" : "laptop"}>
                         {
-                            isLoggedIn ? <Link to="/register" className="centertabs" onClick={() => {cookies.remove('jwt',{ path: '/' });window.location.reload()}}>LOGOUT</Link> : <Link to="/register" className="centertabs">LOGIN</Link>
+                            isLoggedIn ? <Link to="/register" className="centertabs" onClick={() => { cookies.remove('jwt', { path: '/' }); window.location.reload() }}>LOGOUT</Link> : <Link to="/register" className="centertabs">LOGIN</Link>
+                        }
+                        {
+                            isLoggedIn ? <Link to="/profile" className="centertabs">PROFILE</Link> : ""
                         }
                         <Link to="/" className="centertabs">HOME</Link>
-                        <Link to="/pronites" className="centertabs">PRONITES</Link>
-                        <Link to="/announcements" className="centertabs">RESULTS</Link>
+                        {/* <Link to="/pronites" className="centertabs">PRONITES</Link>
+                        <Link to="/announcements" className="centertabs">RESULTS</Link>  */}
                         <div className="navdrop">
                             <button className="dropbtn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                                 EVENTS
@@ -72,9 +75,9 @@ function Navbar({ isLoggedIn }) {
                                 MORE
                             </button>
                             <ul className="dropdown-menu bg-dark">
-                                <li className="dropdown-item text-white"><Link to="/hospitality" className="dropdown-item text-white">HOSPITALITY</Link></li>
+                                {/* <li className="dropdown-item text-white"><Link to="/hospitality" className="dropdown-item text-white">HOSPITALITY</Link></li> */}
                                 <li className="dropdown-item text-white"><Link to="/sponsors" className="dropdown-item text-white">SPONSORS</Link></li>
-                                <li className="dropdown-item text-white"><Link to="/merchandise" className="dropdown-item text-white">MERCHANDISE</Link></li>
+                                {/* <li className="dropdown-item text-white"><Link to="/merchandise" className="dropdown-item text-white">MERCHANDISE</Link></li> */}
                                 <li className="dropdown-item text-white"><Link to="/team" className="dropdown-item text-white">OUT TEAM</Link></li>
                             </ul>
                         </div>
@@ -85,4 +88,4 @@ function Navbar({ isLoggedIn }) {
     )
 }
 
-export default Navbar
+export default Navbar;

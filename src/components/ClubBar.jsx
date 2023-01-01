@@ -3,9 +3,9 @@ import "../style/Club.css";
 import ClubBarCards from "./ClubBarCards";
 
 export default function ClubBar(props) {
-	let i = 0;
+	let i = 1;
 	let arr = [];
-	while (i <= 18) {
+	while (i <= 19) {
 		arr.push(i);
 		i += 1;
 	}
