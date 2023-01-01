@@ -14,7 +14,7 @@
 }
 
 .sponsorhead {
-    height: 19%;
+    height: 19vh;
     width: 85vw;
     font-family: 'Henny Penny';
     font-style: normal;
@@ -28,7 +28,7 @@
 }
 
 .sponsorcontent {
-    height: 15%;
+    height: 15vh;
     width: 85vw;
     font-family: 'Inter';
     font-style: normal;
@@ -41,19 +41,22 @@
 }
 
 .sponsormain {
-    height: 66%;
+    height: 66vh;
     width: 85vh;
     display: flex;
     justify-content: center;
-    overflow-y: auto;
+    align-items: center;
+    overflow-y: scroll;
     flex: wrap;
-    flex-direction: column;
 }
 
 .sponsormainins {
     background-size: 50% 50%;
     background-repeat: no-repeat;
-    height: 20vh;
-    width: 21vw;
+    height: 33%;
+    width: 20vw;
     border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
