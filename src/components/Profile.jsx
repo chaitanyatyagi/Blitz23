@@ -2,8 +2,9 @@ import "../style/profile.css";
 import Navbar from "./Navbar";
 import EventCard from "./EventCard";
 import React from "react";
-import userInfo from "../userData";
-import eventInfo from "../eventData";
+import userInfo from "../TestData/userData";
+import eventInfo from "../TestData/eventData";
+import { useState } from "react";
 
 export default function Profile() {
     const eventData = eventInfo.map(x => {
@@ -17,7 +18,7 @@ export default function Profile() {
 
     return (
         <div className="body">
-            <Navbar />
+            {/* <Navbar /> */}
             <div className="containerprof">
                 <div className="head-div">
                     <h1 className="heading">&lt; User Profile &gt;</h1>

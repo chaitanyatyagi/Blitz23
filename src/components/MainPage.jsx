@@ -1,6 +1,6 @@
 import "../style/mainpage.css"
 import Navbar from "./Navbar"
-import { useRef } from "react"
+import { useRef, useState } from "react"
 import React from "react"
 
 
@@ -14,7 +14,7 @@ function MainPage() {
 
     return (
         <div className="mainpage">
-            <Navbar />
+            {/* <Navbar /> */}
             <section className="landingPg1" ref={landingPg1}>
                 <div className="landingPg1ins"></div>
             </section>
