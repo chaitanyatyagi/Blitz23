@@ -1,5 +1,4 @@
 import "../style/registration.css";
-import Navbar from "./Navbar";
 import React from "react";
 import blitz from "../images/Blitz_Logo_23.png";
 // import close from "../images/Vector.png";
@@ -12,13 +11,14 @@ export default function Registration() {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
-    console.log(name, email, password)
     async function handleSubmit(e) {
         e.preventDefault();
-        let name = e.target[0].value
-        let email = e.target[1].value;
-        let password = e.target[2].value;
-
+        // let name = e.target[0].value
+        // let email = e.target[1].value;
+        // let password = e.target[2].value;
+        // let name = name
+        // let email = email
+        // let password = password
         axios.post('http://127.0.0.1:2080/users/register', {
             name, email, password
         })
