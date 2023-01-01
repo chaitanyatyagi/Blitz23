@@ -1,5 +1,6 @@
 import React from "react"
 import "../style/sponsor.css"
+import sponsor from "../TestData/sponsorData"
 
 function Sponsor() {
 
