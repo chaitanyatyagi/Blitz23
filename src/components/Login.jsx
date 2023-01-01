@@ -18,7 +18,7 @@ export default function Registration(props) {
 			email: e.target[0].value,
 			password: e.target[1].value
 		}
-		axios.post('http://127.0.0.1:2080/users/login', payload)
+		axios.post('process.env.REACT_APP_SERVER/users/login', payload)
 			.then(function (response) {
 				console.log(response.data);
 				if (response.data.status === "error")
