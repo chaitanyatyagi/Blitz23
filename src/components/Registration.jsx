@@ -16,9 +16,6 @@ export default function Registration() {
         // let name = e.target[0].value
         // let email = e.target[1].value;
         // let password = e.target[2].value;
-        // let name = name
-        // let email = email
-        // let password = password
         axios.post('http://127.0.0.1:2080/users/register', {
             name, email, password
         })
