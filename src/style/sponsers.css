@@ -1,0 +1,43 @@
+.containerspon {
+    position: fixed;
+    width: calc(250px * 22);
+    height: 50px;
+    background: black;
+    bottom: 0;
+    opacity: 0.6;
+}
+
+.contentspon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 150%;
+    overflow: hidden;
+    animation: scrolx 25s linear infinite;
+
+}
+
+.contentspon h1 {
+    padding: 20px;
+}
+
+.spnsr {
+    font-weight: 300;
+    font-size: 20px;
+    color: white;
+}
+
+@keyframes scrolx {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-250px*22));
+    }
+}
+
+.contentspon:hover {
+    animation-play-state: paused;
+}

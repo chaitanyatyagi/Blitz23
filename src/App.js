@@ -13,6 +13,7 @@ import Navbar from "./components/Navbar";
 import PaytmRedirect from "./components/PaytmRedirect";
 // import { Cookies } from "react-cookie"
 import Cookies from 'universal-cookie';
+import SponsorFlash from "./components/SponsorFlash";
 
 function App() {
 
@@ -54,6 +55,7 @@ function App() {
 					{/* <Route path="/events" element={<Events club={club} />} /> */}
 				</Routes>
 			</div>
+			<SponsorFlash />
 		</BrowserRouter>
 	);
 }

@@ -7,15 +7,15 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    width: 100%;
+    width: 100vw;
     background-image: url("../images/sponsorBG.png");
     background-size: 100% 100%;
     background-position: contain;
 }
 
 .sponsorhead {
-    height: 19vh;
-    width: 85vw;
+    height: 19%;
+    width: 85%;
     font-family: 'Henny Penny';
     font-style: normal;
     font-weight: 400;
@@ -28,8 +28,8 @@
 }
 
 .sponsorcontent {
-    height: 15vh;
-    width: 85vw;
+    height: 15%;
+    width: 85%;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -41,22 +41,73 @@
 }
 
 .sponsormain {
-    height: 66vh;
-    width: 85vh;
+    height: 66%;
+    width: 85vw;
     display: flex;
+    overflow-y: auto;
     justify-content: center;
-    align-items: center;
-    overflow-y: scroll;
-    flex: wrap;
+    flex-wrap: wrap;
+
 }
 
 .sponsormainins {
+    width: 21vw;
+    height: 30vh;
     background-size: 50% 50%;
     background-repeat: no-repeat;
-    height: 33%;
-    width: 20vw;
-    border: 2px solid white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-position: center;
+}
+
+@media (max-width: 1000px) {
+    .sponsorhead {
+        font-weight: 400;
+        font-size: 40px;
+    }
+
+    .sponsorcontent {
+        font-weight: 400;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 800px) {
+    .sponsorhead {
+        font-weight: 350;
+        font-size: 35px;
+        height: 26%;
+    }
+
+    .sponsorcontent {
+        font-weight: 350;
+        font-size: 13px;
+        height: 18%;
+    }
+}
+
+@media (max-width: 500px) {
+    .sponsorhead {
+        font-weight: 300;
+        font-size: 30px;
+        height: 30%;
+    }
+
+    .sponsorcontent {
+        font-weight: 300;
+        font-size: 12px;
+        height: 24%;
+    }
+}
+
+@media (max-width: 300px) {
+    .sponsorhead {
+        font-weight: 250;
+        font-size: 25px;
+        height: 36%;
+    }
+
+    .sponsorcontent {
+        font-weight: 250;
+        font-size: 9px;
+        height: 28%;
+    }
 }
