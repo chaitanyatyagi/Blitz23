@@ -12,9 +12,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
-      - run: wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
-      - run: bash --login
-      - run: nvm install 16.14.0
+      - run: 	npm install -g n
+      - run: n 16.14.0
       - run: npm install -g npm@8.18.0
       - run: npm install
       - run: npm run build
