@@ -23,12 +23,10 @@ function App() {
 	useEffect(() => {
 		const token = cookies.get('jwt')
 		if (token) {
-			setIsLoggedIn(false)
-			console.log(4)
+			setIsLoggedIn(true)
 		}
 		else {
-			setIsLoggedIn(true)
-			console.log(token)
+			setIsLoggedIn(false)
 		}
 	}, [])
 
