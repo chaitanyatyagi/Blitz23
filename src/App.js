@@ -11,7 +11,8 @@ import Sponsor from "./components/Sponsor";
 import Events from "./components/Events";
 import Navbar from "./components/Navbar";
 import PaytmRedirect from "./components/PaytmRedirect";
-// import { Cookies } from "react-cookie"
+import ForgotPassword from "./components/ForgotPassword";
+import ResetPassword from "./components/ResetPassword";
 import Cookies from 'universal-cookie';
 import SponsorFlash from "./components/SponsorFlash";
 
@@ -51,11 +52,13 @@ function App() {
 					<Route path="/events" element={<Events club={club} setpaytmFinalUrl={setpaytmFinalUrl} setresultData={setresultData} isLoggedIn={isLoggedIn} />} />
 					<Route path="/initiatePayment" element={<PaytmRedirect resultData={resultData} paytmFinalUrl={paytmFinalUrl} />} />
 					<Route path="/clubs" element={<Club active={club} change={setClub} />} />
+					<Route path="/forgotpassword" element={<ForgotPassword />} />
+					<Route path="/resetpassword" element={<ResetPassword />} />
 
 					{/* <Route path="/events" element={<Events club={club} />} /> */}
 				</Routes>
 			</div>
-			<SponsorFlash />
+			{/* <SponsorFlash /> */}
 		</BrowserRouter>
 	);
 }

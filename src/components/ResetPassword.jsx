@@ -1,39 +1,33 @@
 import "../style/registration.css";
 import React from "react";
 import blitz from "../images/Blitz_Logo_23.png";
-// import close from "../images/Vector.png";
 import formCorner from "../images/image76.png";
 import axios from "axios"
-import { useState } from "react";
-import { Link } from "react-router-dom"
 
-export default function Registration() {
+export default function ResetPassword() {
     async function handleSubmit(e) {
         e.preventDefault();
-        let name = e.target[0].value
-        let email = e.target[1].value;
-        let password = e.target[2].value;
-        // axios.post(`${process.env.REACT_APP_SERVER}/users/register`, {
-        axios.post(`http://127.0.0.1:2080/users/register`, {
-            name, email, password
+        let newpassword = e.target[0].value;
+        let confirmpassword = e.target[1].value;
+        let otp = e.target[2].value
+        axios.post("http://127.0.0.1:2080/users/resetpassword", {
+            newpassword, confirmpassword, otp
         })
             .then(function (response) {
-                console.log(response);
                 if (response.data.status === "error")
                     window.alert(response.data.message)
                 else {
-                    window.alert("Account Created. Login Now ");
+                    window.alert("Password Updated");
+                    window.open("/", "_self")
                 }
             })
             .catch(function (error) {
                 console.log(error);
             });
-
     }
 
     return (
         <div className="body">
-            {/* <Navbar /> */}
             <div className="containerreg">
                 <div className="image">
                     <image src={blitz} />
@@ -41,18 +35,17 @@ export default function Registration() {
                 <form className="form" onSubmit={handleSubmit}>
                     <image src={formCorner} className="top-right"></image>
                     <image src={formCorner} className="bottom-left"></image>
-                    <h1 className="form-heading">Registration</h1>
+                    <h1 className="form-heading">Reset Password</h1>
                     <input
-                        className='form-feilds' placeholder='name' name="name">
+                        className='form-feilds' placeholder='NEW PASSWORD' type="password" name="NEWPASSWORD">
                     </input>
                     <input
-                        className='form-feilds' placeholder='email' type="email" name="email">
+                        className='form-feilds' placeholder='CONFIRM PASSWORD' type="password" name="CONFIRMPASSWORD">
                     </input>
                     <input
-                        className='form-feilds' placeholder='password' type="password" name="password">
+                        className='form-feilds' placeholder='OTP' type="number" name="OTP">
                     </input>
-                    <Link to="/login" className="forgot-pass">Already Registered ? Login</Link>
-                    <button className="form-submit">Register</button>
+                    <button className="form-submit">Update Password</button>
                 </form>
             </div>
         </div>

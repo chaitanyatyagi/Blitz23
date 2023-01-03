@@ -5,7 +5,7 @@ import blitz from "../images/IMG-8305.PNG";
 import formCorner from "../images/image76.png";
 import axios from "axios";
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import Cookies from 'universal-cookie';
 const cookies = new Cookies();
 
@@ -18,7 +18,8 @@ export default function Registration(props) {
 			email: e.target[0].value,
 			password: e.target[1].value
 		}
-		axios.post(`${process.env.REACT_APP_SERVER}/users/login`, payload)
+		// axios.post(`${process.env.REACT_APP_SERVER}/users/login`, payload)
+		axios.post(`http://127.0.0.1:2080/users/login`, payload)
 			.then(function (response) {
 				console.log(response.data);
 				if (response.data.status === "error")
@@ -60,7 +61,7 @@ export default function Registration(props) {
 							type="password"
 						>
 						</input>
-						<a href="/" className="forgot-pass">Forgot Password?</a>
+						<Link to="/forgotpassword" className="forgot-pass">Forgot Password?</Link>
 					</div>
 					<button className="form-submit" >Login</button>
 				</form>
