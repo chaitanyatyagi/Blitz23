@@ -12,7 +12,8 @@ function Sponsor() {
             <div className="sponsormain">
                 {
                     sponsor.map((el) => (
-                        <div className="sponsormainins" style={{ backgroundImage: `url(${el.image})` }}></div>
+                        // <div className="sponsormainins" style={{ backgroundImage: `url(${el.image})` }}></div>
+                        <img className="sponsormainins" src={`${el.image}`} width="10.5vw" height="13.5vh"></img>
                     ))
                 }
             </div>
