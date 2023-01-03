@@ -9,7 +9,7 @@ import Cookies from "universal-cookie"
 import NavDropdown from 'react-bootstrap/NavDropdown';
 
 function Navbar({ isLoggedIn }) {
-    console.log(isLoggedIn)
+    const cookies = new Cookies()
     const [IsMobile, SetIsMobile] = useState(false);
     const [cancleButton, setCanclebutton] = useState(true)
     const shownavlinks = () => {
@@ -68,10 +68,10 @@ function Navbar({ isLoggedIn }) {
                         <div>
                             {/* <Link to="/register" className="register">REGISTER</Link> */}
                             {
-                                isLoggedIn ? <Link to="/register" className="text-white" onClick={() => { Cookies.remove('jwt', { path: '/' }); window.location.reload() }}>LOGOUT</Link> : <Link to="/register" className="text-white">REGISTER</Link>
+                                isLoggedIn ? <Link to="/register" className="register" onClick={() => { cookies.remove('jwt', { path: '/' }); window.location.reload() }}>LOGOUT</Link> : <Link to="/register" className="register">REGISTER</Link>
                             }
                             {
-                                isLoggedIn ? <Link to="/profile" className="text-white">PROFILE</Link> : " "
+                                isLoggedIn ? <Link to="/profile" className="register">PROFILE</Link> : " "
                             }
                         </div>
 
