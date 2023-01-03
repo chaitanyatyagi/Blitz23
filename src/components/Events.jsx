@@ -14,8 +14,8 @@ export default function Events(props) {
 	const navigate = useNavigate();
 	const pay = (amount) => {
 		if (props.isLoggedIn) {
-			axios.get(`http://127.0.0.1:2080/paywithpaytm?amount=${amount}`,)
-				// axios.get(`{${process.env.REACT_APP_SERVER}/paywithpaytm?amount=${amount}`,)
+			// axios.get(`http://127.0.0.1:2080/paywithpaytm?amount=${amount}`,)
+			axios.get(`{${process.env.REACT_APP_SERVER}/paywithpaytm?amount=${amount}`,)
 				.then(function (response) {
 					console.log(response.data);
 					props.setresultData(response.data.resultData);

@@ -14,7 +14,7 @@ export default function ForgotPassword() {
         let payload = {
             email: e.target[0].value
         }
-        axios.post(`http://127.0.0.1:2080/users/forgotpassword`, payload)
+        axios.post(`${process.env.REACT_APP_SERVER}/users/forgotpassword`, payload)
             .then(function (response) {
                 if (response.data.status === "error")
                     window.alert(response.data.message)

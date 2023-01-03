@@ -10,7 +10,7 @@ export default function ResetPassword() {
         let newpassword = e.target[0].value;
         let confirmpassword = e.target[1].value;
         let otp = e.target[2].value
-        axios.post("http://127.0.0.1:2080/users/resetpassword", {
+        axios.post(`${process.env.REACT_APP_SERVER}/users/resetpassword`, {
             newpassword, confirmpassword, otp
         })
             .then(function (response) {
