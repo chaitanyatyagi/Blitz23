@@ -14,21 +14,21 @@ import PaytmRedirect from "./components/PaytmRedirect";
 import ForgotPassword from "./components/ForgotPassword";
 import ResetPassword from "./components/ResetPassword";
 import Cookies from 'universal-cookie';
-import SponsorFlash from "./components/SponsorFlash";
+// import SponsorFlash from "./components/SponsorFlash";
 
 function App() {
 
 	const [isLoggedIn, setIsLoggedIn] = useState(false)
 	const cookies = new Cookies()
 	useEffect(() => {
-		console.log(localStorage);
 		const token = cookies.get('jwt')
-		console.log(token, "token");
-		if (!token) {
+		if (token) {
 			setIsLoggedIn(false)
+			console.log(4)
 		}
 		else {
 			setIsLoggedIn(true)
+			console.log(token)
 		}
 	}, [])
 

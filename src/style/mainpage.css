@@ -204,12 +204,12 @@
     background-image: url("../images/landingpg4-right.png");
     background-size: 100% 100vh;
 }
-
+/* hostinger password 1875kishoriBalikamintrago@+ */
 @media(max-width: 1200px) {
     .landingPg1ins {
         background-size: inherit;
         background-image: url("../images/Blitz_Logo_23.png");
-        height: 70vh;
+        height: 40vh;
         width: 100%;
 
         background-position: center;

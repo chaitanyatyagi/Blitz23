@@ -106,7 +106,6 @@ export default function Contact() {
                     </div>
                 </div>
             }
-            <Navbar />
             <div className='maincontainer'>
                 <div className='headline'>
                     CONTACT TO

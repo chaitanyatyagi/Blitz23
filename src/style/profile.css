@@ -25,7 +25,7 @@
     width: 100%;
 }
 
-.container {
+.containerprof {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -63,9 +63,10 @@
     justify-content: flex-start;
     align-items: center;
     margin-bottom: 100px;
+
 }
 
-.content {
+/* .contentprof {
     width: 90%;
     min-height: 80vh;
     background: #1a1919;
@@ -75,7 +76,7 @@
     justify-content: flex-start;
     align-items: center;
     margin-bottom: 100px;
-}
+} */
 
 .user-side {
     width: 90%;
