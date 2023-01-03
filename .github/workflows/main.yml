@@ -4,22 +4,15 @@ on:
     branches:
       - main
       - master
-  schedule:
-    - cron: '0 0 * * *' # Everyday at 12am
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
-      - run: wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
-      - run: bash --login
-      - run: nvm install 16.14.0
-      - run: npm install -g npm@8.18.0
-      - run: npm install
-      - run: npm run build
-      
-      
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+
       - name: Install SSH Key
         uses: shimataro/ssh-key-action@v2
         with:
@@ -43,8 +36,9 @@ jobs:
           port: ${{ secrets.SSH_PORT }}
           script: |
             cd /var/www/Blitz/
-            git fetch origin master
+            git fetch origin main
             git reset --hard FETCH_HEAD
             git clean -d -f --exclude secrets
-            npm install --production
+            npm install
+            npm run build
             chown $(whoami) .
