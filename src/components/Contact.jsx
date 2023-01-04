@@ -54,12 +54,12 @@ export default function Contact() {
                                 {phoneNo}
                             </div>
                         </div>
-                        <div className='media'>
+                        {/* <div className='media'>
                             <p><a href='https://instagram.com/mintrago2022' target="_blank" rel="noreferrer noopener"><FaInstagramSquare /></a></p>
                             <p><a href={"mailto: " + emailId}><FaVoicemail /></a></p>
                             <p><a href='https://wa.me/919798827707' target="_blank" rel="noreferrer noopener"><FaWhatsappSquare /></a></p>
                             <p><a href='https://www.facebook.com/profile.php?id=100087409022493' target="_blank" rel="noreferrer noopener"><FaLinkedinIn /></a></p>
-                        </div>
+                        </div> */}
                         <div className='cancel' onClick={() => hidecontact()}>
                             <FaRegWindowClose />
                         </div>
@@ -74,12 +74,12 @@ export default function Contact() {
                                 {phoneNo}
                             </div>
                         </div>
-                        <div className='media'>
+                        {/* <div className='media'>
                             <p><a href='https://instagram.com/mintrago2022' target="_blank" rel="noreferrer noopener"><FaInstagramSquare /></a></p>
                             <p><a href={"mailto: " + emailId}><FaVoicemail /></a></p>
                             <p><a href='https://wa.me/919798827707' target="_blank" rel="noreferrer noopener"><FaWhatsappSquare /></a></p>
                             <p><a href='https://www.facebook.com/profile.php?id=100087409022493' target="_blank" rel="noreferrer noopener"><FaLinkedinIn /></a></p>
-                        </div>
+                        </div> */}
                         <div className='cancel' onClick={() => hidecontact()}>
                             <FaRegWindowClose />
                         </div>
@@ -94,12 +94,12 @@ export default function Contact() {
                                 {phoneNo}
                             </div>
                         </div>
-                        <div className='media'>
+                        {/* <div className='media'>
                             <p><a href='https://instagram.com/mintrago2022' target="_blank" rel="noreferrer noopener"><FaInstagramSquare /></a></p>
                             <p><a href={"mailto: " + emailId}><FaVoicemail /></a></p>
                             <p><a href='https://wa.me/919798827707' target="_blank" rel="noreferrer noopener"><FaWhatsappSquare /></a></p>
                             <p><a href='https://www.facebook.com/profile.php?id=100087409022493' target="_blank" rel="noreferrer noopener"><FaLinkedinIn /></a></p>
-                        </div>
+                        </div> */}
                         <div className='cancel' onClick={() => hidecontact()}>
                             <FaRegWindowClose />
                         </div>

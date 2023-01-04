@@ -35,7 +35,7 @@ function Navbar({ isLoggedIn }) {
                     </div>
                     <div className={IsMobile ? "mobile" : "laptop"}>
                         <Link to="/" className="centertabs">HOME</Link>
-                        <Link to="/events" className="centertabs">EVENTS</Link>
+                        <Link to="/clubs" className="centertabs">EVENTS</Link>
                         <Link to="/flagship-events" className="centertabs">FLAGSHIP EVENTS</Link>
                         <div>
                             <NavDropdown
