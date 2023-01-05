@@ -31,6 +31,7 @@ function App() {
 			axios({
 				url: `${process.env.REACT_APP_SERVER}/users/getuser`,
 				method: "GET",
+				withCredentials:true,
 			}).then((response) => {
 				console.log(response.data)
 				setUserInfo(response.data)
