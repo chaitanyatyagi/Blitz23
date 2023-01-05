@@ -10,7 +10,6 @@ import "../style/Club.css";
 export default function Club(props) {
 	return (
 		<div className="club-background">
-			<Navbar />
 			<div className="club-contanier">
 				<div className="club-side-bar"></div>
 				<div className="club-info">

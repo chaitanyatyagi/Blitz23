@@ -10,7 +10,7 @@ function RulesRegulation() {
         console.log(eventname)
         e.preventDefault()
         axios({
-            url: `http://127.0.0.1:2080/rulebook/pdf/${eventname}`,
+            url: `${process.env.REACT_APP_SERVER}/rulebook/pdf/${eventname}`,
             method: "GET",
             responseType: "blob"
         }).then((response) => {

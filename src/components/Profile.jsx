@@ -1,12 +1,13 @@
 import "../style/profile.css";
-import Navbar from "./Navbar";
 import EventCard from "./EventCard";
 import React from "react";
-import userInfo from "../TestData/userData";
+// import userInfo from "../TestData/userData";
 import eventInfo from "../TestData/eventData";
-import { useState } from "react";
+import axios from "axios"
+import { useEffect, useState } from "react"
 
-export default function Profile() {
+export default function Profile({ userInfo }) {
+
     const eventData = eventInfo.map(x => {
         return <EventCard
             name={x.name}
@@ -18,7 +19,6 @@ export default function Profile() {
 
     return (
         <div className="body">
-            {/* <Navbar /> */}
             <div className="containerprof">
                 <div className="head-div">
                     <h1 className="heading">&lt; User Profile &gt;</h1>
@@ -26,13 +26,12 @@ export default function Profile() {
                 <div className="contentprof">
                     <div className="user-side">
                         <div className="user-profile">
-                            <div className="user-img"></div>
                             <div className="user-details">
-                                <div className="user-name">{userInfo.fullName}</div>
+                                <div className="user-name">{userInfo.name}</div>
                                 <div className="user-contact">
                                     <div className="details-holder">
                                         <div className="user-icons-username"></div>
-                                        <h3 className="user-contact-details"> : {userInfo.username}</h3>
+                                        <h3 className="user-contact-details"> : {userInfo.password}</h3>
                                     </div>
                                     <div className="details-holder">
                                         <div className="user-icons-email"></div>

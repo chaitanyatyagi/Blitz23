@@ -68,7 +68,7 @@ function Navbar({ isLoggedIn }) {
                         <div>
                             {/* <Link to="/register" className="register">REGISTER</Link> */}
                             {
-                                isLoggedIn ? <Link to="/register" className="register" onClick={() => { cookies.remove('jwt', { path: '/' }); window.location.reload() }}>LOGOUT</Link> : <Link to="/register" className="register">REGISTER</Link>
+                                isLoggedIn ? <Link to="/register" className="register" onClick={() => { cookies.remove('jwt', { path: '/' }); cookies.remove('userId'); window.location.reload() }}>LOGOUT</Link> : <Link to="/register" className="register">REGISTER</Link>
                             }
                             {
                                 isLoggedIn ? <Link to="/profile" className="register">PROFILE</Link> : " "
