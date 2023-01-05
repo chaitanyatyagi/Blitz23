@@ -41,7 +41,7 @@
 .club-info-card {
 	background: #eeeeee;
 	border: 1px solid #000000;
-	min-height: 60vh;
+	height: 60vh;
 	min-width: 60vw;
 	display: flex;
 	flex-direction: row;
@@ -75,6 +75,8 @@
 	text-align: center;
 	letter-spacing: 0.1em;
 	color: #000000;
+	margin-top: 5px;
+	height: 20%;
 }
 .club-info-body {
 	font-family: "Inter";
@@ -83,6 +85,10 @@
 	font-size: 1rem;
 	text-align: justify;
 	color: #000000;
+	overflow-y: scroll;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	height: 55%;
 }
 .club-info-link {
 	text-decoration: none;
@@ -91,6 +97,12 @@
 	font-family: "Inter";
 	font-style: normal;
 	font-weight: 500;
+	height: 20%;
+	margin-bottom: 5px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
 }
 .club-bar {
 	position: fixed;
@@ -116,12 +128,19 @@
 	border: 1px solid #000000;
 	box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.25);
 	border-radius: 5px;
-	font-family: "Henny Penny";
+	font-family: "Inter";
 	font-style: normal;
 	font-weight: 400;
 	color: #000000;
-	font-size: 1rem;
+	font-size: 0.75rem;
 	padding: 2px;
+	position: absolute;
+	bottom: 0px;
+	translate: 0 -60px;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	justify-content: flex-start;
 }
 .club-bar-card-inactive {
 	color: #fdfdfd;
@@ -156,7 +175,9 @@
 @media (max-width: 1000px) {
 	.club-info-card {
 		flex-direction: column;
-		height: 70vh;
+		height: 60vh;
+		overflow-y: scroll;
+		justify-content: flex-start;
 	}
 	.club-info-image {
 		height: 30vh;
@@ -171,6 +192,9 @@
 		margin-bottom: 10px;
 		margin-left: 5px;
 		margin-right: 5px;
+		padding: 2px;
+		overflow-y: visible;
+		height: fit-content;
 	}
 	.club-info-text {
 		height: 65vh;
@@ -185,6 +209,7 @@
 		display: none;
 	}
 	.club-bar {
+		justify-content: space-evenly;
 		flex-wrap: wrap;
 	}
 }

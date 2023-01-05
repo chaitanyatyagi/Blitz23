@@ -9,33 +9,43 @@ import clubData from "../TestData/clubData";
 import EventsNav from "./EventsNav";
 import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
+import EventsMembersScetion from "./EventsMemeberSection";
 
 export default function Events(props) {
 	const navigate = useNavigate();
-	const pay = (amount) => {
-		if (props.isLoggedIn) {
-			// axios.get(`http://127.0.0.1:2080/paywithpaytm?amount=${amount}`,)
-			axios.get(`${process.env.REACT_APP_SERVER}/paywithpaytm?amount=${amount}`,)
-				.then(function (response) {
-					console.log(response.data);
-					props.setresultData(response.data.resultData);
-					props.setpaytmFinalUrl(response.data.paytmFinalUrl);
-					navigate("/initiatePayment");
-					// window.open('/profile', "_self");
-				})
-				.catch(function (error) {
-					console.log(error);
-				});
-		}
-		else {
-			window.alert("Please Log In ");
-			window.open("/login");
-		}
+	// const pay = (amount) => {
+	// 	if (props.isLoggedIn) {
+	// 		// axios.get(`http://127.0.0.1:2080/paywithpaytm?amount=${amount}`,)
+	// 		axios.get(`${process.env.REACT_APP_SERVER}/paywithpaytm?amount=${amount}`,)
+	// 			.then(function (response) {
+	// 				console.log(response.data);
+	// 				props.setresultData(response.data.resultData);
+	// 				props.setpaytmFinalUrl(response.data.paytmFinalUrl);
+	// 				navigate("/initiatePayment");
+	// 				// window.open('/profile', "_self");
+	// 			})
+	// 			.catch(function (error) {
+	// 				console.log(error);
+	// 			});
+	// 	}
+	// 	else {
+	// 		window.alert("Please Log In ");
+	// 		window.open("/login");
+	// 	}
 
-	}
+	// }
+
+	const [formData, setFormData] = React.useState({
+		name: "",
+		college: "",
+		blitzID: "",
+		email: "",
+	});
 	const [activeEvent, setActiveEvent] = React.useState(1);
+	const [dispForm, setDispForm] = React.useState(false);
+
+	let y = 12;
 	let event = clubData[props.club].events[activeEvent - 1];
-	console.log(event.image);
 	let rulesDisp = event.rules.map((x, i) => {
 		return (
 			<li>
@@ -50,6 +60,60 @@ export default function Events(props) {
 			</li>
 		);
 	});
+
+	function handleChange(e) {
+		setFormData((prev) => {
+			return {
+				...prev,
+				[e.target.name]: e.target.value,
+			};
+		});
+	}
+	// function dispMembers() {
+	// 	setFormData((prev) => {
+	// 		return { ...prev, members: [] };
+	// 	});
+	// 	for (let i = 1; i <= formData.Nmembers; i++) {
+	// 		setFormData((prev) => {
+	// 			return {
+	// 				...prev,
+	// 				members: [
+	// 					...prev.members,
+	// 					{
+	// 						memName: "",
+	// 						memCollege: "",
+	// 						memBlitzID: "",
+	// 						memEmail: "",
+	// 					},
+	// 				],
+	// 			};
+	// 		});
+	// 	}
+	// 	let Members = formData.members.map((x, i) => {
+	// 		return <EventsMembersScetion x={x} i={i} formData={formData} setter={setFormData} />;
+	// 	});
+	// 	return Members;
+	// }
+	function handleSubmit() {
+		console.log(formData);
+		setFormData({
+			name: "",
+			college: "",
+			blitzID: "",
+			email: "",
+		});
+		setDispForm(false);
+	}
+	function handleClose() {
+		setFormData({
+			name: "",
+			college: "",
+			blitzID: "",
+			email: "",
+		});
+		setDispForm(false);
+	}
+
 	return (
 		<div>
 			<div className="events-contanier">
@@ -80,13 +144,26 @@ export default function Events(props) {
 									)}
 								</div>
 							)}
-							<div className="event-card-text-register">
-								<Link className="event-link-remover event-card-register-link" onClick={() => pay(10)} >
-									REGISTER
-								</Link>
-							</div>
-						</div>
-					</div>
+							{/* <div className="event-card-text-register">
+		<Link className="event-link-remover event-card-register-link" onClick={() => pay(10)} >
+			REGISTER
+		</Link>
+	</div> */}
+							{event.name !== "" && (
+								<div className="event-card-text-register">
+									<Link
+										className="event-link-remover event-card-register-link"
+										onClick={() => {
+											setDispForm(true);
+											// pay(10)
+										}}
+									>
+										REGISTER
+									</Link>
+								</div>
+							)}
+						</div >
+					</div >
 					<div className="events-card-routed-container">
 						<div className="events-card-nav-container">
 							<EventsNav
@@ -104,38 +181,71 @@ export default function Events(props) {
 										: eventimage
 								}
 							/>
-							{/* <Link className="event-link-remover">
-								<img
-									className="event-card-img-prev"
-									src={shift}
-									onClick={() => {
-										setActiveEvent((prev) => {
-											return prev !== 1
-												? prev - 1
-												: clubData[props.club].events.length;
-										});
-									}}
-								></img>
-							</Link>
-							<Link className="event-link-remover">
-								<img
-									className="event-card-img-next"
-									src={shift}
-									onClick={() => {
-										setActiveEvent((prev) => {
-											return prev !== clubData[props.club].events.length
-												? prev + 1
-												: 1;
-										});
-									}}
-								></img>
-							</Link> */}
 							{/* it covers the poster */}
 						</div>
 					</div>
-				</div>
-			</div>
-			{/* <Navbar /> */}
-		</div>
+				</div >
+				{dispForm && (
+					<div className="events-form-container">
+						<div className="events-form">
+							<div className="events-form-background">
+								<div className="events-form-header">{`Registration - ${event.name}`}</div>
+								<div className="row-wrapper-1">
+									<input
+										className="events-form-text-input"
+										placeholder="Name"
+										name="name"
+										value={formData.name}
+										onChange={handleChange}
+									/>
+									<input
+										className="events-form-text-input"
+										placeholder="College"
+										name="college"
+										value={formData.college}
+										onChange={handleChange}
+									/>
+								</div>
+								<div className="row-wrapper-2">
+									<input
+										className="events-form-text-input"
+										placeholder="BlitzID"
+										name="blitzID"
+										value={formData.blitzID}
+										onChange={handleChange}
+									/>
+									<input
+										className="events-form-text-input"
+										placeholder="Email"
+										name="email"
+										value={formData.email}
+										onChange={handleChange}
+									/>
+								</div>
+								<div className="row-wrapper-4">
+									<input
+										className="events-form-text-input"
+										value={event.price ? event.price : "--"}
+									/>
+									<Link
+										className="event-link-remover event-card-register-link"
+										onClick={handleSubmit}
+									>
+										SUBMIT
+									</Link>
+									<Link
+										className="event-link-remover event-card-register-link"
+										onClick={handleClose}
+									>
+										CLOSE
+									</Link>
+								</div>
+							</div>
+						</div>
+					</div>
+				)
+				}
+			</div >
+		</div >
 	);
 }

@@ -1,11 +1,11 @@
-*:hover::-webkit-scrollbar {
+*::-webkit-scrollbar {
 	display: block;
 	width: 4px;
 	background-color: rgba(245, 245, 245, 0.2);
 	border-radius: 10px;
 }
 
-*:hover::-webkit-scrollbar-thumb {
+*::-webkit-scrollbar-thumb {
 	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
 	background: rgba(30, 30, 30, 0.2);
 	border-radius: 10px;
@@ -16,22 +16,26 @@
 }
 
 .events-contanier {
-	width: 100vw;
+	width: clac(100vw-4px);
 	height: 100vh;
 	background-color: #333333;
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	overflow-x: hidden;
 }
 
 .events-info-card {
-	width: 100vw;
+	width: calc(100vw-4px);
 	height: 100vh;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
+	position: absolute;
+	z-index: 1;
+	bottom: 0px;
 }
 
 .events-card-info-container {
@@ -56,7 +60,8 @@
 	justify-content: space-evenly;
 }
 
-.event-card-text-head {
+.event-card-text-head,
+.events-form-header {
 	font-size: 1.3rem;
 	font-family: "Henny Penny";
 	font-style: normal;
@@ -86,10 +91,6 @@
 	margin-bottom: 10px;
 	padding: 5px;
 	padding-right: 9px;
-}
-
-.event-card-text-breif:hover {
-	padding-right: 5px;
 }
 
 .event-card-text-list {
@@ -273,27 +274,151 @@
 	left: 0;
 }
 
+.events-form-container {
+	width: 100%;
+	height: 100vh;
+	background-color: rgba(0, 0, 0, 0.7);
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	z-index: 2;
+}
+
+.events-form {
+	margin-top: 70px;
+	height: 80vh;
+	width: 60vw;
+	background-image: url("../images/tarot-card-abundance-28485727.jpg");
+	background-size: cover;
+	background-position: top;
+	background-repeat: no-repeat;
+}
+
+.events-form-background {
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	overflow-y: auto;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.events-form-header {
+	margin-bottom: 20px;
+}
+
+.row-wrapper-1,
+.row-wrapper-2,
+.row-wrapper-3,
+.row-wrapper-4 {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	width: 90%;
+	margin-bottom: 10px;
+}
+
+.row-wrapper-4 {
+	justify-content: space-evenly;
+	margin-top: 20px;
+}
+
+.events-form-text-input {
+	outline: none;
+	text-decoration: none;
+	display: block;
+	border: 1px solid gray;
+	height: 32px;
+	min-width: 200px;
+	width: 45%;
+	border-radius: 5px;
+	font-size: 1rem;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-start;
+	font-family: "Inter";
+	padding-left: 10px;
+	color: #333333;
+	background-color: #ffffff;
+}
+
+.events-selector-label {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+.events-labels {
+	color: white;
+	font: "Inter";
+	margin-right: 10px;
+}
+
+.events-member-selection {
+	outline: none;
+	text-decoration: none;
+	border: 1px solid gray;
+	height: 30px;
+	border-radius: 5px;
+	font-size: 1rem;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-start;
+	font-family: "Inter";
+	padding-left: 10px;
+	color: #333333;
+	background-color: #ffffff;
+}
+
+.events-form-members {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-top: 20px;
+}
+
 @media (max-width: 1000px) {
 	*:hover::-webkit-scrollbar {
 		display: none;
 	}
 
 	.events-contanier {
-		min-height: 100vh;
-		height: fit-content;
-		align-items: flex-start;
+		justify-content: flex-start;
+		align-items: flex-end;
+		overflow-x: hidden;
 	}
 
 	.events-info-card {
-		margin-top: 70px;
 		flex-direction: column-reverse;
-		height: fit-content;
-		justify-content: flex-end;
+		justify-content: flex-start;
+		align-items: center;
+		position: absolute;
+		overflow-y: scroll;
+	}
+
+	.events-card-routed-container {
+		height: 50%;
+		width: 100vw;
+		translate: 0 70px;
 	}
 
 	.events-card-info-container {
 		width: 100vw;
-		height: fit-content;
+		height: 50%;
+		justify-content: flex-start;
+		padding-top: 70px;
 	}
 
 	.event-card-margin-manager {
@@ -302,7 +427,9 @@
 
 	.events-card-text {
 		margin-top: 10px;
-		height: fit-content;
+		height: 100%;
+		justify-content: flex-start;
+		overflow-y: scroll;
 	}
 
 	.event-card-text-head {
@@ -310,9 +437,10 @@
 	}
 
 	.event-card-text-breif {
-		max-height: none;
 		height: fit-content;
+		overflow-y: visible;
 		padding-right: 5px;
+		justify-content: flex-start;
 	}
 
 	.event-card-text-list {
@@ -362,5 +490,22 @@
 	.event-card-img-next,
 	.event-card-img-prev {
 		width: 20%;
+	}
+
+	.row-wrapper-1,
+	.row-wrapper-2,
+	.row-wrapper-3,
+	.row-wrapper-4 {
+		flex-direction: column;
+		margin-bottom: 0px;
+		margin-top: 0px;
+	}
+
+	.events-form-text-input {
+		margin-bottom: 10px;
+	}
+
+	.event-card-register-link {
+		margin-bottom: 10px;
 	}
 }
