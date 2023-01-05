@@ -7,8 +7,8 @@ import shift from "../images/eventshift.png";
 import clubData from "../TestData/clubData";
 import EventsNav from "./EventsNav";
 import EventsMembersScetion from "./EventsMemeberSection";
-import { Link } from "react-router-dom";
-
+import { Link ,useNavigate} from "react-router-dom";
+import axios from "axios";
 export default function Events(props) {
 	// const [formData, setFormData] = React.useState({
 	// 	name: "",
@@ -22,10 +22,12 @@ export default function Events(props) {
 	// 		},
 	// 	],
 	// });
+	const navigate=useNavigate();
+	// console.log(props.userInfo)
 	const [formData, setFormData] = React.useState({
-		name: "",
+		name: props.userInfo.name,
 		college: "",
-		blitzID: "",
+		blitzID: props.userInfo.blitzId,
 		email: "",
 		phone: "",
 		teamName: "",
@@ -36,6 +38,7 @@ export default function Events(props) {
 	const [dispForm, setDispForm] = React.useState(false);
 
 	let y = 12;
+	// console.log(clubData[props.club])
 	let event = clubData[props.club].events[activeEvent - 1];
 	let rulesDisp = event.rules.map((x, i) => {
 		return (
@@ -85,12 +88,28 @@ export default function Events(props) {
 	// 	});
 	// 	return Members;
 	// }
-	function handleSubmit() {
+	function handleSubmit(e) {
+		e.preventDefault()
+		//post request to backend
 		console.log(formData);
+		axios.post(`${process.env.REACT_APP_SERVER}/users/registration`, {...formData,eventName:event.name,blitzID: props.userInfo.blitzId,name:props.userInfo.name})
+			.then(function (response) {
+				// console.log(response.data);
+				if (response.data.status === "error")
+					window.alert(response.data.message)
+				else {
+					window.alert("registration successfull");
+					navigate("/profile");
+				}
+			})
+			.catch(function (error) {
+				console.log(error);
+			});
+		//reset form
 		setFormData({
-			name: "",
+			name: props.userInfo.name,
 			college: "",
-			blitzID: "",
+			blitzID: props.userInfo.blitzId,
 			email: "",
 			phone: "",
 			teamName: "",
@@ -101,9 +120,9 @@ export default function Events(props) {
 	}
 	function handleClose() {
 		setFormData({
-			name: "",
+			name: props.userInfo.name,
 			college: "",
-			blitzID: "",
+			blitzID: props.userInfo.blitzId,
 			email: "",
 			phone: "",
 			teamName: "",
@@ -205,7 +224,7 @@ export default function Events(props) {
 					</div>
 				</div>
 				{dispForm && (
-					<div className="events-form-container">
+					<form className="events-form-container" onSubmit={handleSubmit}>
 						<div className="events-form">
 							<div className="events-form-background">
 								<div className="events-form-header">{`Registration - ${event.name}`}</div>
@@ -214,8 +233,9 @@ export default function Events(props) {
 										className="events-form-text-input"
 										placeholder="Name of Participant"
 										name="name"
-										value={formData.name}
-										onChange={handleChange}
+										value={props.userInfo.name}
+										onChange={()=>{}}
+									required={true}
 									/>
 									<input
 										className="events-form-text-input"
@@ -223,6 +243,7 @@ export default function Events(props) {
 										name="college"
 										value={formData.college}
 										onChange={handleChange}
+										required={true}
 									/>
 								</div>
 								<div className="row-wrapper-2">
@@ -230,8 +251,9 @@ export default function Events(props) {
 										className="events-form-text-input"
 										placeholder="BlitzID"
 										name="blitzID"
-										value={formData.blitzID}
-										onChange={handleChange}
+										value={props.userInfo.blitzId}
+										onChange={()=>{}}
+										required={true}
 									/>
 									<input
 										className="events-form-text-input"
@@ -239,6 +261,7 @@ export default function Events(props) {
 										name="email"
 										value={formData.email}
 										onChange={handleChange}
+										required={true}
 									/>
 								</div>
 								<div className="row-wrapper-2">
@@ -249,6 +272,7 @@ export default function Events(props) {
 										type="tel"
 										value={formData.phone}
 										onChange={handleChange}
+										required={true}
 									/>
 									<input
 										className="events-form-text-input"
@@ -256,6 +280,7 @@ export default function Events(props) {
 										name="teamName"
 										value={formData.teamName}
 										onChange={handleChange}
+										required={true}
 									/>
 								</div>
 								<div className="row-wrapper-2">
@@ -266,6 +291,7 @@ export default function Events(props) {
 										type="number"
 										value={formData.Nmembers}
 										onChange={handleChange}
+										required={true}
 									/>
 									<div className="events-form-check-row">
 										<label htmlFor="teamLeader" className="events-labels">
@@ -309,12 +335,12 @@ export default function Events(props) {
 										className="events-form-text-input"
 										value={`Price : ${event.price ? event.price : "--"}`}
 									/>
-									<Link
+									<button
 										className="event-link-remover event-card-register-link"
-										onClick={handleSubmit}
+										// onClick={handleSubmit}
 									>
 										SUBMIT
-									</Link>
+									</button>
 									<Link
 										className="event-link-remover event-card-register-link"
 										onClick={handleClose}
@@ -324,7 +350,7 @@ export default function Events(props) {
 								</div>
 							</div>
 						</div>
-					</div>
+					</form>
 				)}
 			</div>
 		</div>

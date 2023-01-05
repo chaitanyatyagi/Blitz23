@@ -2,21 +2,31 @@ import "../style/profile.css";
 import EventCard from "./EventCard";
 import React from "react";
 // import userInfo from "../TestData/userData";
-import eventInfo from "../TestData/eventData";
+// import eventInfo from "../TestData/eventData";
 import axios from "axios"
 import { useEffect, useState } from "react"
+import {useNavigate} from "react-router-dom";
 
-export default function Profile({ userInfo }) {
-
-    const eventData = eventInfo.map(x => {
+export default function Profile({ userInfo,isLoggedIn }) {
+    const navigate=useNavigate()
+    var eventData=<></>
+    if(userInfo.events){
+        eventData = userInfo.events.map(x => {
         return <EventCard
-            name={x.name}
+            name={x.eventName}
             teamName={x.teamName}
-            nMembers={x.nMembers}
-            link={x.link}
+            nMembers={x.members}
+            // link={x.link}
         />
     })
-
+        }
+    if(!isLoggedIn || ! userInfo)
+    {
+        return <div style={{height:'100vh',display:'flex',flexDirection:'column',justifyContent:'center'}}>
+        <h1>Please Login</h1>
+        </div>
+        }
+    else
     return (
         <div className="body">
             <div className="containerprof">
