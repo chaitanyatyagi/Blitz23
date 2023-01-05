@@ -69,31 +69,6 @@ export default function Events(props) {
 			};
 		});
 	}
-	// function dispMembers() {
-	// 	setFormData((prev) => {
-	// 		return { ...prev, members: [] };
-	// 	});
-	// 	for (let i = 1; i <= formData.Nmembers; i++) {
-	// 		setFormData((prev) => {
-	// 			return {
-	// 				...prev,
-	// 				members: [
-	// 					...prev.members,
-	// 					{
-	// 						memName: "",
-	// 						memCollege: "",
-	// 						memBlitzID: "",
-	// 						memEmail: "",
-	// 					},
-	// 				],
-	// 			};
-	// 		});
-	// 	}
-	// 	let Members = formData.members.map((x, i) => {
-	// 		return <EventsMembersScetion x={x} i={i} formData={formData} setter={setFormData} />;
-	// 	});
-	// 	return Members;
-	// }
 	function handleSubmit() {
 		console.log(formData);
 		setFormData({
@@ -144,11 +119,6 @@ export default function Events(props) {
 									)}
 								</div>
 							)}
-							{/* <div className="event-card-text-register">
-		<Link className="event-link-remover event-card-register-link" onClick={() => pay(10)} >
-			REGISTER
-		</Link>
-	</div> */}
 							{event.name !== "" && (
 								<div className="event-card-text-register">
 									<Link
