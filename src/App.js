@@ -14,6 +14,7 @@ import PaytmRedirect from "./components/PaytmRedirect";
 import ForgotPassword from "./components/ForgotPassword";
 import ResetPassword from "./components/ResetPassword";
 import Cookies from 'universal-cookie';
+import RulesRegulation from "./components/RulesRegulation"
 // import SponsorFlash from "./components/SponsorFlash";
 
 function App() {
@@ -47,13 +48,12 @@ function App() {
 					<Route path="/contactus" element={<Contact />} />
 					<Route path="/sponsors" element={<Sponsor />}></Route>
 					<Route path="/flagship-events" element={<Events club={0} setpaytmFinalUrl={setpaytmFinalUrl} setresultData={setresultData} isLoggedIn={isLoggedIn} />} />
-					<Route path="/events" element={<Events club={club} setpaytmFinalUrl={setpaytmFinalUrl} setresultData={setresultData} isLoggedIn={isLoggedIn} />} />
+					<Route path="/club-blitz-events" element={<Events club={club} setpaytmFinalUrl={setpaytmFinalUrl} setresultData={setresultData} isLoggedIn={isLoggedIn} />} />
 					<Route path="/initiatePayment" element={<PaytmRedirect resultData={resultData} paytmFinalUrl={paytmFinalUrl} />} />
-					<Route path="/clubs" element={<Club active={club} change={setClub} />} />
+					<Route path="/events" element={<Club active={club} change={setClub} />} />
 					<Route path="/forgotpassword" element={<ForgotPassword />} />
 					<Route path="/resetpassword" element={<ResetPassword />} />
-
-					{/* <Route path="/events" element={<Events club={club} />} /> */}
+					<Route path="/rulebook" element={<RulesRegulation />} />
 				</Routes>
 			</div>
 			{/* <SponsorFlash /> */}

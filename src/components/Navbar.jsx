@@ -35,7 +35,7 @@ function Navbar({ isLoggedIn }) {
                     </div>
                     <div className={IsMobile ? "mobile" : "laptop"}>
                         <Link to="/" className="centertabs">HOME</Link>
-                        <Link to="/clubs" className="centertabs">EVENTS</Link>
+                        <Link to="/events" className="centertabs">EVENTS</Link>
                         <Link to="/flagship-events" className="centertabs">FLAGSHIP EVENTS</Link>
                         <div>
                             <NavDropdown
@@ -47,7 +47,7 @@ function Navbar({ isLoggedIn }) {
                                 {/* <NavDropdown.Item href="#action/3.2">
                                     <Link className="text-white">HOSPITALITY</Link>
                                 </NavDropdown.Item> */}
-                                <NavDropdown.Item><Link to="/sponsors" className="text-white">SPONSORS</Link></NavDropdown.Item>
+                                <NavDropdown.Item><Link to="/rulebook" className="text-white">RULEBOOK</Link></NavDropdown.Item>
                                 {/* <NavDropdown.Item><Link className="text-white">HOSPITALITY</Link></NavDropdown.Item> */}
                                 <NavDropdown.Item><Link to="/contactus" className="text-white">OUR TEAM</Link></NavDropdown.Item>
                             </NavDropdown>

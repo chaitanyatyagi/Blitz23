@@ -1,3 +1,48 @@
 export default [
-    { image: "1.png" }, { image: "2.png" }, { image: "3.jpeg" }, { image: "4.png" }, { image: "5.jpeg" }, { image: "6.png" }, { image: "7.jpeg" }, { image: "8.jpeg" }, { image: "9.jpeg" }, { image: "10.jpeg" }, { image: "11.jpeg" }, { image: "12.jpeg" }, { image: "13.jpeg" }, { image: "14.png" }, { image: "15.png" }, { image: "16.png" }, { image: "17.png" }
+    {
+        clubEvents: "Flagship Events",
+        events: ["Panache", "Rambha Sambha", "Blitz Got Talent", "Battle of Bands"]
+    }, {
+        clubEvents: "Mavericks",
+        events: ["Acta Diurna", "Family Feud", "Bolti Tasveere", "On Ground Reporting", "Interactive Surveys & Polls"]
+    }, {
+        clubEvents: "Electoral Literacy Club",
+        events: ["Youth Parliament"]
+    }, {
+        clubEvents: "Creative Arts Club",
+        events: ["Motif-filion", "Art Exhibition", "Line Art", "Fashionista", "Rang De Mukhra", "Tint a Top", "Visuality", "Digital Art Workshop", "Magazine Collage", "Origami Competition", "Picaso-no-oculus"]
+    }, {
+        clubEvents: "Poetry Club",
+        events: ["Arz Kiya Hai", "Battle Ff Shayar"]
+    }, {
+        clubEvents: "English Press Club",
+        events: ["Seek The Truth"]
+    }, {
+        clubEvents: "Dance Club",
+        events: ["Catch The Hook Step", "Breakfree", "Hit The Street"]
+    }, {
+        clubEvents: "Classical Music and Dance",
+        events: ["Dhun", "Nrityanjali", "Voice Choice"]
+    }, {
+        clubEvents: "Music Club",
+        events: ["Hustle n Bustle", "Gungunaate Chalo", "Dhun", "Voice Choice"]
+    }, {
+        clubEvents: "Photography Club",
+        events: ["Moments", "Bhaavna", "Pic Saga"]
+    }, {
+        clubEvents: "Film Making Club",
+        events: ["MNIT Film Festival", "Celebrity Show off"]
+    }, {
+        clubEvents: "Drama Club",
+        events: ["Rangbhoomi", "Movie Screening", "Tamasha", "Monologue Competition"]
+    }, {
+        clubEvents: "Debate Club",
+        events: ["Clashing Views"]
+    }, {
+        clubEvents: "Quiz Club",
+        events: ["Qrptic Quest", "22 Yards", "Bharat Darshan", "Flix & Chill", "Quiz Pro Quo", "What's On Your Bookshelf ?", "Around The World In 80 Questions", "Hello Mr. Musk"]
+    }, {
+        clubEvents: "Travel and Heritage Club",
+        events: ["Exploring India Through A Dart"]
+    }
 ]

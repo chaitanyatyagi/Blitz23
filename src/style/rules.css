@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css?family=Inter");
+@import url("https://fonts.googleapis.com/css?family=Henny+Penny");
+
+.rules-regulations {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100%;
+}
+
+.leftrules {
+    width: 25%;
+    height: 100%;
+    background-image: url("../images/rules.png");
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+.rightrules {
+    width: 75%;
+    height: 100%;
+    background-image: url("../images/ClubBackground.png");
+    background-position: 100% 100%;
+    background-position: center;
+    display: flex;
+    flex-direction: row;
+    overflow-y: scroll;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-top: 90px;
+}
+
+.rulesInside {
+    width: 30%;
+    display: flex;
+    /* height: 60%; */
+    border: 2px solid white;
+    flex-direction: column;
+    margin-top: 10px;
+    border-radius: 9px;
+    background: rgba(102, 102, 102, 0.4);
+    border: 2.26471px solid #FFFFFF;
+    box-shadow: 0px 4.52941px 4.52941px rgba(0, 0, 0, 0.25), 22.6471px 22.6471px 22.6471px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(5.66176px);
+}
+
+.rulesinshead {
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    font-family: "Henny Penny";
+    height: 55px;
+    margin-top: 4px;
+}
+
+.rulesinsname {
+    display: flex;
+    flex-direction: row;
+}
+
+.rulesinsinsname {
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+    font-family: "Inter";
+    height: 25px;
+    width: 78%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: justify;
+    margin: 3px;
+}
+
+.rulesinsinsbtn {
+    width: 22%;
+    font-size: 12px;
+    font-weight: 800;
+    color: black;
+    font-family: "Inter";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin: 3px;
+    cursor: pointer;
+}
+
+@media(max-width:1250px) {
+    .rulesInside {
+        width: 45%;
+    }
+}
+
+@media(max-width:750px) {
+    .rulesInside {
+        width: 65%;
+    }
+}
+
+@media(max-width:500px) {
+    .rulesinsinsbtn {
+        font-size: 10px
+    }
+
+    .rulesinsinsname {
+        font-size: 12px;
+    }
+}
+
+@media(max-width:400px) {
+    .rulesInside {
+        width: 85%;
+    }
+}

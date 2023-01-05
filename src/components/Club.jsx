@@ -22,8 +22,8 @@ export default function Club(props) {
 							<div className="club-info-body">
 								{clubData[props.active].description}
 							</div>
-							<Link className="club-remove-decor" to="/events">
-								<div className="club-info-link">See More</div>
+							<Link className="club-remove-decor" to="/club-blitz-events">
+								<div className="club-info-link">Events</div>
 							</Link>
 						</div>
 					</div>
