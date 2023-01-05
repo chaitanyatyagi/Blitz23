@@ -4,6 +4,7 @@ import ClubBar from "./ClubBar";
 import clubData from "../TestData/clubData";
 import DanceCover from "../images/danceclubcover.png";
 import { Link } from "react-router-dom";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import "../style/Club.css";
 
 export default function Club(props) {
@@ -15,7 +16,14 @@ export default function Club(props) {
 				<div className="club-info">
 					<div className="club-info-card">
 						<div className="club-info-image-container">
-							<img src={DanceCover} className="club-info-image" />
+							<LazyLoadImage
+								src={
+									typeof clubData[props.active].image !== "undefined"
+										? `/Clubs/${clubData[props.active].image}`
+										: DanceCover
+								}
+								className="club-info-image"
+							/>
 						</div>
 						<div className="club-info-text">
 							<div className="club-info-title">{clubData[props.active].title}</div>

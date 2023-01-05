@@ -25,10 +25,11 @@
 	height: 65px;
 	background: black;
 	opacity: 0.7;
-	position: fixed;
+	position: absolute;
 	display: flex;
 	justify-content: space-between;
 	top: 0;
+	z-index: 999;
 }
 
 .menubar {

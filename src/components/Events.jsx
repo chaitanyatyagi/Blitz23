@@ -10,17 +10,23 @@ import EventsMembersScetion from "./EventsMemeberSection";
 import { Link } from "react-router-dom";
 
 export default function Events(props) {
+	// const [formData, setFormData] = React.useState({
+	// 	name: "",
+	// 	Nmembers: 1,
+	// 	members: [
+	// 		{
+	// 			memName: "",
+	// 			memCollege: "",
+	// 			memBlitzID: "",
+	// 			memEmail: "",
+	// 		},
+	// 	],
+	// });
 	const [formData, setFormData] = React.useState({
 		name: "",
-		Nmembers: 1,
-		members: [
-			{
-				memName: "",
-				memCollege: "",
-				memBlitzID: "",
-				memEmail: "",
-			},
-		],
+		college: "",
+		blitzID: "",
+		email: "",
 	});
 	const [activeEvent, setActiveEvent] = React.useState(1);
 	const [dispForm, setDispForm] = React.useState(false);
@@ -50,65 +56,54 @@ export default function Events(props) {
 			};
 		});
 	}
-	function dispMembers() {
-		setFormData((prev) => {
-			return { ...prev, members: [] };
-		});
-		for (let i = 1; i <= formData.Nmembers; i++) {
-			setFormData((prev) => {
-				return {
-					...prev,
-					members: [
-						...prev.members,
-						{
-							memName: "",
-							memCollege: "",
-							memBlitzID: "",
-							memEmail: "",
-						},
-					],
-				};
-			});
-		}
-		let Members = formData.members.map((x, i) => {
-			return <EventsMembersScetion x={x} i={i} formData={formData} setter={setFormData} />;
-		});
-		return Members;
-	}
+	// function dispMembers() {
+	// 	setFormData((prev) => {
+	// 		return { ...prev, members: [] };
+	// 	});
+	// 	for (let i = 1; i <= formData.Nmembers; i++) {
+	// 		setFormData((prev) => {
+	// 			return {
+	// 				...prev,
+	// 				members: [
+	// 					...prev.members,
+	// 					{
+	// 						memName: "",
+	// 						memCollege: "",
+	// 						memBlitzID: "",
+	// 						memEmail: "",
+	// 					},
+	// 				],
+	// 			};
+	// 		});
+	// 	}
+	// 	let Members = formData.members.map((x, i) => {
+	// 		return <EventsMembersScetion x={x} i={i} formData={formData} setter={setFormData} />;
+	// 	});
+	// 	return Members;
+	// }
 	function handleSubmit() {
 		console.log(formData);
 		setFormData({
 			name: "",
-			Nmembers: 1,
-			members: [
-				{
-					memName: "",
-					memCollege: "",
-					memBlitzID: "",
-					memEmail: "",
-				},
-			],
+			college: "",
+			blitzID: "",
+			email: "",
 		});
 		setDispForm(false);
 	}
 	function handleClose() {
 		setFormData({
 			name: "",
-			Nmembers: 1,
-			members: [
-				{
-					memName: "",
-					memCollege: "",
-					memBlitzID: "",
-					memEmail: "",
-				},
-			],
+			college: "",
+			blitzID: "",
+			email: "",
 		});
 		setDispForm(false);
 	}
 
 	return (
 		<div>
+			<Navbar />
 			<div className="events-contanier">
 				<div className="events-info-card">
 					<div className="events-card-info-container">
@@ -203,15 +198,39 @@ export default function Events(props) {
 						<div className="events-form">
 							<div className="events-form-background">
 								<div className="events-form-header">{`Registration - ${event.name}`}</div>
-								<div className="row-warpper-1">
+								<div className="row-wrapper-1">
 									<input
 										className="events-form-text-input"
-										placeholder="Name of Team"
+										placeholder="Name"
 										name="name"
 										value={formData.name}
 										onChange={handleChange}
 									/>
-									<div className="events-selector-label">
+									<input
+										className="events-form-text-input"
+										placeholder="College"
+										name="college"
+										value={formData.college}
+										onChange={handleChange}
+									/>
+								</div>
+								<div className="row-wrapper-2">
+									<input
+										className="events-form-text-input"
+										placeholder="BlitzID"
+										name="blitzID"
+										value={formData.blitzID}
+										onChange={handleChange}
+									/>
+									<input
+										className="events-form-text-input"
+										placeholder="Email"
+										name="email"
+										value={formData.email}
+										onChange={handleChange}
+									/>
+								</div>
+								{/* <div className="events-selector-label">
 										<label htmlFor="members" className="events-labels">
 											No of Members
 										</label>
@@ -234,11 +253,11 @@ export default function Events(props) {
 										</select>
 									</div>
 								</div>
-								<div className="events-form-members">{dispMembers}</div>
+								<div className="events-form-members">{dispMembers}</div> */}
 								<div className="row-wrapper-4">
 									<input
 										className="events-form-text-input"
-										value={formData.Nmembers * y}
+										value={event.price ? event.price : "--"}
 									/>
 									<Link
 										className="event-link-remover event-card-register-link"
@@ -258,7 +277,6 @@ export default function Events(props) {
 					</div>
 				)}
 			</div>
-			<Navbar />
 		</div>
 	);
 }
