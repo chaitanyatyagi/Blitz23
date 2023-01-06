@@ -31,9 +31,8 @@ function App() {
 			axios({
 				url: `${process.env.REACT_APP_SERVER}/users/getuser`,
 				method: "GET",
-				withCredentials:true,
+				withCredentials: true,
 			}).then((response) => {
-				console.log(response.data)
 				setUserInfo(response.data)
 			}).catch((err) => console.log(err, 1))
 		}
@@ -59,7 +58,7 @@ function App() {
 					<Route path="/profile" element={<Profile isLoggedIn={isLoggedIn} userInfo={userInfo} />} />
 					<Route path="/contactus" element={<Contact />} />
 					<Route path="/sponsors" element={<Sponsor />}></Route>
-					<Route path="/flagship-events" element={<Events club={0} setpaytmFinalUrl={setpaytmFinalUrl} setresultData={setresultData} isLoggedIn={isLoggedIn} />} />
+					<Route path="/flagship-events" element={<Events userInfo={userInfo} club={0} setpaytmFinalUrl={setpaytmFinalUrl} setresultData={setresultData} isLoggedIn={isLoggedIn} />} />
 					<Route path="/club-blitz-events" element={<Events userInfo={userInfo} club={club} setpaytmFinalUrl={setpaytmFinalUrl} setresultData={setresultData} isLoggedIn={isLoggedIn} />} />
 					<Route path="/initiatePayment" element={<PaytmRedirect resultData={resultData} paytmFinalUrl={paytmFinalUrl} />} />
 					<Route path="/events" element={<Club active={club} change={setClub} />} />

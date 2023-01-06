@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../style/Events.css";
 import Navbar from "./Navbar";
 import eventimage from "../images/EventTile.png";
@@ -7,23 +7,21 @@ import shift from "../images/eventshift.png";
 import clubData from "../TestData/clubData";
 import EventsNav from "./EventsNav";
 import EventsMembersScetion from "./EventsMemeberSection";
-import { Link ,useNavigate} from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 export default function Events(props) {
-	// const [formData, setFormData] = React.useState({
-	// 	name: "",
-	// 	Nmembers: 1,
-	// 	members: [
-	// 		{
-	// 			memName: "",
-	// 			memCollege: "",
-	// 			memBlitzID: "",
-	// 			memEmail: "",
-	// 		},
-	// 	],
-	// });
-	const navigate=useNavigate();
-	// console.log(props.userInfo)
+
+	function login() {
+		if (!props.isLoggedIn) {
+			window.alert("Please Register/Login")
+			window.open("/register", "_self")
+		}
+		else {
+			setDispForm(true)
+		}
+	}
+
+	const navigate = useNavigate();
 	const [formData, setFormData] = React.useState({
 		name: props.userInfo.name,
 		college: "",
@@ -63,38 +61,11 @@ export default function Events(props) {
 			};
 		});
 	}
-	// function dispMembers() {
-	// 	setFormData((prev) => {
-	// 		return { ...prev, members: [] };
-	// 	});
-	// 	for (let i = 1; i <= formData.Nmembers; i++) {
-	// 		setFormData((prev) => {
-	// 			return {
-	// 				...prev,
-	// 				members: [
-	// 					...prev.members,
-	// 					{
-	// 						memName: "",
-	// 						memCollege: "",
-	// 						memBlitzID: "",
-	// 						memEmail: "",
-	// 					},
-	// 				],
-	// 			};
-	// 		});
-	// 	}
-	// 	let Members = formData.members.map((x, i) => {
-	// 		return <EventsMembersScetion x={x} i={i} formData={formData} setter={setFormData} />;
-	// 	});
-	// 	return Members;
-	// }
 	function handleSubmit(e) {
 		e.preventDefault()
 		//post request to backend
-		console.log(formData);
-		axios.post(`${process.env.REACT_APP_SERVER}/users/registration`, {...formData,eventName:event.name,blitzID: props.userInfo.blitzId,name:props.userInfo.name})
+		axios.post(`${process.env.REACT_APP_SERVER}/events/registration`, { ...formData, eventName: event.name, blitzID: props.userInfo.blitzId, name: props.userInfo.name, blitzId: props.userInfo.blitzId })
 			.then(function (response) {
-				// console.log(response.data);
 				if (response.data.status === "error")
 					window.alert(response.data.message)
 				else {
@@ -167,7 +138,7 @@ export default function Events(props) {
 									<Link
 										className="event-link-remover event-card-register-link"
 										onClick={() => {
-											setDispForm(true);
+											login();
 										}}
 									>
 										REGISTER
@@ -193,33 +164,6 @@ export default function Events(props) {
 										: eventimage
 								}
 							/>
-							{/* <Link className="event-link-remover">
-								<img
-									className="event-card-img-prev"
-									src={shift}
-									onClick={() => {
-										setActiveEvent((prev) => {
-											return prev !== 1
-												? prev - 1
-												: clubData[props.club].events.length;
-										});
-									}}
-								></img>
-							</Link>
-							<Link className="event-link-remover">
-								<img
-									className="event-card-img-next"
-									src={shift}
-									onClick={() => {
-										setActiveEvent((prev) => {
-											return prev !== clubData[props.club].events.length
-												? prev + 1
-												: 1;
-										});
-									}}
-								></img>
-							</Link> */}
-							{/* it covers the poster */}
 						</div>
 					</div>
 				</div>
@@ -234,8 +178,8 @@ export default function Events(props) {
 										placeholder="Name of Participant"
 										name="name"
 										value={props.userInfo.name}
-										onChange={()=>{}}
-									required={true}
+										onChange={() => { }}
+										required={true}
 									/>
 									<input
 										className="events-form-text-input"
@@ -252,7 +196,7 @@ export default function Events(props) {
 										placeholder="BlitzID"
 										name="blitzID"
 										value={props.userInfo.blitzId}
-										onChange={()=>{}}
+										onChange={() => { }}
 										required={true}
 									/>
 									<input
@@ -337,7 +281,7 @@ export default function Events(props) {
 									/>
 									<button
 										className="event-link-remover event-card-register-link"
-										// onClick={handleSubmit}
+									// onClick={handleSubmit}
 									>
 										SUBMIT
 									</button>

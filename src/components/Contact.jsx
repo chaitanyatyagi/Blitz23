@@ -23,22 +23,22 @@ export default function Contact() {
                         Contactdetails[ClickedId].team.map((teammembers) => {
                             return (
                                 <div className='detailsaling'>
-                                    <div className='memimg'>
+                                    {/* <div className='memimg'>
                                         <img src={teammembers.memimg} alt="teammemimg" />
-                                    </div>
+                                    </div> */}
                                     <div className='namestyle'>
                                         {teammembers.name}
-                                        <div className='phone'>
+                                        {/* <div className='phone'>
                                             {teammembers.phone}
-                                        </div>
+                                        </div> */}
                                         <div className='phone'>
-                                            {teammembers.position}
+                                            ({teammembers.position})
                                         </div>
                                     </div>
-                                    <div className='media'>
+                                    {/* <div className='media'>
                                         <p><a href={`https://wa.me/${teammembers.phone}`} target="_blank" rel="noreferrer noopener"><FaWhatsappSquare /></a></p>
                                         <p><a href={"mailto: " + teammembers.email}><FaVoicemail /></a></p>
-                                    </div>
+                                    </div> */}
                                     <div className='cancel' onClick={() => hidecontact()}>
                                         <FaRegWindowClose />
                                     </div>

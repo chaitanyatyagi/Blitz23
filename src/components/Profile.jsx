@@ -1,14 +1,20 @@
 import "../style/profile.css";
-import Navbar from "./Navbar";
 import EventCard from "./EventCard";
 import React from "react";
-// import userInfo from "../TestData/userData";
-// import eventInfo from "../TestData/eventData";
-import axios from "axios"
-import { useEffect, useState } from "react"
 import { useNavigate } from "react-router-dom";
+import { useEffect, useState } from "react"
+import axios from "axios"
 
 export default function Profile({ userInfo, isLoggedIn }) {
+
+    // useEffect(() => {
+    //     axios.post(`${process.env.REACT_APP_SERVER}/events/registration-check`, { events: userInfo.events, blitzId: userInfo.blitzId })
+    // }).then((response) => {
+
+    // }).catch((error) => {
+    //     console.log(error)
+    // })
+
     const navigate = useNavigate()
     var eventData = <></>
     if (userInfo.events) {
@@ -17,7 +23,6 @@ export default function Profile({ userInfo, isLoggedIn }) {
                 name={x.eventName}
                 teamName={x.teamName}
                 nMembers={x.members}
-            // link={x.link}
             />
         })
     }
@@ -38,13 +43,13 @@ export default function Profile({ userInfo, isLoggedIn }) {
                             <div className="profile-user-profile">
                                 <div className="profile-user-img"></div>
                                 <div className="profile-user-details">
-                                    <div className="profile-user-name">{userInfo.fullName}</div>
+                                    <div className="profile-user-name">{userInfo.name}</div>
                                     <div className="profile-user-contact">
                                         <div className="profile-details-holder">
                                             <div className="profile-user-icons-username"></div>
                                             <h3 className="profile-user-contact-details">
                                                 {" "}
-                                                : {userInfo.username}
+                                                : {userInfo.blitzId}
                                             </h3>
                                         </div>
                                         <div className="profile-details-holder">

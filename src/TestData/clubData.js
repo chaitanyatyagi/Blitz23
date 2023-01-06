@@ -430,7 +430,7 @@ export default [
 	},
 	{
 		id: 4,
-		image: "debate.png",
+		image: "debate.jpg",
 		title: "Debating Club",
 		description:
 			"The Debating Club is established with the main purpose of providing students with a platform to share views and discuss topics that interest them. It also gives them an opportunity to enhance interpersonal skills, social skills and and communication skills.",

@@ -19,8 +19,10 @@ export default function Registration() {
         })
             .then(function (response) {
                 console.log(response);
-                if (response.data.status === "error")
+                if (response.data.status === "error") {
                     window.alert(response.data.message)
+                    window.open("/login", "_self")
+                }
                 else {
                     window.alert("Account Created. Login Now ");
                 }
