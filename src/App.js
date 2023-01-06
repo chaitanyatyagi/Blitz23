@@ -40,7 +40,7 @@ function App() {
 		else {
 			setIsLoggedIn(false)
 		}
-	}, [])
+	}, [isLoggedIn])
 
 
 	const [paytmFinalUrl, setpaytmFinalUrl] = useState("");
@@ -56,11 +56,11 @@ function App() {
 					<Route path="/" element={<MainPage />} />
 					<Route path="/login" element={<Login setIsLoggedIn={setIsLoggedIn} />} />
 					<Route path="/register" element={<Registration setIsLoggedIn={setIsLoggedIn} />} />
-					<Route path="/profile" element={<Profile userInfo={userInfo} />} />
+					<Route path="/profile" element={<Profile isLoggedIn={isLoggedIn} userInfo={userInfo} />} />
 					<Route path="/contactus" element={<Contact />} />
 					<Route path="/sponsors" element={<Sponsor />}></Route>
 					<Route path="/flagship-events" element={<Events club={0} setpaytmFinalUrl={setpaytmFinalUrl} setresultData={setresultData} isLoggedIn={isLoggedIn} />} />
-					<Route path="/club-blitz-events" element={<Events club={club} setpaytmFinalUrl={setpaytmFinalUrl} setresultData={setresultData} isLoggedIn={isLoggedIn} />} />
+					<Route path="/club-blitz-events" element={<Events userInfo={userInfo} club={club} setpaytmFinalUrl={setpaytmFinalUrl} setresultData={setresultData} isLoggedIn={isLoggedIn} />} />
 					<Route path="/initiatePayment" element={<PaytmRedirect resultData={resultData} paytmFinalUrl={paytmFinalUrl} />} />
 					<Route path="/events" element={<Club active={club} change={setClub} />} />
 					<Route path="/forgotpassword" element={<ForgotPassword />} />
