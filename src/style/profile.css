@@ -1,22 +1,22 @@
 @import url("https://fonts.googleapis.com/css?family=Inter");
 @import url("https://fonts.googleapis.com/css?family=Henny+Penny");
 
-.body {
+.profile-body {
     background-image: url("../images/image83.png");
     font-family: "Inter";
     min-height: 100vh;
 }
 
-.body::-webkit-scrollbar {
+.profile-body::-webkit-scrollbar {
     display: none;
 }
 
-.body {
+.profile-body {
     -ms-overflow-style: none;
     scrollbar-width: none;
 }
 
-.containerprof {
+.profile-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -25,17 +25,7 @@
     width: 100%;
 }
 
-.containerprof {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    width: 100%;
-
-}
-
-.head-div {
+.profile-head-div {
     width: 90%;
     background: #000000;
     box-shadow: 0px 4px 20px rgba(255, 255, 255, 0.25);
@@ -43,7 +33,7 @@
     margin-top: 100px;
 }
 
-.heading {
+.profile-heading {
     font-family: "Henny Penny";
     font-style: normal;
     font-weight: 400;
@@ -53,20 +43,7 @@
     color: #ffffff;
 }
 
-.contentprof {
-    width: 90%;
-    min-height: 80vh;
-    background: #1A1919;
-    box-shadow: 0px 10px 40px 40px rgba(0, 0, 0, 0.25);
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    margin-bottom: 100px;
-
-}
-
-/* .contentprof {
+.profile-content {
     width: 90%;
     min-height: 80vh;
     background: #1a1919;
@@ -76,9 +53,9 @@
     justify-content: flex-start;
     align-items: center;
     margin-bottom: 100px;
-} */
+}
 
-.user-side {
+.profile-user-side {
     width: 90%;
     margin-top: 20px;
     display: flex;
@@ -87,8 +64,8 @@
     justify-content: space-between;
 }
 
-.user-img {
-    background-image: url("../images/blitzBlogo.png");
+.profile-user-img {
+    background-image: url("../images/Ellipse1.png");
     height: 130px;
     width: 130px;
     background-size: contain;
@@ -96,7 +73,7 @@
     background-position: center;
 }
 
-.user-profile {
+.profile-user-profile {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -104,7 +81,7 @@
     width: 45%;
 }
 
-.user-details {
+.profile-user-details {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -112,7 +89,7 @@
     margin-left: 20px;
 }
 
-.user-name {
+.profile-user-name {
     font-family: "Inter";
     font-style: normal;
     font-weight: 700;
@@ -120,21 +97,21 @@
     margin-bottom: 10px;
 }
 
-.user-contact {
+.profile-user-contact {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
 }
 
-.details-holder {
+.profile-details-holder {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
 }
 
-.user-icons-username {
+.profile-user-icons-username {
     height: 25px;
     width: 25px;
     background-color: transparent;
@@ -142,7 +119,7 @@
     background-size: cover;
 }
 
-.user-icons-email {
+.profile-user-icons-email {
     height: 25px;
     width: 25px;
     background-color: transparent;
@@ -150,7 +127,7 @@
     background-size: cover;
 }
 
-.user-contact-details {
+.profile-user-contact-details {
     font-size: 0.75rem;
     color: white;
     font-family: "Inter";
@@ -159,7 +136,7 @@
     margin-left: 3px;
 }
 
-.blitz-logo {
+.profile-blitz-logo {
     background-image: url("../images/Blitz_Logo_23.png");
     background-size: contain;
     background-repeat: no-repeat;
@@ -168,7 +145,7 @@
     background-position: right;
 }
 
-.separator {
+.profile-separator {
     width: 90%;
     border: 1px solid #ffffff;
     height: 0.01px;
@@ -176,7 +153,7 @@
     margin-bottom: 20px;
 }
 
-.event-side {
+.profile-event-side {
     width: 90%;
     display: flex;
     flex-direction: column;
@@ -185,7 +162,7 @@
     margin-bottom: 50px;
 }
 
-.event-head {
+.profile-event-head {
     font-family: "Inter";
     font-style: normal;
     font-weight: 800;
@@ -194,7 +171,7 @@
     margin-bottom: 30px;
 }
 
-.event-list {
+.profile-event-list {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 20px;
@@ -202,15 +179,15 @@
 }
 
 @media (max-width: 1000px) {
-    .blitz-logo {
+    .profile-blitz-logo {
         display: none;
     }
 
-    .user-profile {
+    .profile-user-profile {
         width: 100%;
     }
 
-    .event-list {
+    .profile-event-list {
         display: flex;
         flex-direction: column;
         width: 100%;

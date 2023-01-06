@@ -151,6 +151,7 @@ export default [
 	},
 	{
 		id: 2,
+		image: "creativeArts.png",
 		title: "Creative Arts Club",
 		description:
 			"Our club aims to bring a busy student life to peace with art. This field is not limited to drawing or painting, but it is also about other avenues where you don't need to be a master but an enthusiast and create something with your imagination.This club regularly holds art competitions on various occasions. We also organize workshops for students to learn and share their prowess in different aspects of art.",
@@ -429,6 +430,7 @@ export default [
 	},
 	{
 		id: 4,
+		image: "debate.png",
 		title: "Debating Club",
 		description:
 			"The Debating Club is established with the main purpose of providing students with a platform to share views and discuss topics that interest them. It also gives them an opportunity to enhance interpersonal skills, social skills and and communication skills.",
@@ -564,7 +566,7 @@ export default [
 		id: 8,
 		title: "Hindi Language Activities Club",
 		description:
-			"Hindi Language Activities Club is for all the Hindi enthusiastic mnitians. our aim is to work for the progress of Hindi language, to create interest in the students for the language and to encouragetheir creativity in oral and writing skills with different literary and cultural events.",
+			"Hindi Language Activities Club is for all the Hindi enthusiastic mnitians. our aim is to work for the progress of Hindi language, to create interest in the students for the language and to encouragetheir creativity in oral and writing skills with different literary and cultural events.",
 		events: [
 			{
 				id: 0,
@@ -628,6 +630,7 @@ export default [
 	},
 	{
 		id: 10,
+		image: "photography.png",
 		title: "Photography Club",
 		description:
 			"The purpose of the photography club is to help students become better photographers. Club organised various contest to enrich the Photography culture among students. We host various workshop of professional photographers to communicate and learn the art of photography.",
@@ -694,6 +697,7 @@ export default [
 	},
 	{
 		id: 12,
+		image: "travel.png",
 		title: "Travel and Heritage Visit Club",
 		description:
 			"This club is for those who love to Travel and explore different places, Heritage sites. This club will be organising many trips to different places and also some trekking and camping activities. Being part of this club you will be learning about different cultures by visiting different Heritage sites. This club also aims to provide awareness regarding the importance of Heritage sites.",
