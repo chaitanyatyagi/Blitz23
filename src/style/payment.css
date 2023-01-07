@@ -63,6 +63,18 @@
     font-family: "Inter";
 }
 
+h3 {
+    color: white;
+}
+
+h5 {
+    color: white;
+}
+
+.plst {
+    margin-top: 20px;
+}
+
 .paymentsubmit {
     border: 2px solid white;
     width: 20%;

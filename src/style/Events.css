@@ -289,9 +289,9 @@
 .events-form {
 	margin-top: 70px;
 	height: 80vh;
-	width: 60vw;
-	background-image: url("../images/tarot-card-abundance-28485727.jpg");
-	background-size: cover;
+	width: 70vw;
+	/* background-image: url("../images/tarot-card-abundance-28485727.jpg");
+	background-size: cover; */
 	background-position: top;
 	background-repeat: no-repeat;
 }

@@ -15,7 +15,7 @@ export default function Registration() {
         let password = e.target[2].value;
         const indx = email.indexOf('@')
         const string = email.substr(indx + 1, email.length)
-        if (string === 'mnit.ac.in' || 'iiitkota.ac.in') {
+        if (string === 'mnit.ac.in' || string === 'iiitkota.ac.in') {
             axios.post(`${process.env.REACT_APP_SERVER}/users/register`, {
                 name, email, password
             })

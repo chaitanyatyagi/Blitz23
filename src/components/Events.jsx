@@ -6,6 +6,7 @@ import clubData from "../TestData/clubData";
 import EventsNav from "./EventsNav";
 import { Link, useNavigate } from "react-router-dom";
 import Payment from "./Payment";
+import axios from "axios";
 export default function Events(props) {
 	function login() {
 		if (!props.isLoggedIn) {
@@ -34,11 +35,15 @@ export default function Events(props) {
 	let y = 12;
 	let event = clubData[props.club].events[activeEvent - 1];
 	const [qrcode, setQrcode] = React.useState(false)
-	const [path,setPath]=useState("/qrcode/events.jpeg");
+	const [path, setPath] = useState("");
 	let data
 	React.useEffect(() => {
 		if (event.name === "Ramba Samba" || event.name === "Blitz Got Talent" || event.name === "Battle of Bands" || event.name === "Panache") {
 			setPath(`/qrcode/flagship.jpeg`);
+			setQrcode(true)
+		}
+		else if (event.name === "Tamasha" || event.name === "Bhaavna" || event.name === "Acta Diurna") {
+			setPath(`/qrcode/events.jpeg`)
 			setQrcode(true)
 		}
 		else {
@@ -82,7 +87,7 @@ export default function Events(props) {
 		});
 		setDispForm(false);
 		if (props.userInfo.college) {
-			axios.post(`${process.env.REACT_APP_SERVER}/events/registration`, { eventName: props.eventName, userId: props.userId, utrId: utr, teamName, members, college: props.userInfo.college })
+			axios.post(`${process.env.REACT_APP_SERVER}/events/registration`, { eventName: event.name, userId: props.userInfo._id, teamName: formData.teamName, members: formData.Nmembers, college: props.userInfo.college })
 				.then(function (response) {
 					if (response.data.status === "error")
 						window.alert(response.data.message)
@@ -287,7 +292,7 @@ export default function Events(props) {
 				)}
 				{
 					dispPayment && (
-						<Payment eventName={event.name} userId={props.userInfo._id} setDispPayment={setDispPayment} path={path} qrcode={qrcode} data={data} />
+						<Payment eventName={event.name} userId={props.userInfo._id} setDispPayment={setDispPayment} path={path} qrcode={qrcode} data={data} members={formData.Nmembers} teamName={formData.teamName} />
 					)
 				}
 			</div>
