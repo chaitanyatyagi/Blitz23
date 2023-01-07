@@ -201,4 +201,7 @@
 	.accomodation-cards-right {
 		display: none;
 	}
+	.accomodation-cards-active {
+		width: 95%;
+	}
 }
