@@ -16,17 +16,18 @@
 
 
 .qrcode {
-    margin-top: 70px;
+    margin-top: 270px;
     /* height: 360px;
     width: 370px; */
-    height: 60%;
-    width: 25%;
-    border: 2px solid white;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    justify-content: center;
+    height: 200px;
+    min-height: 200px;
+    width: 200px;
+    /* border: 2px solid white; */
+    background-size: 200px 200px;
+    /* background-repeat: no-repeat; */
+    /* justify-content: center; */
     align-items: center;
-    display: flex;
+    /* display: flex; */
     color: white;
     font-size: 18px;
     font-weight: 800;
