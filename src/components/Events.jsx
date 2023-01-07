@@ -38,18 +38,20 @@ export default function Events(props) {
 	const [path, setPath] = useState("");
 	let data
 	React.useEffect(() => {
+		console.log(event.name)
 		if (event.name === "Ramba Samba" || event.name === "Blitz Got Talent" || event.name === "Battle of Bands" || event.name === "Panache") {
 			setPath(`/qrcode/flagship.jpeg`);
 			setQrcode(true)
 		}
-		else if (event.name === "Tamasha" || event.name === "Bhaavna" || event.name === "Acta Diurna") {
+		else if (event.name == "Tamasha" || event.name == "Bhaavna" || event.name == "Acta Diurna") {
 			setPath(`/qrcode/events.jpeg`)
 			setQrcode(true)
 		}
 		else {
 			data = "Right now not accepting payment"
+			setQrcode(false)
 		}
-	}, [])
+	}, [event])
 	let rulesDisp = event.rules.map((x, i) => {
 		return (
 			<li>
@@ -75,19 +77,9 @@ export default function Events(props) {
 	}
 	function handleSubmit(e) {
 		e.preventDefault()
-		setFormData({
-			name: props.userInfo.name,
-			college: "",
-			blitzID: props.userInfo.blitzId,
-			email: "",
-			phone: "",
-			teamName: "",
-			Nmembers: "",
-			teamLeader: true,
-		});
-		setDispForm(false);
+		console.log(formData)
 		if (props.userInfo.college) {
-			axios.post(`${process.env.REACT_APP_SERVER}/events/registration`, { eventName: event.name, userId: props.userInfo._id, teamName: formData.teamName, members: formData.Nmembers, college: props.userInfo.college })
+			axios.post(`${process.env.REACT_APP_SERVER}/events/registration`, { eventName: event.name, userId: props.userInfo._id, teamName: formData.teamName, members: formData.Nmembers, college: props.userInfo.college, phone: formData.phone, teamLeader: formData.teamLeader })
 				.then(function (response) {
 					if (response.data.status === "error")
 						window.alert(response.data.message)
@@ -98,10 +90,21 @@ export default function Events(props) {
 				.catch(function (error) {
 					console.log(error);
 				});
+			setFormData({
+				name: props.userInfo.name,
+				college: "",
+				blitzID: props.userInfo.blitzId,
+				email: "",
+				phone: "",
+				teamName: "",
+				Nmembers: "",
+				teamLeader: true,
+			});
 		}
 		else {
 			setDispPayment(true)
 		}
+		setDispForm(false);
 	}
 	function handleClose() {
 		setFormData({
@@ -292,7 +295,7 @@ export default function Events(props) {
 				)}
 				{
 					dispPayment && (
-						<Payment eventName={event.name} userId={props.userInfo._id} setDispPayment={setDispPayment} path={path} qrcode={qrcode} data={data} members={formData.Nmembers} teamName={formData.teamName} />
+						<Payment eventName={event.name} userId={props.userInfo._id} setDispPayment={setDispPayment} path={path} qrcode={qrcode} data={data} members={formData.Nmembers} teamName={formData.teamName} phone={formData.phone} teamLeader={formData.teamLeader} />
 					)
 				}
 			</div>

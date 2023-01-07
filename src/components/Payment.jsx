@@ -9,7 +9,8 @@ export default function Payment(props) {
     function payment(e) {
         console.log(utr)
         e.preventDefault()
-        axios.post(`${process.env.REACT_APP_SERVER}/events/registration`, { eventName: props.eventName, userId: props.userId, utrId: utr, teamName: props.teamName, members: props.members })
+        console.log(props)
+        axios.post(`${process.env.REACT_APP_SERVER}/events/registration`, { eventName: props.eventName, userId: props.userId, utrId: utr, teamName: props.teamName, members: props.members, phone: props.phone, teamLeader: props.teamLeader })
             .then(function (response) {
                 if (response.data.status === "error")
                     window.alert(response.data.message)
