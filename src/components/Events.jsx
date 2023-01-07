@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "../style/Events.css";
 import eventimage from "../images/EventTile.png";
 import { LazyLoadImage } from "react-lazy-load-image-component";
@@ -34,11 +34,11 @@ export default function Events(props) {
 	let y = 12;
 	let event = clubData[props.club].events[activeEvent - 1];
 	const [qrcode, setQrcode] = React.useState(false)
-	let path
+	const [path,setPath]=useState("/qrcode/events.jpeg");
 	let data
 	React.useEffect(() => {
 		if (event.name === "Ramba Samba" || event.name === "Blitz Got Talent" || event.name === "Battle of Bands" || event.name === "Panache") {
-			path = `/qrcode/flagship.jpeg`
+			setPath(`/qrcode/flagship.jpeg`);
 			setQrcode(true)
 		}
 		else {
