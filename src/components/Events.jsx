@@ -14,7 +14,8 @@ export default function Events(props) {
 	const navigate = useNavigate();
 	const pay = (amount) => {
 		if (props.isLoggedIn) {
-			axios.get(`http://127.0.0.1:2080/paywithpaytm?amount=${amount}`,)
+			axios
+				.get(`http://127.0.0.1:2080/paywithpaytm?amount=${amount}`)
 				// axios.get(`{${process.env.REACT_APP_SERVER}/paywithpaytm?amount=${amount}`,)
 				.then(function (response) {
 					console.log(response.data);
@@ -26,16 +27,13 @@ export default function Events(props) {
 				.catch(function (error) {
 					console.log(error);
 				});
-		}
-		else {
+		} else {
 			window.alert("Please Log In ");
 			window.open("/login");
 		}
-
-	}
+	};
 	const [activeEvent, setActiveEvent] = React.useState(1);
 	let event = clubData[props.club].events[activeEvent - 1];
-	console.log(event.image);
 	let rulesDisp = event.rules.map((x, i) => {
 		return (
 			<li>
@@ -81,7 +79,10 @@ export default function Events(props) {
 								</div>
 							)}
 							<div className="event-card-text-register">
-								<Link className="event-link-remover event-card-register-link" onClick={() => pay(10)} >
+								<Link
+									className="event-link-remover event-card-register-link"
+									onClick={() => pay(10)}
+								>
 									REGISTER
 								</Link>
 							</div>

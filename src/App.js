@@ -13,28 +13,26 @@ import Navbar from "./components/Navbar";
 import PaytmRedirect from "./components/PaytmRedirect";
 import ForgotPassword from "./components/ForgotPassword";
 import ResetPassword from "./components/ResetPassword";
-import Cookies from 'universal-cookie';
+import Cookies from "universal-cookie";
+import Accomodation from "./components/Accomodation";
 // import SponsorFlash from "./components/SponsorFlash";
 
 function App() {
-
-	const [isLoggedIn, setIsLoggedIn] = useState(false)
-	const cookies = new Cookies()
+	const [isLoggedIn, setIsLoggedIn] = useState(false);
+	const cookies = new Cookies();
 	useEffect(() => {
-		const token = cookies.get('jwt')
+		const token = cookies.get("jwt");
 		if (token) {
-			setIsLoggedIn(false)
-			console.log(4)
+			setIsLoggedIn(false);
+			console.log(4);
+		} else {
+			setIsLoggedIn(true);
+			console.log(token);
 		}
-		else {
-			setIsLoggedIn(true)
-			console.log(token)
-		}
-	}, [])
+	}, []);
 
 	const [paytmFinalUrl, setpaytmFinalUrl] = useState("");
 	const [resultData, setresultData] = useState({});
-
 
 	const [club, setClub] = React.useState(1);
 	return (
@@ -44,16 +42,45 @@ function App() {
 				<Routes>
 					<Route path="/" element={<MainPage />} />
 					<Route path="/login" element={<Login setIsLoggedIn={setIsLoggedIn} />} />
-					<Route path="/register" element={<Registration setIsLoggedIn={setIsLoggedIn} />} />
+					<Route
+						path="/register"
+						element={<Registration setIsLoggedIn={setIsLoggedIn} />}
+					/>
 					<Route path="/profile" element={<Profile isLoggedIn={isLoggedIn} />} />
 					<Route path="/contactus" element={<Contact />} />
 					<Route path="/sponsors" element={<Sponsor />}></Route>
-					<Route path="/flagship-events" element={<Events club={0} setpaytmFinalUrl={setpaytmFinalUrl} setresultData={setresultData} isLoggedIn={isLoggedIn} />} />
-					<Route path="/events" element={<Events club={club} setpaytmFinalUrl={setpaytmFinalUrl} setresultData={setresultData} isLoggedIn={isLoggedIn} />} />
-					<Route path="/initiatePayment" element={<PaytmRedirect resultData={resultData} paytmFinalUrl={paytmFinalUrl} />} />
+					<Route
+						path="/flagship-events"
+						element={
+							<Events
+								club={0}
+								setpaytmFinalUrl={setpaytmFinalUrl}
+								setresultData={setresultData}
+								isLoggedIn={isLoggedIn}
+							/>
+						}
+					/>
+					<Route
+						path="/events"
+						element={
+							<Events
+								club={club}
+								setpaytmFinalUrl={setpaytmFinalUrl}
+								setresultData={setresultData}
+								isLoggedIn={isLoggedIn}
+							/>
+						}
+					/>
+					<Route
+						path="/initiatePayment"
+						element={
+							<PaytmRedirect resultData={resultData} paytmFinalUrl={paytmFinalUrl} />
+						}
+					/>
 					<Route path="/clubs" element={<Club active={club} change={setClub} />} />
 					<Route path="/forgotpassword" element={<ForgotPassword />} />
 					<Route path="/resetpassword" element={<ResetPassword />} />
+					<Route path="/accomodation" element={<Accomodation />} />
 
 					{/* <Route path="/events" element={<Events club={club} />} /> */}
 				</Routes>
