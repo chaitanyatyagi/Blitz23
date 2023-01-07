@@ -15,8 +15,8 @@ import ForgotPassword from "./components/ForgotPassword";
 import ResetPassword from "./components/ResetPassword";
 import Cookies from 'universal-cookie';
 import RulesRegulation from "./components/RulesRegulation"
+import Payment from "./components/Payment";
 import axios from "axios"
-// import SponsorFlash from "./components/SponsorFlash";
 
 function App() {
 
@@ -65,9 +65,9 @@ function App() {
 					<Route path="/forgotpassword" element={<ForgotPassword />} />
 					<Route path="/resetpassword" element={<ResetPassword />} />
 					<Route path="/rulebook" element={<RulesRegulation />} />
+					<Route path="/payment" element={<Payment />} />
 				</Routes>
 			</div>
-			{/* <SponsorFlash /> */}
 		</BrowserRouter>
 	);
 }

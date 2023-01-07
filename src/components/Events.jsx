@@ -1,14 +1,11 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "../style/Events.css";
-import Navbar from "./Navbar";
 import eventimage from "../images/EventTile.png";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import shift from "../images/eventshift.png";
 import clubData from "../TestData/clubData";
 import EventsNav from "./EventsNav";
-import EventsMembersScetion from "./EventsMemeberSection";
 import { Link, useNavigate } from "react-router-dom";
-import axios from "axios";
+import Payment from "./Payment";
 export default function Events(props) {
 
 	function login() {
@@ -20,7 +17,6 @@ export default function Events(props) {
 			setDispForm(true)
 		}
 	}
-
 	const navigate = useNavigate();
 	const [formData, setFormData] = React.useState({
 		name: props.userInfo.name,
@@ -34,10 +30,22 @@ export default function Events(props) {
 	});
 	const [activeEvent, setActiveEvent] = React.useState(1);
 	const [dispForm, setDispForm] = React.useState(false);
+	const [dispPayment, setDispPayment] = React.useState(false)
 
 	let y = 12;
-	// console.log(clubData[props.club])
 	let event = clubData[props.club].events[activeEvent - 1];
+	const [qrcode, setQrcode] = React.useState(false)
+	let path
+	let data
+	React.useEffect(() => {
+		if (event.name === "Ramba Samba" || event.name === "Blitz Got Talent" || event.name === "Battle of Bands" || event.name === "Panache") {
+			path = `/qrcode/flagship.jpeg`
+			setQrcode(true)
+		}
+		else {
+			data = "Right now not accepting payment"
+		}
+	}, [])
 	let rulesDisp = event.rules.map((x, i) => {
 		return (
 			<li>
@@ -63,20 +71,6 @@ export default function Events(props) {
 	}
 	function handleSubmit(e) {
 		e.preventDefault()
-		//post request to backend
-		axios.post(`${process.env.REACT_APP_SERVER}/events/registration`, { ...formData, eventName: event.name, blitzID: props.userInfo.blitzId, name: props.userInfo.name, blitzId: props.userInfo.blitzId })
-			.then(function (response) {
-				if (response.data.status === "error")
-					window.alert(response.data.message)
-				else {
-					window.alert("registration successfull");
-					navigate("/profile");
-				}
-			})
-			.catch(function (error) {
-				console.log(error);
-			});
-		//reset form
 		setFormData({
 			name: props.userInfo.name,
 			college: "",
@@ -88,6 +82,7 @@ export default function Events(props) {
 			teamLeader: true,
 		});
 		setDispForm(false);
+		setDispPayment(true)
 	}
 	function handleClose() {
 		setFormData({
@@ -133,7 +128,7 @@ export default function Events(props) {
 									)}
 								</div>
 							)}
-							{event.name !== "" && (
+							{/* {event.name !== "" && (
 								<div className="event-card-text-register">
 									<Link
 										className="event-link-remover event-card-register-link"
@@ -144,7 +139,19 @@ export default function Events(props) {
 										REGISTER
 									</Link>
 								</div>
-							)}
+							)} */}
+							{
+								event.name === "Panache" || event.name === "Tamasha" || event.name === "Bhaavna" || event.name === "Acta Diurna" ? <div className="event-card-text-register">
+									<Link
+										className="event-link-remover event-card-register-link"
+										onClick={() => {
+											login();
+										}}
+									>
+										REGISTER
+									</Link>
+								</div> : <div className="event-link-remover event-card-register-link">Registration will start soon</div>
+							}
 						</div>
 					</div>
 					<div className="events-card-routed-container">
@@ -249,31 +256,6 @@ export default function Events(props) {
 										/>
 									</div>
 								</div>
-
-								{/* <div className="events-selector-label">
-										<label htmlFor="members" className="events-labels">
-											No of Members
-										</label>
-										<select
-											className="events-member-selection"
-											name="Nmembers"
-											value={formData.Nmembers}
-											onChange={handleChange}
-										>
-											<option value={1}>1</option>
-											<option value={2}>2</option>
-											<option value={3}>3</option>
-											<option value={4}>4</option>
-											<option value={5}>5</option>
-											<option value={6}>6</option>
-											<option value={7}>7</option>
-											<option value={8}>8</option>
-											<option value={9}>9</option>
-											<option value={10}>10</option>
-										</select>
-									</div>
-								</div>
-								<div className="events-form-members">{dispMembers}</div> */}
 								<div className="row-wrapper-4">
 									<input
 										className="events-form-text-input"
@@ -281,9 +263,8 @@ export default function Events(props) {
 									/>
 									<button
 										className="event-link-remover event-card-register-link"
-									// onClick={handleSubmit}
 									>
-										SUBMIT
+										PAY NOW
 									</button>
 									<Link
 										className="event-link-remover event-card-register-link"
@@ -296,6 +277,11 @@ export default function Events(props) {
 						</div>
 					</form>
 				)}
+				{
+					dispPayment && (
+						<Payment eventName={event.name} userId={props.userInfo._id} setDispPayment={setDispPayment} path={path} qrcode={qrcode} data={data} />
+					)
+				}
 			</div>
 		</div>
 	);

@@ -55,7 +55,7 @@ export default [
 				],
 				judging: ["Costumes", "Theme", "Walking stance", "Attitude", "Tagline"],
 				image: "panache.png",
-				price: 200,
+				price: 600,
 			},
 			{
 				id: 2,
@@ -472,9 +472,10 @@ export default [
 			{
 				id: 2,
 				name: "Tamasha",
-				description: "",
+				description: "It is a nukkad natak competition where all colleges will come up with their respective teams, organized by Drama Club.",
 				rules: [],
 				judging: [],
+				price: 200,
 			},
 			{
 				id: 3,
@@ -645,9 +646,10 @@ export default [
 			{
 				id: 1,
 				name: "Bhaavna",
-				description: "",
+				description: "Bhavana is a photography competition that is based on capturing emotions during the whole fest. The photography club will organize this event",
 				rules: [],
 				judging: [],
+				price: 200,
 			},
 			{
 				id: 2,
@@ -820,6 +822,7 @@ export default [
 					"Time- 1 hour (for one round)",
 					"Multiple rounds can be planned according to footfall",
 				],
+				price: 200,
 			},
 			{
 				id: 1,
