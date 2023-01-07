@@ -16,6 +16,7 @@ import ResetPassword from "./components/ResetPassword";
 import Cookies from 'universal-cookie';
 import RulesRegulation from "./components/RulesRegulation"
 import Payment from "./components/Payment";
+import VerifyOTP from "./components/VerifyOTP";
 import axios from "axios"
 
 function App() {
@@ -66,6 +67,7 @@ function App() {
 					<Route path="/resetpassword" element={<ResetPassword />} />
 					<Route path="/rulebook" element={<RulesRegulation />} />
 					<Route path="/payment" element={<Payment />} />
+					<Route path="/verifyOtp" element={<VerifyOTP />} />
 				</Routes>
 			</div>
 		</BrowserRouter>

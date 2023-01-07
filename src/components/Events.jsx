@@ -7,7 +7,6 @@ import EventsNav from "./EventsNav";
 import { Link, useNavigate } from "react-router-dom";
 import Payment from "./Payment";
 export default function Events(props) {
-
 	function login() {
 		if (!props.isLoggedIn) {
 			window.alert("Please Register/Login")
@@ -82,7 +81,22 @@ export default function Events(props) {
 			teamLeader: true,
 		});
 		setDispForm(false);
-		setDispPayment(true)
+		if (props.userInfo.college) {
+			axios.post(`${process.env.REACT_APP_SERVER}/events/registration`, { eventName: props.eventName, userId: props.userId, utrId: utr, teamName, members, college: props.userInfo.college })
+				.then(function (response) {
+					if (response.data.status === "error")
+						window.alert(response.data.message)
+					else {
+						window.alert("registration successfull");
+					}
+				})
+				.catch(function (error) {
+					console.log(error);
+				});
+		}
+		else {
+			setDispPayment(true)
+		}
 	}
 	function handleClose() {
 		setFormData({
@@ -128,18 +142,6 @@ export default function Events(props) {
 									)}
 								</div>
 							)}
-							{/* {event.name !== "" && (
-								<div className="event-card-text-register">
-									<Link
-										className="event-link-remover event-card-register-link"
-										onClick={() => {
-											login();
-										}}
-									>
-										REGISTER
-									</Link>
-								</div>
-							)} */}
 							{
 								event.name === "Panache" || event.name === "Tamasha" || event.name === "Bhaavna" || event.name === "Acta Diurna" ? <div className="event-card-text-register">
 									<Link
@@ -261,11 +263,17 @@ export default function Events(props) {
 										className="events-form-text-input"
 										value={`Price : ${event.price ? event.price : "--"}`}
 									/>
-									<button
-										className="event-link-remover event-card-register-link"
-									>
-										PAY NOW
-									</button>
+									{
+										props.userInfo.college ? <button
+											className="event-link-remover event-card-register-link"
+										>
+											SUBMIT
+										</button> : <button
+											className="event-link-remover event-card-register-link"
+										>
+											PAY NOW
+										</button>
+									}
 									<Link
 										className="event-link-remover event-card-register-link"
 										onClick={handleClose}

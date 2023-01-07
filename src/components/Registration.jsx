@@ -13,24 +13,46 @@ export default function Registration() {
         let name = e.target[0].value
         let email = e.target[1].value;
         let password = e.target[2].value;
-        axios.post(`${process.env.REACT_APP_SERVER}/users/register`, {
-            // axios.post(`http://127.0.0.1:2080/users/register`, {
-            name, email, password
-        })
-            .then(function (response) {
-                console.log(response);
-                if (response.data.status === "error") {
-                    window.alert(response.data.message)
-                    window.open("/login", "_self")
-                }
-                else {
-                    window.alert("Account Created. Login Now ");
-                }
+        const indx = email.indexOf('@')
+        const string = email.substr(indx + 1, email.length)
+        if (string === 'mnit.ac.in' || 'iiitkota.ac.in') {
+            axios.post(`${process.env.REACT_APP_SERVER}/users/register`, {
+                name, email, password
             })
-            .catch(function (error) {
-                console.log(error);
-            });
+                .then(function (response) {
+                    console.log(response);
+                    if (response.data.status === "error") {
+                        window.alert(response.data.message)
+                    }
+                    else {
+                        window.open("/verifyOtp", "_self")
+                    }
+                })
+                .catch(function (error) {
+                    console.log(error);
+                    window.alert("Something went wrong")
+                });
 
+        }
+        else {
+            axios.post(`${process.env.REACT_APP_SERVER}/users/register`, {
+                // axios.post(`http://127.0.0.1:2080/users/register`, {
+                name, email, password
+            })
+                .then(function (response) {
+                    console.log(response);
+                    if (response.data.status === "error") {
+                        window.alert(response.data.message)
+                    }
+                    else {
+                        window.alert("Account Created. Login Now ");
+                        window.open("/login", "_self")
+                    }
+                })
+                .catch(function (error) {
+                    console.log(error);
+                });
+        }
     }
 
     return (

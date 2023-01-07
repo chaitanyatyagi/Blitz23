@@ -41,7 +41,6 @@ export default function Profile({ userInfo, isLoggedIn }) {
                     <div className="profile-content">
                         <div className="profile-user-side">
                             <div className="profile-user-profile">
-                                <div className="profile-user-img"></div>
                                 <div className="profile-user-details">
                                     <div className="profile-user-name">{userInfo.name}</div>
                                     <div className="profile-user-contact">
@@ -49,14 +48,14 @@ export default function Profile({ userInfo, isLoggedIn }) {
                                             <div className="profile-user-icons-username"></div>
                                             <h3 className="profile-user-contact-details">
                                                 {" "}
-                                                : {userInfo.blitzId}
+                                                Blitzschlag ID - {userInfo.blitzId}
                                             </h3>
                                         </div>
                                         <div className="profile-details-holder">
                                             <div className="profile-user-icons-email"></div>
                                             <h3 className="profile-user-contact-details">
                                                 {" "}
-                                                : {userInfo.email}
+                                                {userInfo.email}
                                             </h3>
                                         </div>
                                     </div>
