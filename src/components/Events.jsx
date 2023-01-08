@@ -38,13 +38,8 @@ export default function Events(props) {
 	const [path, setPath] = useState("");
 	let data
 	React.useEffect(() => {
-		console.log(event.name)
 		if (event.name === "Ramba Samba" || event.name === "Blitz Got Talent" || event.name === "Battle of Bands" || event.name === "Panache") {
 			setPath(`/qrcode/flagship.jpeg`);
-			setQrcode(true)
-		}
-		else if (event.name == "Tamasha" || event.name == "Bhaavna" || event.name == "Acta Diurna") {
-			setPath(`/qrcode/events.jpeg`)
 			setQrcode(true)
 		}
 		else {
@@ -77,9 +72,8 @@ export default function Events(props) {
 	}
 	function handleSubmit(e) {
 		e.preventDefault()
-		console.log(formData)
-		if (props.userInfo.college) {
-			axios.post(`${process.env.REACT_APP_SERVER}/events/registration`, { eventName: event.name, userId: props.userInfo._id, teamName: formData.teamName, members: formData.Nmembers, college: props.userInfo.college, phone: formData.phone, teamLeader: formData.teamLeader })
+		if (props.userInfo.college || !qrcode) {
+			axios.post(`${process.env.REACT_APP_SERVER}/events/registration`, { eventName: event.name, userId: props.userInfo._id, teamName: formData.teamName, members: formData.Nmembers, college: props.userInfo.college, phone: formData.phone, teamLeader: formData.teamLeader, register: true })
 				.then(function (response) {
 					if (response.data.status === "error")
 						window.alert(response.data.message)
@@ -150,18 +144,15 @@ export default function Events(props) {
 									)}
 								</div>
 							)}
-							{
-								event.name === "Panache" || event.name === "Tamasha" || event.name === "Bhaavna" || event.name === "Acta Diurna" ? <div className="event-card-text-register">
-									<Link
-										className="event-link-remover event-card-register-link"
-										onClick={() => {
-											login();
-										}}
-									>
-										REGISTER
-									</Link>
-								</div> : <div className="event-link-remover event-card-register-link">Registration will start soon</div>
-							}
+							<Link
+								className="event-link-remover event-card-register-link"
+								onClick={() => {
+									login();
+								}}
+							>
+								REGISTER
+							</Link>
+
 						</div>
 					</div>
 					<div className="events-card-routed-container">
@@ -272,14 +263,14 @@ export default function Events(props) {
 										value={`Price : ${event.price ? event.price : "--"}`}
 									/>
 									{
-										props.userInfo.college ? <button
-											className="event-link-remover event-card-register-link"
-										>
-											SUBMIT
-										</button> : <button
+										qrcode && !props.userInfo.college ? <button
 											className="event-link-remover event-card-register-link"
 										>
 											PAY NOW
+										</button> : <button
+											className="event-link-remover event-card-register-link"
+										>
+											SUBMIT
 										</button>
 									}
 									<Link

@@ -16,14 +16,14 @@ export default function EventCard(props) {
 					<h1 className="detail-text">: {props.nMembers}</h1>
 				</div>
 			</div>
-			<div
+			{/* <div
 				className="event-link"
 				onClick={() => {
 					console.log("details");
 				}}
 			>
 				View Event Details
-			</div>
+			</div> */}
 		</div>
 	);
 }

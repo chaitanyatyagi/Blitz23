@@ -33,6 +33,7 @@ export default [
 					"Creativity and overall effects",
 				],
 				image: "rambaSamba.png",
+				price: 600,
 			},
 			{
 				id: 1,
@@ -85,6 +86,7 @@ export default [
 					"Stage presence",
 				],
 				image: "battleOfBands.png",
+				price: 600,
 			},
 			{
 				id: 3,
@@ -94,6 +96,7 @@ export default [
 				rules: [],
 				judging: [],
 				image: "blitzGotTalent.png",
+				price: 600,
 			},
 		],
 	},

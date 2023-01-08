@@ -37,33 +37,6 @@
     color: rgb(133, 90, 90);
 }
 
-
-
-/* .main_nav {
-    <<<<<<< HEAD
-        z-index: 10000;
-        width: 100%;
-        height: 65px;
-        background: black;
-        position: fixed;
-        display: flex;
-        justify-content: space-between;
-        top: 0;
-        z-index: 999000;
-        opacity: 0.6;
-    =======
-        width: 100%;
-        height: 65px;
-        background: black;
-        opacity: 0.7;
-        position: absolute;
-        display: flex;
-        justify-content: space-between;
-        top: 0;
-        z-index: 999;
-    >>>>>>> f365aba2dc5ff0a77bf6971a72886b0fcba5c772
-    } */
-
 .main_nav {
     z-index: 10000;
     width: 100%;
@@ -103,6 +76,8 @@
 
 .leftlogo {
     width: 15%;
+    display: flex;
+    flex-direction: row;
 }
 
 .nav_links {
@@ -110,12 +85,24 @@
 }
 
 .leftlogoins {
-    width: 100%;
+    width: 75%;
     height: 65px;
     background-image: url("../images/blitzBlogo.png");
     background-size: 30% 50%;
     background-repeat: no-repeat;
     background-position: left
+}
+
+.leftlogoins1 {
+    width: 25%;
+    height: 65px;
+    background-image: url("../images/mnit.png");
+    background-size: 81% 60%;
+    background-repeat: no-repeat;
+    background-position: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .register {
@@ -224,8 +211,32 @@
     }
 }
 
-@media(max-width:800px) {
-    .leftlogoins {
-        background-size: 50% 50%;
+@media(max-width:1000px) {
+    .leftlogo {
+        width: 30%;
+    }
+}
+
+@media(max-width:600px) {
+    .leftlogo {
+        width: 43%;
+    }
+}
+
+@media(max-width:480px) {
+    .leftlogo {
+        width: 55%;
+    }
+}
+
+@media(max-width:400px) {
+    .leftlogo {
+        width: 65%;
+    }
+}
+
+@media(max-width:350px) {
+    .leftlogo {
+        width: 75%;
     }
 }

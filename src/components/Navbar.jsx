@@ -28,7 +28,7 @@ function Navbar({ isLoggedIn }) {
         <>
 
             <div className="main_nav">
-                <div className="leftlogo"><div className="leftlogoins"></div></div>
+                <div className="leftlogo"><div className="leftlogoins1"></div><div className="leftlogoins"></div></div>
                 <div className="nav_links">
                     <div className="menubar" id="menu">
                         <button className='btn' onClick={() => shownavlinks()}>{cancleButton ? <FaBars /> : <FaWindowClose />}</button>
@@ -37,6 +37,7 @@ function Navbar({ isLoggedIn }) {
                         <Link to="/" className="centertabs">HOME</Link>
                         <Link to="/events" className="centertabs">EVENTS</Link>
                         <Link to="/flagship-events" className="centertabs">FLAGSHIP EVENTS</Link>
+                        <Link to="/accomodation" className="centertabs">ACCOMODATION</Link>
                         <div>
                             <NavDropdown
                                 id="nav-dropdown-dark-example"

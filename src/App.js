@@ -17,6 +17,7 @@ import Cookies from 'universal-cookie';
 import RulesRegulation from "./components/RulesRegulation"
 import Payment from "./components/Payment";
 import VerifyOTP from "./components/VerifyOTP";
+import Accomodation from "./components/Accomodation"
 import axios from "axios"
 
 function App() {
@@ -26,7 +27,7 @@ function App() {
 	const cookies = new Cookies()
 
 	useEffect(() => {
-		const token = cookies.get('jwt')
+		const token = cookies.get("jwt");
 		if (token) {
 			setIsLoggedIn(true)
 			// axios({
@@ -37,17 +38,17 @@ function App() {
 			// 	setUserInfo(response.data)
 			// }).catch((err) => console.log(err, 1))
 
-			axios.post(`${process.env.REACT_APP_SERVER}/users/getuser`, {'jwt':token})
-            .then(function (response) {
-                if (response.data.status === "error")
-                    window.alert(response.data.message)
-                else {
-                    setUserInfo(response.data)
-                }
-            })
-            .catch(function (error) {
-                console.log(error);
-            });
+			axios.post(`${process.env.REACT_APP_SERVER}/users/getuser`, { 'jwt': token })
+				.then(function (response) {
+					if (response.data.status === "error")
+						window.alert(response.data.message)
+					else {
+						setUserInfo(response.data)
+					}
+				})
+				.catch(function (error) {
+					console.log(error);
+				});
 		}
 		else {
 			setIsLoggedIn(false)
@@ -57,7 +58,6 @@ function App() {
 
 	const [paytmFinalUrl, setpaytmFinalUrl] = useState("");
 	const [resultData, setresultData] = useState({});
-
 
 	const [club, setClub] = React.useState(1);
 	return (
@@ -80,6 +80,7 @@ function App() {
 					<Route path="/rulebook" element={<RulesRegulation />} />
 					<Route path="/payment" element={<Payment />} />
 					<Route path="/verifyOtp" element={<VerifyOTP />} />
+					<Route path="/accomodation" element={<Accomodation />} />
 				</Routes>
 			</div>
 		</BrowserRouter>

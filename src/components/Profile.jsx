@@ -1,21 +1,9 @@
 import "../style/profile.css";
 import EventCard from "./EventCard";
 import React from "react";
-import { useNavigate } from "react-router-dom";
-import { useEffect, useState } from "react"
-import axios from "axios"
 
 export default function Profile({ userInfo, isLoggedIn }) {
 
-    // useEffect(() => {
-    //     axios.post(`${process.env.REACT_APP_SERVER}/events/registration-check`, { events: userInfo.events, blitzId: userInfo.blitzId })
-    // }).then((response) => {
-
-    // }).catch((error) => {
-    //     console.log(error)
-    // })
-
-    const navigate = useNavigate()
     var eventData = <></>
     if (userInfo.events) {
         eventData = userInfo.events.map(x => {
