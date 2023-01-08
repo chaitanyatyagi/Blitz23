@@ -86,7 +86,7 @@ const Contactdetails = [
                 name: "Romil Modi (Creatives)",
                 phone: 9798827707,
                 email: "azad@gmail.com",
-                position: "Adviser To Cultural Secretry",
+                position: "Technical Secretary",
                 memimg: 'contimg/Blitz_Logo_23.png',
             },
         ],
@@ -128,7 +128,7 @@ const Contactdetails = [
                 name: "Abhishek Senger",
                 phone: 9798827707,
                 email: "azad@gmail.com",
-                position: "Adviser To Cultural Secretary",
+                position: "Publicity Secretary",
                 memimg: 'contimg/Blitz_Logo_23.png',
             },
             {
