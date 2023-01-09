@@ -13,7 +13,7 @@ export default [
 					"The time limit is 6-8 minutes for each performance.",
 					"Negative marking for exceeding the time limit.",
 					"Maximum 15 members can perform on stage at a given point of time.",
-					" Each team may consist of 40 members at max, including the coordinators.",
+					"Each team may consist of 40 members at max, including the coordinators.",
 					"The choice of songs is open to the participants.",
 					"Use of props is allowed (participants should bring their own props).",
 					"Each group should bring their soundtrack in a pen drive.",
@@ -55,6 +55,7 @@ export default [
 				],
 				judging: ["Costumes", "Theme", "Walking stance", "Attitude", "Tagline"],
 				image: "panache.png",
+				price: 200,
 			},
 			{
 				id: 2,
@@ -98,9 +99,10 @@ export default [
 	},
 	{
 		id: 1,
+		image: "classicalMusicAndDance.png",
 		title: "Classical Music and Dance Club",
 		description:
-			"Praesent ullamcorper gravida nunc vitae sollicitudin. Sed commodo venenatis imperdiet. Suspendisse turpis orci, auctor at accumsan non, euismod id sapien. Quisque vel accumsan tellus, vel commodo tellus. Sed vestibulum commodo turpis, sed lobortis nibh ornare nec. Donec nec pharetra lectus. Duis cursus justo ut erat interdum, quis luctus purus placerat.",
+			"The classical music and dance club provides a nurturing and conducive community for musicians and dancers.Our target is to create a space for students where they can discuss music and dance and showcase their talents,while learing important organizational skills.Its a place for anyone who wishes to learn various artforms and even refine it.",
 		events: [
 			{
 				id: 0,
@@ -131,6 +133,7 @@ export default [
 					"If entrants in one category (like guitar, piano,etc) exceeds a certain number there may be multiple awards",
 				],
 				judging: [],
+				image: "MUSICCLUB/Dhun.png",
 			},
 			{
 				id: 2,
@@ -149,9 +152,10 @@ export default [
 	},
 	{
 		id: 2,
+		image: "creativeArts.png",
 		title: "Creative Arts Club",
 		description:
-			"Praesent ullamcorper gravida nunc vitae sollicitudin. Sed commodo venenatis imperdiet. Suspendisse turpis orci, auctor at accumsan non, euismod id sapien. Quisque vel accumsan tellus, vel commodo tellus. Sed vestibulum commodo turpis, sed lobortis nibh ornare nec. Donec nec pharetra lectus. Duis cursus justo ut erat interdum, quis luctus purus placerat.",
+			"Our club aims to bring a busy student life to peace with art. This field is not limited to drawing or painting, but it is also about other avenues where you don't need to be a master but an enthusiast and create something with your imagination.This club regularly holds art competitions on various occasions. We also organize workshops for students to learn and share their prowess in different aspects of art.",
 		events: [
 			{
 				id: 0,
@@ -163,6 +167,7 @@ export default [
 					"The best 3 entries of doodle will receive prizes.",
 				],
 				judging: ["Best representation of the theme chosen"],
+				image: "CREATIVEARTS/Motif-filion.png",
 			},
 			{
 				id: 1,
@@ -179,6 +184,7 @@ export default [
 					"If Physical Painting or model is not possible for the submission, then Photographs will be allowed only upon the coordinator's approval and verification.",
 				],
 				judging: [],
+				image: "CREATIVEARTS/ArtExhibition.png",
 			},
 			{
 				id: 2,
@@ -196,6 +202,7 @@ export default [
 					"Time and materials will be limited to all. ",
 				],
 				judging: [],
+				image: "CREATIVEARTS/LineArt.png",
 			},
 			{
 				id: 3,
@@ -214,6 +221,7 @@ export default [
 					"Pairing won't be allowed",
 				],
 				judging: [],
+				image: "CREATIVEARTS/tint-a-top.png",
 			},
 			{
 				id: 4,
@@ -234,6 +242,7 @@ export default [
 					"Time and materials will be limited to all. ",
 				],
 				judging: [],
+				image: "CREATIVEARTS/Rang-de-Mukhra.png",
 			},
 			{
 				id: 5,
@@ -251,6 +260,7 @@ export default [
 					"DIYed dresses will be given more preference",
 				],
 				judging: [],
+				image: "CREATIVEARTS/Fashionista.png",
 			},
 			{
 				id: 6,
@@ -272,6 +282,7 @@ export default [
 					"In case of any violation of the rules, the participants are not allowed to participate in subsequent events of the Creative Arts Club. ",
 				],
 				judging: [],
+				image: "CREATIVEARTS/AnimationWorkshop.png",
 			},
 			{
 				id: 7,
@@ -304,6 +315,7 @@ export default [
 					"Mobile phones won’t be allowed during the competition.",
 				],
 				judging: [],
+				image: "CREATIVEARTS/Visuality.png",
 			},
 			{
 				id: 9,
@@ -319,6 +331,7 @@ export default [
 					"The decision of the judging panel will be final.",
 				],
 				judging: [],
+				image: "CREATIVEARTS/MagazineCollage.png",
 			},
 			{
 				id: 10,
@@ -349,6 +362,7 @@ export default [
 					"Participation may be individual or in groups of 2 or 3",
 				],
 				judging: [],
+				image: "CREATIVEARTS/Origami.png",
 			},
 			{
 				id: 12,
@@ -356,20 +370,22 @@ export default [
 				description:
 					"A blindfolded painting competition where fellow teammates will guide a participant. It is organized by the Creative Arts Club.",
 				rules: [
-					"max member in Team 2-3 ",
+					"Max member in Team 2-3 ",
 					"Chit system- A team will pick up a chit in which a word will be given, the teammates will guide the blindfolded teammate to draw the word.",
 					"The blindfolded member is guided by others to paint a painting according to the chit and will be judged by the judges",
 					"No plagiarism ",
 				],
 				judging: [],
+				image: "CREATIVEARTS/picaso-no-oculus.png",
 			},
 		],
 	},
 	{
 		id: 3,
+		image: "dance.png",
 		title: "Dance Club",
 		description:
-			"Praesent ullamcorper gravida nunc vitae sollicitudin. Sed commodo venenatis imperdiet. Suspendisse turpis orci, auctor at accumsan non, euismod id sapien. Quisque vel accumsan tellus, vel commodo tellus. Sed vestibulum commodo turpis, sed lobortis nibh ornare nec. Donec nec pharetra lectus. Duis cursus justo ut erat interdum, quis luctus purus placerat.",
+			"Dance Club where one follows the passion for dance and learning is made priority and teaching dance is focused not only to those who are already mastered in it but to everyone. We promote all types of dance forms by forming subgroups. The one who can't resist his moves on beats is the passionate dancer!",
 		events: [
 			{
 				id: 0,
@@ -413,6 +429,7 @@ export default [
 					"The one who performs the most number of songs with correct hook steps wins the round",
 				],
 				judging: [],
+				image: "DANCECLUB/CatchTheHookStep.png",
 			},
 			{
 				id: 3,
@@ -426,9 +443,10 @@ export default [
 	},
 	{
 		id: 4,
+		image: "debate.png",
 		title: "Debating Club",
 		description:
-			"Praesent ullamcorper gravida nunc vitae sollicitudin. Sed commodo venenatis imperdiet. Suspendisse turpis orci, auctor at accumsan non, euismod id sapien. Quisque vel accumsan tellus, vel commodo tellus. Sed vestibulum commodo turpis, sed lobortis nibh ornare nec. Donec nec pharetra lectus. Duis cursus justo ut erat interdum, quis luctus purus placerat.",
+			"The Debating Club is established with the main purpose of providing students with a platform to share views and discuss topics that interest them. It also gives them an opportunity to enhance interpersonal skills, social skills and and communication skills.",
 		events: [
 			{
 				id: 0,
@@ -440,14 +458,16 @@ export default [
 					"Based on the Judging, winners will be chosen.",
 				],
 				judging: [],
+				image: "DEBATINGCLUB/ClashingViews.png",
 			},
 		],
 	},
 	{
 		id: 5,
+		image: "drama.png",
 		title: "Drama Club",
 		description:
-			"Praesent ullamcorper gravida nunc vitae sollicitudin. Sed commodo venenatis imperdiet. Suspendisse turpis orci, auctor at accumsan non, euismod id sapien. Quisque vel accumsan tellus, vel commodo tellus. Sed vestibulum commodo turpis, sed lobortis nibh ornare nec. Donec nec pharetra lectus. Duis cursus justo ut erat interdum, quis luctus purus placerat.",
+			"Drama Club provides a platform to explore and enhance our aspects regarding theatre and other forms of drama. The club focuses on the character-building and learning more about different kind of emotions and expressions and going beyond one's own limits. The club promotes theatrics and also the skills likeconfidence boosting, communication skills, team work and discipline.",
 		events: [
 			{
 				id: 0,
@@ -455,6 +475,7 @@ export default [
 				description: "",
 				rules: [],
 				judging: [],
+				image: "DRAMACLUB/RANGBHOOMI.png",
 			},
 			{
 				id: 1,
@@ -462,6 +483,7 @@ export default [
 				description: "",
 				rules: [],
 				judging: [],
+				image: "DRAMACLUB/MovieScreening.png",
 			},
 			{
 				id: 2,
@@ -476,29 +498,16 @@ export default [
 				description: "",
 				rules: [],
 				judging: [],
+				image: "DRAMACLUB/MONOLOGUE.png",
 			},
 		],
 	},
 	{
 		id: 6,
-		title: "English Language Activities Club",
-		description:
-			"Praesent ullamcorper gravida nunc vitae sollicitudin. Sed commodo venenatis imperdiet. Suspendisse turpis orci, auctor at accumsan non, euismod id sapien. Quisque vel accumsan tellus, vel commodo tellus. Sed vestibulum commodo turpis, sed lobortis nibh ornare nec. Donec nec pharetra lectus. Duis cursus justo ut erat interdum, quis luctus purus placerat.",
-		events: [
-			{
-				id: 0,
-				name: "",
-				description: "",
-				rules: [],
-				judging: [],
-			},
-		],
-	},
-	{
-		id: 7,
 		title: "English Press Club",
+		image: "englishPress.png",
 		description:
-			"Praesent ullamcorper gravida nunc vitae sollicitudin. Sed commodo venenatis imperdiet. Suspendisse turpis orci, auctor at accumsan non, euismod id sapien. Quisque vel accumsan tellus, vel commodo tellus. Sed vestibulum commodo turpis, sed lobortis nibh ornare nec. Donec nec pharetra lectus. Duis cursus justo ut erat interdum, quis luctus purus placerat.",
+			"The goal of the English Press Club is to give students confidence in their journalistic skills while also enabling them to capture special moments and preserve them by reporting on various college activities. Through a variety of contests and workshops, the students are given a platform to learn speaking their minds and assist them in improving their interviewing and comprehension skills.",
 		events: [
 			{
 				id: 0,
@@ -516,6 +525,7 @@ export default [
 					"Report must be submitted only by the institute mail id. Bonus: - A chance to get featured on our media page. ",
 				],
 				judging: ["Creativity", "Adherence to the word limit", "Effectiveness"],
+				image: "ENGLISHPRESSCLUB/RaiseTheCurtain.png",
 			},
 			{
 				id: 1,
@@ -531,14 +541,15 @@ export default [
 					"No Team will be given on-spot registration on the day of the competition",
 				],
 				judging: ["On the basis of points"],
+				image: "ENGLISHPRESSCLUB/SeekTheTruth.png",
 			},
 		],
 	},
 	{
-		id: 8,
+		id: 7,
 		title: "Film Making Club",
 		description:
-			"Praesent ullamcorper gravida nunc vitae sollicitudin. Sed commodo venenatis imperdiet. Suspendisse turpis orci, auctor at accumsan non, euismod id sapien. Quisque vel accumsan tellus, vel commodo tellus. Sed vestibulum commodo turpis, sed lobortis nibh ornare nec. Donec nec pharetra lectus. Duis cursus justo ut erat interdum, quis luctus purus placerat.",
+			"Films are ways to demolish any stereotypes and to encourage a sense of unity across age ranges, social classes & ethnicities.films are form of entertainment that enacts a story by sound and a sequence of images giving the illusion of continuous movement",
 		events: [
 			{
 				id: 0,
@@ -571,10 +582,10 @@ export default [
 		],
 	},
 	{
-		id: 9,
+		id: 8,
 		title: "Hindi Language Activities Club",
 		description:
-			"Praesent ullamcorper gravida nunc vitae sollicitudin. Sed commodo venenatis imperdiet. Suspendisse turpis orci, auctor at accumsan non, euismod id sapien. Quisque vel accumsan tellus, vel commodo tellus. Sed vestibulum commodo turpis, sed lobortis nibh ornare nec. Donec nec pharetra lectus. Duis cursus justo ut erat interdum, quis luctus purus placerat.",
+			"Hindi Language Activities Club is for all the Hindi enthusiastic mnitians. our aim is to work for the progress of Hindi language, to create interest in the students for the language and to encouragetheir creativity in oral and writing skills with different literary and cultural events.",
 		events: [
 			{
 				id: 0,
@@ -593,25 +604,11 @@ export default [
 		],
 	},
 	{
-		id: 10,
-		title: "Hindi Press Club",
-		description:
-			"Praesent ullamcorper gravida nunc vitae sollicitudin. Sed commodo venenatis imperdiet. Suspendisse turpis orci, auctor at accumsan non, euismod id sapien. Quisque vel accumsan tellus, vel commodo tellus. Sed vestibulum commodo turpis, sed lobortis nibh ornare nec. Donec nec pharetra lectus. Duis cursus justo ut erat interdum, quis luctus purus placerat.",
-		events: [
-			{
-				id: 0,
-				name: "",
-				description: "",
-				rules: [],
-				judging: [],
-			},
-		],
-	},
-	{
-		id: 11,
+		id: 9,
+		image: "music.png",
 		title: "Music Club",
 		description:
-			"Praesent ullamcorper gravida nunc vitae sollicitudin. Sed commodo venenatis imperdiet. Suspendisse turpis orci, auctor at accumsan non, euismod id sapien. Quisque vel accumsan tellus, vel commodo tellus. Sed vestibulum commodo turpis, sed lobortis nibh ornare nec. Donec nec pharetra lectus. Duis cursus justo ut erat interdum, quis luctus purus placerat.",
+			"When words fail, music speaks! The music society develops, enhances and improves musical and instrumental instincts by staging regular fun events like jamming sessions to all India competitions like Voice Choice. It also helps in developing soft skills like management and overcoming stage fear. And the best part, anyone with a love for music can become a part of our family!",
 		events: [
 			{
 				id: 0,
@@ -619,6 +616,7 @@ export default [
 				description: "",
 				rules: [],
 				judging: [],
+				image: "MUSICCLUB/HustleBustle.png",
 			},
 			{
 				id: 1,
@@ -626,6 +624,7 @@ export default [
 				description: "",
 				rules: [],
 				judging: [],
+				image: "MUSICCLUB/GungunateChalo.png",
 			},
 			{
 				id: 2,
@@ -640,6 +639,7 @@ export default [
 				description: "",
 				rules: [],
 				judging: [],
+				image: "MUSICCLUB/Dhun.png",
 			},
 			{
 				id: 4,
@@ -647,14 +647,16 @@ export default [
 				description: "",
 				rules: [],
 				judging: [],
+				image: "MUSICCLUB/VoiceChoice.png",
 			},
 		],
 	},
 	{
-		id: 12,
+		id: 10,
+		image: "photography.png",
 		title: "Photography Club",
 		description:
-			"Praesent ullamcorper gravida nunc vitae sollicitudin. Sed commodo venenatis imperdiet. Suspendisse turpis orci, auctor at accumsan non, euismod id sapien. Quisque vel accumsan tellus, vel commodo tellus. Sed vestibulum commodo turpis, sed lobortis nibh ornare nec. Donec nec pharetra lectus. Duis cursus justo ut erat interdum, quis luctus purus placerat.",
+			"The purpose of the photography club is to help students become better photographers. Club organised various contest to enrich the Photography culture among students. We host various workshop of professional photographers to communicate and learn the art of photography.",
 		events: [
 			{
 				id: 0,
@@ -676,6 +678,7 @@ export default [
 				description: "",
 				rules: [],
 				judging: [],
+				image: "PHOTOGRAPHYCLUB/PicSaga.png",
 			},
 			{
 				id: 3,
@@ -683,6 +686,7 @@ export default [
 				description: "",
 				rules: [],
 				judging: [],
+				image: "PHOTOGRAPHYCLUB/SnipStitch.png",
 			},
 			{
 				id: 4,
@@ -690,14 +694,16 @@ export default [
 				description: "",
 				rules: [],
 				judging: [],
+				image: "PHOTOGRAPHYCLUB/PhotographyWorkshop.png",
 			},
 		],
 	},
 	{
-		id: 13,
+		id: 11,
+		image: "poetry.png",
 		title: "Poetry Club",
 		description:
-			"Praesent ullamcorper gravida nunc vitae sollicitudin. Sed commodo venenatis imperdiet. Suspendisse turpis orci, auctor at accumsan non, euismod id sapien. Quisque vel accumsan tellus, vel commodo tellus. Sed vestibulum commodo turpis, sed lobortis nibh ornare nec. Donec nec pharetra lectus. Duis cursus justo ut erat interdum, quis luctus purus placerat.",
+			"The chief aim of the poetry club is to increase students knowledge of the languages along with the increase in the power of appreciation of beauty. The club provides an interactive environment for improving communication skills , confidence and opportunity for all poetic minds to showcase their talent.",
 		events: [
 			{
 				id: 0,
@@ -705,6 +711,7 @@ export default [
 				description: "",
 				rules: [],
 				judging: [],
+				image: "POETRYCLUB/ArzKiyaHai.png",
 			},
 			{
 				id: 1,
@@ -716,25 +723,11 @@ export default [
 		],
 	},
 	{
-		id: 14,
-		title: "Think India",
-		description:
-			"Praesent ullamcorper gravida nunc vitae sollicitudin. Sed commodo venenatis imperdiet. Suspendisse turpis orci, auctor at accumsan non, euismod id sapien. Quisque vel accumsan tellus, vel commodo tellus. Sed vestibulum commodo turpis, sed lobortis nibh ornare nec. Donec nec pharetra lectus. Duis cursus justo ut erat interdum, quis luctus purus placerat.",
-		events: [
-			{
-				id: 0,
-				name: "",
-				description: "",
-				rules: [],
-				judging: [],
-			},
-		],
-	},
-	{
-		id: 15,
+		id: 12,
+		image: "travel.png",
 		title: "Travel and Heritage Visit Club",
 		description:
-			"Praesent ullamcorper gravida nunc vitae sollicitudin. Sed commodo venenatis imperdiet. Suspendisse turpis orci, auctor at accumsan non, euismod id sapien. Quisque vel accumsan tellus, vel commodo tellus. Sed vestibulum commodo turpis, sed lobortis nibh ornare nec. Donec nec pharetra lectus. Duis cursus justo ut erat interdum, quis luctus purus placerat.",
+			"This club is for those who love to Travel and explore different places, Heritage sites. This club will be organising many trips to different places and also some trekking and camping activities. Being part of this club you will be learning about different cultures by visiting different Heritage sites. This club also aims to provide awareness regarding the importance of Heritage sites.",
 		events: [
 			{
 				id: 0,
@@ -751,10 +744,10 @@ export default [
 		],
 	},
 	{
-		id: 16,
+		id: 13,
 		title: "Electoral Literacy Club",
 		description:
-			"Praesent ullamcorper gravida nunc vitae sollicitudin. Sed commodo venenatis imperdiet. Suspendisse turpis orci, auctor at accumsan non, euismod id sapien. Quisque vel accumsan tellus, vel commodo tellus. Sed vestibulum commodo turpis, sed lobortis nibh ornare nec. Donec nec pharetra lectus. Duis cursus justo ut erat interdum, quis luctus purus placerat.",
+			"The Electoral Literacy Club offers a setting for students to learn about their voting rights and become acquainted with the registration and voting process via interactive and fun activities.The purpose of these games and activities is to get the pupils thinking and asking questions. ",
 		events: [
 			{
 				id: 0,
@@ -766,10 +759,10 @@ export default [
 		],
 	},
 	{
-		id: 17,
+		id: 14,
 		title: "Quiz Club",
 		description:
-			"Praesent ullamcorper gravida nunc vitae sollicitudin. Sed commodo venenatis imperdiet. Suspendisse turpis orci, auctor at accumsan non, euismod id sapien. Quisque vel accumsan tellus, vel commodo tellus. Sed vestibulum commodo turpis, sed lobortis nibh ornare nec. Donec nec pharetra lectus. Duis cursus justo ut erat interdum, quis luctus purus placerat.",
+			"Quiz Club is a group of MNITians who are passionate about trivia and love to learn more from our peers. The club meets on a regular basis, where members talk about the topics they like. Events are organised on a nearly monthly basis and feature a variety of quizzes and trivia games.",
 		events: [
 			{
 				id: 0,
@@ -830,10 +823,11 @@ export default [
 		],
 	},
 	{
-		id: 18,
+		id: 15,
+		image: "mavericks.png",
 		title: "The Mavericks",
 		description:
-			"Praesent ullamcorper gravida nunc vitae sollicitudin. Sed commodo venenatis imperdiet. Suspendisse turpis orci, auctor at accumsan non, euismod id sapien. Quisque vel accumsan tellus, vel commodo tellus. Sed vestibulum commodo turpis, sed lobortis nibh ornare nec. Donec nec pharetra lectus. Duis cursus justo ut erat interdum, quis luctus purus placerat.",
+			"“Awareness overpowers Ignorance” \n The Mavericks is the Mass and Media body of MNIT Jaipur. Aiming towards raising awareness about contemporary issues around the world, holding events on Journalism, like the ACTA DIURNA, which always attracts huge participation from the audience. The Mavericks also conducts events based on reporting and conducting surveys and polls. The major highlight of The Mavericks are their Campus Placement and career-oriented talks, which are a huge hit on their Instagram, which also happens to be the biggest instagram page under MNIT. The Mavericks is also in charge of organising talks like TEDxMNITJaipur, Under the Banyan Tree.",
 		events: [
 			{
 				id: 0,
@@ -853,6 +847,7 @@ export default [
 					"Time- 1 hour (for one round)",
 					"Multiple rounds can be planned according to footfall",
 				],
+				image: "THEMAVERICKS/actamav.png",
 			},
 			{
 				id: 1,
@@ -885,6 +880,7 @@ export default [
 					"The entire team will be given only one chance per round",
 				],
 				judging: ["General poll-based event(no judging criteria)"],
+				image: "THEMAVERICKS/FamilyFeud.png",
 			},
 			{
 				id: 3,
@@ -906,7 +902,7 @@ export default [
 		id: 19,
 		title: "NSS",
 		description:
-			"Praesent ullamcorper gravida nunc vitae sollicitudin. Sed commodo venenatis imperdiet. Suspendisse turpis orci, auctor at accumsan non, euismod id sapien. Quisque vel accumsan tellus, vel commodo tellus. Sed vestibulum commodo turpis, sed lobortis nibh ornare nec. Donec nec pharetra lectus. Duis cursus justo ut erat interdum, quis luctus purus placerat.",
+			"The overall aim of National Service Scheme is to give an extension dimension to the higher education system and orient the student youth to community service while they are studying in educational institution. It is necessary to arouse the social conscience of the students, and to provide them an opportunity to work with the people who are in need of basic necessities of life. This will expose them to the realities of life and bring about a change in their social perception. Various activities can be adult school, coaching for poor and slum students, education of the deprived communities about their rights and the government schemes for their upliftment, distribution of leftover food to the deprived community, creating self-employment for them, encouraging child education, women empowerment, women upliftment etc.",
 		events: [
 			{
 				id: 0,
