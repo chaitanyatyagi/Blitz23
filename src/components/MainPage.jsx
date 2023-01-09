@@ -85,11 +85,25 @@ function MainPage() {
                 <div className="landingPg3Head">THEME : ILLUSION</div>
                 <div className="landingPg3main">
                     <div className="landingPg3left">
-                        <div className="landingPg3content">Although the term 'Bollywood' was popularized only in the 1970s, Bollywood has been a major part of Indian culture for years before that. Blitzschlag 2020 pays homage to an aspect of our culture that has borne many icons, set pioneering trends, and become a much-loved household name. From the iconic 'angry young man' characters and dastardly villains, to thought-provoking movies
-                            with a social message, and blockbuster 'masala' movies, Bollywood has something for everyone, and that's the case for Blitzschlag 2020! Music,
-                            dance, drama, and more await you in a feast for the senses, so join us
-                            as we treat you to a panoply of performances and competitions set
-                            in the heart of Rajasthan. Padhaaro mhaare Bollywood!
+                        <div className="landingPg3content">Imagine losing the sense of "reality" for a minute or two?
+                            Imagine your brain pulling pranks over you?
+                            These weirdly bewildering thoughts are being brought to life this year at BLITSCHLAG 2023
+                            With our theme ILISOLUN.
+                            ILLUSION, a misrepresentation of a “real”;
+                            an interpretation that contradicts objective “reality” as defined by general agreement.
+                            Why does our brain play around with our ability to see and think though?
+                            Or are we just delusional?
+                            A curious and greedy brain is what we feed upon;
+                            Hence all answers to your curious mind
+                            Would be here... waiting for you to be discovered,seen,understood and solved...
+                            So this this year, lets put into test and see;
+                            "TEH PAOMNNEHAL PWEOR OF THE HMUAN MNID"
+
+
+
+
+
+                            ***Come witness the illusions of life and get lost in the meandering curves to fall and rise in the land of unending illusions...
                         </div>
                         {/* <div className="landingPg3footer">
                             <div className="landingPg3b1">20K+ FOOTFALL</div>
