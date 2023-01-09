@@ -99,13 +99,7 @@ function MainPage() {
                             Hence all answers to your curious mind
                             Would be here... waiting for you to be discovered,seen,understood and solved...
                             So this this year, lets put into test and see;
-                            "TEH PAOMNNEHAL PWEOR OF THE HMUAN MNID"
-
-
-
-
-
-                            ***Come witness the illusions of life and get lost in the meandering curves to fall and rise in the land of unending illusions...
+                            "TEH PAOMNNEHAL PWEOR OF THE HMUAN MNID"! ***Come witness the illusions of life and get lost in the meandering curves to fall and rise in the land of unending illusions...
                         </div>
                         {/* <div className="landingPg3footer">
                             <div className="landingPg3b1">20K+ FOOTFALL</div>
