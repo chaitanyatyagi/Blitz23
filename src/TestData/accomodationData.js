@@ -11,7 +11,7 @@ export default [
 		id: 1,
 		head: "Optica",
 		detail: "An Optica pass entitles you to lodge for the day as well as participate in any one flagship event of your choice. You can take part in any of the club activities scheduled on that day as well as attend the same-day pronite.",
-		price: 1200,
+		price: 1500,
 	},
 	{
 		id: 2,

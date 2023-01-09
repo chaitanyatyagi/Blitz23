@@ -14,7 +14,7 @@ export default function Accomodation({ isLoggedIn, userInfo }) {
 		name: userInfo.name,
 		college: "",
 		blitzID: userInfo.blitzId,
-		email: "",
+		InstituteId: "",
 		phone: "",
 		teamName: "",
 		Nmembers: "",
@@ -191,9 +191,9 @@ export default function Accomodation({ isLoggedIn, userInfo }) {
 							/>
 							<input
 								className=" accomodation-form-text-input"
-								placeholder="Email"
-								name="email"
-								value={formData.email}
+								placeholder="InstituteId"
+								name="InstituteId"
+								value={formData.InstituteId}
 								onChange={handleChange}
 							/>
 						</div>
@@ -306,7 +306,7 @@ export default function Accomodation({ isLoggedIn, userInfo }) {
 				)}
 				{
 					dispPayment && (
-						<Payment userId={userInfo._id} phone={formData.phone} packageName={packages[activePackage].head} day={formData.date} eventName={formData.flagship} qrcode={qrcode} path={path} setDispPayment={setDispPayment} register={true} teamName={formData.teamName} teamLeader={formData.teamLeader} members={formData.Nmembers} />
+						<Payment userId={userInfo._id} phone={formData.phone} packageName={packages[activePackage].head} day={formData.date} eventName={formData.flagship} qrcode={qrcode} path={path} setDispPayment={setDispPayment} register={true} teamName={formData.teamName} teamLeader={formData.teamLeader} members={formData.Nmembers} InstituteId={formData.InstituteId} />
 					)
 				}
 				{rulesActive && (

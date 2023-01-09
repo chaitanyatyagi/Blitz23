@@ -24,7 +24,7 @@ export default function Events(props) {
 		name: props.userInfo.name,
 		college: "",
 		blitzID: props.userInfo.blitzId,
-		email: "",
+		InstituteId: "",
 		phone: "",
 		teamName: "",
 		Nmembers: "",
@@ -82,7 +82,7 @@ export default function Events(props) {
 		e.preventDefault()
 		setRegister(true)
 		if (props.userInfo.college || !qrcode) {
-			axios.post(`${process.env.REACT_APP_SERVER}/events/registration`, { eventName: event.name, userId: props.userInfo._id, teamName: formData.teamName, members: formData.Nmembers, college: props.userInfo.college, phone: formData.phone, teamLeader: formData.teamLeader, register: true })
+			axios.post(`${process.env.REACT_APP_SERVER}/events/registration`, { eventName: event.name, userId: props.userInfo._id, teamName: formData.teamName, members: formData.Nmembers, college: props.userInfo.college, phone: formData.phone, teamLeader: formData.teamLeader, register: true, InstituteId: formData.InstituteId })
 				.then(function (response) {
 					if (response.data.status === "error")
 						window.alert(response.data.message)
@@ -97,7 +97,7 @@ export default function Events(props) {
 				name: props.userInfo.name,
 				college: "",
 				blitzID: props.userInfo.blitzId,
-				email: "",
+				InstituteId: "",
 				phone: "",
 				teamName: "",
 				Nmembers: "",
@@ -114,7 +114,7 @@ export default function Events(props) {
 			name: props.userInfo.name,
 			college: "",
 			blitzID: props.userInfo.blitzId,
-			email: "",
+			InstituteId: "",
 			phone: "",
 			teamName: "",
 			Nmembers: "",
@@ -218,9 +218,9 @@ export default function Events(props) {
 									/>
 									<input
 										className="events-form-text-input"
-										placeholder="Email"
-										name="email"
-										value={formData.email}
+										placeholder="InstituteId"
+										name="InstituteId"
+										value={formData.InstituteId}
 										onChange={handleChange}
 										required={true}
 									/>
@@ -267,6 +267,7 @@ export default function Events(props) {
 									</div>
 								</div>
 								<div className="events-form-check-row">NOTE - Please mention "None" in Team Name if this is an Individual Event and 1 as number of Team Members.</div>
+								<div className="events-form-check-row">NOTE - .</div>
 								<div className="row-wrapper-4">
 									<input
 										className="events-form-text-input"
@@ -296,7 +297,7 @@ export default function Events(props) {
 				)}
 				{
 					dispPayment && (
-						<Payment eventName={event.name} userId={props.userInfo._id} setDispPayment={setDispPayment} path={path} qrcode={qrcode} data={data} members={formData.Nmembers} teamName={formData.teamName} phone={formData.phone} teamLeader={formData.teamLeader} register={register} />
+						<Payment eventName={event.name} userId={props.userInfo._id} setDispPayment={setDispPayment} path={path} qrcode={qrcode} data={data} members={formData.Nmembers} teamName={formData.teamName} phone={formData.phone} teamLeader={formData.teamLeader} register={register} InstitudeId={formData.InstitudeId} />
 					)
 				}
 			</div>
