@@ -9,8 +9,9 @@ export default function Profile({ userInfo, isLoggedIn }) {
         eventData = userInfo.events.map(x => {
             return <EventCard
                 name={x.eventName.name}
-            // teamName={x.teamName}
-            // nMembers={x.members}
+                package1={x.Envision}
+                package2={x.Optica}
+                package3={x.Mirage}
             />
         })
     }
@@ -53,7 +54,7 @@ export default function Profile({ userInfo, isLoggedIn }) {
                         </div>
                         <div className="profile-separator"></div>
                         <div className="profile-event-side">
-                            <h1 className="profile-event-head">Registered Events</h1>
+                            <h1 className="profile-event-head">Registered Events - Events/Package pass will be provided on payment verification.</h1>
                             <div className="profile-event-list">{eventData}</div>
                         </div>
                     </div>

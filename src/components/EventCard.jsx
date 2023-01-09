@@ -6,7 +6,7 @@ export default function EventCard(props) {
 		<div className="card-container">
 			<div className="event-details">
 				<div className="title">
-					<h1 className="title-text">Name of Event</h1>
+					<h1 className="title-text">Name of Event/Package</h1>
 					{/* <h1 className="title-text">Team Name</h1>
 					<h1 className="title-text">No. of Members</h1> */}
 				</div>
