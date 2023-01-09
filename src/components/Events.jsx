@@ -8,7 +8,6 @@ import { Link, useNavigate } from "react-router-dom";
 import Payment from "./Payment";
 import axios from "axios";
 export default function Events(props) {
-	let register
 
 	// LOGIN POPUP -----
 	function login() {
@@ -29,7 +28,7 @@ export default function Events(props) {
 		phone: "",
 		teamName: "",
 		Nmembers: "",
-		teamLeader: true,
+		teamLeader: false,
 	});
 	const [activeEvent, setActiveEvent] = React.useState(1);
 	const [dispForm, setDispForm] = React.useState(false);
@@ -42,6 +41,7 @@ export default function Events(props) {
 	const [qrcode, setQrcode] = React.useState(false)
 	const [path, setPath] = useState("");
 	let data
+	const [register, setRegister] = React.useState(false)
 
 	React.useEffect(() => {
 		if (event.name === "Ramba Samba" || event.name === "Blitz Got Talent" || event.name === "Battle of Bands" || event.name === "Panache") {
@@ -80,7 +80,7 @@ export default function Events(props) {
 	// SENDING REQUESTSS ----
 	function handleSubmit(e) {
 		e.preventDefault()
-		register = true
+		setRegister(true)
 		if (props.userInfo.college || !qrcode) {
 			axios.post(`${process.env.REACT_APP_SERVER}/events/registration`, { eventName: event.name, userId: props.userInfo._id, teamName: formData.teamName, members: formData.Nmembers, college: props.userInfo.college, phone: formData.phone, teamLeader: formData.teamLeader, register: true })
 				.then(function (response) {
@@ -266,6 +266,7 @@ export default function Events(props) {
 										/>
 									</div>
 								</div>
+								<div className="events-form-check-row">NOTE - Please mention "None" in Team Name if this is an Individual Event and 1 as number of Team Members.</div>
 								<div className="row-wrapper-4">
 									<input
 										className="events-form-text-input"

@@ -282,6 +282,7 @@ export default function Accomodation({ isLoggedIn, userInfo }) {
 								</div> : ""
 							}
 						</div>
+						<div className="events-form-check-row">NOTE - Please mention "None" in TeamName if this is an Individual Event and 1 as number of Team Members.</div>
 						<div className="row-wrapper">
 							<div className="accomodation-form-labels price-display">
 								Price : {packages[activePackage].price}
