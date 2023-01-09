@@ -8,7 +8,7 @@ export default function Payment(props) {
 
     function payment(e) {
         e.preventDefault()
-        axios.post(`${process.env.REACT_APP_SERVER}/events/registration`, { eventName: props.eventName, userId: props.userId, utrId: utr, teamName: props.teamName, members: props.members, phone: props.phone, teamLeader: props.teamLeader, register: props.register, day: props.day, packageName: props.packageName })
+        axios.post(`${process.env.REACT_APP_SERVER}/events/registration`, { eventName: props.eventName, userId: props.userId, utrId: utr, teamName: props.teamName, members: props.members, phone: props.phone, teamLeader: props.teamLeader, register: props.register, day: props.day, packageName: props.packageName, InstituteId: props.InstituteId })
             .then(function (response) {
                 if (response.data.status === "error")
                     window.alert(response.data.message)

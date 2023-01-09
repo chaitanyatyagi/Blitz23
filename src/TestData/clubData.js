@@ -852,11 +852,7 @@ export default [
 					"Time- 1 hour (for one round)",
 					"Multiple rounds can be planned according to footfall",
 				],
-<<<<<<< HEAD
-				price: 200,
-=======
 				image: "THEMAVERICKS/actamav.png",
->>>>>>> 7c3d200e982abff812daf30537c82ceeaedb5dbe
 			},
 			{
 				id: 1,

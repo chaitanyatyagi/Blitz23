@@ -266,8 +266,8 @@ export default function Events(props) {
 										/>
 									</div>
 								</div>
-								<div className="events-form-check-row">NOTE - Please mention "None" in Team Name if this is an Individual Event and 1 as number of Team Members.</div>
-								<div className="events-form-check-row">NOTE - .</div>
+								<div className="events-form-check-row">Note: Please mention "None" in Team Name if this is an Individual Event and 1 as number of Team Members.</div>
+								<div className="events-form-check-row">Note: Choose your Package wisely. We'll Suggest you to take a glimpse at our combo packages(Optica and Mirage) to avail exciting discounts. For reference visit: blitzschlag.co.in/accomodation .</div>
 								<div className="row-wrapper-4">
 									<input
 										className="events-form-text-input"

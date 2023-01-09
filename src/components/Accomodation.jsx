@@ -39,7 +39,7 @@ export default function Accomodation({ isLoggedIn, userInfo }) {
 			setQrcode(true)
 		}
 		else if (packages[activePackage].head === "Optica") {
-			setPath(`/qrcode/1200.jpeg`);
+			setPath(`/qrcode/1500.jpeg`);
 			setQrcode(true)
 		}
 		else if (packages[activePackage].head === "Mirage") {

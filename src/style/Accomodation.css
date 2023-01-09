@@ -336,10 +336,7 @@
 	padding: 5px;
 	border-radius: 10px;
 	z-index: 100;
-<<<<<<< HEAD
 	color: white;
-=======
->>>>>>> 7c3d200e982abff812daf30537c82ceeaedb5dbe
 }
 
 .accomaodation-rules-float-cont>img {
@@ -384,49 +381,30 @@
 	.accomodation-cards-right {
 		display: none;
 	}
-<<<<<<< HEAD
 
 	.accomodation-form-popup {
 		justify-content: flex-start;
 	}
 
-=======
-	.accomodation-form-popup {
-		justify-content: flex-start;
-	}
->>>>>>> 7c3d200e982abff812daf30537c82ceeaedb5dbe
 	.row-wrapper {
 		flex-direction: column;
 		gap: 10px;
 		margin-bottom: 10px;
 	}
-<<<<<<< HEAD
 
-=======
->>>>>>> 7c3d200e982abff812daf30537c82ceeaedb5dbe
 	.accomodation-form-selectors {
 		flex-direction: row;
 		justify-content: space-between;
 		width: 100%;
 		gap: 5px;
 	}
-<<<<<<< HEAD
 
-=======
->>>>>>> 7c3d200e982abff812daf30537c82ceeaedb5dbe
 	.price-row-manager {
 		width: 100%;
 		justify-content: flex-start;
 	}
-<<<<<<< HEAD
 
 	.accomodation-form-number-input {
 		width: fit-content;
 	}
 }
-=======
-	.accomodation-form-number-input {
-		width: fit-content;
-	}
-}
->>>>>>> 7c3d200e982abff812daf30537c82ceeaedb5dbe
