@@ -136,6 +136,7 @@ export default [
 					"If entrants in one category (like guitar, piano,etc) exceeds a certain number there may be multiple awards",
 				],
 				judging: [],
+				image: "MUSICCLUB/Dhun.png",
 			},
 			{
 				id: 2,
@@ -169,7 +170,7 @@ export default [
 					"The best 3 entries of doodle will receive prizes.",
 				],
 				judging: ["Best representation of the theme chosen"],
-				image: "Motif-filion.png"
+				image: "CREATIVEARTS/Motif-filion.png",
 			},
 			{
 				id: 1,
@@ -186,7 +187,7 @@ export default [
 					"If Physical Painting or model is not possible for the submission, then Photographs will be allowed only upon the coordinator's approval and verification.",
 				],
 				judging: [],
-				image: "Art Exhibition.png"
+				image: "CREATIVEARTS/ArtExhibition.png",
 			},
 			{
 				id: 2,
@@ -204,7 +205,7 @@ export default [
 					"Time and materials will be limited to all. ",
 				],
 				judging: [],
-				image: "Line Art.png"
+				image: "CREATIVEARTS/LineArt.png",
 			},
 			{
 				id: 3,
@@ -223,7 +224,7 @@ export default [
 					"Pairing won't be allowed",
 				],
 				judging: [],
-				image: "tint-a-top.png"
+				image: "CREATIVEARTS/tint-a-top.png",
 			},
 			{
 				id: 4,
@@ -244,7 +245,7 @@ export default [
 					"Time and materials will be limited to all. ",
 				],
 				judging: [],
-				image: "Rang-de-Mukhra.png"
+				image: "CREATIVEARTS/Rang-de-Mukhra.png",
 			},
 			{
 				id: 5,
@@ -262,7 +263,7 @@ export default [
 					"DIYed dresses will be given more preference",
 				],
 				judging: [],
-				image: "Fashionista.png",
+				image: "CREATIVEARTS/Fashionista.png",
 			},
 			{
 				id: 6,
@@ -284,7 +285,7 @@ export default [
 					"In case of any violation of the rules, the participants are not allowed to participate in subsequent events of the Creative Arts Club. ",
 				],
 				judging: [],
-				image: "Animation Workshop.png"
+				image: "CREATIVEARTS/AnimationWorkshop.png",
 			},
 			{
 				id: 7,
@@ -317,7 +318,7 @@ export default [
 					"Mobile phones won’t be allowed during the competition.",
 				],
 				judging: [],
-				image: "Visuality.png"
+				image: "CREATIVEARTS/Visuality.png",
 			},
 			{
 				id: 9,
@@ -333,7 +334,7 @@ export default [
 					"The decision of the judging panel will be final.",
 				],
 				judging: [],
-				image: "Magazine Collage.png"
+				image: "CREATIVEARTS/MagazineCollage.png",
 			},
 			{
 				id: 10,
@@ -364,7 +365,7 @@ export default [
 					"Participation may be individual or in groups of 2 or 3",
 				],
 				judging: [],
-				image: "Origami.png"
+				image: "CREATIVEARTS/Origami.png",
 			},
 			{
 				id: 12,
@@ -372,13 +373,13 @@ export default [
 				description:
 					"A blindfolded painting competition where fellow teammates will guide a participant. It is organized by the Creative Arts Club.",
 				rules: [
-					"max member in Team 2-3 ",
+					"Max member in Team 2-3 ",
 					"Chit system- A team will pick up a chit in which a word will be given, the teammates will guide the blindfolded teammate to draw the word.",
 					"The blindfolded member is guided by others to paint a painting according to the chit and will be judged by the judges",
 					"No plagiarism ",
 				],
 				judging: [],
-				image: "picaso-no-oculus.png"
+				image: "CREATIVEARTS/picaso-no-oculus.png",
 			},
 		],
 	},
@@ -431,6 +432,7 @@ export default [
 					"The one who performs the most number of songs with correct hook steps wins the round",
 				],
 				judging: [],
+				image: "DANCECLUB/CatchTheHookStep.png",
 			},
 			{
 				id: 3,
@@ -444,7 +446,7 @@ export default [
 	},
 	{
 		id: 4,
-		image: "debate.jpg",
+		image: "debate.png",
 		title: "Debating Club",
 		description:
 			"The Debating Club is established with the main purpose of providing students with a platform to share views and discuss topics that interest them. It also gives them an opportunity to enhance interpersonal skills, social skills and and communication skills.",
@@ -459,6 +461,7 @@ export default [
 					"Based on the Judging, winners will be chosen.",
 				],
 				judging: [],
+				image: "DEBATINGCLUB/ClashingViews.png",
 			},
 		],
 	},
@@ -475,6 +478,7 @@ export default [
 				description: "",
 				rules: [],
 				judging: [],
+				image: "DRAMACLUB/RANGBHOOMI.png",
 			},
 			{
 				id: 1,
@@ -482,6 +486,7 @@ export default [
 				description: "",
 				rules: [],
 				judging: [],
+				image: "DRAMACLUB/MovieScreening.png",
 			},
 			{
 				id: 2,
@@ -497,6 +502,7 @@ export default [
 				description: "",
 				rules: [],
 				judging: [],
+				image: "DRAMACLUB/MONOLOGUE.png",
 			},
 		],
 	},
@@ -523,6 +529,7 @@ export default [
 					"Report must be submitted only by the institute mail id. Bonus: - A chance to get featured on our media page. ",
 				],
 				judging: ["Creativity", "Adherence to the word limit", "Effectiveness"],
+				image: "ENGLISHPRESSCLUB/RaiseTheCurtain.png",
 			},
 			{
 				id: 1,
@@ -538,6 +545,7 @@ export default [
 					"No Team will be given on-spot registration on the day of the competition",
 				],
 				judging: ["On the basis of points"],
+				image: "ENGLISHPRESSCLUB/SeekTheTruth.png",
 			},
 		],
 	},
@@ -581,7 +589,7 @@ export default [
 		id: 8,
 		title: "Hindi Language Activities Club",
 		description:
-			"Hindi Language Activities Club is for all the Hindi enthusiastic mnitians. our aim is to work for the progress of Hindi language, to create interest in the students for the language and to encouragetheir creativity in oral and writing skills with different literary and cultural events.",
+			"Hindi Language Activities Club is for all the Hindi enthusiastic mnitians. our aim is to work for the progress of Hindi language, to create interest in the students for the language and to encouragetheir creativity in oral and writing skills with different literary and cultural events.",
 		events: [
 			{
 				id: 0,
@@ -612,6 +620,7 @@ export default [
 				description: "",
 				rules: [],
 				judging: [],
+				image: "MUSICCLUB/HustleBustle.png",
 			},
 			{
 				id: 1,
@@ -619,6 +628,7 @@ export default [
 				description: "",
 				rules: [],
 				judging: [],
+				image: "MUSICCLUB/GungunateChalo.png",
 			},
 			{
 				id: 2,
@@ -633,6 +643,7 @@ export default [
 				description: "",
 				rules: [],
 				judging: [],
+				image: "MUSICCLUB/Dhun.png",
 			},
 			{
 				id: 4,
@@ -640,6 +651,7 @@ export default [
 				description: "",
 				rules: [],
 				judging: [],
+				image: "MUSICCLUB/VoiceChoice.png",
 			},
 		],
 	},
@@ -671,6 +683,7 @@ export default [
 				description: "",
 				rules: [],
 				judging: [],
+				image: "PHOTOGRAPHYCLUB/PicSaga.png",
 			},
 			{
 				id: 3,
@@ -678,6 +691,7 @@ export default [
 				description: "",
 				rules: [],
 				judging: [],
+				image: "PHOTOGRAPHYCLUB/SnipStitch.png",
 			},
 			{
 				id: 4,
@@ -685,6 +699,7 @@ export default [
 				description: "",
 				rules: [],
 				judging: [],
+				image: "PHOTOGRAPHYCLUB/PhotographyWorkshop.png",
 			},
 		],
 	},
@@ -701,6 +716,7 @@ export default [
 				description: "",
 				rules: [],
 				judging: [],
+				image: "POETRYCLUB/ArzKiyaHai.png",
 			},
 			{
 				id: 1,
@@ -836,7 +852,11 @@ export default [
 					"Time- 1 hour (for one round)",
 					"Multiple rounds can be planned according to footfall",
 				],
+<<<<<<< HEAD
 				price: 200,
+=======
+				image: "THEMAVERICKS/actamav.png",
+>>>>>>> 7c3d200e982abff812daf30537c82ceeaedb5dbe
 			},
 			{
 				id: 1,
@@ -869,6 +889,7 @@ export default [
 					"The entire team will be given only one chance per round",
 				],
 				judging: ["General poll-based event(no judging criteria)"],
+				image: "THEMAVERICKS/FamilyFeud.png",
 			},
 			{
 				id: 3,
