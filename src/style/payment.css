@@ -3,6 +3,7 @@
 
 
 .payment {
+    position: absolute;
     background-color: black;
     display: flex;
     justify-content: center;
@@ -11,23 +12,17 @@
     width: 100%;
     flex-direction: column;
     overflow-y: scroll;
-    z-index: 2;
+    z-index: 200;
 }
 
 
 .qrcode {
     margin-top: 270px;
-    /* height: 360px;
-    width: 370px; */
     height: 200px;
     min-height: 200px;
     width: 200px;
-    /* border: 2px solid white; */
     background-size: 200px 200px;
-    /* background-repeat: no-repeat; */
-    /* justify-content: center; */
     align-items: center;
-    /* display: flex; */
     color: white;
     font-size: 18px;
     font-weight: 800;
@@ -37,8 +32,6 @@
 .utr {
     display: flex;
     flex-direction: row;
-    /* height: 111px;
-    width: 370px; */
     height: 20%;
     width: 28%;
     align-items: center;

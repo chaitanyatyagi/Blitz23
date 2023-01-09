@@ -169,6 +169,7 @@ export default [
 					"The best 3 entries of doodle will receive prizes.",
 				],
 				judging: ["Best representation of the theme chosen"],
+				image: "Motif-filion.png"
 			},
 			{
 				id: 1,
@@ -185,6 +186,7 @@ export default [
 					"If Physical Painting or model is not possible for the submission, then Photographs will be allowed only upon the coordinator's approval and verification.",
 				],
 				judging: [],
+				image: "Art Exhibition.png"
 			},
 			{
 				id: 2,
@@ -202,6 +204,7 @@ export default [
 					"Time and materials will be limited to all. ",
 				],
 				judging: [],
+				image: "Line Art.png"
 			},
 			{
 				id: 3,
@@ -220,6 +223,7 @@ export default [
 					"Pairing won't be allowed",
 				],
 				judging: [],
+				image: "tint-a-top.png"
 			},
 			{
 				id: 4,
@@ -240,6 +244,7 @@ export default [
 					"Time and materials will be limited to all. ",
 				],
 				judging: [],
+				image: "Rang-de-Mukhra.png"
 			},
 			{
 				id: 5,
@@ -257,6 +262,7 @@ export default [
 					"DIYed dresses will be given more preference",
 				],
 				judging: [],
+				image: "Fashionista.png",
 			},
 			{
 				id: 6,
@@ -278,6 +284,7 @@ export default [
 					"In case of any violation of the rules, the participants are not allowed to participate in subsequent events of the Creative Arts Club. ",
 				],
 				judging: [],
+				image: "Animation Workshop.png"
 			},
 			{
 				id: 7,
@@ -310,10 +317,11 @@ export default [
 					"Mobile phones won’t be allowed during the competition.",
 				],
 				judging: [],
+				image: "Visuality.png"
 			},
 			{
 				id: 9,
-				name: "Magzine Collage",
+				name: "Magazine Collage",
 				description: "",
 				rules: [
 					"A theme will be provided on the spot at the time of the event ",
@@ -325,6 +333,7 @@ export default [
 					"The decision of the judging panel will be final.",
 				],
 				judging: [],
+				image: "Magazine Collage.png"
 			},
 			{
 				id: 10,
@@ -355,6 +364,7 @@ export default [
 					"Participation may be individual or in groups of 2 or 3",
 				],
 				judging: [],
+				image: "Origami.png"
 			},
 			{
 				id: 12,
@@ -368,6 +378,7 @@ export default [
 					"No plagiarism ",
 				],
 				judging: [],
+				image: "picaso-no-oculus.png"
 			},
 		],
 	},

@@ -30,14 +30,6 @@ function App() {
 		const token = cookies.get("jwt");
 		if (token) {
 			setIsLoggedIn(true)
-			// axios({
-			// 	url: `${process.env.REACT_APP_SERVER}/users/getuser`,
-			// 	method: "GET",
-			// 	withCredentials: true,
-			// }).then((response) => {
-			// 	setUserInfo(response.data)
-			// }).catch((err) => console.log(err, 1))
-
 			axios.post(`${process.env.REACT_APP_SERVER}/users/getuser`, { 'jwt': token })
 				.then(function (response) {
 					if (response.data.status === "error")
@@ -80,7 +72,7 @@ function App() {
 					<Route path="/rulebook" element={<RulesRegulation />} />
 					<Route path="/payment" element={<Payment />} />
 					<Route path="/verifyOtp" element={<VerifyOTP />} />
-					<Route path="/accomodation" element={<Accomodation />} />
+					<Route path="/accomodation" element={<Accomodation isLoggedIn={isLoggedIn} userInfo={userInfo} />} />
 				</Routes>
 			</div>
 		</BrowserRouter>

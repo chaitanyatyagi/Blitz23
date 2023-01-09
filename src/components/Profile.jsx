@@ -8,9 +8,9 @@ export default function Profile({ userInfo, isLoggedIn }) {
     if (userInfo.events) {
         eventData = userInfo.events.map(x => {
             return <EventCard
-                name={x.eventName}
-                teamName={x.teamName}
-                nMembers={x.members}
+                name={x.eventName.name}
+            // teamName={x.teamName}
+            // nMembers={x.members}
             />
         })
     }

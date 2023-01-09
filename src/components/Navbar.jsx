@@ -37,7 +37,6 @@ function Navbar({ isLoggedIn }) {
                         <Link to="/" className="centertabs">HOME</Link>
                         <Link to="/events" className="centertabs">EVENTS</Link>
                         <Link to="/flagship-events" className="centertabs">FLAGSHIP EVENTS</Link>
-                        <Link to="/accomodation" className="centertabs">ACCOMODATION</Link>
                         <div>
                             <NavDropdown
                                 id="nav-dropdown-dark-example"
@@ -51,6 +50,7 @@ function Navbar({ isLoggedIn }) {
                                 <NavDropdown.Item><Link to="/rulebook" className="text-white">RULEBOOK</Link></NavDropdown.Item>
                                 {/* <NavDropdown.Item><Link className="text-white">HOSPITALITY</Link></NavDropdown.Item> */}
                                 <NavDropdown.Item><Link to="/contactus" className="text-white">OUR TEAM</Link></NavDropdown.Item>
+                                <NavDropdown.Item><Link to="/accomodation" className="text-white">HOSPITALITY</Link></NavDropdown.Item>
                             </NavDropdown>
                         </div>
                         {/* <div>

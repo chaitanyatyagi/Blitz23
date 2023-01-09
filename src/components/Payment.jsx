@@ -7,10 +7,8 @@ export default function Payment(props) {
     const [utr, setUtr] = React.useState("")
 
     function payment(e) {
-        console.log(utr)
         e.preventDefault()
-        console.log(props)
-        axios.post(`${process.env.REACT_APP_SERVER}/events/registration`, { eventName: props.eventName, userId: props.userId, utrId: utr, teamName: props.teamName, members: props.members, phone: props.phone, teamLeader: props.teamLeader, register: true })
+        axios.post(`${process.env.REACT_APP_SERVER}/events/registration`, { eventName: props.eventName, userId: props.userId, utrId: utr, teamName: props.teamName, members: props.members, phone: props.phone, teamLeader: props.teamLeader, register: props.register, day: props.day, packageName: props.packageName })
             .then(function (response) {
                 if (response.data.status === "error")
                     window.alert(response.data.message)

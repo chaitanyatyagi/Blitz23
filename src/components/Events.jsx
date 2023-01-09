@@ -8,10 +8,13 @@ import { Link, useNavigate } from "react-router-dom";
 import Payment from "./Payment";
 import axios from "axios";
 export default function Events(props) {
+	let register
+
+	// LOGIN POPUP -----
 	function login() {
 		if (!props.isLoggedIn) {
-			window.alert("Please Register/Login")
-			window.open("/register", "_self")
+			window.alert("Please login first.")
+			window.open("/login", "_self")
 		}
 		else {
 			setDispForm(true)
@@ -34,12 +37,15 @@ export default function Events(props) {
 
 	let y = 12;
 	let event = clubData[props.club].events[activeEvent - 1];
+
+	// QR CODE ----
 	const [qrcode, setQrcode] = React.useState(false)
 	const [path, setPath] = useState("");
 	let data
+
 	React.useEffect(() => {
 		if (event.name === "Ramba Samba" || event.name === "Blitz Got Talent" || event.name === "Battle of Bands" || event.name === "Panache") {
-			setPath(`/qrcode/flagship.jpeg`);
+			setPath(`/qrcode/600.jpeg`);
 			setQrcode(true)
 		}
 		else {
@@ -70,8 +76,11 @@ export default function Events(props) {
 			};
 		});
 	}
+
+	// SENDING REQUESTSS ----
 	function handleSubmit(e) {
 		e.preventDefault()
+		register = true
 		if (props.userInfo.college || !qrcode) {
 			axios.post(`${process.env.REACT_APP_SERVER}/events/registration`, { eventName: event.name, userId: props.userInfo._id, teamName: formData.teamName, members: formData.Nmembers, college: props.userInfo.college, phone: formData.phone, teamLeader: formData.teamLeader, register: true })
 				.then(function (response) {
@@ -92,7 +101,7 @@ export default function Events(props) {
 				phone: "",
 				teamName: "",
 				Nmembers: "",
-				teamLeader: true,
+				teamLeader: false,
 			});
 		}
 		else {
@@ -286,7 +295,7 @@ export default function Events(props) {
 				)}
 				{
 					dispPayment && (
-						<Payment eventName={event.name} userId={props.userInfo._id} setDispPayment={setDispPayment} path={path} qrcode={qrcode} data={data} members={formData.Nmembers} teamName={formData.teamName} phone={formData.phone} teamLeader={formData.teamLeader} />
+						<Payment eventName={event.name} userId={props.userInfo._id} setDispPayment={setDispPayment} path={path} qrcode={qrcode} data={data} members={formData.Nmembers} teamName={formData.teamName} phone={formData.phone} teamLeader={formData.teamLeader} register={register} />
 					)
 				}
 			</div>

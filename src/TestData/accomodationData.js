@@ -4,6 +4,8 @@ export default [
 		head: "Envision",
 		detail: "An envision pass allows you to take part in all of that day's club events. For eg if you take (Day 1) pass, you can take part in any of the club activities scheduled on that day (except flagship events & pronites).",
 		price: 200,
+		date: true,
+		flagship: true,
 	},
 	{
 		id: 1,
