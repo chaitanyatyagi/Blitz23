@@ -299,6 +299,7 @@
 	background-color: rgba(51, 51, 51);
 	padding: 5px;
 	border-radius: 10px;
+	z-index: 100;
 }
 .accomaodation-rules-float-cont > img {
 	width: 32px;
@@ -337,5 +338,26 @@
 	.accomodation-cards-left,
 	.accomodation-cards-right {
 		display: none;
+	}
+	.accomodation-form-popup {
+		justify-content: flex-start;
+	}
+	.row-wrapper {
+		flex-direction: column;
+		gap: 10px;
+		margin-bottom: 10px;
+	}
+	.accomodation-form-selectors {
+		flex-direction: row;
+		justify-content: space-between;
+		width: 100%;
+		gap: 5px;
+	}
+	.price-row-manager {
+		width: 100%;
+		justify-content: flex-start;
+	}
+	.accomodation-form-number-input {
+		width: fit-content;
 	}
 }

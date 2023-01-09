@@ -95,10 +95,10 @@ export default function Accomodation() {
 	return (
 		<div className="accomodation-root">
 			<Navbar />
+			<RulesFloat />
 			<div className="accomodation-container">
 				<div className="accomodation-details-page">
 					<div className="accomodation-head">Hospitality</div>
-					<RulesFloat />
 					<div className="accomodation-body">
 						Over the past years BLITZSCHLAG has had the privilege to have hosted a
 						number of sponsors which provided a very entertaining experience to our
