@@ -377,11 +377,21 @@
 
     .landingPg3left {
         width: 100%;
-        height: 70%;
+        height: 100%;
     }
 
     .landingPg3right {
-        width: 60%;
-        height: 30%;
+        width: 0%;
+        height: 0%;
+    }
+
+    .landingPg2left {
+        width: 100%;
+        height: 100%;
+    }
+
+    .landingPg2right {
+        width: 0%;
+        height: 0%;
     }
 }
