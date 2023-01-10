@@ -140,7 +140,7 @@ export default [
 			},
 			{
 				id: 2,
-				name: "Voice Change",
+				name: "Voice Choice",
 				description: "The Music Club will organize the Solo Singing competition.",
 				rules: [
 					"Entries will be accepted through a google form for all the performances.",
@@ -174,7 +174,7 @@ export default [
 			},
 			{
 				id: 1,
-				name: "Art Exibition",
+				name: "Art Exhibition",
 				description:
 					"The Art Exhibition is a display of different kinds of paintings from previous events organized by the Creative Arts Club.",
 				rules: [
@@ -393,7 +393,7 @@ export default [
 			{
 				id: 0,
 				name: "Hit the Street",
-				description: "",
+				description: "It is an inter-college dance battle that the dance club will organize.",
 				rules: [
 					"The participating teams will have to register themselves via the registration link of the event. ",
 					"Share a video of your performance (30-40 seconds) in the registration form. ",
@@ -410,7 +410,7 @@ export default [
 			{
 				id: 1,
 				name: "Break Free",
-				description: "",
+				description: "It is a solo freestyle dance competition that is organized by a dance club. (All the dance forms included)",
 				rules: [
 					"The participants need to register themselves through the registration link of the event.",
 					"They have to upload a short video of their performance (up to 30 seconds) in the registration form.",
@@ -425,7 +425,7 @@ export default [
 			{
 				id: 2,
 				name: "Catch the Hook Step",
-				description: "",
+				description: "Catch the hook step is organized by the Dance club MNIT in which the performer performs the steps(Hook Steps) of famous songs and the audience has to judge that.",
 				rules: [
 					"There will be on-the-spot registration for this event. ",
 					"Two participants at a time will perform the hook step of the series of songs.",
@@ -454,7 +454,7 @@ export default [
 			{
 				id: 0,
 				name: "Clashing Views",
-				description: "",
+				description: "Debate competition organized by the debating club.",
 				rules: [
 					"Initially each speaker will be given a time limit of 3 minutes for expressing their views.",
 					"After everyone completes their speaking, they will be divided into two groups- one for the topic and one against the topic.",
@@ -475,7 +475,7 @@ export default [
 			{
 				id: 0,
 				name: "Rangbhoomi",
-				description: "",
+				description: "Life is a theater set in which there are but few practicable entrances. We all have been dramatic in our life, acting in each emotion; be it love, hate, anger, or joy. Now it's time for you to put some life on stage - Life that is created by a writer, managed by a director, and lived by an actor. It's not only about acting, script, dialogues, and lights; rather, it's about you living that character on stage that brings life to the audience. It is organized by the Dramatics club.",
 				rules: [],
 				judging: [],
 				image: "DRAMACLUB/RANGBHOOMI.png",
@@ -483,7 +483,7 @@ export default [
 			{
 				id: 1,
 				name: "Movie screening",
-				description: "",
+				description: "The dramatics club showcases a drama documentary.",
 				rules: [],
 				judging: [],
 				image: "DRAMACLUB/MovieScreening.png",
@@ -499,7 +499,7 @@ export default [
 			{
 				id: 3,
 				name: "Monologue competiton",
-				description: "",
+				description: "Competition in which a solo performer performs the whole show through various characters played by him/her.",
 				rules: [],
 				judging: [],
 				image: "DRAMACLUB/MONOLOGUE.png",
@@ -558,27 +558,20 @@ export default [
 			{
 				id: 0,
 				name: "MNIT Film Festival",
-				description: "",
+				description: "International short film-making competition is a 4-day long event organized by the Film Making Club.",
 				rules: [],
 				judging: [],
 			},
 			{
 				id: 1,
 				name: "Show a reel",
-				description: "",
+				description: "The participants will have to make reels during various Blitzschlag events showcasing the beauty of this fest, organized by the filmmaking club.",
 				rules: [],
 				judging: [],
 			},
 			{
 				id: 2,
 				name: "Celebrity Show up",
-				description: "",
-				rules: [],
-				judging: [],
-			},
-			{
-				id: 3,
-				name: "Boomerang",
 				description: "",
 				rules: [],
 				judging: [],
@@ -594,14 +587,7 @@ export default [
 			{
 				id: 0,
 				name: "Arz kiya hai",
-				description: "",
-				rules: [],
-				judging: [],
-			},
-			{
-				id: 1,
-				name: "Hindi Vad Vivad",
-				description: "",
+				description: "Shayari Competition organized by the Poetry Club.",
 				rules: [],
 				judging: [],
 			},
@@ -617,7 +603,7 @@ export default [
 			{
 				id: 0,
 				name: "Hustle n Bustle",
-				description: "",
+				description: "The Music Club organized the beatboxing competition.",
 				rules: [],
 				judging: [],
 				image: "MUSICCLUB/HustleBustle.png",
@@ -625,7 +611,7 @@ export default [
 			{
 				id: 1,
 				name: "Gungunaate Chalo",
-				description: "",
+				description: "20 sec. The background music of a song will be played, and the participant has to continue the song. It is organized by the Music Club.",
 				rules: [],
 				judging: [],
 				image: "MUSICCLUB/GungunateChalo.png",
@@ -633,14 +619,14 @@ export default [
 			{
 				id: 2,
 				name: "Jamming Session",
-				description: "",
+				description: "A fun music event consisting of singing & instrumentals organized by the Music Club.",
 				rules: [],
 				judging: [],
 			},
 			{
 				id: 3,
 				name: "Dhun",
-				description: "",
+				description: "Instrumental Music competition organized by Music Club.",
 				rules: [],
 				judging: [],
 				image: "MUSICCLUB/Dhun.png",
@@ -648,7 +634,7 @@ export default [
 			{
 				id: 4,
 				name: "Voice Choice",
-				description: "",
+				description: "The Music Club will organize the Solo Singing competition.",
 				rules: [],
 				judging: [],
 				image: "MUSICCLUB/VoiceChoice.png",
@@ -665,7 +651,7 @@ export default [
 			{
 				id: 0,
 				name: "Moments",
-				description: "",
+				description: "International level Photography competition & exhibition is a 4-day long event organized by the Photography club.",
 				rules: [],
 				judging: [],
 			},
@@ -680,7 +666,7 @@ export default [
 			{
 				id: 2,
 				name: "PicSaga",
-				description: "",
+				description: "It is a competition in which participants will depict a story from the set of images clicked, which will be arranged in chronological order and organized by the photography club.",
 				rules: [],
 				judging: [],
 				image: "PHOTOGRAPHYCLUB/PicSaga.png",
@@ -688,7 +674,7 @@ export default [
 			{
 				id: 3,
 				name: "Snip & Stitch",
-				description: "",
+				description: "You will be given 4-5 photos, and using Adobe Photoshop, you have to make one singular meaningful photo, merging all the given photos. It is organized by the Photography Club.",
 				rules: [],
 				judging: [],
 				image: "PHOTOGRAPHYCLUB/SnipStitch.png",
@@ -713,17 +699,10 @@ export default [
 			{
 				id: 0,
 				name: "Arz kiya hai",
-				description: "",
+				description: "Shayari Competition organized by the Poetry Club.",
 				rules: [],
 				judging: [],
 				image: "POETRYCLUB/ArzKiyaHai.png",
-			},
-			{
-				id: 1,
-				name: "Battle of Shayar",
-				description: "",
-				rules: [],
-				judging: [],
 			},
 		],
 	},
@@ -757,7 +736,7 @@ export default [
 			{
 				id: 0,
 				name: "Youth Parliament",
-				description: "",
+				description: "Replica of parliament as done by the government. It is a debating contest organized by the Electoral Literacy Club.",
 				rules: [],
 				judging: [],
 			},
@@ -772,56 +751,56 @@ export default [
 			{
 				id: 0,
 				name: "Qryptic Quest",
-				description: "",
+				description: "Unlock your inner Sherlock to solve puzzles, answer riddles, find the hidden objects, and more of the like in this event.",
 				rules: [],
 				judging: [],
 			},
 			{
 				id: 1,
 				name: "22 Yards",
-				description: "",
+				description: "This competition comprises 2 rounds, Round 1 is a quiz based on IPL. Teams clearing this round will proceed to round 2, Round 2 is an auction round that mimics the actual IPL Auction that is held on the next day.",
 				rules: [],
 				judging: [],
 			},
 			{
 				id: 2,
 				name: "Bharat Darshan",
-				description: "",
+				description: "Quiz competition based on the intangible and tangible heritage of India. The questions would encompass built heritage, performing arts, crafts, and natural heritage of India.",
 				rules: [],
 				judging: [],
 			},
 			{
 				id: 3,
 				name: "Flix and Chill",
-				description: "",
+				description: "A fun and unconventional quiz competition based on web series, TV shows, Hollywood, Bollywood, and regional cinema.",
 				rules: [],
 				judging: [],
 			},
 			{
 				id: 4,
 				name: "Quiz Pro Quo",
-				description: "",
+				description: "A pot-pourri of everyone’s favourite trivia shows like Bournvita Quiz Contest, Kaun Banega Crorepati, and Jeopardy, this event is a multi-round general knowledge quiz competition.",
 				rules: [],
 				judging: [],
 			},
 			{
 				id: 5,
 				name: "What's on your bookshelf ?",
-				description: "",
+				description: "Quiz competition based on all-time works of literature from Shakespeare to JK Rowling and everything in between.",
 				rules: [],
 				judging: [],
 			},
 			{
 				id: 6,
 				name: "Around the world in 80 questions",
-				description: "",
+				description: "A world tour masquerading as a travel quiz.",
 				rules: [],
 				judging: [],
 			},
 			{
 				id: 7,
 				name: "Hello Mr.Husk",
-				description: "",
+				description: "A quiz that tests your knowledge from the world of Business. Questions will be based on business news and events, trade, commerce, and finance.",
 				rules: [],
 				judging: [],
 			},
@@ -897,21 +876,6 @@ export default [
 			{
 				id: 4,
 				name: "Interactive Surveys and Polls",
-				description: "",
-				rules: [],
-				judging: [],
-			},
-		],
-	},
-	{
-		id: 19,
-		title: "NSS",
-		description:
-			"The overall aim of National Service Scheme is to give an extension dimension to the higher education system and orient the student youth to community service while they are studying in educational institution. It is necessary to arouse the social conscience of the students, and to provide them an opportunity to work with the people who are in need of basic necessities of life. This will expose them to the realities of life and bring about a change in their social perception. Various activities can be adult school, coaching for poor and slum students, education of the deprived communities about their rights and the government schemes for their upliftment, distribution of leftover food to the deprived community, creating self-employment for them, encouraging child education, women empowerment, women upliftment etc.",
-		events: [
-			{
-				id: 0,
-				name: "Draw for Cause",
 				description: "",
 				rules: [],
 				judging: [],
