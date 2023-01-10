@@ -44,8 +44,12 @@ export default function Events(props) {
 	const [register, setRegister] = React.useState(false)
 
 	React.useEffect(() => {
-		if (event.name === "Ramba Samba" || event.name === "Blitz Got Talent" || event.name === "Battle of Bands" || event.name === "Panache") {
+		if (event.name === "Ramba Samba" || event.name === "Panache") {
 			setPath(`/qrcode/600.jpeg`);
+			setQrcode(true)
+		}
+		else if (event.name === "Blitz Got Talent" || event.name === "Battle of Bands") {
+			setPath(`/qrcode/450.jpeg`);
 			setQrcode(true)
 		}
 		else {
