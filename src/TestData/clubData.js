@@ -86,7 +86,7 @@ export default [
 					"Stage presence",
 				],
 				image: "battleOfBands.png",
-				price: 600,
+				price: 450,
 			},
 			{
 				id: 3,
@@ -96,7 +96,7 @@ export default [
 				rules: [],
 				judging: [],
 				image: "blitzGotTalent.png",
-				price: 600,
+				price: 450,
 			},
 		],
 	},
