@@ -122,6 +122,7 @@ export default [
 					"The organizing committee reserves the right to make any last-minute change to the rules.",
 				],
 				judging: [],
+				image: "MUSICCLUB/Nrityanjali.png",
 			},
 			{
 				id: 1,
@@ -150,6 +151,7 @@ export default [
 					"Judges’ decision will decide the winner.",
 				],
 				judging: [],
+				image: "MUSICCLUB/VoiceChoice.png",
 			},
 		],
 	},
@@ -393,7 +395,8 @@ export default [
 			{
 				id: 0,
 				name: "Hit the Street",
-				description: "It is an inter-college dance battle that the dance club will organize.",
+				description:
+					"It is an inter-college dance battle that the dance club will organize.",
 				rules: [
 					"The participating teams will have to register themselves via the registration link of the event. ",
 					"Share a video of your performance (30-40 seconds) in the registration form. ",
@@ -406,11 +409,13 @@ export default [
 					"The decision of judges will be final.",
 				],
 				judging: [],
+				image: "DANCECLUB/HitTheStreet.png",
 			},
 			{
 				id: 1,
 				name: "Break Free",
-				description: "It is a solo freestyle dance competition that is organized by a dance club. (All the dance forms included)",
+				description:
+					"It is a solo freestyle dance competition that is organized by a dance club. (All the dance forms included)",
 				rules: [
 					"The participants need to register themselves through the registration link of the event.",
 					"They have to upload a short video of their performance (up to 30 seconds) in the registration form.",
@@ -421,11 +426,13 @@ export default [
 					"The decision of the judges will be final",
 				],
 				judging: [],
+				image: "DANCECLUB/BREAKFREE.png",
 			},
 			{
 				id: 2,
 				name: "Catch the Hook Step",
-				description: "Catch the hook step is organized by the Dance club MNIT in which the performer performs the steps(Hook Steps) of famous songs and the audience has to judge that.",
+				description:
+					"Catch the hook step is organized by the Dance club MNIT in which the performer performs the steps(Hook Steps) of famous songs and the audience has to judge that.",
 				rules: [
 					"There will be on-the-spot registration for this event. ",
 					"Two participants at a time will perform the hook step of the series of songs.",
@@ -446,7 +453,7 @@ export default [
 	},
 	{
 		id: 4,
-		image: "debate.png",
+		image: "debate.jpg",
 		title: "Debating Club",
 		description:
 			"The Debating Club is established with the main purpose of providing students with a platform to share views and discuss topics that interest them. It also gives them an opportunity to enhance interpersonal skills, social skills and and communication skills.",
@@ -475,7 +482,8 @@ export default [
 			{
 				id: 0,
 				name: "Rangbhoomi",
-				description: "Life is a theater set in which there are but few practicable entrances. We all have been dramatic in our life, acting in each emotion; be it love, hate, anger, or joy. Now it's time for you to put some life on stage - Life that is created by a writer, managed by a director, and lived by an actor. It's not only about acting, script, dialogues, and lights; rather, it's about you living that character on stage that brings life to the audience. It is organized by the Dramatics club.",
+				description:
+					"Life is a theater set in which there are but few practicable entrances. We all have been dramatic in our life, acting in each emotion; be it love, hate, anger, or joy. Now it's time for you to put some life on stage - Life that is created by a writer, managed by a director, and lived by an actor. It's not only about acting, script, dialogues, and lights; rather, it's about you living that character on stage that brings life to the audience. It is organized by the Dramatics club.",
 				rules: [],
 				judging: [],
 				image: "DRAMACLUB/RANGBHOOMI.png",
@@ -491,15 +499,18 @@ export default [
 			{
 				id: 2,
 				name: "Tamasha",
-				description: "It is a nukkad natak competition where all colleges will come up with their respective teams, organized by Drama Club.",
+				description:
+					"It is a nukkad natak competition where all colleges will come up with their respective teams, organized by Drama Club.",
 				rules: [],
 				judging: [],
+				image: "DRAMACLUB/Tamasha.png",
 				price: 200,
 			},
 			{
 				id: 3,
 				name: "Monologue competiton",
-				description: "Competition in which a solo performer performs the whole show through various characters played by him/her.",
+				description:
+					"Competition in which a solo performer performs the whole show through various characters played by him/her.",
 				rules: [],
 				judging: [],
 				image: "DRAMACLUB/MONOLOGUE.png",
@@ -558,23 +569,27 @@ export default [
 			{
 				id: 0,
 				name: "MNIT Film Festival",
-				description: "International short film-making competition is a 4-day long event organized by the Film Making Club.",
+				description:
+					"International short film-making competition is a 4-day long event organized by the Film Making Club.",
 				rules: [],
 				judging: [],
+				image: "FILM/FilmFestival.png",
 			},
 			{
 				id: 1,
 				name: "Show a reel",
-				description: "The participants will have to make reels during various Blitzschlag events showcasing the beauty of this fest, organized by the filmmaking club.",
+				description:
+					"The participants will have to make reels during various Blitzschlag events showcasing the beauty of this fest, organized by the filmmaking club.",
 				rules: [],
 				judging: [],
 			},
 			{
 				id: 2,
-				name: "Celebrity Show up",
+				name: "Celebrity Show Off",
 				description: "",
 				rules: [],
 				judging: [],
+				image: "FILM/Celebrity.png",
 			},
 		],
 	},
@@ -590,6 +605,7 @@ export default [
 				description: "Shayari Competition organized by the Poetry Club.",
 				rules: [],
 				judging: [],
+				image: "POETRYCLUB / ArzKiyaHai.png",
 			},
 		],
 	},
@@ -611,7 +627,8 @@ export default [
 			{
 				id: 1,
 				name: "Gungunaate Chalo",
-				description: "20 sec. The background music of a song will be played, and the participant has to continue the song. It is organized by the Music Club.",
+				description:
+					"20 sec. The background music of a song will be played, and the participant has to continue the song. It is organized by the Music Club.",
 				rules: [],
 				judging: [],
 				image: "MUSICCLUB/GungunateChalo.png",
@@ -619,7 +636,8 @@ export default [
 			{
 				id: 2,
 				name: "Jamming Session",
-				description: "A fun music event consisting of singing & instrumentals organized by the Music Club.",
+				description:
+					"A fun music event consisting of singing & instrumentals organized by the Music Club.",
 				rules: [],
 				judging: [],
 			},
@@ -651,14 +669,16 @@ export default [
 			{
 				id: 0,
 				name: "Moments",
-				description: "International level Photography competition & exhibition is a 4-day long event organized by the Photography club.",
+				description:
+					"International level Photography competition & exhibition is a 4-day long event organized by the Photography club.",
 				rules: [],
 				judging: [],
 			},
 			{
 				id: 1,
 				name: "Bhaavna",
-				description: "Bhavana is a photography competition that is based on capturing emotions during the whole fest. The photography club will organize this event",
+				description:
+					"Bhavana is a photography competition that is based on capturing emotions during the whole fest. The photography club will organize this event",
 				rules: [],
 				judging: [],
 				price: 200,
@@ -666,7 +686,8 @@ export default [
 			{
 				id: 2,
 				name: "PicSaga",
-				description: "It is a competition in which participants will depict a story from the set of images clicked, which will be arranged in chronological order and organized by the photography club.",
+				description:
+					"It is a competition in which participants will depict a story from the set of images clicked, which will be arranged in chronological order and organized by the photography club.",
 				rules: [],
 				judging: [],
 				image: "PHOTOGRAPHYCLUB/PicSaga.png",
@@ -674,7 +695,8 @@ export default [
 			{
 				id: 3,
 				name: "Snip & Stitch",
-				description: "You will be given 4-5 photos, and using Adobe Photoshop, you have to make one singular meaningful photo, merging all the given photos. It is organized by the Photography Club.",
+				description:
+					"You will be given 4-5 photos, and using Adobe Photoshop, you have to make one singular meaningful photo, merging all the given photos. It is organized by the Photography Club.",
 				rules: [],
 				judging: [],
 				image: "PHOTOGRAPHYCLUB/SnipStitch.png",
@@ -736,9 +758,11 @@ export default [
 			{
 				id: 0,
 				name: "Youth Parliament",
-				description: "Replica of parliament as done by the government. It is a debating contest organized by the Electoral Literacy Club.",
+				description:
+					"Replica of parliament as done by the government. It is a debating contest organized by the Electoral Literacy Club.",
 				rules: [],
 				judging: [],
+				image: "ELA/YouthParliament.png",
 			},
 		],
 	},
@@ -751,42 +775,48 @@ export default [
 			{
 				id: 0,
 				name: "Qryptic Quest",
-				description: "Unlock your inner Sherlock to solve puzzles, answer riddles, find the hidden objects, and more of the like in this event.",
+				description:
+					"Unlock your inner Sherlock to solve puzzles, answer riddles, find the hidden objects, and more of the like in this event.",
 				rules: [],
 				judging: [],
 			},
 			{
 				id: 1,
 				name: "22 Yards",
-				description: "This competition comprises 2 rounds, Round 1 is a quiz based on IPL. Teams clearing this round will proceed to round 2, Round 2 is an auction round that mimics the actual IPL Auction that is held on the next day.",
+				description:
+					"This competition comprises 2 rounds, Round 1 is a quiz based on IPL. Teams clearing this round will proceed to round 2, Round 2 is an auction round that mimics the actual IPL Auction that is held on the next day.",
 				rules: [],
 				judging: [],
 			},
 			{
 				id: 2,
 				name: "Bharat Darshan",
-				description: "Quiz competition based on the intangible and tangible heritage of India. The questions would encompass built heritage, performing arts, crafts, and natural heritage of India.",
+				description:
+					"Quiz competition based on the intangible and tangible heritage of India. The questions would encompass built heritage, performing arts, crafts, and natural heritage of India.",
 				rules: [],
 				judging: [],
 			},
 			{
 				id: 3,
 				name: "Flix and Chill",
-				description: "A fun and unconventional quiz competition based on web series, TV shows, Hollywood, Bollywood, and regional cinema.",
+				description:
+					"A fun and unconventional quiz competition based on web series, TV shows, Hollywood, Bollywood, and regional cinema.",
 				rules: [],
 				judging: [],
 			},
 			{
 				id: 4,
 				name: "Quiz Pro Quo",
-				description: "A pot-pourri of everyone’s favourite trivia shows like Bournvita Quiz Contest, Kaun Banega Crorepati, and Jeopardy, this event is a multi-round general knowledge quiz competition.",
+				description:
+					"A pot-pourri of everyone’s favourite trivia shows like Bournvita Quiz Contest, Kaun Banega Crorepati, and Jeopardy, this event is a multi-round general knowledge quiz competition.",
 				rules: [],
 				judging: [],
 			},
 			{
 				id: 5,
 				name: "What's on your bookshelf ?",
-				description: "Quiz competition based on all-time works of literature from Shakespeare to JK Rowling and everything in between.",
+				description:
+					"Quiz competition based on all-time works of literature from Shakespeare to JK Rowling and everything in between.",
 				rules: [],
 				judging: [],
 			},
@@ -800,7 +830,8 @@ export default [
 			{
 				id: 7,
 				name: "Hello Mr.Husk",
-				description: "A quiz that tests your knowledge from the world of Business. Questions will be based on business news and events, trade, commerce, and finance.",
+				description:
+					"A quiz that tests your knowledge from the world of Business. Questions will be based on business news and events, trade, commerce, and finance.",
 				rules: [],
 				judging: [],
 			},
