@@ -8,11 +8,10 @@ export default function VerifyOTP() {
     async function handleSubmit(e) {
         e.preventDefault();
         let name = e.target[0].value
-        let password = e.target[2].value
         let email = e.target[1].value;
-        let otp = e.target[3].value
+        let otp = e.target[2].value
         axios.post(`${process.env.REACT_APP_SERVER}/users/verifyOtp`, {
-            password, name, email, otp
+            name, email, otp,
         })
             .then(function (response) {
                 if (response.data.status === "error") {
@@ -40,16 +39,13 @@ export default function VerifyOTP() {
                     <image src={formCorner} className="bottom-left"></image>
                     <h1 className="form-heading">Verify OTP</h1>
                     <input
-                        className='form-feilds' placeholder='name' name="name">
+                        className='form-feilds' placeholder='name' name="name" required="true">
                     </input>
                     <input
-                        className='form-feilds' placeholder='EMAIL' type="email" name="EMAIL">
+                        className='form-feilds' placeholder='EMAIL' type="email" name="EMAIL" required="true">
                     </input>
                     <input
-                        className='form-feilds' placeholder='PASSWORD' type="password" name="PASSWORD">
-                    </input>
-                    <input
-                        className='form-feilds' placeholder='OTP' type="number" name="OTP">
+                        className='form-feilds' placeholder='OTP' type="number" name="OTP" required="true">
                     </input>
                     <button className="form-submit">Verify</button>
                 </form>

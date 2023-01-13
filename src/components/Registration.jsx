@@ -13,11 +13,13 @@ export default function Registration() {
         let name = e.target[0].value
         let email = e.target[1].value;
         let password = e.target[2].value;
+        let phone = e.target[3].value
+        let instituteId = e.target[4].value
         const indx = email.indexOf('@')
         const string = email.substr(indx + 1, email.length)
         if (string === 'mnit.ac.in' || string === 'iiitkota.ac.in') {
             axios.post(`${process.env.REACT_APP_SERVER}/users/register`, {
-                name, email, password
+                name, email, password, phone, instituteId
             })
                 .then(function (response) {
                     console.log(response);
@@ -25,6 +27,7 @@ export default function Registration() {
                         window.alert(response.data.message)
                     }
                     else {
+                        window.alert("OTP has been sent to this email !")
                         window.open("/verifyOtp", "_self")
                     }
                 })
@@ -74,6 +77,12 @@ export default function Registration() {
                     </input>
                     <input
                         className='form-feilds' placeholder='password' type="password" name="password">
+                    </input>
+                    <input
+                        className='form-feilds' placeholder='PHONE NUMBER' name="PHONENO">
+                    </input>
+                    <input
+                        className='form-feilds' placeholder='INSTITUTE ID' name="INSTITUTEID">
                     </input>
                     <Link to="/login" className="forgot-pass">Already Registered ? Login</Link>
                     <button className="form-submit">Register</button>
