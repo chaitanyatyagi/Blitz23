@@ -1,8 +1,6 @@
 import React from "react";
 import clubData from "../TestData/clubData";
 import "../style/Club.css";
-import Popup from "reactjs-popup";
-import "reactjs-popup/dist/index.css";
 
 export default function ClubBarCards(props) {
 	const [over, setOver] = React.useState(false);

@@ -8,15 +8,13 @@ import { Link, useNavigate } from "react-router-dom";
 import Payment from "./Payment";
 import axios from "axios";
 export default function Events(props) {
-
 	// LOGIN POPUP -----
 	function login() {
 		if (!props.isLoggedIn) {
-			window.alert("Please login first.")
-			window.open("/login", "_self")
-		}
-		else {
-			setDispForm(true)
+			window.alert("Please login first.");
+			window.open("/login", "_self");
+		} else {
+			setDispForm(true);
 		}
 	}
 	const navigate = useNavigate();
@@ -32,31 +30,28 @@ export default function Events(props) {
 	});
 	const [activeEvent, setActiveEvent] = React.useState(1);
 	const [dispForm, setDispForm] = React.useState(false);
-	const [dispPayment, setDispPayment] = React.useState(false)
-
+	const [dispPayment, setDispPayment] = React.useState(false);
 	let y = 12;
 	let event = clubData[props.club].events[activeEvent - 1];
 
 	// QR CODE ----
-	const [qrcode, setQrcode] = React.useState(false)
+	const [qrcode, setQrcode] = React.useState(false);
 	const [path, setPath] = useState("");
-	let data
-	const [register, setRegister] = React.useState(false)
+	let data;
+	const [register, setRegister] = React.useState(false);
 
 	React.useEffect(() => {
 		if (event.name === "Ramba Samba" || event.name === "Panache") {
 			setPath(`/qrcode/600.jpeg`);
-			setQrcode(true)
-		}
-		else if (event.name === "Blitz Got Talent" || event.name === "Battle of Bands") {
+			setQrcode(true);
+		} else if (event.name === "Blitz Got Talent" || event.name === "Battle of Bands") {
 			setPath(`/qrcode/450.jpeg`);
-			setQrcode(true)
+			setQrcode(true);
+		} else {
+			data = "Right now not accepting payment";
+			setQrcode(false);
 		}
-		else {
-			data = "Right now not accepting payment"
-			setQrcode(false)
-		}
-	}, [event])
+	}, [event]);
 	let rulesDisp = event.rules.map((x, i) => {
 		return (
 			<li>
@@ -83,13 +78,23 @@ export default function Events(props) {
 
 	// SENDING REQUESTSS ----
 	function handleSubmit(e) {
-		e.preventDefault()
-		setRegister(true)
+		e.preventDefault();
+		setRegister(true);
 		if (props.userInfo.college || !qrcode) {
-			axios.post(`${process.env.REACT_APP_SERVER}/events/registration`, { eventName: event.name, userId: props.userInfo._id, teamName: formData.teamName, members: formData.Nmembers, college: props.userInfo.college, phone: formData.phone, teamLeader: formData.teamLeader, register: true, InstituteId: formData.InstituteId })
+			axios
+				.post(`${process.env.REACT_APP_SERVER}/events/registration`, {
+					eventName: event.name,
+					userId: props.userInfo._id,
+					teamName: formData.teamName,
+					members: formData.Nmembers,
+					college: props.userInfo.college,
+					phone: formData.phone,
+					teamLeader: formData.teamLeader,
+					register: true,
+					InstituteId: formData.InstituteId,
+				})
 				.then(function (response) {
-					if (response.data.status === "error")
-						window.alert(response.data.message)
+					if (response.data.status === "error") window.alert(response.data.message);
 					else {
 						window.alert("registration successfull");
 					}
@@ -107,9 +112,8 @@ export default function Events(props) {
 				Nmembers: "",
 				teamLeader: false,
 			});
-		}
-		else {
-			setDispPayment(true)
+		} else {
+			setDispPayment(true);
 		}
 		setDispForm(false);
 	}
@@ -165,7 +169,6 @@ export default function Events(props) {
 							>
 								REGISTER
 							</Link>
-
 						</div>
 					</div>
 					<div className="events-card-routed-container">
@@ -199,7 +202,7 @@ export default function Events(props) {
 										placeholder="Name of Participant"
 										name="name"
 										value={props.userInfo.name}
-										onChange={() => { }}
+										onChange={() => {}}
 										required={true}
 									/>
 									<input
@@ -217,7 +220,7 @@ export default function Events(props) {
 										placeholder="BlitzID"
 										name="blitzID"
 										value={props.userInfo.blitzId}
-										onChange={() => { }}
+										onChange={() => {}}
 										required={true}
 									/>
 									<input
@@ -270,24 +273,30 @@ export default function Events(props) {
 										/>
 									</div>
 								</div>
-								<div className="events-form-check-row">Note: Please mention "None" in Team Name if this is an Individual Event and 1 as number of Team Members.</div>
-								<div className="events-form-check-row">Note: Choose your Package wisely. We'll Suggest you to take a glimpse at our combo packages(Optica and Mirage) to avail exciting discounts. For reference visit: blitzschlag.co.in/accomodation .</div>
+								<div className="events-form-check-row">
+									Note: Please mention "None" in Team Name if this is an
+									Individual Event and 1 as number of Team Members.
+								</div>
+								<div className="events-form-check-row">
+									Note: Choose your Package wisely. We'll Suggest you to take a
+									glimpse at our combo packages(Optica and Mirage) to avail
+									exciting discounts. For reference visit:
+									blitzschlag.co.in/accomodation .
+								</div>
 								<div className="row-wrapper-4">
 									<input
 										className="events-form-text-input"
 										value={`Price : ${event.price ? event.price : "--"}`}
 									/>
-									{
-										qrcode && !props.userInfo.college ? <button
-											className="event-link-remover event-card-register-link"
-										>
+									{qrcode && !props.userInfo.college ? (
+										<button className="event-link-remover event-card-register-link">
 											PAY NOW
-										</button> : <button
-											className="event-link-remover event-card-register-link"
-										>
+										</button>
+									) : (
+										<button className="event-link-remover event-card-register-link">
 											SUBMIT
 										</button>
-									}
+									)}
 									<Link
 										className="event-link-remover event-card-register-link"
 										onClick={handleClose}
@@ -299,11 +308,22 @@ export default function Events(props) {
 						</div>
 					</form>
 				)}
-				{
-					dispPayment && (
-						<Payment eventName={event.name} userId={props.userInfo._id} setDispPayment={setDispPayment} path={path} qrcode={qrcode} data={data} members={formData.Nmembers} teamName={formData.teamName} phone={formData.phone} teamLeader={formData.teamLeader} register={register} InstitudeId={formData.InstitudeId} />
-					)
-				}
+				{dispPayment && (
+					<Payment
+						eventName={event.name}
+						userId={props.userInfo._id}
+						setDispPayment={setDispPayment}
+						path={path}
+						qrcode={qrcode}
+						data={data}
+						members={formData.Nmembers}
+						teamName={formData.teamName}
+						phone={formData.phone}
+						teamLeader={formData.teamLeader}
+						register={register}
+						InstitudeId={formData.InstitudeId}
+					/>
+				)}
 			</div>
 		</div>
 	);

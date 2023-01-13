@@ -203,13 +203,21 @@
 	.club-info-link {
 		font-size: 0.7rem;
 	}
+	.club-bar-card-name {
+		display: none;
+	}
 }
 @media (max-width: 760px) {
 	.club-side-bar {
 		display: none;
 	}
 	.club-bar {
-		justify-content: space-evenly;
-		flex-wrap: wrap;
+		display: grid;
+		grid-template-columns: repeat(7, 1fr);
+		padding: 5px;
+	}
+	.club-bar-card-active,
+	.club-bar-card-inactive {
+		margin: 0px;
 	}
 }
