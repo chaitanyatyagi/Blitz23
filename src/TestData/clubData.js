@@ -32,7 +32,7 @@ export default [
 					"Energy Level",
 					"Creativity and overall effects",
 				],
-				image: "rambaSamba.png",
+				image: "rambaSamba.webp",
 				price: 600,
 			},
 			{
@@ -55,7 +55,7 @@ export default [
 					"The organizing committee reserves the right to make any last-minute change to the rules.",
 				],
 				judging: ["Costumes", "Theme", "Walking stance", "Attitude", "Tagline"],
-				image: "panache.png",
+				image: "panache.webp",
 				price: 600,
 			},
 			{
@@ -85,7 +85,7 @@ export default [
 					"Audience reaction",
 					"Stage presence",
 				],
-				image: "battleOfBands.png",
+				image: "battleOfBands.webp",
 				price: 450,
 			},
 			{
@@ -95,14 +95,14 @@ export default [
 					"Talent hunt competition- where the participants will showcase their unique talents in various fields. It is organized by the Cultural Society.",
 				rules: [],
 				judging: [],
-				image: "blitzGotTalent.png",
+				image: "blitzGotTalent.webp",
 				price: 450,
 			},
 		],
 	},
 	{
 		id: 1,
-		image: "classicalMusicAndDance.png",
+		image: "classicalMusicAndDance.webp",
 		title: "Classical Music and Dance Club",
 		description:
 			"The classical music and dance club provides a nurturing and conducive community for musicians and dancers.Our target is to create a space for students where they can discuss music and dance and showcase their talents,while learing important organizational skills.Its a place for anyone who wishes to learn various artforms and even refine it.",
@@ -122,7 +122,7 @@ export default [
 					"The organizing committee reserves the right to make any last-minute change to the rules.",
 				],
 				judging: [],
-				image: "MUSICCLUB/Nrityanjali.png",
+				image: "MUSICCLUB/Nrityanjali.webp",
 			},
 			{
 				id: 1,
@@ -137,7 +137,7 @@ export default [
 					"If entrants in one category (like guitar, piano,etc) exceeds a certain number there may be multiple awards",
 				],
 				judging: [],
-				image: "MUSICCLUB/Dhun.png",
+				image: "MUSICCLUB/Dhun.webp",
 			},
 			{
 				id: 2,
@@ -151,13 +151,13 @@ export default [
 					"Judges’ decision will decide the winner.",
 				],
 				judging: [],
-				image: "MUSICCLUB/VoiceChoice.png",
+				image: "MUSICCLUB/VoiceChoice.webp",
 			},
 		],
 	},
 	{
 		id: 2,
-		image: "creativeArts.png",
+		image: "creativeArts.webp",
 		title: "Creative Arts Club",
 		description:
 			"Our club aims to bring a busy student life to peace with art. This field is not limited to drawing or painting, but it is also about other avenues where you don't need to be a master but an enthusiast and create something with your imagination.This club regularly holds art competitions on various occasions. We also organize workshops for students to learn and share their prowess in different aspects of art.",
@@ -172,7 +172,7 @@ export default [
 					"The best 3 entries of doodle will receive prizes.",
 				],
 				judging: ["Best representation of the theme chosen"],
-				image: "CREATIVEARTS/Motif-filion.png",
+				image: "CREATIVEARTS/Motif-filion.webp",
 			},
 			{
 				id: 1,
@@ -189,7 +189,7 @@ export default [
 					"If Physical Painting or model is not possible for the submission, then Photographs will be allowed only upon the coordinator's approval and verification.",
 				],
 				judging: [],
-				image: "CREATIVEARTS/ArtExhibition.png",
+				image: "CREATIVEARTS/ArtExhibition.webp",
 			},
 			{
 				id: 2,
@@ -207,7 +207,7 @@ export default [
 					"Time and materials will be limited to all. ",
 				],
 				judging: [],
-				image: "CREATIVEARTS/LineArt.png",
+				image: "CREATIVEARTS/LineArt.webp",
 			},
 			{
 				id: 3,
@@ -226,7 +226,7 @@ export default [
 					"Pairing won't be allowed",
 				],
 				judging: [],
-				image: "CREATIVEARTS/tint-a-top.png",
+				image: "CREATIVEARTS/tint-a-top.webp",
 			},
 			{
 				id: 4,
@@ -247,7 +247,7 @@ export default [
 					"Time and materials will be limited to all. ",
 				],
 				judging: [],
-				image: "CREATIVEARTS/Rang-de-Mukhra.png",
+				image: "CREATIVEARTS/Rang-de-Mukhra.webp",
 			},
 			{
 				id: 5,
@@ -265,7 +265,7 @@ export default [
 					"DIYed dresses will be given more preference",
 				],
 				judging: [],
-				image: "CREATIVEARTS/Fashionista.png",
+				image: "CREATIVEARTS/Fashionista.webp",
 			},
 			{
 				id: 6,
@@ -287,7 +287,7 @@ export default [
 					"In case of any violation of the rules, the participants are not allowed to participate in subsequent events of the Creative Arts Club. ",
 				],
 				judging: [],
-				image: "CREATIVEARTS/AnimationWorkshop.png",
+				image: "CREATIVEARTS/AnimationWorkshop.webp",
 			},
 			{
 				id: 7,
@@ -320,7 +320,7 @@ export default [
 					"Mobile phones won’t be allowed during the competition.",
 				],
 				judging: [],
-				image: "CREATIVEARTS/Visuality.png",
+				image: "CREATIVEARTS/Visuality.webp",
 			},
 			{
 				id: 9,
@@ -336,7 +336,7 @@ export default [
 					"The decision of the judging panel will be final.",
 				],
 				judging: [],
-				image: "CREATIVEARTS/MagazineCollage.png",
+				image: "CREATIVEARTS/MagazineCollage.webp",
 			},
 			{
 				id: 10,
@@ -367,7 +367,7 @@ export default [
 					"Participation may be individual or in groups of 2 or 3",
 				],
 				judging: [],
-				image: "CREATIVEARTS/Origami.png",
+				image: "CREATIVEARTS/Origami.webp",
 			},
 			{
 				id: 12,
@@ -381,13 +381,20 @@ export default [
 					"No plagiarism ",
 				],
 				judging: [],
-				image: "CREATIVEARTS/picaso-no-oculus.png",
+				image: "CREATIVEARTS/picaso-no-oculus.webp",
+			},
+			{
+				id: 13,
+				name: "Trashion",
+				description: "",
+				rules: [],
+				judging: [],
 			},
 		],
 	},
 	{
 		id: 3,
-		image: "dance.png",
+		image: "dance.webp",
 		title: "Dance Club",
 		description:
 			"Dance Club where one follows the passion for dance and learning is made priority and teaching dance is focused not only to those who are already mastered in it but to everyone. We promote all types of dance forms by forming subgroups. The one who can't resist his moves on beats is the passionate dancer!",
@@ -409,7 +416,7 @@ export default [
 					"The decision of judges will be final.",
 				],
 				judging: [],
-				image: "DANCECLUB/HitTheStreet.png",
+				image: "DANCECLUB/HitTheStreet.webp",
 			},
 			{
 				id: 1,
@@ -426,7 +433,7 @@ export default [
 					"The decision of the judges will be final",
 				],
 				judging: [],
-				image: "DANCECLUB/BREAKFREE.png",
+				image: "DANCECLUB/BREAKFREE.webp",
 			},
 			{
 				id: 2,
@@ -439,7 +446,7 @@ export default [
 					"The one who performs the most number of songs with correct hook steps wins the round",
 				],
 				judging: [],
-				image: "DANCECLUB/CatchTheHookStep.png",
+				image: "DANCECLUB/CatchTheHookStep.webp",
 			},
 			{
 				id: 3,
@@ -453,7 +460,7 @@ export default [
 	},
 	{
 		id: 4,
-		image: "debate.jpg",
+		image: "debate.webp",
 		title: "Debating Club",
 		description:
 			"The Debating Club is established with the main purpose of providing students with a platform to share views and discuss topics that interest them. It also gives them an opportunity to enhance interpersonal skills, social skills and and communication skills.",
@@ -468,13 +475,13 @@ export default [
 					"Based on the Judging, winners will be chosen.",
 				],
 				judging: [],
-				image: "DEBATINGCLUB/ClashingViews.png",
+				image: "DEBATINGCLUB/ClashingViews.webp",
 			},
 		],
 	},
 	{
 		id: 5,
-		image: "drama.png",
+		image: "drama.webp",
 		title: "Drama Club",
 		description:
 			"Drama Club provides a platform to explore and enhance our aspects regarding theatre and other forms of drama. The club focuses on the character-building and learning more about different kind of emotions and expressions and going beyond one's own limits. The club promotes theatrics and also the skills likeconfidence boosting, communication skills, team work and discipline.",
@@ -486,7 +493,7 @@ export default [
 					"Life is a theater set in which there are but few practicable entrances. We all have been dramatic in our life, acting in each emotion; be it love, hate, anger, or joy. Now it's time for you to put some life on stage - Life that is created by a writer, managed by a director, and lived by an actor. It's not only about acting, script, dialogues, and lights; rather, it's about you living that character on stage that brings life to the audience. It is organized by the Dramatics club.",
 				rules: [],
 				judging: [],
-				image: "DRAMACLUB/RANGBHOOMI.png",
+				image: "DRAMACLUB/RANGBHOOMI.webp",
 			},
 			{
 				id: 1,
@@ -494,7 +501,7 @@ export default [
 				description: "The dramatics club showcases a drama documentary.",
 				rules: [],
 				judging: [],
-				image: "DRAMACLUB/MovieScreening.png",
+				image: "DRAMACLUB/MovieScreening.webp",
 			},
 			{
 				id: 2,
@@ -503,7 +510,7 @@ export default [
 					"It is a nukkad natak competition where all colleges will come up with their respective teams, organized by Drama Club.",
 				rules: [],
 				judging: [],
-				image: "DRAMACLUB/Tamasha.png",
+				image: "DRAMACLUB/Tamasha.webp",
 				price: 200,
 			},
 			{
@@ -513,14 +520,14 @@ export default [
 					"Competition in which a solo performer performs the whole show through various characters played by him/her.",
 				rules: [],
 				judging: [],
-				image: "DRAMACLUB/MONOLOGUE.png",
+				image: "DRAMACLUB/MONOLOGUE.webp",
 			},
 		],
 	},
 	{
 		id: 6,
 		title: "English Press Club",
-		image: "englishPress.png",
+		image: "englishPress.webp",
 		description:
 			"The goal of the English Press Club is to give students confidence in their journalistic skills while also enabling them to capture special moments and preserve them by reporting on various college activities. Through a variety of contests and workshops, the students are given a platform to learn speaking their minds and assist them in improving their interviewing and comprehension skills.",
 		events: [
@@ -540,7 +547,7 @@ export default [
 					"Report must be submitted only by the institute mail id. Bonus: - A chance to get featured on our media page. ",
 				],
 				judging: ["Creativity", "Adherence to the word limit", "Effectiveness"],
-				image: "ENGLISHPRESSCLUB/RaiseTheCurtain.png",
+				image: "ENGLISHPRESSCLUB/RaiseTheCurtain.webp",
 			},
 			{
 				id: 1,
@@ -556,7 +563,7 @@ export default [
 					"No Team will be given on-spot registration on the day of the competition",
 				],
 				judging: ["On the basis of points"],
-				image: "ENGLISHPRESSCLUB/SeekTheTruth.png",
+				image: "ENGLISHPRESSCLUB/SeekTheTruth.webp",
 			},
 		],
 	},
@@ -573,7 +580,7 @@ export default [
 					"International short film-making competition is a 4-day long event organized by the Film Making Club.",
 				rules: [],
 				judging: [],
-				image: "FILM/FilmFestival.png",
+				image: "FILM/FilmFestival.webp",
 			},
 			{
 				id: 1,
@@ -589,29 +596,21 @@ export default [
 				description: "",
 				rules: [],
 				judging: [],
-				image: "FILM/Celebrity.png",
+				image: "FILM/Celebrity.webp",
+			},
+			{
+				id: 3,
+				name: "Boomerang",
+				description: "",
+				rules: [],
+				judging: [],
+				image: "",
 			},
 		],
 	},
 	{
 		id: 8,
-		title: "Hindi Language Activities Club",
-		description:
-			"Hindi Language Activities Club is for all the Hindi enthusiastic mnitians. our aim is to work for the progress of Hindi language, to create interest in the students for the language and to encouragetheir creativity in oral and writing skills with different literary and cultural events.",
-		events: [
-			{
-				id: 0,
-				name: "Arz kiya hai",
-				description: "Shayari Competition organized by the Poetry Club.",
-				rules: [],
-				judging: [],
-				image: "POETRYCLUB / ArzKiyaHai.png",
-			},
-		],
-	},
-	{
-		id: 9,
-		image: "music.png",
+		image: "music.webp",
 		title: "Music Club",
 		description:
 			"When words fail, music speaks! The music society develops, enhances and improves musical and instrumental instincts by staging regular fun events like jamming sessions to all India competitions like Voice Choice. It also helps in developing soft skills like management and overcoming stage fear. And the best part, anyone with a love for music can become a part of our family!",
@@ -622,7 +621,7 @@ export default [
 				description: "The Music Club organized the beatboxing competition.",
 				rules: [],
 				judging: [],
-				image: "MUSICCLUB/HustleBustle.png",
+				image: "MUSICCLUB/HustleBustle.webp",
 			},
 			{
 				id: 1,
@@ -631,7 +630,7 @@ export default [
 					"20 sec. The background music of a song will be played, and the participant has to continue the song. It is organized by the Music Club.",
 				rules: [],
 				judging: [],
-				image: "MUSICCLUB/GungunateChalo.png",
+				image: "MUSICCLUB/GungunateChalo.webp",
 			},
 			{
 				id: 2,
@@ -647,7 +646,7 @@ export default [
 				description: "Instrumental Music competition organized by Music Club.",
 				rules: [],
 				judging: [],
-				image: "MUSICCLUB/Dhun.png",
+				image: "MUSICCLUB/Dhun.webp",
 			},
 			{
 				id: 4,
@@ -655,13 +654,13 @@ export default [
 				description: "The Music Club will organize the Solo Singing competition.",
 				rules: [],
 				judging: [],
-				image: "MUSICCLUB/VoiceChoice.png",
+				image: "MUSICCLUB/VoiceChoice.webp",
 			},
 		],
 	},
 	{
-		id: 10,
-		image: "photography.png",
+		id: 9,
+		image: "photography.webp",
 		title: "Photography Club",
 		description:
 			"The purpose of the photography club is to help students become better photographers. Club organised various contest to enrich the Photography culture among students. We host various workshop of professional photographers to communicate and learn the art of photography.",
@@ -690,7 +689,7 @@ export default [
 					"It is a competition in which participants will depict a story from the set of images clicked, which will be arranged in chronological order and organized by the photography club.",
 				rules: [],
 				judging: [],
-				image: "PHOTOGRAPHYCLUB/PicSaga.png",
+				image: "PHOTOGRAPHYCLUB/PicSaga.webp",
 			},
 			{
 				id: 3,
@@ -699,7 +698,7 @@ export default [
 					"You will be given 4-5 photos, and using Adobe Photoshop, you have to make one singular meaningful photo, merging all the given photos. It is organized by the Photography Club.",
 				rules: [],
 				judging: [],
-				image: "PHOTOGRAPHYCLUB/SnipStitch.png",
+				image: "PHOTOGRAPHYCLUB/SnipStitch.webp",
 			},
 			{
 				id: 4,
@@ -707,13 +706,13 @@ export default [
 				description: "",
 				rules: [],
 				judging: [],
-				image: "PHOTOGRAPHYCLUB/PhotographyWorkshop.png",
+				image: "PHOTOGRAPHYCLUB/PhotographyWorkshop.webp",
 			},
 		],
 	},
 	{
-		id: 11,
-		image: "poetry.png",
+		id: 10,
+		image: "poetry.webp",
 		title: "Poetry Club",
 		description:
 			"The chief aim of the poetry club is to increase students knowledge of the languages along with the increase in the power of appreciation of beauty. The club provides an interactive environment for improving communication skills , confidence and opportunity for all poetic minds to showcase their talent.",
@@ -724,13 +723,13 @@ export default [
 				description: "Shayari Competition organized by the Poetry Club.",
 				rules: [],
 				judging: [],
-				image: "POETRYCLUB/ArzKiyaHai.png",
+				image: "POETRYCLUB/ArzKiyaHai.webp",
 			},
 		],
 	},
 	{
-		id: 12,
-		image: "travel.png",
+		id: 11,
+		image: "travel.webp",
 		title: "Travel and Heritage Visit Club",
 		description:
 			"This club is for those who love to Travel and explore different places, Heritage sites. This club will be organising many trips to different places and also some trekking and camping activities. Being part of this club you will be learning about different cultures by visiting different Heritage sites. This club also aims to provide awareness regarding the importance of Heritage sites.",
@@ -750,7 +749,7 @@ export default [
 		],
 	},
 	{
-		id: 13,
+		id: 12,
 		title: "Electoral Literacy Club",
 		description:
 			"The Electoral Literacy Club offers a setting for students to learn about their voting rights and become acquainted with the registration and voting process via interactive and fun activities.The purpose of these games and activities is to get the pupils thinking and asking questions. ",
@@ -762,12 +761,12 @@ export default [
 					"Replica of parliament as done by the government. It is a debating contest organized by the Electoral Literacy Club.",
 				rules: [],
 				judging: [],
-				image: "ELA/YouthParliament.png",
+				image: "ELA/YouthParliament.webp",
 			},
 		],
 	},
 	{
-		id: 14,
+		id: 13,
 		title: "Quiz Club",
 		description:
 			"Quiz Club is a group of MNITians who are passionate about trivia and love to learn more from our peers. The club meets on a regular basis, where members talk about the topics they like. Events are organised on a nearly monthly basis and feature a variety of quizzes and trivia games.",
@@ -779,6 +778,7 @@ export default [
 					"Unlock your inner Sherlock to solve puzzles, answer riddles, find the hidden objects, and more of the like in this event.",
 				rules: [],
 				judging: [],
+				image: "QUIZCLUB/QRYPTICQUEST.webp",
 			},
 			{
 				id: 1,
@@ -787,6 +787,7 @@ export default [
 					"This competition comprises 2 rounds, Round 1 is a quiz based on IPL. Teams clearing this round will proceed to round 2, Round 2 is an auction round that mimics the actual IPL Auction that is held on the next day.",
 				rules: [],
 				judging: [],
+				image: "QUIZCLUB/22YARDS.webp",
 			},
 			{
 				id: 2,
@@ -795,14 +796,16 @@ export default [
 					"Quiz competition based on the intangible and tangible heritage of India. The questions would encompass built heritage, performing arts, crafts, and natural heritage of India.",
 				rules: [],
 				judging: [],
+				image: "QUIZCLUB/BHARATDARSHAN.webp",
 			},
 			{
 				id: 3,
-				name: "Flix and Chill",
+				name: "Flix & Chill",
 				description:
 					"A fun and unconventional quiz competition based on web series, TV shows, Hollywood, Bollywood, and regional cinema.",
 				rules: [],
 				judging: [],
+				image: "QUIZCLUB/FLIX&CHILL.webp",
 			},
 			{
 				id: 4,
@@ -811,6 +814,7 @@ export default [
 					"A pot-pourri of everyone’s favourite trivia shows like Bournvita Quiz Contest, Kaun Banega Crorepati, and Jeopardy, this event is a multi-round general knowledge quiz competition.",
 				rules: [],
 				judging: [],
+				image: "QUIZCLUB/QUIZPROQUO.webp",
 			},
 			{
 				id: 5,
@@ -819,6 +823,7 @@ export default [
 					"Quiz competition based on all-time works of literature from Shakespeare to JK Rowling and everything in between.",
 				rules: [],
 				judging: [],
+				image: "QUIZCLUB/WHAT'SONYOURBOOKSHELF.webp",
 			},
 			{
 				id: 6,
@@ -826,20 +831,22 @@ export default [
 				description: "A world tour masquerading as a travel quiz.",
 				rules: [],
 				judging: [],
+				image: "QUIZCLUB/AROUNDTHEWORLDIN80QUESTIONS.webp",
 			},
 			{
 				id: 7,
-				name: "Hello Mr.Husk",
+				name: "Hello Mr.Musk",
 				description:
 					"A quiz that tests your knowledge from the world of Business. Questions will be based on business news and events, trade, commerce, and finance.",
 				rules: [],
 				judging: [],
+				image: "QUIZCLUB/HELLOMrMUSK!.webp",
 			},
 		],
 	},
 	{
-		id: 15,
-		image: "mavericks.png",
+		id: 14,
+		image: "mavericks.webp",
 		title: "The Mavericks",
 		description:
 			"“Awareness overpowers Ignorance” \n The Mavericks is the Mass and Media body of MNIT Jaipur. Aiming towards raising awareness about contemporary issues around the world, holding events on Journalism, like the ACTA DIURNA, which always attracts huge participation from the audience. The Mavericks also conducts events based on reporting and conducting surveys and polls. The major highlight of The Mavericks are their Campus Placement and career-oriented talks, which are a huge hit on their Instagram, which also happens to be the biggest instagram page under MNIT. The Mavericks is also in charge of organising talks like TEDxMNITJaipur, Under the Banyan Tree.",
@@ -862,7 +869,7 @@ export default [
 					"Time- 1 hour (for one round)",
 					"Multiple rounds can be planned according to footfall",
 				],
-				image: "THEMAVERICKS/actamav.png",
+				image: "THEMAVERICKS/actamav.webp",
 			},
 			{
 				id: 1,
@@ -895,7 +902,7 @@ export default [
 					"The entire team will be given only one chance per round",
 				],
 				judging: ["General poll-based event(no judging criteria)"],
-				image: "THEMAVERICKS/FamilyFeud.png",
+				image: "THEMAVERICKS/FamilyFeud.webp",
 			},
 			{
 				id: 3,
