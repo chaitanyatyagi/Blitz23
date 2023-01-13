@@ -269,42 +269,6 @@ export default [
 			},
 			{
 				id: 6,
-				name: "Digital Art Workshop",
-				description:
-					"Digital platforms like Sketchbook, Procreate, Krita, etc., were on a certain theme, and participants have to create a digital sketch. An industry expert will deliver the knowledge, and competition amongst the participants follows this. It is a 2-day long event organized by Creative Arts Club.",
-				rules: [
-					"On day 3, in the first session (9-10 AM) the speaker will guide the learners through the basics of animation.",
-					"The next session (10-11 AM) will be for learning and downloading the software. Also, participants can clarify their respective doubts.",
-					"At the end of the workshop feedback will be collected via google forms.",
-					"Process for downloading the software will also be shared on social media handles.",
-					"On day 4, the participants will be free to choose a theme to work on.",
-					"Participants will be given a time limit of 1 hour 45 minutes from their respective start.",
-					"Participants are required to bring their laptops and software for the same must be downloaded beforehand.",
-					"Results will be announced at the end of the day and prizes will be distributed to the first three winners. ",
-					"Theme cannot be changed in any case after choosing.",
-					"Each participant is required to complete the task and is not allowed to leave midway.",
-					"The process will be displayed for reference and time will be limited.",
-					"In case of any violation of the rules, the participants are not allowed to participate in subsequent events of the Creative Arts Club. ",
-				],
-				judging: [],
-				image: "CREATIVEARTS/AnimationWorkshop.webp",
-			},
-			{
-				id: 7,
-				name: "Lego Trance",
-				description: "",
-				rules: [
-					"Participation will take place in teams of 2",
-					"One team member will be blindfolded while the other will be provided with a picture of the blocks/ lego formation",
-					"The blindfolded member will arrange the given blocks with the guidance of the other team member, to make the same formation as the picture",
-					"The process will be timed",
-					"The team to make the formations quicker will proceed to the next round",
-					"The event will be in rounds",
-				],
-				judging: [],
-			},
-			{
-				id: 8,
 				name: "Visuality",
 				description:
 					"The Creative Arts Club will organize a painting competition of any location preceding MNIT (Live Sketching).",
@@ -323,7 +287,7 @@ export default [
 				image: "CREATIVEARTS/Visuality.webp",
 			},
 			{
-				id: 9,
+				id: 7,
 				name: "Magazine Collage",
 				description: "",
 				rules: [
@@ -339,19 +303,7 @@ export default [
 				image: "CREATIVEARTS/MagazineCollage.webp",
 			},
 			{
-				id: 10,
-				name: "Far Apart Art",
-				description:
-					"It is a competition of painting in which participants will be given brushes for painting, but they will be given brushes according to the specified distance organized by the Creative Arts Club.",
-				rules: [
-					"With each team one volunteer will draw with the conditions and the team members will guess the drawing",
-					"With each passing round, the team with the maximum points will be considered the winner and will have certificates.",
-					"And to the drawing well-illustrated would be given the prize",
-				],
-				judging: [],
-			},
-			{
-				id: 11,
+				id: 8,
 				name: "Origami",
 				description:
 					"Origami-making competition. The creative arts club will organize this event.",
@@ -370,7 +322,7 @@ export default [
 				image: "CREATIVEARTS/Origami.webp",
 			},
 			{
-				id: 12,
+				id: 9,
 				name: "Picaso-no-Oculus",
 				description:
 					"A blindfolded painting competition where fellow teammates will guide a participant. It is organized by the Creative Arts Club.",
@@ -382,13 +334,6 @@ export default [
 				],
 				judging: [],
 				image: "CREATIVEARTS/picaso-no-oculus.webp",
-			},
-			{
-				id: 13,
-				name: "Trashion",
-				description: "",
-				rules: [],
-				judging: [],
 			},
 		],
 	},
@@ -569,6 +514,7 @@ export default [
 	},
 	{
 		id: 7,
+		image: "filmmaking.webp",
 		title: "Film Making Club",
 		description:
 			"Films are ways to demolish any stereotypes and to encourage a sense of unity across age ranges, social classes & ethnicities.films are form of entertainment that enacts a story by sound and a sequence of images giving the illusion of continuous movement",
@@ -589,11 +535,12 @@ export default [
 					"The participants will have to make reels during various Blitzschlag events showcasing the beauty of this fest, organized by the filmmaking club.",
 				rules: [],
 				judging: [],
+				image: "FILM/showareel.webp"
 			},
 			{
 				id: 2,
 				name: "Celebrity Show Off",
-				description: "",
+				description: "One need to pose or walk for music the video is recorded in slow motion Best posing and walk will be chosen and prizes distributed accordingly ",
 				rules: [],
 				judging: [],
 				image: "FILM/Celebrity.webp",
@@ -634,14 +581,6 @@ export default [
 			},
 			{
 				id: 2,
-				name: "Jamming Session",
-				description:
-					"A fun music event consisting of singing & instrumentals organized by the Music Club.",
-				rules: [],
-				judging: [],
-			},
-			{
-				id: 3,
 				name: "Dhun",
 				description: "Instrumental Music competition organized by Music Club.",
 				rules: [],
@@ -649,7 +588,7 @@ export default [
 				image: "MUSICCLUB/Dhun.webp",
 			},
 			{
-				id: 4,
+				id: 3,
 				name: "Voice Choice",
 				description: "The Music Club will organize the Solo Singing competition.",
 				rules: [],
@@ -681,6 +620,7 @@ export default [
 				rules: [],
 				judging: [],
 				price: 200,
+				image: "PHOTOGRAPHYCLUB/PicSaga.webp",
 			},
 			{
 				id: 2,
@@ -854,7 +794,7 @@ export default [
 			{
 				id: 0,
 				name: "Acta Diurna",
-				description: "",
+				description: "ACTA DIURNA is back to take you amidst all suspense and thrill. In this event, you are served with a mind-tossing murder mystery with all its characters and hints. You, being a journalist/detective, are trying to solve the mystery by asking your queries from the characters of the plot enacted by us.",
 				rules: [
 					"Team Size-(up to 3 members)",
 					"Language-English and Hindi",
@@ -874,7 +814,7 @@ export default [
 			{
 				id: 1,
 				name: "Bolti Tasveere",
-				description: "",
+				description: "Story writing competition from the pictures depicted. It is organized by the Mavericks Club.",
 				rules: [
 					"Team Size-(Solo)",
 					"Language- Hindi",
@@ -892,7 +832,7 @@ export default [
 			{
 				id: 2,
 				name: "Family Feud",
-				description: "",
+				description: "Join us for an evening overloaded with fun and excitement with our very own version of the popular game show 'Family Feud'! Just like on the show, two teams will go head to head to see who can guess the most popular answers to survey questions.But wait, there’s more! In addition to the main event, we will also have exciting prizes for the audience. Whether you're competing or just spectating, there's something for everyone to enjoy.So gather your friends, team up and get ready to feud! This event is guaranteed to be a memorable evening filled with laughter and friendly competition. Don't miss out - we hope to see you there!",
 				rules: [
 					"Team Size-(up to 5 members)",
 					"Language- English",

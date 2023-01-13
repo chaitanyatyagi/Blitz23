@@ -90,6 +90,7 @@
 	font-style: normal;
 	font-weight: 500;
 	width: 10em;
+	border-radius: 10px;
 }
 
 .form-submit:hover {

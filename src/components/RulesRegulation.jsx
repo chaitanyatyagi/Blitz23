@@ -21,6 +21,7 @@ function RulesRegulation() {
     return (
         <div className="rules-regulations">
             <div className="leftrules"></div>
+            <div className="mediaquery">RULES & REGULATIONS</div>
             <div className="rightrules">
                 {
                     sponsorData.map((element) => (

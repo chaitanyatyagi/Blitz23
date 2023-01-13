@@ -23,11 +23,14 @@ function Navbar({ isLoggedIn }) {
             setCanclebutton(false)
         }
     }
+    const hideNavBar = () => {
+        SetIsMobile(false)
+    }
 
     return (
         <>
 
-            <div className="main_nav">
+            <div className="main_nav" onBlur={hideNavBar}>
                 <div className="leftlogo"><div className="leftlogoins1"></div><div className="leftlogoins"></div></div>
                 <div className="nav_links">
                     <div className="menubar" id="menu">
