@@ -289,7 +289,7 @@ export default [
 			{
 				id: 7,
 				name: "Magazine Collage",
-				description: "",
+				description: "A collage is a visual representation made from an assembly of different forms, materials and sources creating a new whole. A collage may include newspaper clippings, ribbons, bits of colored or hand-made papers, portions of other artwork, photographs, and such, glued  to a solid support or canvas.",
 				rules: [
 					"A theme will be provided on the spot at the time of the event ",
 					"Participants will have to make a collage based on the theme within the given time frame  Required materials & stationery will be provided",
@@ -828,6 +828,7 @@ export default [
 					"strength in the language(Vocabulary)",
 					"thinking(perspective)",
 				],
+				image: "THEMAVERICKS/boltitasveere.webp"
 			},
 			{
 				id: 2,
