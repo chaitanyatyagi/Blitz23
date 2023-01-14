@@ -1,7 +1,7 @@
 import "../style/navbar.css"
 import { FaBars, FaWindowClose } from 'react-icons/fa'
 import { Link } from "react-router-dom"
-import React, { useState } from "react"
+import React, { useState, useRef } from "react"
 import '../../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import '../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js'
 import Cookies from "universal-cookie"
@@ -9,6 +9,7 @@ import Cookies from "universal-cookie"
 import NavDropdown from 'react-bootstrap/NavDropdown';
 
 function Navbar({ isLoggedIn }) {
+    const navRef = useRef()
     const cookies = new Cookies()
     const [IsMobile, SetIsMobile] = useState(false);
     const [cancleButton, setCanclebutton] = useState(true)
@@ -23,23 +24,26 @@ function Navbar({ isLoggedIn }) {
             setCanclebutton(false)
         }
     }
-    const hideNavBar = () => {
+    const hideNav = () => {
+        // navRef.current.classList.remove("mobile")
+        // navRef.current.classList.add("laptop")
         SetIsMobile(false)
+        setCanclebutton(true)
     }
 
     return (
         <>
-            {/* onBlur={hideNavBar} */}
+            {/* onClick={hideNavBar} */}
             <div className="main_nav" >
                 <div className="leftlogo"><div className="leftlogoins1"></div><div className="leftlogoins"></div></div>
                 <div className="nav_links">
                     <div className="menubar" id="menu">
                         <button className='btn' onClick={() => shownavlinks()}>{cancleButton ? <FaBars /> : <FaWindowClose />}</button>
                     </div>
-                    <div className={IsMobile ? "mobile" : "laptop"}>
-                        <Link to="/" className="centertabs">HOME</Link>
-                        <Link to="/events" className="centertabs">EVENTS</Link>
-                        <Link to="/flagship-events" className="centertabs">FLAGSHIP EVENTS</Link>
+                    <div className={IsMobile ? "mobile" : "laptop"} ref={navRef}>
+                        <Link to="/" className="centertabs" onClick={() => hideNav()} onBlur={() => hideNav()}>HOME</Link>
+                        <Link to="/events" className="centertabs" onClick={() => hideNav()} onBlur={() => hideNav()}>EVENTS</Link>
+                        <Link to="/flagship-events" className="centertabs" onClick={() => hideNav()} onBlur={() => hideNav()}>FLAGSHIP EVENTS</Link>
                         <div>
                             <NavDropdown
                                 id="nav-dropdown-dark-example"
@@ -47,13 +51,10 @@ function Navbar({ isLoggedIn }) {
                                 menuVariant="dark"
                                 className="navdrop"
                             >
-                                {/* <NavDropdown.Item href="#action/3.2">
-                                    <Link className="text-white">HOSPITALITY</Link>
-                                </NavDropdown.Item> */}
-                                <NavDropdown.Item><Link to="/rulebook" className="text-white">RULEBOOK</Link></NavDropdown.Item>
+                                <NavDropdown.Item><Link to="/rulebook" className="text-white" onClick={() => hideNav()} onBlur={() => hideNav()}>RULEBOOK</Link></NavDropdown.Item>
                                 {/* <NavDropdown.Item><Link className="text-white">HOSPITALITY</Link></NavDropdown.Item> */}
-                                <NavDropdown.Item><Link to="/contactus" className="text-white">OUR TEAM</Link></NavDropdown.Item>
-                                <NavDropdown.Item><Link to="/accomodation" className="text-white">HOSPITALITY</Link></NavDropdown.Item>
+                                <NavDropdown.Item><Link to="/contactus" className="text-white" onClick={() => hideNav()} onBlur={() => hideNav()}>OUR TEAM</Link></NavDropdown.Item>
+                                <NavDropdown.Item><Link to="/accomodation" className="text-white" onClick={() => hideNav()} onBlur={() => hideNav()}>HOSPITALITY</Link></NavDropdown.Item>
                             </NavDropdown>
                         </div>
                         {/* <div>
@@ -72,10 +73,13 @@ function Navbar({ isLoggedIn }) {
                         {/* <div> */}
                         {/* <Link to="/register" className="register">REGISTER</Link> */}
                         {
-                            isLoggedIn ? <Link to="/register" className="register" onClick={() => { cookies.remove('jwt', { path: '/' }); cookies.remove('userId'); window.location.reload() }}>LOGOUT</Link> : <Link to="/register" className="register">REGISTER</Link>
+                            isLoggedIn ? <Link to="/register" className="register" onClick={() => {
+                                cookies.remove('jwt', { path: '/' }); cookies.remove('userId'); window.location.reload();
+                                hideNav()
+                            }} >LOGOUT</Link> : <Link to="/register" className="register" onClick={() => hideNav()} onBlur={() => hideNav()}>REGISTER</Link>
                         }
                         {
-                            isLoggedIn ? <Link to="/profile" className="register">PROFILE</Link> : " "
+                            isLoggedIn ? <Link to="/profile" className="register" onClick={() => hideNav()} onBlur={() => hideNav()}>PROFILE</Link> : " "
                         }
                         {/* </div> */}
 
