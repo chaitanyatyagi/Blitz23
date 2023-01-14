@@ -64,15 +64,14 @@ export default [
 				description:
 					"Inter-college Musical band competition. The Battle of Bands is the most awaited celebration of culture, aiding young minds to delve into music and the traditions associated with it. Renowned musical bands grace the stage and plug in some soulful magic through their cords. Judged by a panel of distinguished artists, the band that strums magic through their strings and makes one hymn to their beats wins the battle!",
 				rules: [
-					"Only one entry per college.",
-					"A performance may consist of both instrumental and vocal performances.",
+					"Multiple entries per college are allowed",
+					"A performance must consist of both instrumental and vocal performances.",
 					"All bands must contain a minimum of three (3) members and they should play at least one instrument.",
 					"The maximum team size allowed is 8.",
 					"The maximum time allowed is 10 minutes.",
 					"Carry your own instrument. ",
 					"Band members are responsible for the security of their equipment. ",
 					"All songs can be original or cover songs or songs by other artists.",
-					"While one band is playing, the next band may start getting ready to set up in the background. However, please do not be disruptive so that the band on stage can be the focus of the judges and the crowd. ",
 					"Bands may not use pre-recorded sound material. All bands must play live.",
 					"Any distasteful behavior and /or damage to the surrounding equipment or supplies will result in disqualification. ",
 					"It is imperative that all team members must possess a valid college ID which must be presented at all times.",
