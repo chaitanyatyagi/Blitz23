@@ -29,8 +29,8 @@ function Navbar({ isLoggedIn }) {
 
     return (
         <>
-
-            <div className="main_nav" onBlur={hideNavBar}>
+            {/* onBlur={hideNavBar} */}
+            <div className="main_nav" >
                 <div className="leftlogo"><div className="leftlogoins1"></div><div className="leftlogoins"></div></div>
                 <div className="nav_links">
                     <div className="menubar" id="menu">
