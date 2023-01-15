@@ -270,13 +270,23 @@ export default function Events(props) {
 										/>
 									</div>
 								</div>
-								<div className="events-form-check-row">Note: Please mention "None" in Team Name if this is an Individual Event and 1 as number of Team Members.</div>
-								<div className="events-form-check-row">Note: Choose your Package wisely. We'll Suggest you to take a glimpse at our combo packages(Optica and Mirage) to avail exciting discounts. For reference visit: blitzschlag.co.in/accomodation .</div>
+								<div className="events-form-check-row2">
+									<div className="events-form-check-row3">
+										NOTE :
+									</div>
+									<div className="events-form-check-row1">
+										Please mention "None" in Team Name if this is an Individual Event and 1 as number of Team Members.
+									</div>
+									<div className="events-form-check-row1">Choose your Package wisely. We'll Suggest you to take a glimpse at our combo packages(Optica and Mirage) to avail exciting discounts. For reference visit: blitzschlag.co.in/accomodation.</div>
+									<div className="events-form-check-row1">If you have more than 1 team member, then each team member is suppose to register for the particular event.</div>
+								</div>
 								<div className="row-wrapper-4">
-									<input
-										className="events-form-text-input"
-										value={`Price : ${event.price ? event.price : "--"}`}
-									/>
+									{
+										qrcode && !props.userInfo.college ? <input
+											className="events-form-text-input"
+											value={`Price : ${event.price ? event.price : "--"}`}
+										/> : ""
+									}
 									{
 										qrcode && !props.userInfo.college ? <button
 											className="event-link-remover event-card-register-link"

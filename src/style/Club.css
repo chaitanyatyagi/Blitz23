@@ -2,6 +2,7 @@
 	text-decoration: none;
 	color: black;
 }
+
 .club-background {
 	min-height: 100vh;
 	width: 100vw;
@@ -11,6 +12,7 @@
 	background-size: cover;
 	margin-top: 0px;
 }
+
 .club-contanier {
 	width: 100vw;
 	min-height: 100vh;
@@ -20,6 +22,7 @@
 	align-items: center;
 	justify-content: space-evenly;
 }
+
 .club-side-bar {
 	width: 20vw;
 	min-height: 100vh;
@@ -29,6 +32,7 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+
 .club-info {
 	width: 80vw;
 	min-height: 100vh;
@@ -38,6 +42,7 @@
 	align-items: center;
 	justify-content: center;
 }
+
 .club-info-card {
 	background: #eeeeee;
 	border: 1px solid #000000;
@@ -48,6 +53,7 @@
 	align-items: center;
 	justify-content: space-evenly;
 }
+
 .club-info-image-container {
 	height: 60vh;
 	width: 20vw;
@@ -55,10 +61,12 @@
 	align-items: center;
 	justify-content: center;
 }
+
 .club-info-image {
 	height: 50vh;
 	max-width: 20vw;
 }
+
 .club-info-text {
 	display: flex;
 	flex-direction: column;
@@ -67,6 +75,7 @@
 	width: 35vw;
 	height: 60vh;
 }
+
 .club-info-title {
 	font-family: "Henny Penny";
 	font-style: normal;
@@ -78,6 +87,7 @@
 	margin-top: 5px;
 	height: 20%;
 }
+
 .club-info-body {
 	font-family: "Inter";
 	font-style: normal;
@@ -90,6 +100,7 @@
 	margin-bottom: 10px;
 	height: 55%;
 }
+
 .club-info-link {
 	text-decoration: none;
 	border: 2px solid #000000;
@@ -104,6 +115,7 @@
 	align-items: center;
 	justify-content: center;
 }
+
 .club-bar {
 	position: fixed;
 	width: 100vw;
@@ -117,12 +129,14 @@
 	align-items: center;
 	justify-content: space-evenly;
 }
+
 .club-bar-card {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	margin-top: 10px;
 }
+
 .club-bar-card-name {
 	background: #ffffff;
 	border: 1px solid #000000;
@@ -142,6 +156,7 @@
 	align-items: flex-start;
 	justify-content: flex-start;
 }
+
 .club-bar-card-inactive {
 	color: #fdfdfd;
 	background: rgba(0, 0, 0, 0.3);
@@ -154,11 +169,13 @@
 	margin-bottom: 10px;
 	max-height: 60px;
 }
+
 .club-bar-card-inactive:hover {
 	background: #ffffff;
 	border: 1px solid #ffffff;
 	color: #000000;
 }
+
 .club-bar-card-active {
 	background: #ffffff;
 	border: 1px solid #ffffff;
@@ -172,21 +189,32 @@
 	margin-bottom: 10px;
 	max-height: 60px;
 }
+
 @media (max-width: 1000px) {
+	* {
+		height: fit-content;
+		max-height: fit-content;
+	}
+
 	.club-info-card {
 		flex-direction: column;
 		height: 60vh;
 		overflow-y: scroll;
 		justify-content: flex-start;
 	}
+
 	.club-info-image {
+		margin-top: 10px;
+		margin-bottom: 10px;
 		height: 30vh;
 		max-width: fit-content;
 	}
+
 	.club-info-title {
 		margin-bottom: 10px;
 		font-size: 1rem;
 	}
+
 	.club-info-body {
 		font-size: 0.6rem;
 		margin-bottom: 10px;
@@ -196,26 +224,37 @@
 		overflow-y: visible;
 		height: fit-content;
 	}
+
 	.club-info-text {
 		height: 65vh;
 		width: 60vw;
 	}
+
 	.club-info-link {
 		font-size: 0.7rem;
 	}
+
 	.club-bar-card-name {
 		display: none;
 	}
-}
-@media (max-width: 760px) {
+
 	.club-side-bar {
 		display: none;
 	}
+
+	.club-info-image-container {
+		height: fit-content;
+		max-height: fit-content;
+	}
+}
+
+@media (max-width: 760px) {
 	.club-bar {
 		display: grid;
 		grid-template-columns: repeat(7, 1fr);
 		padding: 5px;
 	}
+
 	.club-bar-card-active,
 	.club-bar-card-inactive {
 		margin: 0px;
