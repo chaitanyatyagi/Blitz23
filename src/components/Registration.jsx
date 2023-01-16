@@ -40,7 +40,7 @@ export default function Registration() {
         else {
             axios.post(`${process.env.REACT_APP_SERVER}/users/register`, {
                 // axios.post(`http://127.0.0.1:2080/users/register`, {
-                name, email, password
+                name, email, password, phone, instituteId
             })
                 .then(function (response) {
                     console.log(response);
