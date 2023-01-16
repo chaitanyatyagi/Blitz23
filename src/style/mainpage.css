@@ -24,11 +24,13 @@
 .landingPg1ins {
     height: 100%;
     width: 85%;
+    background-image: url("../images/Blitz-Updated-Logo.webp");
+    background-size: 75% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("../images/Blitz_Logo_23.png");
-    background-size: 100% 100%;
 }
 
 .landingPg2 {

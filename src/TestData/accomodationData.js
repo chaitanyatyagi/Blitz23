@@ -16,7 +16,7 @@ export default [
 	{
 		id: 2,
 		head: "Mirage",
-		detail: "A mirage pass enables you to participate in any flagship event of your choice as well as provides accommodation for 5 days from 1st Feb 10 AM to 5th Feb.You can take part in any club event during the course of the fest. Furthermore, you will be able to attend all four pronites of Blitzschlag'23.",
+		detail: "A mirage pass enables you to participate in any flagship event of your choice as well as provides accommodation for 5 days from 8th Feb 10 AM to 12th Feb.You can take part in any club event during the course of the fest. Furthermore, you will be able to attend all four pronites of Blitzschlag'23.",
 		price: 3500,
 	}
 ];
