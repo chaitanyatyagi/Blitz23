@@ -70,10 +70,18 @@ export default function Accomodation({ isLoggedIn, userInfo }) {
 			</div>
 		);
 	}
+
 	function displayForm() {
-		setFormData(formTemplate);
-		setFormActive(true);
+		if (!isLoggedIn) {
+			window.alert("Please login first.")
+			window.open("/login", "_self")
+		}
+		else {
+			setFormData(formTemplate);
+			setFormActive(true);
+		}
 	}
+
 	function handleSubmit() {
 		if (isLoggedIn) {
 			if (userInfo.college) {
