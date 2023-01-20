@@ -119,6 +119,7 @@ export default [
 					"The competition will have a judge.",
 					"Winner will be decided based on the judge’s decision",
 					"The organizing committee reserves the right to make any last-minute change to the rules.",
+					"Please submit your video entry through this google form for registration - https://docs.google.com/forms/d/e/1FAIpQLSem2-p8QoG3BncxU5ahSZROCzKA9715iEL826erZg9dC_xrFg/viewform?usp=sf_link",
 				],
 				judging: [],
 				image: "MUSICCLUB/Nrityanjali.webp",
@@ -134,6 +135,7 @@ export default [
 					"The team will decide the final decision for auditions.",
 					"Judges’ decision will decide the winner",
 					"If entrants in one category (like guitar, piano,etc) exceeds a certain number there may be multiple awards",
+					"Please submit your video entry through this google form for registration - https://docs.google.com/forms/d/e/1FAIpQLSf7eu7sNzR9IV87D66OI9RTb_vwzrqiqhEfE_P8QIRDU9sm7A/viewform?usp=sf_link"
 				],
 				judging: [],
 				image: "MUSICCLUB/Dhun.webp",
@@ -148,6 +150,7 @@ export default [
 					"There will be a final audition for all entrants.",
 					"Final decision for auditions will be decided by the team.",
 					"Judges’ decision will decide the winner.",
+					"Please submit your video entry through this google form for registration - https://docs.google.com/forms/d/e/1FAIpQLSewiFmCx08RfzpI09YSI4SNGbJpAW9byfU-XqCrVXLRceLCHQ/viewform?usp=sf_link"
 				],
 				judging: [],
 				image: "MUSICCLUB/VoiceChoice.webp",
