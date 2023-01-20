@@ -147,29 +147,31 @@ export default function Events(props) {
 							{event.description !== "" && (
 								<div className="event-card-text-breif">{event.description}</div>
 							)}
-							{event.rules.length !== 0 && event.judging.length !== 0 && (
-								<div className="event-card-text-list">
-									{event.rules.length !== 0 && (
-										<div className="event-card-text-rules">
-											Rules: <div className="events-space" /> {rulesDisp}
-										</div>
-									)}
-									{event.judging.length !== 0 && (
-										<div className="event-card-text-judging">
-											Judgment Criteria: <div className="events-space" />
-											{judgeDisp}
-										</div>
-									)}
-								</div>
-							)}
-							<Link
-								className="event-link-remover event-card-register-link"
-								onClick={() => {
-									login();
-								}}
-							>
-								REGISTER
-							</Link>
+							{/* {event.rules.length !== 0 && event.judging.length !== 0 && ( */}
+							<div className="event-card-text-list">
+								{event.rules.length !== 0 ? (
+									<div className="event-card-text-rules">
+										Rules: <div className="events-space" /> {rulesDisp}
+									</div>) : ""
+								}
+								{event.judging.length !== 0 ? (
+									<div className="event-card-text-judging">
+										Judgment Criteria: <div className="events-space" />
+										{judgeDisp}
+									</div>
+								) : ""}
+							</div>
+							// )}
+							{
+								event.name === "Flashmob" ? "" : <Link
+									className="event-link-remover event-card-register-link"
+									onClick={() => {
+										login();
+									}}
+								>
+									REGISTER
+								</Link>
+							}
 						</div>
 					</div>
 					<div className="events-card-routed-container">
@@ -204,7 +206,7 @@ export default function Events(props) {
 										placeholder="Name of Participant"
 										name="name"
 										value={props.userInfo.name}
-										onChange={() => {}}
+										onChange={() => { }}
 										required={true}
 									/>
 									<input
@@ -222,7 +224,7 @@ export default function Events(props) {
 										placeholder="BlitzID"
 										name="blitzID"
 										value={props.userInfo.blitzId}
-										onChange={() => {}}
+										onChange={() => { }}
 										required={true}
 									/>
 									<input

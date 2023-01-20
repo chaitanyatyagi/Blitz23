@@ -126,7 +126,7 @@ export default [
 			{
 				id: 1,
 				name: "Dhun",
-				description: "Instrumental Music competition organized by Music Club.",
+				description: "Instrumental Music competition organized by Music Club & Classical Music and Dance Club.",
 				rules: [
 					"Entries will be accepted through a google form for all performances.",
 					"Participants should bring their own instruments. The sound arrangements and connecting leads will be provided, if required.",
@@ -141,7 +141,7 @@ export default [
 			{
 				id: 2,
 				name: "Voice Choice",
-				description: "The Music Club will organize the Solo Singing competition.",
+				description: "The Music Club & Classical Music and Dance Club will organize the Solo Singing competition.",
 				rules: [
 					"Entries will be accepted through a google form for all the performances.",
 					"Participants should bring their own instruments. The sound arrangements and connecting leads will be provided, if required.",
@@ -186,6 +186,7 @@ export default [
 					"Original Paintings are recommended.",
 					"Physical Paintings and Models will be asked for the selected entries.",
 					"If Physical Painting or model is not possible for the submission, then Photographs will be allowed only upon the coordinator's approval and verification.",
+					"Mail us your entries at creativeartsmnit@gmail.com "
 				],
 				judging: [],
 				image: "CREATIVEARTS/ArtExhibition.webp",
@@ -262,6 +263,7 @@ export default [
 					"Prize money will be awarded to the Winner and runner-up.",
 					"Dresses should not be copied",
 					"DIYed dresses will be given more preference",
+					"Mail us your entries at creativeartsmnit@gmail.com "
 				],
 				judging: [],
 				image: "CREATIVEARTS/Fashionista.webp",
@@ -322,6 +324,19 @@ export default [
 			},
 			{
 				id: 9,
+				name: "Animation Workshop",
+				description:
+					"The Creative arts club presents the most awaited ANIMATION WORKSHOP for beginners.",
+				rules: [
+					"You will be required to bring your own laptops.",
+					"A workshop with a tutor who will introduce some animation techniques.",
+					"Afterwords a competition will also be held wherein you can showcase your learnings.",
+				],
+				judging: [],
+				image: "CREATIVEARTS/ani.webp"
+			},
+			{
+				id: 10,
 				name: "Picaso-no-Oculus",
 				description:
 					"A blindfolded painting competition where fellow teammates will guide a participant. It is organized by the Creative Arts Club.",
@@ -399,6 +414,7 @@ export default [
 					"A sensational performance by the members of the dance club (approx 50 heads) at various places as a motive to promote dance culture and the cultural fest BLITZSCHLAG. The practice session for the same will be starting around mid-January. Goodies will be provided to each participant",
 				rules: [],
 				judging: [],
+				image: "DANCECLUB/flashmob.webp"
 			},
 		],
 	},
@@ -435,8 +451,9 @@ export default [
 				name: "Rangbhoomi",
 				description:
 					"Life is a theater set in which there are but few practicable entrances. We all have been dramatic in our life, acting in each emotion; be it love, hate, anger, or joy. Now it's time for you to put some life on stage - Life that is created by a writer, managed by a director, and lived by an actor. It's not only about acting, script, dialogues, and lights; rather, it's about you living that character on stage that brings life to the audience. It is organized by the Dramatics club.",
-				rules: [],
-				judging: [],
+				rules: ["Each team should have a minimum of 3 actors and maximum 15.", "Time limit: 1) Elimination round- 8-10 mins in form of video. 2) Final act- 20-70 mins", "Language of the play can be English/Hindi.", "Participants have to record a play for elimination round submission. This can be done with all members present together or with different actors.", "The decision of the judges will be final and binding.", "The organizing committee reserves the right to make any last minute change in the rules.", "Submission- Participants must send a link of their video performance at dramsocmnit@gmail com.", "Rename the recorded video as “YOUR COLLEGE NAME- TEAM NAME- STAGE PLAY”.", "Mail the video- The subject of the mail should be “COLLEGE NAME- TEAM NAME- STAGE PLAY”", "Mention name of all team members in the mail body."
+				],
+				judging: ["Content – 35%", " Acting/Expression- 35%", "Direction – 15%", "Miscellaneous Effects – 15%"],
 				image: "DRAMACLUB/RANGBHOOMI.webp",
 			},
 			{
@@ -451,18 +468,18 @@ export default [
 				id: 2,
 				name: "Tamasha",
 				description:
-					"It is a nukkad natak competition where all colleges will come up with their respective teams, organized by Drama Club.",
-				rules: [],
-				judging: [],
+					"Nukkad Natak is an drama performed on street to create social awareness, it’s an old tool through which lot of social awareness campaign have gained strength such as family planning girls education, child labour, etc.",
+				rules: ["The team shall consist of max. 25 people and a min. of 10 people.", "Time limit should be maximum of 25 mins.", "Submission- Participants must send a link of their video performance at dramsocmnit@gmail com", "Rename the recorded video as “YOUR COLLEGE NAME- TEAM NAME- NUKKAD”.", "Mail the video- The subject of the mail should be “COLLEGE NAME- TEAM NAME- NUKKAD”.", "Mention name of all team members in the mail body."],
+				judging: ["Content, Theme and Message- 35%", "Performance including Acting, Dialogues and Expression 35%", "Interaction and Improvisation 15%", "Direction, Gimmicks and Effects- 15%.", "The decision of the judges and the coordinators shall be final and binding in all cases.", "Blitzschlag reserves the right to change or modify any of these rules."],
 				image: "DRAMACLUB/Tamasha.webp",
 				price: 200,
 			},
 			{
 				id: 3,
-				name: "Monologue competiton",
+				name: "Monologue Competiton",
 				description:
-					"Competition in which a solo performer performs the whole show through various characters played by him/her.",
-				rules: [],
+					"In theatre, a monologue is a speech presented by a single character, most often to express their thought aloud, though sometimes also to directly address another character or the audience.",
+				rules: ["Send a video for the elimination round of about 2-5 mins at dramsocmnit@gmail com.", " For the final round the time limit is of maximum 10 mins.", "There should be no use of offensive language.", "Props and costumes have to arranged by the performer itself.", "The organizing committee reserves the right to make any last minute change in the rules.", "Submission- Participants must send a link of their video performance at dramsocmnit@gmail com.", "Rename the recorded video as “YOUR COLLEGE NAME- TEAM NAME- NUKKAD”.", "Mail the video- The subject of the mail should be “COLLEGE NAME- TEAM NAME- NUKKAD”", "Mention name of all team members in the mail body."],
 				judging: [],
 				image: "DRAMACLUB/MONOLOGUE.webp",
 			},
@@ -544,14 +561,6 @@ export default [
 				judging: [],
 				image: "FILM/Celebrity.webp",
 			},
-			{
-				id: 3,
-				name: "Boomerang",
-				description: "",
-				rules: [],
-				judging: [],
-				image: "",
-			},
 		],
 	},
 	{
@@ -581,7 +590,7 @@ export default [
 			{
 				id: 2,
 				name: "Dhun",
-				description: "Instrumental Music competition organized by Music Club.",
+				description: "Instrumental Music competition organized by Music Club & Classical Music and Dance Club.",
 				rules: [],
 				judging: [],
 				image: "MUSICCLUB/Dhun.webp",
@@ -589,7 +598,7 @@ export default [
 			{
 				id: 3,
 				name: "Voice Choice",
-				description: "The Music Club will organize the Solo Singing competition.",
+				description: "The Music Club & Classical Music and Dance Club will organize the Solo Singing competition.",
 				rules: [],
 				judging: [],
 				image: "MUSICCLUB/VoiceChoice.webp",
@@ -610,6 +619,7 @@ export default [
 					"International level Photography competition & exhibition is a 4-day long event organized by the Photography club.",
 				rules: [],
 				judging: [],
+				image: "PHOTOGRAPHYCLUB/moments.webp"
 			},
 			{
 				id: 1,
@@ -642,7 +652,7 @@ export default [
 			{
 				id: 4,
 				name: "Photography Workshop",
-				description: "",
+				description: "We've always felt like our images are missing something, don't we? The wait is ended because the MNIT Jaipur Photography Club is hosting a session that will teach you how to shoot excellent photos. Tania Chatterjee, a well-known photographer, will assist you by offering photography advice and outlining her career path that led to her appointment as a Nikon representative.                                                                                                               Ready to be inspired? Sign up right now for the workshop.",
 				rules: [],
 				judging: [],
 				image: "PHOTOGRAPHYCLUB/PhotographyWorkshop.webp",
@@ -684,6 +694,7 @@ export default [
 					"In the end, if the participant fulfilled 6/6 objectives, then he/she will be given a bar of chocolate as a token of appreciation and if he/she failed to do so then he/she will be given a toffee. ",
 				],
 				judging: [],
+				image: "TRAVEL/exploring.webp"
 			},
 		],
 	},
@@ -703,10 +714,12 @@ export default [
 				image: "ELA/YouthParliament.webp",
 			},
 		],
+		image: "electoral.webp"
 	},
 	{
 		id: 13,
 		title: "Quiz Club",
+		image: "quizClub.webp",
 		description:
 			"Quiz Club is a group of MNITians who are passionate about trivia and love to learn more from our peers. The club meets on a regular basis, where members talk about the topics they like. Events are organised on a nearly monthly basis and feature a variety of quizzes and trivia games.",
 		events: [
@@ -843,20 +856,6 @@ export default [
 				],
 				judging: ["General poll-based event(no judging criteria)"],
 				image: "THEMAVERICKS/FamilyFeud.webp",
-			},
-			{
-				id: 3,
-				name: "On-ground Reporting",
-				description: "",
-				rules: [],
-				judging: [],
-			},
-			{
-				id: 4,
-				name: "Interactive Surveys and Polls",
-				description: "",
-				rules: [],
-				judging: [],
 			},
 		],
 	},
