@@ -368,8 +368,6 @@ export default [
 					"It is an inter-college dance battle that the dance club will organize.",
 				rules: [
 					"The participating teams will have to register themselves via the registration link of the event. ",
-					"Share a video of your performance (30-40 seconds) in the registration form. ",
-					"Selected teams after paying the participation fees will be eligible to take part in the event.",
 					"Teams which participate in Ramba Samba are eligible to participate in this event on-spot.",
 					"It’s a dance battle, teams are free to flaunt their moves and stunts but college doesn’t hold any responsibility for any injury during stunts.",
 					"You are allowed to cheer and boo but no abusive language is allowed. If found so, you will be disqualified.",
@@ -387,8 +385,6 @@ export default [
 					"It is a solo freestyle dance competition that is organized by a dance club. (All the dance forms included)",
 				rules: [
 					"The participants need to register themselves through the registration link of the event.",
-					"They have to upload a short video of their performance (up to 30 seconds) in the registration form.",
-					"Selected participants will have to pay the participation fees to take part in the event.",
 					"Members of teams who participate in Ramba Samba or hit the street can register on-spot for this.",
 					"Classical or folk dance forms are not allowed. We have a separate competition for the same.",
 					"There can be multiple round based to judge’s decision",
@@ -414,7 +410,7 @@ export default [
 				id: 3,
 				name: "Flashmob",
 				description:
-					"A sensational performance by the members of the dance club (approx 50 heads) at various places as a motive to promote dance culture and the cultural fest BLITZSCHLAG. The practice session for the same will be starting around mid-January. Goodies will be provided to each participant",
+					"A sensational performance by the members of the dance club at various places as a motive to promote dance culture and the cultural fest BLITZSCHLAG.",
 				rules: [],
 				judging: [],
 				image: "DANCECLUB/flashmob.webp"
@@ -482,7 +478,7 @@ export default [
 				name: "Monologue Competiton",
 				description:
 					"In theatre, a monologue is a speech presented by a single character, most often to express their thought aloud, though sometimes also to directly address another character or the audience.",
-				rules: ["Send a video for the elimination round of about 2-5 mins at dramsocmnit@gmail com.", " For the final round the time limit is of maximum 10 mins.", "There should be no use of offensive language.", "Props and costumes have to arranged by the performer itself.", "The organizing committee reserves the right to make any last minute change in the rules.", "Submission- Participants must send a link of their video performance at dramsocmnit@gmail com.", "Rename the recorded video as “YOUR COLLEGE NAME- TEAM NAME- NUKKAD”.", "Mail the video- The subject of the mail should be “COLLEGE NAME- TEAM NAME- NUKKAD”", "Mention name of all team members in the mail body."],
+				rules: ["Send a video for the elimination round of about 2-5 mins at dramsocmnit@gmail com.", "For the final round the time limit is of maximum 10 mins.", "There should be no use of offensive language.", "Props and costumes have to arranged by the performer itself.", "The organizing committee reserves the right to make any last minute change in the rules.", "Submission- Participants must send a link of their video performance at dramsocmnit@gmail com.", "Rename the recorded video as “YOUR COLLEGE NAME- YOUR NAME”.", "Mail the video- The subject of the mail should be “COLLEGE NAME- YOUR NAME- ”"],
 				judging: [],
 				image: "DRAMACLUB/MONOLOGUE.webp",
 			},
@@ -498,7 +494,7 @@ export default [
 			{
 				id: 0,
 				name: "Raise the Curtain",
-				description: "",
+				description: "Google Form Link:- https://docs.google.com/forms/d/e/1FAIpQLSfbW4h0XsCMU-UwdLGsCQ4gzdaSZePLXrdoHmI8hBO_uDiqxA/viewform",
 				rules: [
 					"Team Size-(Solo)Language-English Rounds-1 (Online)",
 					"Deadline for Submission-3rd Feb",

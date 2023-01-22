@@ -262,10 +262,9 @@ export default function Accomodation({ isLoggedIn, userInfo }) {
 										required={true}
 									>
 										<option value=""></option>
-										<option value={"2 Feb"}>2 Feb</option>
-										<option value={"3 Feb"}>3 Feb</option>
-										<option value={"4 Feb"}>4 Feb</option>
-										<option value={"5 Feb"}>5 Feb</option>
+										<option value={"10 Feb"}>10 Feb</option>
+										<option value={"11 Feb"}>11 Feb</option>
+										<option value={"12 Feb"}>12 Feb</option>
 									</select>
 								</div> : ""
 							}

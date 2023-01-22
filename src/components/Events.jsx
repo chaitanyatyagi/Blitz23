@@ -286,11 +286,16 @@ export default function Events(props) {
 									exciting discounts. For reference visit:
 									blitzschlag.co.in/accomodation .
 								</div>
+								<div className="events-form-check-row">
+									Note: If it is a team event, then all team members are requested to register for this event.
+								</div>
 								<div className="row-wrapper-4">
-									<input
-										className="events-form-text-input"
-										value={`Price : ${event.price ? event.price : "--"}`}
-									/>
+									{
+										event.name === "Panache" || event.name === "Ramba Samba" || event.name === "Blitz Got Talent" || event.name === "Battle of Bands" ? <input
+											className="events-form-text-input"
+											value={`Price : ${event.price ? event.price : "--"}`}
+										/> : ""
+									}
 									{qrcode && !props.userInfo.college ? (
 										<button className="event-link-remover event-card-register-link">
 											PAY NOW
