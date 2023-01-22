@@ -1,8 +1,8 @@
 import "../style/login.css";
 import Navbar from "./Navbar";
 import React from "react";
-import blitz from "../images/IMG-8305.PNG";
-import formCorner from "../images/image76.png";
+import blitz from "../images/IMG-8305.webp";
+import formCorner from "../images/image76.webp";
 import axios from "axios";
 import { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";

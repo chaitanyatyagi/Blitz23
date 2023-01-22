@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../style/Events.css";
-import eventimage from "../images/EventTile.png";
+import eventimage from "../images/EventTile.webp";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import clubData from "../TestData/clubData";
 import EventsNav from "./EventsNav";

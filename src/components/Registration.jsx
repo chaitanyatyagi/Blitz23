@@ -1,8 +1,8 @@
 import "../style/registration.css";
 import React from "react";
-import blitz from "../images/Blitz_Logo_23.png";
+import blitz from "../images/Blitz_Logo_23.webp";
 // import close from "../images/Vector.png";
-import formCorner from "../images/image76.png";
+import formCorner from "../images/image76.webp";
 import axios from "axios"
 import { useState } from "react";
 import { Link } from "react-router-dom"

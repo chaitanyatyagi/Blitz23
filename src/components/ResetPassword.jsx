@@ -1,7 +1,7 @@
 import "../style/registration.css";
 import React from "react";
-import blitz from "../images/Blitz_Logo_23.png";
-import formCorner from "../images/image76.png";
+import blitz from "../images/Blitz_Logo_23.webp";
+import formCorner from "../images/image76.webp";
 import axios from "axios"
 
 export default function ResetPassword() {

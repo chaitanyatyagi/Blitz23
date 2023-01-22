@@ -1,7 +1,7 @@
 import "../style/login.css";
 import React from "react";
-import blitz from "../images/IMG-8305.PNG";
-import formCorner from "../images/image76.png";
+import blitz from "../images/IMG-8305.webp";
+import formCorner from "../images/image76.webp";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 

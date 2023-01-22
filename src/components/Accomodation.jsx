@@ -1,12 +1,12 @@
 import React, { useEffect } from "react";
 import { Navbar } from "react-bootstrap";
 import "../style/Accomodation.css";
-import leftControl from "../images/Vector-left.png";
-import rightControl from "../images/Vector-right.png";
+import leftControl from "../images/Vector-left.webp";
+import rightControl from "../images/Vector-right.webp";
 import packages from "../TestData/accomodationData";
 import { Link } from "react-router-dom";
-import ruleLogo from "../images/rule_FILL0_wght400_GRAD0_opsz48.png";
-import closeLogo from "../images/close_FILL0_wght400_GRAD0_opsz48.png";
+import ruleLogo from "../images/rule_FILL0_wght400_GRAD0_opsz48.webp";
+import closeLogo from "../images/close_FILL0_wght400_GRAD0_opsz48.webp";
 import Payment from "./Payment";
 
 export default function Accomodation({ isLoggedIn, userInfo }) {
