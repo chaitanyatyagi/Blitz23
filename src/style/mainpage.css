@@ -1,393 +1,399 @@
-@import url("https://fonts.googleapis.com/css?family=Inter");
-@import url("https://fonts.googleapis.com/css?family=Henny+Penny");
+@import url('https://fonts.googleapis.com/css?family=Inter');
+@import url('https://fonts.googleapis.com/css?family=Henny+Penny');
 
 .mainpage {
-	display: flex;
-	flex-direction: column;
-	scroll-snap-type: y mandatory;
-	width: 100%;
-	background-color: black;
+    display: flex;
+    flex-direction: column;
+    scroll-snap-type: y mandatory;
+    width: 100%;
+    background-color: black;
 }
 
 .landingPg1 {
-	height: 100vh;
-	width: 100%;
-	background-image: url("../images/landingpg1.webp");
-	background-size: 100% 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: row;
-	scroll-snap-align: start;
+    height: 100vh;
+    width: 100%;
+    background-image: url("../images/landingpg1.png");
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    scroll-snap-align: start;
 }
 
 .landingPg1ins {
-	height: 100%;
-	width: 85%;
-	background-image: url("../images/Blitz-Updated-Logo.webp");
-	background-size: 75%;
-	background-repeat: no-repeat;
-	background-position: center;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+    height: 100%;
+    width: 85%;
+    background-image: url("../images/Blitz-Updated-Logo.webp");
+    background-size: 75% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .landingPg2 {
-	height: 110vh;
-	width: 100%;
-	background-image: url("../images/landingpg2-bg.webp");
-	background-size: 100% 100vh;
-	display: flex;
-	align-items: flex-end;
-	justify-content: center;
-	flex-direction: row;
+    height: 110vh;
+    width: 100%;
+    background-image: url("../images/landingpg2-bg.png");
+    background-size: 100% 100vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: row;
 }
 
 .landingPg2left {
-	width: 65%;
-	height: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
+    width: 65%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .landingPg2lefthead {
-	width: 100%;
-	height: 25%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	font-family: "Henny Penny";
-	font-style: normal;
-	font-weight: 400;
-	font-size: 35px;
-	line-height: 50px;
-	color: white;
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Henny Penny";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 50px;
+    color: white;
 }
 
 .landingPg2leftcontent {
-	width: 70%;
-	height: 75%;
-	font-family: "Inter";
-	font-style: normal;
-	font-weight: 400;
-	font-size: 18px;
-	line-height: 30px;
-	color: white;
-	text-align: justify;
+    width: 70%;
+    height: 75%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: white;
+    text-align: justify;
+
 }
 
 .landingPg2right {
-	width: 35%;
-	height: 60%;
-	align-items: center;
-	background-image: url("../images/landinngpg2-icon.webp");
-	background-size: 100% 100%;
+    width: 35%;
+    height: 60%;
+    align-items: center;
+    background-image: url("../images/landinngpg2-icon.png");
+    background-size: 100% 100%;
+
 }
 
 .landingPg3 {
-	height: 100vh;
-	width: 100%;
-	background-image: url("../images/landingpg3.webp");
-	background-size: 100% 100vh;
-	display: flex;
-	flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    background-image: url("../images/landingpg3.png");
+    background-size: 100% 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .landingPg3Head {
-	width: 100%;
-	height: 20%;
-	font-family: "Henny Penny";
-	font-style: normal;
-	font-weight: 400;
-	font-size: 35px;
-	line-height: 50px;
-	color: white;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+    width: 100%;
+    height: 20%;
+    font-family: 'Henny Penny';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 50px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .landingPg3main {
-	width: 100%;
-	height: 80%;
-	display: flex;
-	flex-direction: row;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
 }
 
 .landingPg3left {
-	width: 60%;
-	height: 100%;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .landingPg3content {
-	width: 80%;
-	height: 70%;
-	font-family: "Inter";
-	font-style: normal;
-	font-weight: 500;
-	font-size: 18px;
-	line-height: 30px;
-	color: white;
-	text-align: justify;
+    width: 80%;
+    height: 70%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    color: white;
+    text-align: justify;
 }
 
 .landingPg3footer {
-	width: 100%;
-	margin-top: 20px;
-	padding: 20px;
+    width: 100%;
+    margin-top: 20px;
+    padding: 20px;
 }
 
 .landingPg3b1 {
-	width: 100%;
-	height: 5%;
-	display: flex;
-	justify-content: flex-start;
-	font-family: "Inter";
-	font-style: normal;
-	font-weight: 500;
-	font-size: 18px;
-	line-height: 30px;
-	color: white;
+    width: 100%;
+    height: 5%;
+    display: flex;
+    justify-content: flex-start;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    color: white;
 }
 
 .landingPg3b2 {
-	width: 100%;
-	height: 5%;
-	display: flex;
-	justify-content: center;
-	font-family: "Inter";
-	font-style: normal;
-	margin-top: 40px;
-	margin-left: 30px;
-	font-weight: 500;
-	font-size: 18px;
-	line-height: 30px;
-	color: white;
+    width: 100%;
+    height: 5%;
+    display: flex;
+    justify-content: center;
+    font-family: 'Inter';
+    font-style: normal;
+    margin-top: 40px;
+    margin-left: 30px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    color: white;
 }
 
 .landingPg3b3 {
-	width: 100%;
-	height: 5%;
-	display: flex;
-	justify-content: flex-end;
-	font-family: "Inter";
-	font-style: normal;
-	margin-top: 40px;
-	margin-left: 70px;
-	font-weight: 500;
-	font-size: 18px;
-	line-height: 30px;
-	color: white;
+    width: 100%;
+    height: 5%;
+    display: flex;
+    justify-content: flex-end;
+    font-family: 'Inter';
+    font-style: normal;
+    margin-top: 40px;
+    margin-left: 70px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    color: white;
 }
 
 .landingPg3right {
-	width: 40%;
-	height: 100%;
-	background-image: url("../images/landingpg3-tree.webp");
-	background-size: 100% 100%;
-	color: white;
+    width: 40%;
+    height: 100%;
+    background-image: url("../images/landingpg3-tree.png");
+    background-size: 100% 100%;
+    color: white;
 }
 
 .landingPg4 {
-	height: 100vh;
-	width: 100%;
-	display: flex;
-	flex-direction: row;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
 }
 
 .landingPg4left {
-	height: 100vh;
-	width: 50%;
-	background-image: url("../images/landingpg4-left.webp");
-	background-size: 100% 100vh;
+    height: 100vh;
+    width: 50%;
+    background-image: url("../images/landingpg4-left.png");
+    background-size: 100% 100vh
 }
 
 .landingPg4right {
-	height: 100vh;
-	width: 50%;
-	background-image: url("../images/landingpg4-right.webp");
-	background-size: 100% 100vh;
+    height: 100vh;
+    width: 50%;
+    background-image: url("../images/landingpg4-right.png");
+    background-size: 100% 100vh;
 }
 
-@media (max-width: 1625px) {
-	.landingPg1ins {
-		height: 55%;
-		width: 100%;
-	}
 
-	.landingPg3content {
-		font-size: 17px;
-	}
+@media(max-width: 1625px) {
+    .landingPg1ins {
+        height: 55%;
+        width: 100%;
+    }
 
-	.landingPg2leftcontent {
-		font-size: 17px;
-	}
+    .landingPg3content {
+        font-size: 17px;
+    }
 
-	.landingPg3b1 {
-		font-size: 17px;
-	}
+    .landingPg2leftcontent {
+        font-size: 17px;
+    }
 
-	.landingPg3b2 {
-		font-size: 17px;
-	}
+    .landingPg3b1 {
+        font-size: 17px;
+    }
 
-	.landingPg3b3 {
-		font-size: 17px;
-	}
+    .landingPg3b2 {
+        font-size: 17px;
+    }
+
+    .landingPg3b3 {
+        font-size: 17px;
+    }
+
 }
 
-@media (max-width: 900px) {
-	.landingPg1ins {
-		height: 45%;
-		width: 100%;
-	}
+@media(max-width: 900px) {
+    .landingPg1ins {
+        height: 45%;
+        width: 100%;
+    }
 
-	.landingPg3content {
-		font-size: 15px;
-	}
+    .landingPg3content {
+        font-size: 15px;
+    }
 
-	.landingPg2leftcontent {
-		font-size: 15px;
-	}
+    .landingPg2leftcontent {
+        font-size: 15px;
+    }
 
-	.landingPg3b1 {
-		font-size: 15px;
-	}
+    .landingPg3b1 {
+        font-size: 15px;
+    }
 
-	.landingPg3b2 {
-		font-size: 15px;
-	}
+    .landingPg3b2 {
+        font-size: 15px;
+    }
 
-	.landingPg3b3 {
-		font-size: 15px;
-	}
+    .landingPg3b3 {
+        font-size: 15px;
+    }
+
 }
 
-@media (max-width: 550px) {
-	.landingPg1ins {
-		height: 35%;
-		width: 100%;
-	}
+@media(max-width: 550px) {
+    .landingPg1ins {
+        height: 35%;
+        width: 100%;
+    }
 
-	.landingPg3content {
-		font-size: 13px;
-	}
+    .landingPg3content {
+        font-size: 13px;
+    }
 
-	.landingPg2leftcontent {
-		font-size: 13px;
-	}
+    .landingPg2leftcontent {
+        font-size: 13px;
+    }
 
-	.landingPg3b1 {
-		font-size: 13px;
-	}
+    .landingPg3b1 {
+        font-size: 13px;
+    }
 
-	.landingPg3b2 {
-		font-size: 13px;
-	}
+    .landingPg3b2 {
+        font-size: 13px;
+    }
 
-	.landingPg3b3 {
-		font-size: 13px;
-	}
+    .landingPg3b3 {
+        font-size: 13px;
+    }
 }
 
-@media (max-width: 420px) {
-	.landingPg1ins {
-		height: 30%;
-		width: 100%;
-	}
+@media(max-width: 420px) {
+    .landingPg1ins {
+        height: 30%;
+        width: 100%;
+    }
 
-	.landingPg3content {
-		font-size: 12px;
-	}
+    .landingPg3content {
+        font-size: 12px;
+    }
 
-	.landingPg2leftcontent {
-		font-size: 12px;
-	}
+    .landingPg2leftcontent {
+        font-size: 12px;
+    }
 
-	.landingPg3b1 {
-		font-size: 12px;
-	}
+    .landingPg3b1 {
+        font-size: 12px;
+    }
 
-	.landingPg3b2 {
-		font-size: 12px;
-	}
+    .landingPg3b2 {
+        font-size: 12px;
+    }
 
-	.landingPg3b3 {
-		font-size: 12px;
-	}
+    .landingPg3b3 {
+        font-size: 12px;
+    }
 }
 
-@media (max-width: 1200px) {
-	.landingPg2leftcontent {
-		height: 400px;
-		overflow-y: scroll;
-		scroll-behavior: smooth;
-		text-align: left;
-	}
+@media(max-width: 1200px) {
 
-	.landingPg3content {
-		height: 400px;
-		overflow-y: scroll;
-		scroll-behavior: smooth;
-		text-align: left;
-		width: 80%;
-	}
+    .landingPg2leftcontent {
+        height: 400px;
+        overflow-y: scroll;
+        scroll-behavior: smooth;
+        text-align: left;
+    }
 
-	.landingPg2lefthead {
-		height: 18%;
-	}
+    .landingPg3content {
+        height: 400px;
+        overflow-y: scroll;
+        scroll-behavior: smooth;
+        text-align: left;
+        width: 80%;
+    }
 
-	.landingPg2 {
-		height: 90vh;
-	}
+    .landingPg2lefthead {
+        height: 18%;
+    }
 
-	.landingPg3right {
-		width: 30%;
-		height: 70%;
-	}
+    .landingPg2 {
+        height: 90vh;
+    }
+
+    .landingPg3right {
+        width: 30%;
+        height: 70%;
+    }
 }
 
-@media (max-width: 900px) {
-	.landingPg3left {
-		width: 50%;
-	}
+@media(max-width:900px) {
+    .landingPg3left {
+        width: 50%;
+    }
 
-	.landingPg3right {
-		width: 50%;
-	}
+    .landingPg3right {
+        width: 50%;
+    }
 }
 
-@media (max-width: 550px) {
-	.landingPg3main {
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-	}
+@media(max-width:550px) {
+    .landingPg3main {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
-	.landingPg3left {
-		width: 100%;
-		height: 100%;
-	}
+    .landingPg3left {
+        width: 100%;
+        height: 100%;
+    }
 
-	.landingPg3right {
-		width: 0%;
-		height: 0%;
-	}
+    .landingPg3right {
+        width: 0%;
+        height: 0%;
+    }
 
-	.landingPg2left {
-		width: 100%;
-		height: 100%;
-	}
+    .landingPg2left {
+        width: 100%;
+        height: 100%;
+    }
 
-	.landingPg2right {
-		width: 0%;
-		height: 0%;
-	}
+    .landingPg2right {
+        width: 0%;
+        height: 0%;
+    }
 }

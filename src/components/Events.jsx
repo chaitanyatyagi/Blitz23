@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../style/Events.css";
-import eventimage from "../images/EventTile.webp";
+import eventimage from "../images/EventTile.png";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import clubData from "../TestData/clubData";
 import EventsNav from "./EventsNav";
@@ -152,24 +152,18 @@ export default function Events(props) {
 								{event.rules.length !== 0 ? (
 									<div className="event-card-text-rules">
 										Rules: <div className="events-space" /> {rulesDisp}
-									</div>
-								) : (
-									""
-								)}
+									</div>) : ""
+								}
 								{event.judging.length !== 0 ? (
 									<div className="event-card-text-judging">
 										Judgment Criteria: <div className="events-space" />
 										{judgeDisp}
 									</div>
-								) : (
-									""
-								)}
+								) : ""}
 							</div>
 							// )}
-							{event.name === "Flashmob" ? (
-								""
-							) : (
-								<Link
+							{
+								event.name === "Flashmob" ? "" : <Link
 									className="event-link-remover event-card-register-link"
 									onClick={() => {
 										login();
@@ -177,7 +171,7 @@ export default function Events(props) {
 								>
 									REGISTER
 								</Link>
-							)}
+							}
 						</div>
 					</div>
 					<div className="events-card-routed-container">
@@ -212,7 +206,7 @@ export default function Events(props) {
 										placeholder="Name of Participant"
 										name="name"
 										value={props.userInfo.name}
-										onChange={() => {}}
+										onChange={() => { }}
 										required={true}
 									/>
 									<input
@@ -230,7 +224,7 @@ export default function Events(props) {
 										placeholder="BlitzID"
 										name="blitzID"
 										value={props.userInfo.blitzId}
-										onChange={() => {}}
+										onChange={() => { }}
 										required={true}
 									/>
 									<input

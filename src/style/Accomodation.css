@@ -10,7 +10,7 @@
 .accomodation-root {
 	height: 100vh;
 	width: 100vw;
-	background-image: url("../images/image93.webp");
+	background-image: url("../images/image93.png");
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -60,7 +60,7 @@
 	font-family: "Inter";
 	font-style: normal;
 	font-weight: 400;
-	font-size: 1.1rem;
+	font-size: 1.10rem;
 	line-height: 2rem;
 	text-align: justify;
 	color: #ffffff;
@@ -339,7 +339,7 @@
 	color: white;
 }
 
-.accomaodation-rules-float-cont > img {
+.accomaodation-rules-float-cont>img {
 	width: 32px;
 }
 
@@ -376,6 +376,7 @@
 }
 
 @media (max-width: 1000px) {
+
 	.accomodation-cards-left,
 	.accomodation-cards-right {
 		display: none;

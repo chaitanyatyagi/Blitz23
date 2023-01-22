@@ -1,238 +1,242 @@
 .laptop {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-evenly;
-	align-items: center;
-	margin-right: 45px;
-	height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-right: 45px;
+    height: 100%;
 }
 
 .navdrop {
-	color: white;
-	font-family: "Inter";
-	font-style: normal;
-	font-weight: 800;
-	font-size: 18px;
+    color: white;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
 }
 
 .dropmenu {
-	background-color: red;
+    background-color: red;
 }
 
 .dropdown-item a {
-	text-decoration: none;
-	text-align: justify;
-	color: white;
+    text-decoration: none;
+    text-align: justify;
+    color: white;
 }
 
 .laptop a {
-	font-weight: 500;
-	font-size: 21px;
-	font-family: "Inter";
-	font-style: normal;
-	z-index: 999000;
+    font-weight: 500;
+    font-size: 21px;
+    font-family: 'Inter';
+    font-style: normal;
+    z-index: 999000;
 }
 
 .laptop a:hover {
-	color: rgb(133, 90, 90);
+    color: rgb(133, 90, 90);
 }
 
 .main_nav {
-	z-index: 10000;
-	width: 100%;
-	height: 65px;
-	background: black;
-	position: fixed;
-	display: flex;
-	justify-content: space-between;
-	top: 0;
-	z-index: 999000;
-	opacity: 0.6;
-	width: 100%;
-	height: 65px;
-	background: black;
-	opacity: 0.7;
-	position: absolute;
-	display: flex;
-	justify-content: space-between;
-	top: 0;
-	z-index: 999;
+    z-index: 10000;
+    width: 100%;
+    height: 65px;
+    background: black;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+    z-index: 999000;
+    opacity: 0.6;
+    width: 100%;
+    height: 65px;
+    background: black;
+    opacity: 0.7;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+    z-index: 999;
 }
 
 .menubar {
-	display: none;
-	position: fixed;
-	top: 15px;
-	right: 15px;
-	background-color: #ffffff;
-	border-radius: 7px;
+    display: none;
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    background-color: #ffffff;
+    border-radius: 7px;
 }
 
 .btn {
-	padding: 5px;
-	font-size: 20px;
-	border-radius: 7px;
+    padding: 5px;
+    font-size: 20px;
+    border-radius: 7px;
 }
 
 .leftlogo {
-	width: 15%;
-	display: flex;
-	flex-direction: row;
+    width: 15%;
+    display: flex;
+    flex-direction: row;
 }
 
 .nav_links {
-	width: 80%;
+    width: 80%;
 }
 
 .leftlogoins {
-	width: 75%;
-	height: 65px;
-	background-image: url("../images/blitzBlogo.webp");
-	background-size: 30% 50%;
-	background-repeat: no-repeat;
-	background-position: left;
+    width: 75%;
+    height: 65px;
+    background-image: url("../images/blitzBlogo.png");
+    background-size: 30% 50%;
+    background-repeat: no-repeat;
+    background-position: left
 }
 
 .leftlogoins1 {
-	width: 25%;
-	height: 65px;
-	background-image: url("../images/mnit.webp");
-	background-size: 81% 60%;
-	background-repeat: no-repeat;
-	background-position: left;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+    width: 25%;
+    height: 65px;
+    background-image: url("../images/mnit.png");
+    background-size: 81% 60%;
+    background-repeat: no-repeat;
+    background-position: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .register {
-	display: flex;
-	height: 100%;
-	flex-direction: row;
-	align-items: center;
-	color: white;
-	text-decoration: none;
-	font-family: "Inter";
-	font-style: normal;
-	font-weight: 500;
-	font-size: 18px;
+    display: flex;
+    height: 100%;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
 }
 
 .login {
-	display: flex;
-	width: 15%;
-	height: 100%;
-	/* border: 1px solid white; */
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	color: white;
-	text-decoration: none;
-	font-family: "Inter";
-	font-style: normal;
-	font-weight: 500;
-	font-size: 18px;
-	line-height: 30px;
+    display: flex;
+    width: 15%;
+    height: 100%;
+    /* border: 1px solid white; */
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
 }
 
 .centertabs {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	color: white;
-	text-decoration: none;
-	font-family: "Inter";
-	font-style: normal;
-	font-weight: 500;
-	font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
 }
 
 .dropbtn {
-	font-weight: 500;
-	font-size: 21px;
-	margin-left: 45px;
-	background-color: transparent;
-	color: white;
+    font-weight: 500;
+    font-size: 21px;
+    margin-left: 45px;
+    background-color: transparent;
+    color: white;
 }
 
+
+
 .dropbtn {
-	font-weight: 500;
-	font-size: 21px;
-	margin-left: 45px;
-	background-color: transparent;
-	color: white;
+    font-weight: 500;
+    font-size: 21px;
+    margin-left: 45px;
+    background-color: transparent;
+    color: white;
 }
 
 .mobile {
-	height: 0%;
-	right: 0;
-	top: 65px;
+    height: 0%;
+    right: 0;
+    top: 65px;
 }
 
-@media (max-width: 1000px) {
-	.laptop {
-		position: fixed;
-		right: 1200px;
-		flex-direction: column;
-		/* transition: all ease-in-out 1s; */
-		z-index: 999000;
-	}
+@media(max-width: 1000px) {
 
-	.mobile {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		position: fixed;
-		background-color: rgb(22, 21, 21);
-		height: fit-content;
-		z-index: 999000;
-	}
+    .laptop {
+        position: fixed;
+        right: 1200px;
+        flex-direction: column;
+        /* transition: all ease-in-out 1s; */
+        z-index: 999000;
+    }
 
-	.mobile a {
-		margin: 22px 20px;
-		z-index: 999000;
-		padding: 10px;
-	}
+    .mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        background-color: rgb(22, 21, 21);
+        height: fit-content;
+        z-index: 999000;
+    }
 
-	.nav_links {
-		margin-top: 20px;
-	}
+    .mobile a {
+        margin: 22px 20px;
+        z-index: 999000;
+        padding: 10px;
+    }
 
-	.laptop a {
-		margin-top: 20px;
-	}
+    .nav_links {
+        margin-top: 20px;
+    }
 
-	.menubar {
-		display: block;
-	}
+    .laptop a {
+        margin-top: 20px;
+    }
+
+
+    .menubar {
+        display: block;
+    }
 }
 
-@media (max-width: 1000px) {
-	.leftlogo {
-		width: 30%;
-	}
+@media(max-width:1000px) {
+    .leftlogo {
+        width: 30%;
+    }
 }
 
-@media (max-width: 600px) {
-	.leftlogo {
-		width: 43%;
-	}
+@media(max-width:600px) {
+    .leftlogo {
+        width: 43%;
+    }
 }
 
-@media (max-width: 480px) {
-	.leftlogo {
-		width: 55%;
-	}
+@media(max-width:480px) {
+    .leftlogo {
+        width: 55%;
+    }
 }
 
-@media (max-width: 400px) {
-	.leftlogo {
-		width: 65%;
-	}
+@media(max-width:400px) {
+    .leftlogo {
+        width: 65%;
+    }
 }
 
-@media (max-width: 350px) {
-	.leftlogo {
-		width: 75%;
-	}
+@media(max-width:350px) {
+    .leftlogo {
+        width: 75%;
+    }
 }
