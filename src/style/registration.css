@@ -3,7 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
 
 .body {
-	background-image: url("../images/image60.webp");
+	background-image: url("../images/image60.png");
 	font-family: "Inter";
 }
 
@@ -54,16 +54,16 @@
 
 .form-feilds {
 	background: rgba(255, 255, 255, 0.2);
-	border: 1px solid #ffffff;
+	border: 1px solid #FFFFFF;
 	border-radius: 5px;
 	margin-bottom: 2em;
 	height: 1.2em;
 	padding: 8px;
 	width: 80%;
-	color: #d5d5d5;
+	color: #D5D5D5;
 	padding: 20px;
 	font-size: 1rem;
-	font-family: "Poppins";
+	font-family: 'Poppins';
 	font-style: normal;
 	font-weight: 600;
 }
@@ -130,7 +130,7 @@
 	color: white;
 }
 
-@media (max-width: 900px) {
+@media (max-width:900px) {
 	.body::-webkit-scrollbar {
 		display: none;
 	}
@@ -163,7 +163,7 @@
 	}
 }
 
-@media (min-width: 901px) {
+@media (min-width:901px) {
 	.body {
 		overflow: hidden;
 		height: 100vh;

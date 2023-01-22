@@ -6,7 +6,7 @@
 .club-background {
 	min-height: 100vh;
 	width: 100vw;
-	background-image: url("../images/ClubBackground.webp");
+	background-image: url("../images/ClubBackground.png");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -27,7 +27,7 @@
 	width: 20vw;
 	min-height: 100vh;
 	height: 100%;
-	background-image: url("../images/clubsidebar.webp");
+	background-image: url("../images/clubsidebar.png");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
