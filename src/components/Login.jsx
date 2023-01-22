@@ -1,14 +1,13 @@
 import "../style/login.css";
 import Navbar from "./Navbar";
 import React from "react";
-import blitz from "../images/IMG-8305.PNG";
-import formCorner from "../images/image76.png";
+import blitz from "../images/IMG-8305.webp";
+import formCorner from "../images/image76.webp";
 import axios from "axios";
 import { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
-import Cookies from 'universal-cookie';
+import Cookies from "universal-cookie";
 const cookies = new Cookies();
-
 
 export default function Registration(props) {
 	const navigate = useNavigate();
@@ -16,17 +15,17 @@ export default function Registration(props) {
 		e.preventDefault();
 		let payload = {
 			email: e.target[0].value,
-			password: e.target[1].value
-		}
+			password: e.target[1].value,
+		};
 		// axios.post(`${process.env.REACT_APP_SERVER}/users/login`, payload)
-		axios.post(`${process.env.REACT_APP_SERVER}/users/login`, payload)
+		axios
+			.post(`${process.env.REACT_APP_SERVER}/users/login`, payload)
 			.then(function (response) {
 				console.log(response.data);
-				if (response.data.status === "error")
-					window.alert(response.data.message)
+				if (response.data.status === "error") window.alert(response.data.message);
 				else {
 					props.setIsLoggedIn(true);
-					cookies.set('jwt', response.data.token, { path: '/' });
+					cookies.set("jwt", response.data.token, { path: "/" });
 					navigate("/profile");
 				}
 			})
@@ -42,7 +41,7 @@ export default function Registration(props) {
 				<div className="image">
 					<image src={blitz} />
 				</div>
-				<form className="form" onSubmit={handleSubmit} >
+				<form className="form" onSubmit={handleSubmit}>
 					<image src={formCorner} className="top-right"></image>
 					<image src={formCorner} className="bottom-left"></image>
 					<h1 className="form-heading">Login</h1>
@@ -52,20 +51,20 @@ export default function Registration(props) {
 							className="form-feilds"
 							placeholder="Email-ID / Username"
 							type="email"
-						>
-						</input>
+						></input>
 						<input
 							name="password"
 							className="form-feilds"
 							placeholder="Password"
 							type="password"
-						>
-						</input>
-						<Link to="/forgotpassword" className="forgot-pass">Forgot Password?</Link>
+						></input>
+						<Link to="/forgotpassword" className="forgot-pass">
+							Forgot Password?
+						</Link>
 					</div>
-					<button className="form-submit" >Login</button>
+					<button className="form-submit">Login</button>
 				</form>
 			</div>
 		</div>
-	)
+	);
 }
