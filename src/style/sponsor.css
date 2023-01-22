@@ -1,112 +1,113 @@
-@import url("https://fonts.googleapis.com/css?family=Inter");
-@import url("https://fonts.googleapis.com/css?family=Henny+Penny");
+@import url('https://fonts.googleapis.com/css?family=Inter');
+@import url('https://fonts.googleapis.com/css?family=Henny+Penny');
 
 .sponsor {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	height: 100vh;
-	width: 100vw;
-	background-image: url("../images/sponsorBG.webp");
-	background-size: 100% 100%;
-	background-position: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-image: url("../images/sponsorBG.png");
+    background-size: 100% 100%;
+    background-position: contain;
 }
 
 .sponsorhead {
-	height: 19%;
-	width: 85%;
-	font-family: "Henny Penny";
-	font-style: normal;
-	font-weight: 400;
-	font-size: 45px;
-	letter-spacing: 0.08em;
-	display: flex;
-	align-items: flex-end;
-	justify-content: center;
-	color: white;
+    height: 19%;
+    width: 85%;
+    font-family: 'Henny Penny';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 45px;
+    letter-spacing: 0.08em;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    color: white;
 }
 
 .sponsorcontent {
-	height: 15%;
-	width: 85%;
-	font-family: "Inter";
-	font-style: normal;
-	font-weight: 400;
-	font-size: 19px;
-	color: white;
-	display: flex;
-	align-items: center;
-	text-align: justify;
+    height: 15%;
+    width: 85%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    color: white;
+    display: flex;
+    align-items: center;
+    text-align: justify;
 }
 
 .sponsormain {
-	height: 66%;
-	width: 85vw;
-	display: flex;
-	overflow-y: auto;
-	justify-content: center;
-	flex-wrap: wrap;
+    height: 66%;
+    width: 85vw;
+    display: flex;
+    overflow-y: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+
 }
 
 .sponsormainins {
-	width: 21vw;
-	height: 30vh;
-	background-size: 50% 50%;
-	background-repeat: no-repeat;
-	background-position: center;
+    width: 21vw;
+    height: 30vh;
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 @media (max-width: 1000px) {
-	.sponsorhead {
-		font-weight: 400;
-		font-size: 40px;
-	}
+    .sponsorhead {
+        font-weight: 400;
+        font-size: 40px;
+    }
 
-	.sponsorcontent {
-		font-weight: 400;
-		font-size: 16px;
-	}
+    .sponsorcontent {
+        font-weight: 400;
+        font-size: 16px;
+    }
 }
 
 @media (max-width: 800px) {
-	.sponsorhead {
-		font-weight: 350;
-		font-size: 35px;
-		height: 26%;
-	}
+    .sponsorhead {
+        font-weight: 350;
+        font-size: 35px;
+        height: 26%;
+    }
 
-	.sponsorcontent {
-		font-weight: 350;
-		font-size: 13px;
-		height: 18%;
-	}
+    .sponsorcontent {
+        font-weight: 350;
+        font-size: 13px;
+        height: 18%;
+    }
 }
 
 @media (max-width: 500px) {
-	.sponsorhead {
-		font-weight: 300;
-		font-size: 30px;
-		height: 30%;
-	}
+    .sponsorhead {
+        font-weight: 300;
+        font-size: 30px;
+        height: 30%;
+    }
 
-	.sponsorcontent {
-		font-weight: 300;
-		font-size: 12px;
-		height: 24%;
-	}
+    .sponsorcontent {
+        font-weight: 300;
+        font-size: 12px;
+        height: 24%;
+    }
 }
 
 @media (max-width: 300px) {
-	.sponsorhead {
-		font-weight: 250;
-		font-size: 25px;
-		height: 36%;
-	}
+    .sponsorhead {
+        font-weight: 250;
+        font-size: 25px;
+        height: 36%;
+    }
 
-	.sponsorcontent {
-		font-weight: 250;
-		font-size: 9px;
-		height: 28%;
-	}
+    .sponsorcontent {
+        font-weight: 250;
+        font-size: 9px;
+        height: 28%;
+    }
 }

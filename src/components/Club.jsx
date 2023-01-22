@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "./Navbar";
 import ClubBar from "./ClubBar";
 import clubData from "../TestData/clubData";
-import DanceCover from "../images/danceclubcover.webp";
+import DanceCover from "../images/danceclubcover.png";
 import { Link } from "react-router-dom";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "../style/Club.css";

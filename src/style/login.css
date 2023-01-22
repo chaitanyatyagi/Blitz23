@@ -3,7 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
 
 .body {
-	background-image: url("../images/image60.webp");
+	background-image: url("../images/image60.png");
 	font-family: "Inter";
 }
 
@@ -25,7 +25,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-image: url("../images/image\ 78.webp");
+	background-image: url("../images/image\ 78.png");
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -181,18 +181,18 @@
 }
 
 .facebook {
-	background-image: url("../images/image\ 81.webp");
+	background-image: url("../images/image\ 81.png");
 }
 
 .google {
-	background-image: url("../images/image\ 79.webp");
+	background-image: url("../images/image\ 79.png");
 }
 
 .twitter {
-	background-image: url("../images/image\ 80.webp");
+	background-image: url("../images/image\ 80.png");
 }
 
-@media (max-width: 900px) {
+@media (max-width:900px) {
 	.body::-webkit-scrollbar {
 		display: none;
 	}
@@ -227,7 +227,7 @@
 	}
 }
 
-@media (min-width: 901px) {
+@media (min-width:901px) {
 	.body {
 		overflow: hidden;
 		height: 100vh;
