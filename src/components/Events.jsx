@@ -161,7 +161,6 @@ export default function Events(props) {
 									</div>
 								) : ""}
 							</div>
-							// )}
 							{
 								event.name === "Flashmob" ? "" : <Link
 									className="event-link-remover event-card-register-link"
