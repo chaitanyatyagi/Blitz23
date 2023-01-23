@@ -1,75 +1,52 @@
-import React, { useState } from 'react'
+import React from 'react'
 import '../style/contact.css'
 import Contactdetails from './ContactApi'
-import Navbar from './Navbar';
-import { FaRegWindowClose, FaWhatsappSquare, FaVoicemail } from 'react-icons/fa';
+import { FaWhatsappSquare, FaInstagramSquare } from 'react-icons/fa';
 
 export default function Contact() {
-    const [showpopup, setShowpopup] = useState(false);
-    const [ClickedId, setClickedId] = useState();
-    const showcontact = (id) => {
-        setShowpopup(true);
-        setClickedId(id)
-    }
-    const hidecontact = () => {
-        setShowpopup(false)
-    }
 
     return (
         <>
-            {showpopup &&
-                <div className='contDetails'>
-                    {
-                        Contactdetails[ClickedId].team.map((teammembers) => {
-                            return (
-                                <div className='detailsaling'>
-                                    {/* <div className='memimg'>
-                                        <img src={teammembers.memimg} alt="teammemimg" />
-                                    </div> */}
-                                    <div className='namestyle'>
-                                        {teammembers.name}
-                                        {/* <div className='phone'>
-                                            {teammembers.phone}
-                                        </div> */}
-                                        <div className='phone'>
-                                            ({teammembers.position})
-                                        </div>
-                                    </div>
-                                    {/* <div className='media'>
-                                        <p><a href={`https://wa.me/${teammembers.phone}`} target="_blank" rel="noreferrer noopener"><FaWhatsappSquare /></a></p>
-                                        <p><a href={"mailto: " + teammembers.email}><FaVoicemail /></a></p>
-                                    </div> */}
-                                    <div className='cancel' onClick={() => hidecontact()}>
-                                        <FaRegWindowClose />
-                                    </div>
-                                </div>
-                            )
-                        })
-                    }
 
-                </div>
-            }
             <div className='maincontainer'>
-                <div className='headline'>
-                    CONTACT TO
+                <div className='contheading'>
+                    contact us
                 </div>
-                <div className='contentcont'>
-                    {
-                        Contactdetails.map((e) => {
+                <div className='contnav'>
+                    {Contactdetails.map((item) => {
+                        return (
+                            <div key={item.id} > <a href={"#" + item.id + "id"}>{item.title}</a></div>
+                        )
+                    })}
+                </div>
+                <div className='contdetails'>
+                    {Contactdetails.map((item) => {
+                        return (
+                            <div className='subheading' id={item.id + "id"} key={item.id}>
+                                {item.title}
+                                <div className='cardContainer'>
+                                    {
+                                        item.team.map((member) => {
+                                            return (
+                                                <div className='teamMemb'>
+                                                    <img src={`${member.memimg}`} alt="contimg/azad.jpng" className='contimg' />
+                                                    <div>
+                                                        <p className='memname'>{member.name}</p>
+                                                        <p className='post'>{member.position}</p>
+                                                        <p className='email'>{member.email}</p>
+                                                        <p className='phone'>{member.phone}</p>
+                                                    </div>
 
-                            return (
-                                <div className='containercont' key={e.id} onClick={() => showcontact(e.id)}>
-                                    <div className='contimg'>
-                                        <img className='img' src={e.image} alt="tech" />
-                                    </div>
+                                                </div>
+                                            )
+                                        })
+                                    }
 
-                                    <div className='contdesc'>
-                                        {e.title}
-                                    </div>
                                 </div>
-                            )
-                        })
-                    }
+                            </div>
+                        )
+                    })}
+
                 </div>
             </div>
         </>

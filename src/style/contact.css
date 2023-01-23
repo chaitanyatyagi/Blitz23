@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;900&family=Radio+Canada:wght@400;500&family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@300;400;500&family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter');
 @import url('https://fonts.googleapis.com/css?family=Henny+Penny');
 
 * {
@@ -9,148 +9,154 @@
 
 .maincontainer {
     width: 100%;
-    min-height: 100vh;
-    z-index: 999000000;
-    padding-top: 25px;
-    background-size: cover;
+    height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
     background-position: center;
-    padding-bottom: 100px;
     background: linear-gradient(rgba(22, 21, 21, 0.75), rgba(16, 14, 14, 0.75)), url('../images/concbg.webp');
-}
-
-.headline {
-    color: white;
-    font-size: 40px;
-    font-weight: 400;
-    padding-top: 50px;
-    font-family: "Henny Penny";
-}
-
-.contentcont {
-    /* margin: auto; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 20px;
-}
-
-body::-webkit-scrollbar {
-    display: none;
-}
-
-.contDetails {
-    margin-top: 80px;
-    position: fixed;
-    background-size: cover;
-    z-index: 9990000;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
-    background-position: center center;
-    padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    border-top-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    background: linear-gradient(rgba(51, 50, 50), rgba(35, 25, 25));
-    justify-content: center;
-    align-items: center;
-    left: 50%;
-    transform: translate(-50%, 0);
-    transition: all ease-in-out 1s;
 }
 
-.detailstyle {
-    padding: 10px;
-    font-size: 21px;
-    font-weight: 500;
-    box-shadow: 5px 5px 5px 5px rgba(10, 9, 9, 0.3);
-    border-radius: 8px;
-    border: 0.2px solid grey;
-    margin-bottom: 5px;
+.contheading {
+    color: #fff;
+    font-size: 2.7vw;
+    font-weight: 700;
+    position: relative;
+    top: 65px;
+    left: 3.1vw;
+    text-transform: uppercase;
+
 }
 
-.detailsaling {
+.contnav {
+    position: fixed;
+    color: #fff;
+    top: 10vh;
+    z-index: 2;
+    right: 40px;
+    text-align: end;
+    font-family: "Henny Penny";
+    font-size: x-large;
+}
+
+.contnav div {
+    margin: 12px;
+    cursor: pointer;
+    color: white;
+}
+
+.contnav div a {
+    color: white;
+    font-size: 18px;
+}
+
+.contnav div:hover {
+    cursor: pointer;
+    scale: 1.2;
+}
+
+.contdetails {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    z-index: 9990000;
-    align-items: center;
-    color: white;
-    margin: 15px 35px;
-}
-
-.namestyle {
-    font-family: "Henny Penny";
-    font-size: 35px;
-}
-
-.phone {
-    font-family: cursive;
-    font-size: 19px;
-}
-
-.media {
-    display: flex;
-    justify-content: space-around;
+    padding-bottom: 170px;
     width: 80%;
-    font-size: 25px;
-    margin-top: 7px;
-
 }
 
-.media p a {
-    color: white;
+.subheading {
+    color: #fff;
+    font-size: 1.5vw;
+    font-family: Raleway-Bold;
+    position: relative;
+    padding-top: 70px;
+    left: 3.1vw;
+    padding-bottom: 0;
+    margin: 3vw 0;
+    text-align: left;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cardContainer {
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    /* overflow-x: scroll; */
+}
+
+.teamMemb {
+    min-height: 30vw;
+    background-color: #fff;
+    margin: 1.5vw 2vw;
+    background-color: #2aff99;
+    box-shadow: 0.4vw 0.4vw #2db061;
+    font-weight: 900;
+    text-align: center;
 }
 
 .contimg {
-    height: 83%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 15vw;
+    height: 15vw;
 }
 
-.img {
-    height: 200px;
-    border-radius: 50%;
+.memname {
+    color: #2f0b2e;
+    font-family: Raleway-Bold;
+    text-align: center;
+    padding-left: 0.2vw;
+    font-size: 1.7vw;
+    padding-right: 0.2vw;
+    overflow-wrap: break-word;
 }
 
-.contdesc {
-    font-size: 25px;
-    font-weight: 500;
-    color: white;
+.post {
+    color: #793478;
+    text-align: center;
+    text-align: center;
+    padding-left: 0.2vw;
+    font-size: 1.7vw;
+    padding-right: 0.2vw;
+    overflow-wrap: break-word;
+    font-style: italic;
+    text-overflow: clip;
+    overflow-wrap: break-word;
 }
 
-.containercont {
-    border: 0.5px solid grey;
-    padding: 10px;
-    cursor: pointer;
-    box-shadow: 5px 5px 5px 5px rgba(10, 9, 9, 0.3);
-    margin: 8px 12px;
-    height: 300px;
-    width: 300px;
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 22px;
 }
 
-.cancel {
-    position: fixed;
-    right: 2px;
-    top: 2px;
-    cursor: pointer;
-}
+@media(max-width: 800px) {
+    .contnav {
+        color: #fff;
+        position: relative;
+        top: 12vh;
+        right: 0;
+        margin-left: 2vw;
+        text-align: left;
+        margin: auto;
+    }
 
-/* .memimg{
-    
-} */
+    .teamMemb {
+        padding: 5px;
+        width: 120px;
+    }
 
-.memimg img {
-    height: 80px;
-    border-radius: 50%;
-    border: 2px solid grey;
-}
+    .subheading {
+        font-size: 14px;
+    }
 
-@media(max-width: 950px) {
-    .contDetails {
-        width: 100%;
-        height: 100vh;
-        overflow-y: scroll;
+    .contdetails {
+        display: flex;
+        flex-direction: column;
+        margin-left: 2vw;
+    }
+
+    .maincontainer {
+        display: flex;
+        flex-direction: column;
     }
 }
