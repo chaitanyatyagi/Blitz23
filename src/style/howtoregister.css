@@ -1,0 +1,35 @@
+.howtoregister {
+    display: flex;
+    background-color: black;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    overflow-y: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.video1desk {
+    margin-top: 70px;
+    width: 20%;
+    height: 20%;
+    border: 2px solid white;
+}
+
+.video2desk {
+    width: 20%;
+    height: 20%;
+    border: 2px solid white;
+}
+
+.video1mob {
+    width: 20%;
+    height: 20%;
+    border: 2px solid white;
+}
+
+.video2mob {
+    width: 20%;
+    height: 20%;
+    border: 2px solid white;
+}

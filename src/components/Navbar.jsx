@@ -44,6 +44,7 @@ function Navbar({ isLoggedIn }) {
                         <Link to="/events" className="centertabs" onClick={() => hideNav()} onBlur={() => hideNav()}>EVENTS</Link>
                         <Link to="/flagship-events" className="centertabs" onClick={() => hideNav()} onBlur={() => hideNav()}>FLAGSHIP EVENTS</Link>
                         <Link to="/accomodation" className="centertabs" onClick={() => hideNav()} onBlur={() => hideNav()}>HOSPITALITY</Link>
+                        <Link to="/how-to-register" className="centertabs" onClick={() => hideNav()} onBlur={() => hideNav()}>HOW TO REGISTER?</Link>
                         <div>
                             <NavDropdown
                                 id="nav-dropdown-dark-example"

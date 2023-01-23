@@ -20,6 +20,7 @@ import VerifyOTP from "./components/VerifyOTP";
 import Accomodation from "./components/Accomodation"
 import Preloader from "./components/Preloader";
 import BrandAmbassador from "./components/BrandAmbassador";
+import HowToRegister from "./components/HowToRegister";
 import axios from "axios"
 
 function App() {
@@ -84,7 +85,8 @@ function App() {
 						<Route path="/payment" element={<Payment />} />
 						<Route path="/verifyOtp" element={<VerifyOTP />} />
 						<Route path="/accomodation" element={<Accomodation isLoggedIn={isLoggedIn} userInfo={userInfo} />} />
-						<Route path="/campus-ambassador" element={<BrandAmbassador />} />s
+						<Route path="/campus-ambassador" element={<BrandAmbassador />} />
+						<Route path="/how-to-register" element={<HowToRegister />} />
 					</Routes>
 				</div>
 			}
