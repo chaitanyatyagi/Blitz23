@@ -7,11 +7,11 @@ import axios from "axios"
 export default function VerifyOTP() {
     async function handleSubmit(e) {
         e.preventDefault();
-        let name = e.target[0].value
+        let phone = e.target[0].value
         let email = e.target[1].value;
         let otp = e.target[2].value
         axios.post(`${process.env.REACT_APP_SERVER}/users/verifyOtp`, {
-            name, email, otp,
+            phone, email, otp,
         })
             .then(function (response) {
                 if (response.data.status === "error") {
@@ -39,7 +39,7 @@ export default function VerifyOTP() {
                     <image src={formCorner} className="bottom-left"></image>
                     <h1 className="form-heading">Verify OTP</h1>
                     <input
-                        className='form-feilds' placeholder='name' name="name" required="true">
+                        className='form-feilds' placeholder='PHONE NUMBER' name="PHONENO">
                     </input>
                     <input
                         className='form-feilds' placeholder='EMAIL' type="email" name="EMAIL" required="true">
