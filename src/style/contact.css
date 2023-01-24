@@ -110,6 +110,16 @@
     overflow-wrap: break-word;
 }
 
+.emailc {
+    color: white;
+    font-family: Raleway-Bold;
+    text-align: center;
+    padding-left: 0.2vw;
+    font-size: 1.7vw;
+    padding-right: 0.2vw;
+    overflow-wrap: break-word;
+}
+
 .post {
     color: #793478;
     text-align: center;

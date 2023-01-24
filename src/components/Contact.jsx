@@ -33,7 +33,7 @@ export default function Contact() {
                                                     <div>
                                                         <p className='memname'>{member.name}</p>
                                                         <p className='post'>{member.position}</p>
-                                                        <p className='email'>{member.email}</p>
+                                                        <p className='emailc'>{member.email}</p>
                                                         <p className='phone'>{member.phone}</p>
                                                     </div>
 
