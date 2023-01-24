@@ -1,174 +1,195 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter');
-@import url('https://fonts.googleapis.com/css?family=Henny+Penny');
+@import url("https://fonts.googleapis.com/css2?family=Inter");
+@import url("https://fonts.googleapis.com/css?family=Henny+Penny");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 .maincontainer {
-    width: 100%;
-    height: 100vh;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    background-position: center;
-    background: linear-gradient(rgba(22, 21, 21, 0.75), rgba(16, 14, 14, 0.75)), url('../images/concbg.webp');
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
+	width: 100%;
+	height: 100vh;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	background-position: center;
+	background: linear-gradient(rgba(22, 21, 21, 0.75), rgba(16, 14, 14, 0.75)),
+		url("../images/concbg.webp");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
 }
 
 .contheading {
-    color: #fff;
-    font-size: 2.7vw;
-    font-weight: 700;
-    position: relative;
-    top: 65px;
-    left: 3.1vw;
-    text-transform: uppercase;
-
+	color: #fff;
+	font-size: 2rem;
+	font-weight: 700;
+	position: relative;
+	top: 65px;
+	left: 3.1vw;
+	text-transform: uppercase;
 }
 
 .contnav {
-    position: fixed;
-    color: #fff;
-    top: 10vh;
-    z-index: 2;
-    right: 40px;
-    text-align: end;
-    font-family: "Henny Penny";
-    font-size: x-large;
+	position: fixed;
+	color: #fff;
+	top: 10vh;
+	z-index: 2;
+	right: 40px;
+	text-align: end;
+	font-family: "Henny Penny";
+	font-size: x-large;
 }
 
 .contnav div {
-    margin: 12px;
-    cursor: pointer;
-    color: white;
+	margin: 12px;
+	cursor: pointer;
+	color: white;
 }
 
 .contnav div a {
-    color: white;
-    font-size: 18px;
+	color: white;
+	font-size: 18px;
 }
 
 .contnav div:hover {
-    cursor: pointer;
-    scale: 1.2;
+	cursor: pointer;
+	scale: 1.2;
 }
 
 .contdetails {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 170px;
-    width: 80%;
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 170px;
+	width: 80%;
 }
 
 .subheading {
-    color: #fff;
-    font-size: 1.5vw;
-    font-family: Raleway-Bold;
-    position: relative;
-    padding-top: 70px;
-    left: 3.1vw;
-    padding-bottom: 0;
-    margin: 3vw 0;
-    text-align: left;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
+	color: #fff;
+	font-size: 1.5rem;
+	font-family: Raleway-Bold;
+	position: relative;
+	padding-top: 70px;
+	left: 3.1vw;
+	padding-bottom: 0;
+	margin: 3vw 0;
+	text-align: left;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
 }
 
 .cardContainer {
-    display: flex;
-    /* flex-direction: column; */
-    flex-wrap: wrap;
-    /* overflow-x: scroll; */
+	display: flex;
+	/* flex-direction: column; */
+	flex-wrap: wrap;
+	/* overflow-x: scroll; */
 }
 
 .teamMemb {
-    min-height: 30vw;
-    background-color: #fff;
-    margin: 1.5vw 2vw;
-    background-color: #2aff99;
-    box-shadow: 0.4vw 0.4vw #2db061;
-    font-weight: 900;
-    border: 2px solid white;
-    text-align: center;
-    width: 16vw;
+	min-height: 30vw;
+	background-color: #fff;
+	margin: 1.5vw 2vw;
+	background-color: #9549c9;
+	box-shadow: 0.4vw 0.4vw #575a8d;
+	font-weight: 900;
+	border: 2px solid white;
+	text-align: center;
+	width: 16vw;
 }
 
 .contimg {
-    width: 100%;
-    height: 15vw;
+	max-width: 100%;
+	height: 15vw;
 }
 
 .memname {
-    color: #2f0b2e;
-    font-family: Raleway-Bold;
-    text-align: center;
-    padding-left: 0.2vw;
-    font-size: 1.3vw;
-    padding-right: 0.2vw;
-    overflow-wrap: break-word;
+	color: white;
+	font-family: Raleway-Bold;
+	text-align: center;
+	padding-left: 0.2vw;
+	font-size: 1.2rem;
+	padding-right: 0.2vw;
+	overflow-wrap: break-word;
+	font-weight: 700;
 }
 
 .emailc {
-    color: white;
-    font-family: Raleway-Bold;
-    text-align: center;
-    padding-left: 0.2vw;
-    font-size: 1.3vw;
-    padding-right: 0.2vw;
-    overflow-wrap: break-word;
+	color: white;
+	font-family: Raleway-Bold;
+	text-align: center;
+	padding-left: 0.2vw;
+	font-size: 1rem;
+	padding-right: 0.2vw;
+	overflow-wrap: break-word;
+	font-weight: 400;
 }
 
 .post {
-    color: #793478;
-    text-align: center;
-    text-align: center;
-    padding-left: 0.2vw;
-    font-size: 1.3vw;
-    padding-right: 0.2vw;
-    overflow-wrap: break-word;
-    font-style: italic;
-    text-overflow: clip;
-    overflow-wrap: break-word;
+	color: white;
+	text-align: center;
+	text-align: center;
+	padding-left: 0.2vw;
+	font-size: 1rem;
+	padding-right: 0.2vw;
+	overflow-wrap: break-word;
+	font-style: italic;
+	text-overflow: clip;
+	overflow-wrap: break-word;
+	font-weight: 400;
+}
+
+.phone {
+	font-size: 1rem;
+	font-weight: 400;
 }
 
 a {
-    text-decoration: none;
-    color: black;
-    font-size: 22px;
+	text-decoration: none;
+	color: black;
+	font-size: 22px;
 }
 
-@media(max-width: 800px) {
-    .contnav {
-        color: #fff;
-        position: relative;
-        top: 12vh;
-        right: 0;
-        margin-left: 2vw;
-        text-align: left;
-        margin: auto;
-    }
+@media (max-width: 800px) {
+	.contnav {
+		color: #fff;
+		position: relative;
+		top: 12vh;
+		right: 0;
+		margin-left: 2vw;
+		text-align: left;
+		margin: auto;
+		display: none;
+	}
 
-    .teamMemb {
-        padding: 5px;
-        width: 120px;
-    }
+	.teamMemb {
+		padding: 5px;
+		width: 120px;
+	}
 
-    .subheading {
-        font-size: 14px;
-    }
+	.subheading {
+		font-size: 1rem;
+	}
 
-    .contdetails {
-        display: flex;
-        flex-direction: column;
-        margin-left: 2vw;
-    }
+	.contdetails {
+		display: flex;
+		flex-direction: column;
+		margin-left: 2vw;
+	}
 
-    .maincontainer {
-        display: flex;
-        flex-direction: column;
-    }
+	.maincontainer {
+		display: flex;
+		flex-direction: column;
+	}
+	.contimg {
+		width: 100%;
+		height: fit-content;
+	}
+	.memname {
+		font-size: 0.8rem;
+	}
+	.post,
+	.emailc,
+	.phone {
+		font-size: 0.7rem;
+	}
 }
