@@ -28,7 +28,7 @@ function App() {
 	const [isLoggedIn, setIsLoggedIn] = useState(false)
 	const [userInfo, setUserInfo] = useState({})
 	const cookies = new Cookies()
-	const [loading, setLoading] = useState(false)
+	const [loading, setLoading] = useState(true)
 
 	useEffect(() => {
 		setTimeout(() => {
