@@ -167,13 +167,14 @@ export default [
 			{
 				id: 0,
 				name: "Motif-Filion",
-				description: "",
+				description: "Doodling event: A doodle is a drawing made while a person's attention is occupied. Doodling can have concrete representational meaning or may just be composed of random and abstract lines or shapes, generally without ever lifting the drawing device from the paper. REQUIREMENTS: A5 Sheets - (based on entries),Markers and Sketch pens. Themes- Emotions / Favourites /Food/Cartoons/cars/ human faces/games (any other) ",
 				rules: [
-					"Based on the themes the participants with their interpretation based on it will doodle out their imagination.",
-					"It would be a fun event.",
+					"Individual Participation",
+					"Based on the given themes the participants with their interpretation based on it will doodle out their imagination. ",
+					"It would be a fun event . ",
 					"The best 3 entries of doodle will receive prizes.",
 				],
-				judging: ["Best representation of the theme chosen"],
+				judging: ["Best representation about the theme chosen."],
 				image: "CREATIVEARTS/Motif-filion.webp",
 			},
 			{
@@ -182,14 +183,13 @@ export default [
 				description:
 					"The Art Exhibition is a display of different kinds of paintings from previous events organized by the Creative Arts Club.",
 				rules: [
-					"A Google Form will be posted to receive entries from all the students of MNIT",
-					"Selection of Paintings and Models will be done from the entries",
+					"After registering on the website, entries have to be mailed on creativeartsmnit@gmail.com",
+					"Selection of Paintings and Models  will be done from the entries",
 					"Selected Paintings and Models will be displayed in the hall provided for the event",
-					"Paintings and ArtWorks from past Creative Arts Club Events will also be displayed at the event.",
+					"Paintings and ArtWorks from past Creative Arts Club Events will also be displayed in the event.",
 					"Original Paintings are recommended.",
 					"Physical Paintings and Models will be asked for the selected entries.",
-					"If Physical Painting or model is not possible for the submission, then Photographs will be allowed only upon the coordinator's approval and verification.",
-					"Mail us your entries at creativeartsmnit@gmail.com "
+					"If Physical Painting or model is not possible for the submission, then Photographs will be allowed only upon the coordinators approval and verification."
 				],
 				judging: [],
 				image: "CREATIVEARTS/ArtExhibition.webp",
@@ -200,14 +200,12 @@ export default [
 				description:
 					"A competition organized by the Creative Arts Club wherein the participants are required to draw objects and figures by lines.",
 				rules: [
-					"A Google Form will be posted to receive entries from all the students of MNIT ",
-					"Selection of Paintings and Models will be done from the entries",
-					"Selected Paintings and Models will be displayed in the hall provided for the event ",
-					"Paintings and ArtWorks from past Creative Arts Club Events will also be displayed in the event.",
-					"Theme cannot be changed in any case after choosing",
+					"All the participants will be provided with a particular theme to draw on.  ",
+					"White sheets, colours, and markers will be provided.",
+					"Results will be announced at the end of the day and prizes will be distributed to the first three winners.",
+					"A single reference will be allowed for every participant in relation to ‘What is line art?’.  ",
+					"Time and materials will be limited to all.  ",
 					"Each participant is required to complete the artwork and is not allowed to leave midway.",
-					"A single reference will be allowed for every participant in relation to ‘What is line art?’.",
-					"Time and materials will be limited to all. ",
 				],
 				judging: [],
 				image: "CREATIVEARTS/LineArt.webp",
@@ -216,17 +214,13 @@ export default [
 				id: 3,
 				name: "Tint-a-Top",
 				description:
-					"It is a creative art competition in which participants will paint a t-shirt, and the creative arts club will organize this event.",
+					"It is a creative art competition in which participants will paint a t-shirt, and the creative arts club will organize this event.Material Required:- T-Shirts of various Sizes, Acrylic Colors, Paint Brushes ( Both Round and Flat Brushes )",
 				rules: [
-					"A Google Form will be posted to receive participation from all the students of MNIT and other colleges & schools also ( Open to all events)",
-					"Entry Fee will be taken",
-					"T-Shirts, Colors, and Paint Brushes will be provided.",
-					"After the Competition, T-Shirts will be exhibited in the venue for the judgments.",
+					"T-Shirts, Colors and Paint Brushes will be provided.",
+					"After the Competition, T Shirts will be exhibited in the venue for the judgments.",
 					"A Judge will be called and the entries will be judged after the competition.",
 					"Copywork won't be accepted.",
-					"Extra T-Shirts won't be given for the 2nd time. So be careful while painting",
 					"Participants can bring their own art supplies",
-					"Pairing won't be allowed",
 				],
 				judging: [],
 				image: "CREATIVEARTS/tint-a-top.webp",
@@ -365,7 +359,7 @@ export default [
 				id: 0,
 				name: "Hit the Street",
 				description:
-					"It is an inter-college dance battle that the dance club will organize.",
+					"It is an grand inter-college dance battle for group dancers which is one of the events being organised by the Dance Club. We are inviting the best teams of all the colleges to show up their dance moves and win prizes. Teams of all the dance forms(except classical form, there is separate competition for that) are allowed to perform.",
 				rules: [
 					"The participating teams will have to register themselves via the registration link of the event. ",
 					"Teams which participate in Ramba Samba are eligible to participate in this event on-spot.",
@@ -382,7 +376,7 @@ export default [
 				id: 1,
 				name: "Break Free",
 				description:
-					"It is a solo freestyle dance competition that is organized by a dance club. (All the dance forms included)",
+					"It is a solo/duet freestyle dance competition thta is organised by Dance club. An inter college competition which will be judged by the judges and prizes will be provided to the winners and runner up of the event. All forms of dances are welcomed (except classical, we have separate competition for that)",
 				rules: [
 					"The participants need to register themselves through the registration link of the event.",
 					"Members of teams who participate in Ramba Samba or hit the street can register on-spot for this.",
@@ -397,7 +391,7 @@ export default [
 				id: 2,
 				name: "Catch the Hook Step",
 				description:
-					"Catch the hook step is organized by the Dance club MNIT in which the performer performs the steps(Hook Steps) of famous songs and the audience has to judge that.",
+					"As the name suggests, Catch the Hook Step is an amusing event in which a series of Bollywood songs will be played and the participants have to showcase the hook moves. Being judged by the audience, whoever does all the moves correctly, will win the round and will be qualified for the further rounds. ",
 				rules: [
 					"There will be on-the-spot registration for this event. ",
 					"Two participants at a time will perform the hook step of the series of songs.",
@@ -405,15 +399,6 @@ export default [
 				],
 				judging: [],
 				image: "DANCECLUB/CatchTheHookStep.webp",
-			},
-			{
-				id: 3,
-				name: "Flashmob",
-				description:
-					"A sensational performance by the members of the dance club at various places as a motive to promote dance culture and the cultural fest BLITZSCHLAG.",
-				rules: [],
-				judging: [],
-				image: "DANCECLUB/flashmob.webp"
 			},
 		],
 	},
@@ -685,7 +670,7 @@ export default [
 			{
 				id: 0,
 				name: "Exploring India Through a Dart",
-				description: "",
+				description: "Life without cultural and historical heritage would be like a blank page. The travel and heritage club of MNIT Jaipur presents you a fun event : 'Exploring India through a Dart' to test your knowledge about heritage through a fun quiz. But there's a catch, instead of conventional quiz game the questions your are going to answer will be decided by a dart game. So Get ready to have fun and win exciting prizes along with it. Mark your presence and make the event successful , remarkable and memorable.Meet you all on 10th Feb.",
 				rules: [
 					"A dart will be given to participants and they will be told to shoot that on India’s map blindfolded.",
 					"Participants had to tell several things about the state where the dart landed.",
