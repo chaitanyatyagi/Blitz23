@@ -110,16 +110,16 @@ export default [
 				id: 0,
 				name: "Nrityanjali",
 				description:
-					"Classical dance competition organized by Classical Music & Dance Club.",
+					"Dance is poetry with arms and legs, it’s an art form that communicates through gestures set to musical notes. Blitzschlag 2023 presents Nrityanjali, an opportunity to showcase your classical dance skills. So, put your best foot forward and dance like it’s your last performance",
 				rules: [
-					"Entries will be accepted through a google form for all performances.",
+					"Submit your video entry via email at: aarsh1729@gmail.com.",
 					"Participants should follow the classical/folk dance theme",
 					"There will be a final audition for all entrants ",
 					"The team will decide the final decision for an audition.",
 					"The competition will have a judge.",
 					"Winner will be decided based on the judge’s decision",
 					"The organizing committee reserves the right to make any last-minute change to the rules.",
-					"Please submit your video entry through this google form for registration - https://docs.google.com/forms/d/e/1FAIpQLSem2-p8QoG3BncxU5ahSZROCzKA9715iEL826erZg9dC_xrFg/viewform?usp=sf_link",
+					// "Please submit your video entry through this google form for registration - https://docs.google.com/forms/d/e/1FAIpQLSem2-p8QoG3BncxU5ahSZROCzKA9715iEL826erZg9dC_xrFg/viewform?usp=sf_link",
 				],
 				judging: [],
 				image: "MUSICCLUB/Nrityanjali.webp",
@@ -127,15 +127,15 @@ export default [
 			{
 				id: 1,
 				name: "Dhun",
-				description: "Instrumental Music competition organized by Music Club & Classical Music and Dance Club.",
+				description: "Music gives a soul to the universe, wings to the mind, flight to the imagination and life to everything. And it’s time for a showdown of the soul of music, instruments. Music Club and CMD Club brings Dhun, a Solo Instrumental Competition which enjoys enormous participation from all across the country. In a world full of music and camaraderie, its time to get your friends and go head-to-head against some of the most insanely talented instrumentalists. Come join us in this rocking and musical fiesta and immerse yourself in the phantom sphere of Blitzschlag.",
 				rules: [
-					"Entries will be accepted through a google form for all performances.",
+					"Submit your video entry via email at: harshdotraj@gmail.com",
 					"Participants should bring their own instruments. The sound arrangements and connecting leads will be provided, if required.",
 					"There will be a final audition for all entrants.",
 					"The team will decide the final decision for auditions.",
 					"Judges’ decision will decide the winner",
 					"If entrants in one category (like guitar, piano,etc) exceeds a certain number there may be multiple awards",
-					"Please submit your video entry through this google form for registration - https://docs.google.com/forms/d/e/1FAIpQLSf7eu7sNzR9IV87D66OI9RTb_vwzrqiqhEfE_P8QIRDU9sm7A/viewform?usp=sf_link"
+					// "Please submit your video entry through this google form for registration - https://docs.google.com/forms/d/e/1FAIpQLSf7eu7sNzR9IV87D66OI9RTb_vwzrqiqhEfE_P8QIRDU9sm7A/viewform?usp=sf_link"
 				],
 				judging: [],
 				image: "MUSICCLUB/Dhun.webp",
@@ -143,14 +143,14 @@ export default [
 			{
 				id: 2,
 				name: "Voice Choice",
-				description: "The Music Club & Classical Music and Dance Club will organize the Solo Singing competition.",
+				description: "Music is the shorthand of emotion. It has the ability to take people out of themselves for a few hours. Music Society and the Classical Music & Dance Club is delighted to announce Voice Choice, a Solo Singing Competition. It is a perennial event which enjoys immense participation from all across the country. So put your best foot forward, and immerse yourself in the phantom sphere of Blitzschlag. ",
 				rules: [
-					"Entries will be accepted through a google form for all the performances.",
+					"Submit your video entry via email at: aarsh1729@gmail.com",
 					"Participants should bring their own instruments. The sound arrangements and connecting leads will be provided, if required.",
 					"There will be a final audition for all entrants.",
 					"Final decision for auditions will be decided by the team.",
 					"Judges’ decision will decide the winner.",
-					"Please submit your video entry through this google form for registration - https://docs.google.com/forms/d/e/1FAIpQLSewiFmCx08RfzpI09YSI4SNGbJpAW9byfU-XqCrVXLRceLCHQ/viewform?usp=sf_link"
+					// "Please submit your video entry through this google form for registration - https://docs.google.com/forms/d/e/1FAIpQLSewiFmCx08RfzpI09YSI4SNGbJpAW9byfU-XqCrVXLRceLCHQ/viewform?usp=sf_link"
 				],
 				judging: [],
 				image: "MUSICCLUB/VoiceChoice.webp",
@@ -167,7 +167,7 @@ export default [
 			{
 				id: 0,
 				name: "Motif-Filion",
-				description: "Doodling event: A doodle is a drawing made while a person's attention is occupied. Doodling can have concrete representational meaning or may just be composed of random and abstract lines or shapes, generally without ever lifting the drawing device from the paper. REQUIREMENTS: A5 Sheets - (based on entries),Markers and Sketch pens. Themes- Emotions / Favourites /Food/Cartoons/cars/ human faces/games (any other) ",
+				description: "A doodle is a drawing made while a person's attention is occupied. Doodling can have concrete representational meaning or may just be composed of random and abstract lines or shapes.We present to you a Doodling competition where participants will be provided with sheets and markers and will have to doodle on them on the basis of the theme.",
 				rules: [
 					"Individual Participation",
 					"Based on the given themes the participants with their interpretation based on it will doodle out their imagination. ",
@@ -181,7 +181,7 @@ export default [
 				id: 1,
 				name: "Art Exhibition",
 				description:
-					"The Art Exhibition is a display of different kinds of paintings from previous events organized by the Creative Arts Club.",
+					"Art brings together so many of our inner passions. The brilliance of artists humbles everyone. Artworks and models will be exhibited and the best three artworks will win prizes worth INR 6000 !  You are free to send your artworks made using any medium. Mail us your entries at creativeartsmnit@gmail.com ",
 				rules: [
 					"After registering on the website, entries have to be mailed on creativeartsmnit@gmail.com",
 					"Selection of Paintings and Models  will be done from the entries",
@@ -198,7 +198,7 @@ export default [
 				id: 2,
 				name: "Line Art",
 				description:
-					"A competition organized by the Creative Arts Club wherein the participants are required to draw objects and figures by lines.",
+					"‘Everything is connected’, Von Humboldt acclaimed. To put it in terms of art, by learning how not to lift the pencil off the paper until the drawing is complete, you are able to focus on hand-eye coordination and relaxation techniques which helps you achieve more natural-looking results in future pieces of artwork.To appreciate this concept, the Creative Arts club is organising LINE ART competition ",
 				rules: [
 					"All the participants will be provided with a particular theme to draw on.  ",
 					"White sheets, colours, and markers will be provided.",
@@ -214,7 +214,7 @@ export default [
 				id: 3,
 				name: "Tint-a-Top",
 				description:
-					"It is a creative art competition in which participants will paint a t-shirt, and the creative arts club will organize this event.Material Required:- T-Shirts of various Sizes, Acrylic Colors, Paint Brushes ( Both Round and Flat Brushes )",
+					"Get your creative minds ready and spread the colors of your imagination on the canvas of a T-shirt as creative arts club gives you the perfect opportunity to showcase your fashion mantra in the T-shirt painting competition. Turn on your colourful, creative pulses and show what your style mantra is all about! Explore the horizon of creativity and experience, the fun and pride by wearing a self-designed T-shirt. A T-Shirt Painting Competition where you will be provided with the materials required and there won't be any theme and you will be free to paint on the t-shirt from your imagination.",
 				rules: [
 					"T-Shirts, Colors and Paint Brushes will be provided.",
 					"After the Competition, T Shirts will be exhibited in the venue for the judgments.",
@@ -229,7 +229,7 @@ export default [
 				id: 4,
 				name: "Rang de Mukhra",
 				description:
-					"It is a creative art competition in which participants will paint the face of their partners and will be organized by a creative arts club. It is a team event.",
+					"The Creative Arts Club is hosting an entertaining contest for you all. Rang de Mukhra, sounds fun right? trust me, it's more than that. You'll know it once you're there, so pick up your brushes and be there and join us.The participation will be done in a team of 2 members. Theme will be given by picking up the chits.",
 				rules: [
 					"All the participants will be provided with a particular theme to draw on.",
 					"This event will have participation in pairs.",
@@ -250,7 +250,7 @@ export default [
 				id: 5,
 				name: "Fashionista",
 				description:
-					"It is a costume design competition that will be launched online, and the top entries of this event will be showcased during the panache event by performing models. It is organized by the Creative Arts Club.",
+					"Fashionista is here- the most fashionable show of BLITZSCHLAG where you can explode the box of creativity to put together the craziest fun outfits and captivate all EYES on YOU!✨A Fashion Competition will be held where you will participate in the fashion walk in costumes designed by you. The walk will be of minimum 4 Minutes and maximum 6 Minutes with a background music produced by the teams.Mail us your entries at creativeartsmnit@gmail.com ",
 				rules: [
 					"A google form will be circulated for collecting entries. (Entries will be allowed from MNIT and other colleges also) No. of members in a group- 10 max",
 					"Selections will be held to pick the best teams who will get a chance to perform in the cultural event.",
@@ -269,7 +269,7 @@ export default [
 				id: 6,
 				name: "Visuality",
 				description:
-					"The Creative Arts Club will organize a painting competition of any location preceding MNIT (Live Sketching).",
+					"‘Visuality’; See the world through the eyes of an Artist....  Have you ever come across a scene or view that appealed to your eyes so much that you thought of capturing it. Then The Creative Arts Club of MNIT is here to give you the opportunity to show your creativity in an event of live sketching and showcase it in a way you see and perceive through art. Come and unlock the Pandora box of your creativity and talent and join us in this live sketching event. A Live Sketching event will be held at an open place in the campus.",
 				rules: [
 					"A Google form will be circulated to receive participation from students of Mnit and other colleges as well.",
 					"Drawing sheets will be provided.",
@@ -287,7 +287,7 @@ export default [
 			{
 				id: 7,
 				name: "Magazine Collage",
-				description: "A collage is a visual representation made from an assembly of different forms, materials and sources creating a new whole. A collage may include newspaper clippings, ribbons, bits of colored or hand-made papers, portions of other artwork, photographs, and such, glued  to a solid support or canvas.",
+				description: "A collage is a visual representation made from an assembly of different forms, materials and sources creating a new whole. A collage may include newspaper clippings, ribbons, bits of colored or hand-made papers, portions of other artwork, photographs, and such, glued  to a solid support or canvas. Participants will have to make a cover page collage for a theme based magazine. Theme will be provided on the spot. Materials will be provided.",
 				rules: [
 					"A theme will be provided on the spot at the time of the event ",
 					"Participants will have to make a collage based on the theme within the given time frame  Required materials & stationery will be provided",
@@ -304,7 +304,7 @@ export default [
 				id: 8,
 				name: "Origami",
 				description:
-					"Origami-making competition. The creative arts club will organize this event.",
+					"Twist, turn and fold the papers and you can have a beautiful world around you with origami. Creative arts club is holding an origami competition where you can show your creativity in this unique Japanese paper folding art. Join us in this fun war of folds. Participants will be given a base and origami papers and will be asked to create a scene or a story with them.",
 				rules: [
 					"Participants will have to create a scene or a story out of their work",
 					"A base will be provided",
@@ -323,7 +323,7 @@ export default [
 				id: 9,
 				name: "Animation Workshop",
 				description:
-					"The Creative arts club presents the most awaited ANIMATION WORKSHOP for beginners.",
+					"The Creative arts club presents the most awaited ANIMATION WORKSHOP for beginners. All you need is your laptop and enthusiasm to be a part of this exciting event which is just one registration away, so seize the chance and be there on time. A Speaker will come to teach basic animation and then on the same day an animation Competition will be held. Participants will have to bring their own laptops and the software will be provided in the workshop to download.",
 				rules: [
 					"You will be required to bring your own laptops.",
 					"A workshop with a tutor who will introduce some animation techniques.",
@@ -336,7 +336,7 @@ export default [
 				id: 10,
 				name: "Picaso-no-Oculus",
 				description:
-					"A blindfolded painting competition where fellow teammates will guide a participant. It is organized by the Creative Arts Club.",
+					"You might have heard of Blindfold Games such as Pin the tail of a donkey, but you will be surprised if we tell you that you can do blindfold painting. Creative Arts Club brings you an interesting art event at BLITZSCHLAG 2023. A blindfold Competition will be held where participants will form a team of 2 members where the teams will compete with each other in a game where one of team member will have to draw a chit and draw the same thing on the board where the other team members will have to guess the thing. ",
 				rules: [
 					"Max member in Team 2-3 ",
 					"Chit system- A team will pick up a chit in which a word will be given, the teammates will guide the blindfolded teammate to draw the word.",
@@ -441,14 +441,6 @@ export default [
 				image: "DRAMACLUB/RANGBHOOMI.webp",
 			},
 			{
-				id: 1,
-				name: "Movie screening",
-				description: "The dramatics club showcases a drama documentary.",
-				rules: [],
-				judging: [],
-				image: "DRAMACLUB/MovieScreening.webp",
-			},
-			{
 				id: 2,
 				name: "Tamasha",
 				description:
@@ -479,7 +471,7 @@ export default [
 			{
 				id: 0,
 				name: "Raise the Curtain",
-				description: "Google Form Link:- https://docs.google.com/forms/d/e/1FAIpQLSfbW4h0XsCMU-UwdLGsCQ4gzdaSZePLXrdoHmI8hBO_uDiqxA/viewform",
+				description: "The participants have to raise the curtain on their news report writing skills by recounting an event in their life from a first or third person point of view and report it in the form of news. Eg: reporting about the time they fell down in a running race from their mother's point of view; reporting about the time they recieved their JEE results, etc.",
 				rules: [
 					"Team Size-(Solo)Language-English Rounds-1 (Online)",
 					"Deadline for Submission-3rd Feb",
@@ -497,7 +489,7 @@ export default [
 			{
 				id: 1,
 				name: "Seek the Truth",
-				description: "",
+				description: "The club shall report the news as reporters and try to convince the audience into believing a fake news piece and an eccentric real news piece, and then try to get the audience to guess which one of the two is true. This will be a buzzer round conducted in groups where each team has to differentiate between the presented fake and real news and uncover the truth. Each team will compete against another for points to finally become the winner.",
 				rules: [
 					"Team Size-(4-5 members per team)",
 					"Language-English",
@@ -557,8 +549,8 @@ export default [
 			{
 				id: 0,
 				name: "Hustle n Bustle",
-				description: "The Music Club organized the beatboxing competition.",
-				rules: [],
+				description: "Kya Bolti Public! It’s time to take you to the coolest form of music ever as Music Society brings the premier beatboxing competition ‘Hustle Bustle’, an event encapsulating an art form that is both fascinating and mesmerizing. For the unversed, beatboxing refers to a kind of vocal music that employs various vocal techniques to imitate drums and other instruments. It’s fun, engaging and an awesome way to express yourself. So, get out of your box and voice your love for beats, register for ‘Hustle Bustle’ and show your talent to everyone!",
+				rules: ["Submit your video entry via email at: harshdotraj@gmail.com"],
 				judging: [],
 				image: "MUSICCLUB/HustleBustle.webp",
 			},
@@ -566,24 +558,37 @@ export default [
 				id: 1,
 				name: "Gungunaate Chalo",
 				description:
-					"20 sec. The background music of a song will be played, and the participant has to continue the song. It is organized by the Music Club.",
-				rules: [],
+					"You listen to songs all day on repeat and wonder whether you will ever get to use all this music knowledge in your life. If that’s your story, then fikar not! Music Society brings GUNGUNATE CHALO, a fun and exciting competition in which the background music of a song will be played for 15-20 seconds and the participants will have to guess the song and continue it. So what are you waiting for? Bring along your friends, have fun while guessing songs, and have a chance to win exciting prizes!",
+				rules: ["Submit your video entry via email at: harshdotraj@gmail.com"],
 				judging: [],
 				image: "MUSICCLUB/GungunateChalo.webp",
 			},
 			{
 				id: 2,
 				name: "Dhun",
-				description: "Instrumental Music competition organized by Music Club & Classical Music and Dance Club.",
-				rules: [],
+				description: "Music gives a soul to the universe, wings to the mind, flight to the imagination and life to everything. And it’s time for a showdown of the soul of music, instruments. Music Club and CMD Club brings Dhun, a Solo Instrumental Competition which enjoys enormous participation from all across the country. In a world full of music and camaraderie, its time to get your friends and go head-to-head against some of the most insanely talented instrumentalists. Come join us in this rocking and musical fiesta and immerse yourself in the phantom sphere of Blitzschlag.",
+				rules: [
+					"Submit your video entry via email at: harshdotraj@gmail.com",
+					"Participants should bring their own instruments. The sound arrangements and connecting leads will be provided, if required.",
+					"There will be a final audition for all entrants.",
+					"The team will decide the final decision for auditions.",
+					"Judges’ decision will decide the winner",
+					"If entrants in one category (like guitar, piano,etc) exceeds a certain number there may be multiple awards",
+				],
 				judging: [],
 				image: "MUSICCLUB/Dhun.webp",
 			},
 			{
 				id: 3,
 				name: "Voice Choice",
-				description: "The Music Club & Classical Music and Dance Club will organize the Solo Singing competition.",
-				rules: [],
+				description: "Music is the shorthand of emotion. It has the ability to take people out of themselves for a few hours. Music Society and the Classical Music & Dance Club is delighted to announce Voice Choice, a Solo Singing Competition. It is a perennial event which enjoys immense participation from all across the country. So put your best foot forward, and immerse yourself in the phantom sphere of Blitzschlag. ",
+				rules: [
+					"Submit your video entry via email at: aarsh1729@gmail.com",
+					"Participants should bring their own instruments. The sound arrangements and connecting leads will be provided, if required.",
+					"There will be a final audition for all entrants.",
+					"Final decision for auditions will be decided by the team.",
+					"Judges’ decision will decide the winner.",
+				],
 				judging: [],
 				image: "MUSICCLUB/VoiceChoice.webp",
 			},
@@ -609,11 +614,11 @@ export default [
 				id: 1,
 				name: "Bhaavna",
 				description:
-					"Bhavana is a photography competition that is based on capturing emotions during the whole fest. The photography club will organize this event",
+					"Bhavana is a photography competition that is based on capturing emotions during the whole fest. The photography club will organize this event.",
 				rules: [],
 				judging: [],
 				price: 200,
-				image: "PHOTOGRAPHYCLUB/PicSaga.webp",
+				image: "PHOTOGRAPHYCLUB/bhaavna.webp",
 			},
 			{
 				id: 2,
@@ -648,7 +653,7 @@ export default [
 		image: "poetry.webp",
 		title: "Poetry Club",
 		description:
-			"The chief aim of the poetry club is to increase students knowledge of the languages along with the increase in the power of appreciation of beauty. The club provides an interactive environment for improving communication skills , confidence and opportunity for all poetic minds to showcase their talent.",
+			"A poetry is something that comes bursting out of you, something that comes unasked out of your heart & your mind & your mouth & your gut.Don't keep your aesthetic, beguiling and quirky creations to yourselves. Bring out your eloquent self, read out your masterpiece to the world. Let them hear what they can't put in words.",
 		events: [
 			{
 				id: 0,
@@ -810,7 +815,7 @@ export default [
 			{
 				id: 1,
 				name: "Bolti Tasveere",
-				description: "Story writing competition from the pictures depicted. It is organized by the Mavericks Club.",
+				description: "Bring on your creativity and spun a story or a poem around a set of pictures given to you.Participants will have a couple of pictures to start with and will be given a couple more in between the clock to weave them together with their already written write-up. Judgment will be based on your creativity and out-of-the-box thinking.",
 				rules: [
 					"Team Size-(Solo)",
 					"Language- Hindi",
@@ -829,7 +834,7 @@ export default [
 			{
 				id: 2,
 				name: "Family Feud",
-				description: "Join us for an evening overloaded with fun and excitement with our very own version of the popular game show 'Family Feud'! Just like on the show, two teams will go head to head to see who can guess the most popular answers to survey questions.But wait, there’s more! In addition to the main event, we will also have exciting prizes for the audience. Whether you're competing or just spectating, there's something for everyone to enjoy.So gather your friends, team up and get ready to feud! This event is guaranteed to be a memorable evening filled with laughter and friendly competition. Don't miss out - we hope to see you there!",
+				description: "Join us for an evening overloaded with fun and excitement with our very own version of the popular game show 'Family Feud'! Just like on the show, two families take turns trying to guess the most popular answers to survey questions.  The host presents a survey question, such as 'Name something you put on your pancakes,' The first family has a set amount of time to come up with as many answers as possible. Each answer is worth a certain number of points. The family with the most points at the end of the game wins. But wait, there’s more! In addition to the main event, we will also have exciting prizes for the audience. Whether you're competing or just spectating, there's something for everyone to enjoy. So gather your friends, team up, and get ready to feud! This event will be a memorable evening filled with laughter and friendly competition. Don't miss out - we hope to see you there",
 				rules: [
 					"Team Size-(up to 5 members)",
 					"Language- English",
