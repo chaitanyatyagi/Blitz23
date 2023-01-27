@@ -162,7 +162,7 @@ export default function Events(props) {
 								) : ""}
 							</div>
 							{
-								event.name === "Flashmob" ? "" : <Link
+								event.name === "Moments" ? <Link to="/rulebook" className="event-link-remover event-card-register-link">Refer to Moments rulebook.</Link> : <Link
 									className="event-link-remover event-card-register-link"
 									onClick={() => {
 										login();

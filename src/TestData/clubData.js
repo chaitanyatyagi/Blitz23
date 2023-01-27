@@ -532,7 +532,7 @@ export default [
 			{
 				id: 2,
 				name: "Celebrity Show Off",
-				description: "One need to pose or walk for music the video is recorded in slow motion Best posing and walk will be chosen and prizes distributed accordingly ",
+				description: "Celebrity Show Off is a event where you should try to be our favourite celebrity by using their dialogue delivery and body language.This event will showcase yours passion towards films. ",
 				rules: [],
 				judging: [],
 				image: "FILM/Celebrity.webp",
@@ -605,9 +605,9 @@ export default [
 				id: 0,
 				name: "Moments",
 				description:
-					"International level Photography competition & exhibition is a 4-day long event organized by the Photography club.",
-				rules: [],
-				judging: [],
+					"They say Photography is the pause moment of life.  Photography Club organising an exciting event for you, 'Moments'. It is an International level Photography Contest cum Exhibition. So bring your inner photographer to the surface. Capture the moments and stand a chance to win prizes worth upto Rs. 35,000. Just visit the link below to know how you can be the part of this super amazing event. - https://drive.google.com/file/d/1TdqFu-eOTSLB9C_EJUhggcaElhsGF7YQ/view?usp=sharing",
+				rules: ["There are 6 categories for event mention in the rulebook", "Entries are required to be submitted online via mail moments.mnit23@gmail.com", "Each entry must consist of a minimum of 4 and a maximum of 12 photos.", "Each category can have a maximum of 2 photos only.", "Please visit the above mention link for further rules of submission and prize distribution."],
+				judging: ["Creativity and Innovation", "Technical Skills", "Composition and Frame", "Light", "Theme", "Message depicted"],
 				image: "PHOTOGRAPHYCLUB/moments.webp"
 			},
 			{
@@ -658,8 +658,8 @@ export default [
 			{
 				id: 0,
 				name: "Arz kiya hai",
-				description: "Shayari Competition organized by the Poetry Club.",
-				rules: [],
+				description: "In a world full of chaos and noise, let's awaken the writer in us and boost the aura of the cosmos. One of the most intriguing, endearing, and brilliant poetry competitions,'Arz Kia Hai' is being organized by the Poetry Club of MNIT Jaipur.Come up with creative, distinctive writeups and 'BRING UP THE WRITER INSIDE YOU'",
+				rules: ["For entries mail us to at poetryclub605@gmail.com"],
 				judging: [],
 				image: "POETRYCLUB/ArzKiyaHai.webp",
 			},
