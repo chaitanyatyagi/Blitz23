@@ -22,7 +22,7 @@ export default function Contact() {
 					{Contactdetails.map((item) => {
 						return (
 							<div className="subheading" id={item.id + "id"} key={item.id}>
-								{item.title}
+								<div className="itemtitlecontact">{item.title}</div>
 								<div className="cardContainer">
 									{item.team.map((member) => {
 										return (

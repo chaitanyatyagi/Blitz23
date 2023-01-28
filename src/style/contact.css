@@ -76,6 +76,8 @@
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
+	display: flex;
+	flex-direction: column;
 }
 
 .cardContainer {
@@ -180,13 +182,16 @@ a {
 		display: flex;
 		flex-direction: column;
 	}
+
 	.contimg {
 		width: 100%;
 		height: fit-content;
 	}
+
 	.memname {
 		font-size: 0.8rem;
 	}
+
 	.post,
 	.emailc,
 	.phone {

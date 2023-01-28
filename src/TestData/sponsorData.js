@@ -1,10 +1,10 @@
 export default [
     {
         clubEvents: "Flagship Events",
-        events: ["Panache", "Rambha Sambha", "Blitz Got Talent", "Battle of Bands"]
+        events: ["Panache", "Ramba Samba", "Blitz Got Talent", "Battle of Bands"]
     }, {
         clubEvents: "Mavericks",
-        events: ["Acta Diurna", "Family Feud", "Bolti Tasveere", "On Ground Reporting", "Interactive Surveys & Polls"]
+        events: ["Acta Diurna", "Family Feud", "Bolti Tasveere"]
     }, {
         clubEvents: "Electoral Literacy Club",
         events: ["Youth Parliament"]
@@ -13,10 +13,10 @@ export default [
         events: ["Motif-filion", "Art Exhibition", "Line Art", "Fashionista", "Rang De Mukhra", "Tint a Top", "Visuality", "Digital Art Workshop", "Magazine Collage", "Origami Competition", "Picaso-no-oculus"]
     }, {
         clubEvents: "Poetry Club",
-        events: ["Arz Kiya Hai", "Battle Ff Shayar"]
+        events: ["Arz Kiya Hai"]
     }, {
         clubEvents: "English Press Club",
-        events: ["Seek The Truth"]
+        events: ["Seek The Truth", "Raise The Curtain"]
     }, {
         clubEvents: "Dance Club",
         events: ["Catch The Hook Step", "Breakfree", "Hit The Street"]
@@ -28,10 +28,10 @@ export default [
         events: ["Hustle n Bustle", "Gungunaate Chalo", "Dhun", "Voice Choice"]
     }, {
         clubEvents: "Photography Club",
-        events: ["Moments", "Bhaavna", "Pic Saga"]
+        events: ["Moments", "Bhaavna", "Pic Saga", "Snip-N-Stitch", "Photo Workshop"]
     }, {
         clubEvents: "Film Making Club",
-        events: ["MNIT Film Festival", "Celebrity Show off"]
+        events: ["MNIT Film Festival", "Celebrity Show off", "Show A Reel"]
     }, {
         clubEvents: "Drama Club",
         events: ["Rangbhoomi", "Movie Screening", "Tamasha", "Monologue Competition"]
