@@ -50,7 +50,7 @@ export default function Registration(props) {
 						<input
 							name="email"
 							className="form-feilds"
-							placeholder="Email-ID / Username"
+							placeholder="Email-ID"
 							type="email"
 						>
 						</input>
