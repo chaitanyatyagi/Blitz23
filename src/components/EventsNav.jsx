@@ -11,8 +11,9 @@ export default function EventsNav(props) {
 		i -= 1;
 	}
 	arr.reverse();
-	let dispNav = arr.map((x) => {
-		return <EventNavCard text={x} active={props.active} onChange={props.change} />;
+	let dispNav = arr.map((x, i) => {
+		if (clubData[props.club].events[i].day.includes(props.day))
+			return <EventNavCard text={x} active={props.active} onChange={props.change} />;
 	});
 	return <div className="events-card-nav">{dispNav}</div>;
 }

@@ -28,7 +28,16 @@ export default function Events(props) {
 		Nmembers: "",
 		teamLeader: false,
 	});
-	const [activeEvent, setActiveEvent] = React.useState(1);
+	let startActive = 1;
+	React.useEffect(() => {
+		let events = clubData[props.club].events;
+		for (let i = 0; i < events.length; i++) {
+			if (events[i].day.includes(props.day)) {
+				startActive = i + 1;
+			}
+		}
+	}, []);
+	const [activeEvent, setActiveEvent] = React.useState(startActive);
 	const [dispForm, setDispForm] = React.useState(false);
 	const [dispPayment, setDispPayment] = React.useState(false);
 
@@ -132,6 +141,16 @@ export default function Events(props) {
 		setDispForm(false);
 	}
 
+	function checkEvents() {
+		let events = clubData[props.club].events;
+		for (let i = 0; i < events.length; i++) {
+			if (events[i].day.includes(props.day)) {
+				return true;
+			}
+		}
+		return false;
+	}
+
 	return (
 		<div>
 			<div className="events-contanier">
@@ -140,37 +159,51 @@ export default function Events(props) {
 						<div className="event-card-margin-manager"></div>
 						<div className="events-card-text">
 							<div className="event-card-text-head">
-								{event.name !== ""
+								{event.name !== "" && checkEvents()
 									? event.name
 									: "Sorry there seems to be no event"}
 							</div>
-							{event.description !== "" && (
+							{event.description !== "" && checkEvents() && (
 								<div className="event-card-text-breif">{event.description}</div>
 							)}
 							{/* {event.rules.length !== 0 && event.judging.length !== 0 && ( */}
-							<div className="event-card-text-list">
-								{event.rules.length !== 0 ? (
-									<div className="event-card-text-rules">
-										Rules: <div className="events-space" /> {rulesDisp}
-									</div>) : ""
-								}
-								{event.judging.length !== 0 ? (
-									<div className="event-card-text-judging">
-										Judgment Criteria: <div className="events-space" />
-										{judgeDisp}
-									</div>
-								) : ""}
-							</div>
-							{
-								event.name === "Moments" ? <Link to="/rulebook" className="event-link-remover event-card-register-link">Refer to Moments rulebook.</Link> : <Link
-									className="event-link-remover event-card-register-link"
-									onClick={() => {
-										login();
-									}}
-								>
-									REGISTER
-								</Link>
-							}
+							{checkEvents() && (
+								<div className="event-card-text-list">
+									{event.rules.length !== 0 ? (
+										<div className="event-card-text-rules">
+											Rules: <div className="events-space" /> {rulesDisp}
+										</div>
+									) : (
+										""
+									)}
+									{event.judging.length !== 0 ? (
+										<div className="event-card-text-judging">
+											Judgment Criteria: <div className="events-space" />
+											{judgeDisp}
+										</div>
+									) : (
+										""
+									)}
+								</div>
+							)}
+							{checkEvents() &&
+								(event.name === "Moments" ? (
+									<Link
+										to="/rulebook"
+										className="event-link-remover event-card-register-link"
+									>
+										Refer to Moments rulebook.
+									</Link>
+								) : (
+									<Link
+										className="event-link-remover event-card-register-link"
+										onClick={() => {
+											login();
+										}}
+									>
+										REGISTER
+									</Link>
+								))}
 						</div>
 					</div>
 					<div className="events-card-routed-container">
@@ -180,13 +213,14 @@ export default function Events(props) {
 								active={activeEvent}
 								change={setActiveEvent}
 								club={props.club}
+								day={props.day}
 							/>
 						</div>
 						<div className="events-card-img-container">
 							<LazyLoadImage
 								className="event-card-img"
 								src={
-									typeof event.image !== "undefined"
+									typeof event.image !== "undefined" && checkEvents()
 										? `/Events/${event.image}`
 										: eventimage
 								}
@@ -205,7 +239,7 @@ export default function Events(props) {
 										placeholder="Name of Participant"
 										name="name"
 										value={props.userInfo.name}
-										onChange={() => { }}
+										onChange={() => {}}
 										required={true}
 									/>
 									<input
@@ -223,7 +257,7 @@ export default function Events(props) {
 										placeholder="BlitzID"
 										name="blitzID"
 										value={props.userInfo.blitzId}
-										onChange={() => { }}
+										onChange={() => {}}
 										required={true}
 									/>
 									<input
@@ -287,15 +321,21 @@ export default function Events(props) {
 									blitzschlag.co.in/accomodation .
 								</div>
 								<div className="events-form-check-row">
-									Note: If it is a team event, then all team members are requested to register for this event.
+									Note: If it is a team event, then all team members are requested
+									to register for this event.
 								</div>
 								<div className="row-wrapper-4">
-									{
-										event.name === "Panache" || event.name === "Ramba Samba" || event.name === "Blitz Got Talent" || event.name === "Battle of Bands" ? <input
+									{event.name === "Panache" ||
+									event.name === "Ramba Samba" ||
+									event.name === "Blitz Got Talent" ||
+									event.name === "Battle of Bands" ? (
+										<input
 											className="events-form-text-input"
 											value={`Price : ${event.price ? event.price : "--"}`}
-										/> : ""
-									}
+										/>
+									) : (
+										""
+									)}
 									{qrcode && !props.userInfo.college ? (
 										<button className="event-link-remover event-card-register-link">
 											PAY NOW

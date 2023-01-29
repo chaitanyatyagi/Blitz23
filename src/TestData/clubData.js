@@ -6,6 +6,7 @@ export default [
 			{
 				id: 0,
 				name: "Ramba Samba",
+				day: [0, 1, 2, 3],
 				description:
 					"It is a grand inter-college dance competition which is one of the main events being organized in Blitzschlag year after year. The dance competition invites the best dancing troops across the country to flaunt their moves. It is open for all dance forms.",
 				rules: [
@@ -38,6 +39,7 @@ export default [
 			{
 				id: 1,
 				name: "Panache",
+				day: [0, 1, 2, 3],
 				description:
 					"A grand inter-college fashion show competition organized by the Cultural Society.",
 				rules: [
@@ -62,6 +64,7 @@ export default [
 			{
 				id: 2,
 				name: "Battle of Bands",
+				day: [0, 1, 2, 3],
 				description:
 					"Inter-college Musical band competition. The Battle of Bands is the most awaited celebration of culture, aiding young minds to delve into music and the traditions associated with it. Renowned musical bands grace the stage and plug in some soulful magic through their cords. Judged by a panel of distinguished artists, the band that strums magic through their strings and makes one hymn to their beats wins the battle!",
 				rules: [
@@ -91,9 +94,25 @@ export default [
 			{
 				id: 3,
 				name: "Blitz Got Talent",
+				day: [0, 1, 2, 3],
 				description:
 					"Talent hunt competition- where the participants will showcase their unique talents in various fields. It is organized by the Cultural Society.",
-				rules: ["No restrictions on entries per college.", " Solo and team performances are allowed.", " The maximum time limit for a performance would be 15 minutes (including setup and the performance).", "Any kind of talent barring stand ups can be shown (dancing, singing, mime act,monologue, rap, beatboxing etc). No language barrier is there.", " Participants should perform within the time limit.", " You should carry tracks in a pen drive and should be submitted in advance.", " Vulgarity or use of abusive language is strongly prohibited. Any form of obscenity will lead to debarring the participant from the contest.", " All costumes are permitted, which maintain decency including original costumes &fashion designs. Purchased, professionally made, or rented costumes are permitted.", " The theme would be of your choice.", "No props and costumes will be provided by us.", " Use of materials like cigarettes, alcohol, and any hazardous materials on stage is prohibited.", "Participants are not allowed to mention their college names at any point during their performance.", "It is imperative that all participants must possess a valid college ID which must be presented at all times.", " The organizing committee reserves the right to make any last-minute change to the rules."],
+				rules: [
+					"No restrictions on entries per college.",
+					" Solo and team performances are allowed.",
+					" The maximum time limit for a performance would be 15 minutes (including setup and the performance).",
+					"Any kind of talent barring stand ups can be shown (dancing, singing, mime act,monologue, rap, beatboxing etc). No language barrier is there.",
+					" Participants should perform within the time limit.",
+					" You should carry tracks in a pen drive and should be submitted in advance.",
+					" Vulgarity or use of abusive language is strongly prohibited. Any form of obscenity will lead to debarring the participant from the contest.",
+					" All costumes are permitted, which maintain decency including original costumes &fashion designs. Purchased, professionally made, or rented costumes are permitted.",
+					" The theme would be of your choice.",
+					"No props and costumes will be provided by us.",
+					" Use of materials like cigarettes, alcohol, and any hazardous materials on stage is prohibited.",
+					"Participants are not allowed to mention their college names at any point during their performance.",
+					"It is imperative that all participants must possess a valid college ID which must be presented at all times.",
+					" The organizing committee reserves the right to make any last-minute change to the rules.",
+				],
 				judging: ["Skill (Talent)", "Creativity", "Confidence", "Presentation"],
 				image: "blitzGotTalent.webp",
 				price: 450,
@@ -110,6 +129,7 @@ export default [
 			{
 				id: 0,
 				name: "Nrityanjali",
+				day: [3],
 				description:
 					"Dance is poetry with arms and legs, it’s an art form that communicates through gestures set to musical notes. Blitzschlag 2023 presents Nrityanjali, an opportunity to showcase your classical dance skills. So, put your best foot forward and dance like it’s your last performance",
 				rules: [
@@ -128,7 +148,9 @@ export default [
 			{
 				id: 1,
 				name: "Dhun",
-				description: "Music gives a soul to the universe, wings to the mind, flight to the imagination and life to everything. And it’s time for a showdown of the soul of music, instruments. Music Club and CMD Club brings Dhun, a Solo Instrumental Competition which enjoys enormous participation from all across the country. In a world full of music and camaraderie, its time to get your friends and go head-to-head against some of the most insanely talented instrumentalists. Come join us in this rocking and musical fiesta and immerse yourself in the phantom sphere of Blitzschlag.",
+				day: [2],
+				description:
+					"Music gives a soul to the universe, wings to the mind, flight to the imagination and life to everything. And it’s time for a showdown of the soul of music, instruments. Music Club and CMD Club brings Dhun, a Solo Instrumental Competition which enjoys enormous participation from all across the country. In a world full of music and camaraderie, its time to get your friends and go head-to-head against some of the most insanely talented instrumentalists. Come join us in this rocking and musical fiesta and immerse yourself in the phantom sphere of Blitzschlag.",
 				rules: [
 					"Submit your video entry via email at: harshdotraj@gmail.com",
 					"Participants should bring their own instruments. The sound arrangements and connecting leads will be provided, if required.",
@@ -144,7 +166,9 @@ export default [
 			{
 				id: 2,
 				name: "Voice Choice",
-				description: "Music is the shorthand of emotion. It has the ability to take people out of themselves for a few hours. Music Society and the Classical Music & Dance Club is delighted to announce Voice Choice, a Solo Singing Competition. It is a perennial event which enjoys immense participation from all across the country. So put your best foot forward, and immerse yourself in the phantom sphere of Blitzschlag. ",
+				day: [3],
+				description:
+					"Music is the shorthand of emotion. It has the ability to take people out of themselves for a few hours. Music Society and the Classical Music & Dance Club is delighted to announce Voice Choice, a Solo Singing Competition. It is a perennial event which enjoys immense participation from all across the country. So put your best foot forward, and immerse yourself in the phantom sphere of Blitzschlag. ",
 				rules: [
 					"Submit your video entry via email at: aarsh1729@gmail.com",
 					"Participants should bring their own instruments. The sound arrangements and connecting leads will be provided, if required.",
@@ -168,7 +192,9 @@ export default [
 			{
 				id: 0,
 				name: "Motif-Filion",
-				description: "A doodle is a drawing made while a person's attention is occupied. Doodling can have concrete representational meaning or may just be composed of random and abstract lines or shapes.We present to you a Doodling competition where participants will be provided with sheets and markers and will have to doodle on them on the basis of the theme.",
+				day: [3],
+				description:
+					"A doodle is a drawing made while a person's attention is occupied. Doodling can have concrete representational meaning or may just be composed of random and abstract lines or shapes.We present to you a Doodling competition where participants will be provided with sheets and markers and will have to doodle on them on the basis of the theme.",
 				rules: [
 					"Individual Participation",
 					"Based on the given themes the participants with their interpretation based on it will doodle out their imagination. ",
@@ -181,6 +207,7 @@ export default [
 			{
 				id: 1,
 				name: "Art Exhibition",
+				day: [1],
 				description:
 					"Art brings together so many of our inner passions. The brilliance of artists humbles everyone. Artworks and models will be exhibited and the best three artworks will win prizes worth INR 6000 !  You are free to send your artworks made using any medium. Mail us your entries at creativeartsmnit@gmail.com ",
 				rules: [
@@ -190,7 +217,7 @@ export default [
 					"Paintings and ArtWorks from past Creative Arts Club Events will also be displayed in the event.",
 					"Original Paintings are recommended.",
 					"Physical Paintings and Models will be asked for the selected entries.",
-					"If Physical Painting or model is not possible for the submission, then Photographs will be allowed only upon the coordinators approval and verification."
+					"If Physical Painting or model is not possible for the submission, then Photographs will be allowed only upon the coordinators approval and verification.",
 				],
 				judging: [],
 				image: "CREATIVEARTS/ArtExhibition.webp",
@@ -198,6 +225,7 @@ export default [
 			{
 				id: 2,
 				name: "Line Art",
+				day: [2],
 				description:
 					"‘Everything is connected’, Von Humboldt acclaimed. To put it in terms of art, by learning how not to lift the pencil off the paper until the drawing is complete, you are able to focus on hand-eye coordination and relaxation techniques which helps you achieve more natural-looking results in future pieces of artwork.To appreciate this concept, the Creative Arts club is organising LINE ART competition ",
 				rules: [
@@ -214,6 +242,7 @@ export default [
 			{
 				id: 3,
 				name: "Tint-a-Top",
+				day: [1],
 				description:
 					"Get your creative minds ready and spread the colors of your imagination on the canvas of a T-shirt as creative arts club gives you the perfect opportunity to showcase your fashion mantra in the T-shirt painting competition. Turn on your colourful, creative pulses and show what your style mantra is all about! Explore the horizon of creativity and experience, the fun and pride by wearing a self-designed T-shirt. A T-Shirt Painting Competition where you will be provided with the materials required and there won't be any theme and you will be free to paint on the t-shirt from your imagination.",
 				rules: [
@@ -229,6 +258,7 @@ export default [
 			{
 				id: 4,
 				name: "Rang de Mukhra",
+				day: [1],
 				description:
 					"The Creative Arts Club is hosting an entertaining contest for you all. Rang de Mukhra, sounds fun right? trust me, it's more than that. You'll know it once you're there, so pick up your brushes and be there and join us.The participation will be done in a team of 2 members. Theme will be given by picking up the chits.",
 				rules: [
@@ -250,6 +280,7 @@ export default [
 			{
 				id: 5,
 				name: "Fashionista",
+				day: [1],
 				description:
 					"Fashionista is here- the most fashionable show of BLITZSCHLAG where you can explode the box of creativity to put together the craziest fun outfits and captivate all EYES on YOU!✨A Fashion Competition will be held where you will participate in the fashion walk in costumes designed by you. The walk will be of minimum 4 Minutes and maximum 6 Minutes with a background music produced by the teams.Mail us your entries at creativeartsmnit@gmail.com ",
 				rules: [
@@ -261,7 +292,7 @@ export default [
 					"Prize money will be awarded to the Winner and runner-up.",
 					"Dresses should not be copied",
 					"DIYed dresses will be given more preference",
-					"Mail us your entries at creativeartsmnit@gmail.com "
+					"Mail us your entries at creativeartsmnit@gmail.com ",
 				],
 				judging: [],
 				image: "CREATIVEARTS/Fashionista.webp",
@@ -269,6 +300,7 @@ export default [
 			{
 				id: 6,
 				name: "Visuality",
+				day: [2],
 				description:
 					"‘Visuality’; See the world through the eyes of an Artist....  Have you ever come across a scene or view that appealed to your eyes so much that you thought of capturing it. Then The Creative Arts Club of MNIT is here to give you the opportunity to show your creativity in an event of live sketching and showcase it in a way you see and perceive through art. Come and unlock the Pandora box of your creativity and talent and join us in this live sketching event. A Live Sketching event will be held at an open place in the campus.",
 				rules: [
@@ -288,7 +320,9 @@ export default [
 			{
 				id: 7,
 				name: "Magazine Collage",
-				description: "A collage is a visual representation made from an assembly of different forms, materials and sources creating a new whole. A collage may include newspaper clippings, ribbons, bits of colored or hand-made papers, portions of other artwork, photographs, and such, glued  to a solid support or canvas. Participants will have to make a cover page collage for a theme based magazine. Theme will be provided on the spot. Materials will be provided.",
+				day: [3],
+				description:
+					"A collage is a visual representation made from an assembly of different forms, materials and sources creating a new whole. A collage may include newspaper clippings, ribbons, bits of colored or hand-made papers, portions of other artwork, photographs, and such, glued  to a solid support or canvas. Participants will have to make a cover page collage for a theme based magazine. Theme will be provided on the spot. Materials will be provided.",
 				rules: [
 					"A theme will be provided on the spot at the time of the event ",
 					"Participants will have to make a collage based on the theme within the given time frame  Required materials & stationery will be provided",
@@ -304,6 +338,7 @@ export default [
 			{
 				id: 8,
 				name: "Origami",
+				day: [3],
 				description:
 					"Twist, turn and fold the papers and you can have a beautiful world around you with origami. Creative arts club is holding an origami competition where you can show your creativity in this unique Japanese paper folding art. Join us in this fun war of folds. Participants will be given a base and origami papers and will be asked to create a scene or a story with them.",
 				rules: [
@@ -323,6 +358,7 @@ export default [
 			{
 				id: 9,
 				name: "Animation Workshop",
+				day: [2],
 				description:
 					"The Creative arts club presents the most awaited ANIMATION WORKSHOP for beginners. All you need is your laptop and enthusiasm to be a part of this exciting event which is just one registration away, so seize the chance and be there on time. A Speaker will come to teach basic animation and then on the same day an animation Competition will be held. Participants will have to bring their own laptops and the software will be provided in the workshop to download.",
 				rules: [
@@ -331,11 +367,12 @@ export default [
 					"Afterwords a competition will also be held wherein you can showcase your learnings.",
 				],
 				judging: [],
-				image: "CREATIVEARTS/ani.webp"
+				image: "CREATIVEARTS/ani.webp",
 			},
 			{
 				id: 10,
 				name: "Picaso-no-Oculus",
+				day: [3],
 				description:
 					"You might have heard of Blindfold Games such as Pin the tail of a donkey, but you will be surprised if we tell you that you can do blindfold painting. Creative Arts Club brings you an interesting art event at BLITZSCHLAG 2023. A blindfold Competition will be held where participants will form a team of 2 members where the teams will compete with each other in a game where one of team member will have to draw a chit and draw the same thing on the board where the other team members will have to guess the thing. ",
 				rules: [
@@ -359,6 +396,7 @@ export default [
 			{
 				id: 0,
 				name: "Hit the Street",
+				day: [3],
 				description:
 					"It is an grand inter-college dance battle for group dancers which is one of the events being organised by the Dance Club. We are inviting the best teams of all the colleges to show up their dance moves and win prizes. Teams of all the dance forms(except classical form, there is separate competition for that) are allowed to perform.",
 				rules: [
@@ -376,6 +414,7 @@ export default [
 			{
 				id: 1,
 				name: "Break Free",
+				day: [1],
 				description:
 					"It is a solo/duet freestyle dance competition thta is organised by Dance club. An inter college competition which will be judged by the judges and prizes will be provided to the winners and runner up of the event. All forms of dances are welcomed (except classical, we have separate competition for that)",
 				rules: [
@@ -391,6 +430,7 @@ export default [
 			{
 				id: 2,
 				name: "Catch the Hook Step",
+				day: [2],
 				description:
 					"As the name suggests, Catch the Hook Step is an amusing event in which a series of Bollywood songs will be played and the participants have to showcase the hook moves. Being judged by the audience, whoever does all the moves correctly, will win the round and will be qualified for the further rounds. ",
 				rules: [
@@ -413,7 +453,9 @@ export default [
 			{
 				id: 0,
 				name: "Clashing Views",
-				description: "The Clashing View will be a debating competition organised by Debating Club of MNIT. The speakers will be allowed to put forward their views on topic already known to them . After all the speakers have finished speaking , those speaking for and against the motion will be seated separately , and will be allowed to have a free discussion where participants can put arguments as well as counter other arguments. The winners will be decided based on the above activity.",
+				day: [3],
+				description:
+					"The Clashing View will be a debating competition organised by Debating Club of MNIT. The speakers will be allowed to put forward their views on topic already known to them . After all the speakers have finished speaking , those speaking for and against the motion will be seated separately , and will be allowed to have a free discussion where participants can put arguments as well as counter other arguments. The winners will be decided based on the above activity.",
 				rules: [
 					"Initially each speaker will be given a time limit of 3 minutes for expressing their views.",
 					"After everyone completes their speaking, they will be divided into two groups- one for the topic and one against the topic.",
@@ -434,29 +476,70 @@ export default [
 			{
 				id: 0,
 				name: "Rangbhoomi",
+				day: [2],
 				description:
 					"Life is a theater set in which there are but few practicable entrances. We all have been dramatic in our life, acting in each emotion; be it love, hate, anger, or joy. Now it's time for you to put some life on stage - Life that is created by a writer, managed by a director, and lived by an actor. It's not only about acting, script, dialogues, and lights; rather, it's about you living that character on stage that brings life to the audience. It is organized by the Dramatics club.",
-				rules: ["Each team should have a minimum of 3 actors and maximum 15.", "Time limit: 1) Elimination round- 8-10 mins in form of video. 2) Final act- 20-70 mins", "Language of the play can be English/Hindi.", "Participants have to record a play for elimination round submission. This can be done with all members present together or with different actors.", "The decision of the judges will be final and binding.", "The organizing committee reserves the right to make any last minute change in the rules.", "Submission- Participants must send a link of their video performance at dramsocmnit@gmail com.", "Rename the recorded video as “YOUR COLLEGE NAME- TEAM NAME- STAGE PLAY”.", "Mail the video- The subject of the mail should be “COLLEGE NAME- TEAM NAME- STAGE PLAY”", "Mention name of all team members in the mail body."
+				rules: [
+					"Each team should have a minimum of 3 actors and maximum 15.",
+					"Time limit: 1) Elimination round- 8-10 mins in form of video. 2) Final act- 20-70 mins",
+					"Language of the play can be English/Hindi.",
+					"Participants have to record a play for elimination round submission. This can be done with all members present together or with different actors.",
+					"The decision of the judges will be final and binding.",
+					"The organizing committee reserves the right to make any last minute change in the rules.",
+					"Submission- Participants must send a link of their video performance at dramsocmnit@gmail com.",
+					"Rename the recorded video as “YOUR COLLEGE NAME- TEAM NAME- STAGE PLAY”.",
+					"Mail the video- The subject of the mail should be “COLLEGE NAME- TEAM NAME- STAGE PLAY”",
+					"Mention name of all team members in the mail body.",
 				],
-				judging: ["Content – 35%", " Acting/Expression- 35%", "Direction – 15%", "Miscellaneous Effects – 15%"],
+				judging: [
+					"Content – 35%",
+					" Acting/Expression- 35%",
+					"Direction – 15%",
+					"Miscellaneous Effects – 15%",
+				],
 				image: "DRAMACLUB/RANGBHOOMI.webp",
 			},
 			{
 				id: 2,
 				name: "Tamasha",
+				day: [0],
 				description:
 					"Nukkad Natak is an drama performed on street to create social awareness, it’s an old tool through which lot of social awareness campaign have gained strength such as family planning girls education, child labour, etc.",
-				rules: ["The team shall consist of max. 25 people and a min. of 10 people.", "Time limit should be maximum of 25 mins.", "Submission- Participants must send a link of their video performance at dramsocmnit@gmail com", "Rename the recorded video as “YOUR COLLEGE NAME- TEAM NAME- NUKKAD”.", "Mail the video- The subject of the mail should be “COLLEGE NAME- TEAM NAME- NUKKAD”.", "Mention name of all team members in the mail body."],
-				judging: ["Content, Theme and Message- 35%", "Performance including Acting, Dialogues and Expression 35%", "Interaction and Improvisation 15%", "Direction, Gimmicks and Effects- 15%.", "The decision of the judges and the coordinators shall be final and binding in all cases.", "Blitzschlag reserves the right to change or modify any of these rules."],
+				rules: [
+					"The team shall consist of max. 25 people and a min. of 10 people.",
+					"Time limit should be maximum of 25 mins.",
+					"Submission- Participants must send a link of their video performance at dramsocmnit@gmail com",
+					"Rename the recorded video as “YOUR COLLEGE NAME- TEAM NAME- NUKKAD”.",
+					"Mail the video- The subject of the mail should be “COLLEGE NAME- TEAM NAME- NUKKAD”.",
+					"Mention name of all team members in the mail body.",
+				],
+				judging: [
+					"Content, Theme and Message- 35%",
+					"Performance including Acting, Dialogues and Expression 35%",
+					"Interaction and Improvisation 15%",
+					"Direction, Gimmicks and Effects- 15%.",
+					"The decision of the judges and the coordinators shall be final and binding in all cases.",
+					"Blitzschlag reserves the right to change or modify any of these rules.",
+				],
 				image: "DRAMACLUB/Tamasha.webp",
 				price: 200,
 			},
 			{
 				id: 3,
 				name: "Monologue Competiton",
+				day: [3],
 				description:
 					"In theatre, a monologue is a speech presented by a single character, most often to express their thought aloud, though sometimes also to directly address another character or the audience.",
-				rules: ["Send a video for the elimination round of about 2-5 mins at dramsocmnit@gmail com.", "For the final round the time limit is of maximum 10 mins.", "There should be no use of offensive language.", "Props and costumes have to arranged by the performer itself.", "The organizing committee reserves the right to make any last minute change in the rules.", "Submission- Participants must send a link of their video performance at dramsocmnit@gmail com.", "Rename the recorded video as “YOUR COLLEGE NAME- YOUR NAME”.", "Mail the video- The subject of the mail should be “COLLEGE NAME- YOUR NAME- ”"],
+				rules: [
+					"Send a video for the elimination round of about 2-5 mins at dramsocmnit@gmail com.",
+					"For the final round the time limit is of maximum 10 mins.",
+					"There should be no use of offensive language.",
+					"Props and costumes have to arranged by the performer itself.",
+					"The organizing committee reserves the right to make any last minute change in the rules.",
+					"Submission- Participants must send a link of their video performance at dramsocmnit@gmail com.",
+					"Rename the recorded video as “YOUR COLLEGE NAME- YOUR NAME”.",
+					"Mail the video- The subject of the mail should be “COLLEGE NAME- YOUR NAME- ”",
+				],
 				judging: [],
 				image: "DRAMACLUB/MONOLOGUE.webp",
 			},
@@ -472,7 +555,9 @@ export default [
 			{
 				id: 0,
 				name: "Raise the Curtain",
-				description: "The participants have to raise the curtain on their news report writing skills by recounting an event in their life from a first or third person point of view and report it in the form of news. Eg: reporting about the time they fell down in a running race from their mother's point of view; reporting about the time they recieved their JEE results, etc.",
+				day: [1],
+				description:
+					"The participants have to raise the curtain on their news report writing skills by recounting an event in their life from a first or third person point of view and report it in the form of news. Eg: reporting about the time they fell down in a running race from their mother's point of view; reporting about the time they recieved their JEE results, etc.",
 				rules: [
 					"Team Size-(Solo)Language-English Rounds-1 (Online)",
 					"Deadline for Submission-3rd Feb",
@@ -490,7 +575,9 @@ export default [
 			{
 				id: 1,
 				name: "Seek the Truth",
-				description: "The club shall report the news as reporters and try to convince the audience into believing a fake news piece and an eccentric real news piece, and then try to get the audience to guess which one of the two is true. This will be a buzzer round conducted in groups where each team has to differentiate between the presented fake and real news and uncover the truth. Each team will compete against another for points to finally become the winner.",
+				day: [3],
+				description:
+					"The club shall report the news as reporters and try to convince the audience into believing a fake news piece and an eccentric real news piece, and then try to get the audience to guess which one of the two is true. This will be a buzzer round conducted in groups where each team has to differentiate between the presented fake and real news and uncover the truth. Each team will compete against another for points to finally become the winner.",
 				rules: [
 					"Team Size-(4-5 members per team)",
 					"Language-English",
@@ -515,26 +602,64 @@ export default [
 			{
 				id: 0,
 				name: "MNIT Film Festival",
+				day: [1, 2, 3],
 				description:
 					"International short film-making competition is a 4-day long event organized by the Film Making Club.",
-				rules: ["No of entries is 30-50 max", "English and Hindi both languages preferred", "Total duration of short film 5-10 minutes", "Any genre-based film, message oriented well appreciated", "Deadline for entries is Feb 5", "All entry films will be screened day-wise", "No content should be copied", "Content should not be any kind of vulgarity nor it should promote hate towards any aspect of society", "Proper video format should be there. (Ie. Aspect ratio 16:9)"],
-				judging: ["Day wise best 3 will be chosen", "On the last day in 9 best films 3 will be rewarded with prizes", "Prize worth 5k for first, 3k for a second, 2k for 3rd"],
+				rules: [
+					"No of entries is 30-50 max",
+					"English and Hindi both languages preferred",
+					"Total duration of short film 5-10 minutes",
+					"Any genre-based film, message oriented well appreciated",
+					"Deadline for entries is Feb 5",
+					"All entry films will be screened day-wise",
+					"No content should be copied",
+					"Content should not be any kind of vulgarity nor it should promote hate towards any aspect of society",
+					"Proper video format should be there. (Ie. Aspect ratio 16:9)",
+				],
+				judging: [
+					"Day wise best 3 will be chosen",
+					"On the last day in 9 best films 3 will be rewarded with prizes",
+					"Prize worth 5k for first, 3k for a second, 2k for 3rd",
+				],
 				image: "FILM/FilmFestival.webp",
 			},
 			{
 				id: 1,
 				name: "Show a reel",
+				day: [3],
 				description:
 					"The participants will have to make reels during various Blitzschlag events showcasing the beauty of this fest, organized by the filmmaking club.",
-				rules: ["After registering on the website, entries have to be mailed to fmc.mnitjaipur@gmail.com", "Team Size-(Solo)", "Rounds-1(Online)", "Deadline for Submission 9-12 Feb", " Participants will have to create a reel with a minimum time limit of 30 seconds.", "Only 1 entry is allowed per participant", "Participants should tag the official Instagram Handle of the FMC while posting their reel.", "Reel must be an entirely new creation (Plagiarism is not allowed)."],
+				rules: [
+					"After registering on the website, entries have to be mailed to fmc.mnitjaipur@gmail.com",
+					"Team Size-(Solo)",
+					"Rounds-1(Online)",
+					"Deadline for Submission 9-12 Feb",
+					" Participants will have to create a reel with a minimum time limit of 30 seconds.",
+					"Only 1 entry is allowed per participant",
+					"Participants should tag the official Instagram Handle of the FMC while posting their reel.",
+					"Reel must be an entirely new creation (Plagiarism is not allowed).",
+				],
 				judging: ["Editing", "Camera Handling", "Background Score & Location of Shoot"],
-				image: "FILM/showareel.webp"
+				image: "FILM/showareel.webp",
 			},
 			{
 				id: 2,
 				name: "Celebrity Show Off",
-				description: "Celebrity Show Off is a event where you should try to be our favourite celebrity by using their dialogue delivery and body language.This event will showcase yours passion towards films. ",
-				rules: ["One should be allowed to give only one entry", "Total duration 5 minutes for each entry", "No entries are 100 max", "Deadline for entries is Feb 8", "One should make a video of oneself and share it through the google form provided", "One can show their hidden talents in acting", "Entries videos will be posted on FMC official Instagram account. Entries videos will be posted on FMC official Instagram account", "Best content is chosen", "The Best reels will be featured on our official Instagram Handle", "The Best 3 participants would receive a prize worth from the Club"],
+				day: [2],
+				description:
+					"Celebrity Show Off is a event where you should try to be our favourite celebrity by using their dialogue delivery and body language.This event will showcase yours passion towards films. ",
+				rules: [
+					"One should be allowed to give only one entry",
+					"Total duration 5 minutes for each entry",
+					"No entries are 100 max",
+					"Deadline for entries is Feb 8",
+					"One should make a video of oneself and share it through the google form provided",
+					"One can show their hidden talents in acting",
+					"Entries videos will be posted on FMC official Instagram account. Entries videos will be posted on FMC official Instagram account",
+					"Best content is chosen",
+					"The Best reels will be featured on our official Instagram Handle",
+					"The Best 3 participants would receive a prize worth from the Club",
+				],
 				judging: [],
 				image: "FILM/Celebrity.webp",
 			},
@@ -550,7 +675,9 @@ export default [
 			{
 				id: 0,
 				name: "Hustle n Bustle",
-				description: "Kya Bolti Public! It’s time to take you to the coolest form of music ever as Music Society brings the premier beatboxing competition ‘Hustle Bustle’, an event encapsulating an art form that is both fascinating and mesmerizing. For the unversed, beatboxing refers to a kind of vocal music that employs various vocal techniques to imitate drums and other instruments. It’s fun, engaging and an awesome way to express yourself. So, get out of your box and voice your love for beats, register for ‘Hustle Bustle’ and show your talent to everyone!",
+				day: [1],
+				description:
+					"Kya Bolti Public! It’s time to take you to the coolest form of music ever as Music Society brings the premier beatboxing competition ‘Hustle Bustle’, an event encapsulating an art form that is both fascinating and mesmerizing. For the unversed, beatboxing refers to a kind of vocal music that employs various vocal techniques to imitate drums and other instruments. It’s fun, engaging and an awesome way to express yourself. So, get out of your box and voice your love for beats, register for ‘Hustle Bustle’ and show your talent to everyone!",
 				rules: ["Submit your video entry via email at: harshdotraj@gmail.com"],
 				judging: [],
 				image: "MUSICCLUB/HustleBustle.webp",
@@ -558,16 +685,26 @@ export default [
 			{
 				id: 1,
 				name: "Gungunaate Chalo",
+				day: [1],
 				description:
 					"You listen to songs all day on repeat and wonder whether you will ever get to use all this music knowledge in your life. If that’s your story, then fikar not! Music Society brings GUNGUNATE CHALO, a fun and exciting competition in which the background music of a song will be played for 15-20 seconds and the participants will have to guess the song and continue it. So what are you waiting for? Bring along your friends, have fun while guessing songs, and have a chance to win exciting prizes!",
-				rules: ["Submit your video entry via email at: harshdotraj@gmail.com to get featured on our instahandle.", "One can make their own groups of 4-5. Depending upon the attendees, a number of groups will be decided.", "Points for a correct guess, negative points for a wrong guess, and no points for passing.", "The difficulty will increase with rounds ranging from famous and popular songs to obscure and less common songs", "The event will be organised such that for a maximum time all groups will be in the hunt for the prize. To ensure interest and thrill, bonus points and wildcard systems will be there.", "Winners will be awarded by the Organising Team/ Faculty Coordinator."],
+				rules: [
+					"Submit your video entry via email at: harshdotraj@gmail.com to get featured on our instahandle.",
+					"One can make their own groups of 4-5. Depending upon the attendees, a number of groups will be decided.",
+					"Points for a correct guess, negative points for a wrong guess, and no points for passing.",
+					"The difficulty will increase with rounds ranging from famous and popular songs to obscure and less common songs",
+					"The event will be organised such that for a maximum time all groups will be in the hunt for the prize. To ensure interest and thrill, bonus points and wildcard systems will be there.",
+					"Winners will be awarded by the Organising Team/ Faculty Coordinator.",
+				],
 				judging: [],
 				image: "MUSICCLUB/GungunateChalo.webp",
 			},
 			{
 				id: 2,
 				name: "Dhun",
-				description: "Music gives a soul to the universe, wings to the mind, flight to the imagination and life to everything. And it’s time for a showdown of the soul of music, instruments. Music Club and CMD Club brings Dhun, a Solo Instrumental Competition which enjoys enormous participation from all across the country. In a world full of music and camaraderie, its time to get your friends and go head-to-head against some of the most insanely talented instrumentalists. Come join us in this rocking and musical fiesta and immerse yourself in the phantom sphere of Blitzschlag.",
+				day: [0, 1, 2, 3],
+				description:
+					"Music gives a soul to the universe, wings to the mind, flight to the imagination and life to everything. And it’s time for a showdown of the soul of music, instruments. Music Club and CMD Club brings Dhun, a Solo Instrumental Competition which enjoys enormous participation from all across the country. In a world full of music and camaraderie, its time to get your friends and go head-to-head against some of the most insanely talented instrumentalists. Come join us in this rocking and musical fiesta and immerse yourself in the phantom sphere of Blitzschlag.",
 				rules: [
 					"Submit your video entry via email at: harshdotraj@gmail.com",
 					"Participants should bring their own instruments. The sound arrangements and connecting leads will be provided, if required.",
@@ -582,7 +719,9 @@ export default [
 			{
 				id: 3,
 				name: "Voice Choice",
-				description: "Music is the shorthand of emotion. It has the ability to take people out of themselves for a few hours. Music Society and the Classical Music & Dance Club is delighted to announce Voice Choice, a Solo Singing Competition. It is a perennial event which enjoys immense participation from all across the country. So put your best foot forward, and immerse yourself in the phantom sphere of Blitzschlag. ",
+				day: [0, 1, 2, 3],
+				description:
+					"Music is the shorthand of emotion. It has the ability to take people out of themselves for a few hours. Music Society and the Classical Music & Dance Club is delighted to announce Voice Choice, a Solo Singing Competition. It is a perennial event which enjoys immense participation from all across the country. So put your best foot forward, and immerse yourself in the phantom sphere of Blitzschlag. ",
 				rules: [
 					"Submit your video entry via email at: aarsh1729@gmail.com",
 					"Participants should bring their own instruments. The sound arrangements and connecting leads will be provided, if required.",
@@ -605,45 +744,112 @@ export default [
 			{
 				id: 0,
 				name: "Moments",
+				day: [1, 2, 3],
 				description:
 					"They say Photography is the pause moment of life.  Photography Club organising an exciting event for you, 'Moments'. It is an International level Photography Contest cum Exhibition. So bring your inner photographer to the surface. Capture the moments and stand a chance to win prizes worth upto Rs. 35,000. Just visit the link below to know how you can be the part of this super amazing event. - https://drive.google.com/file/d/1TdqFu-eOTSLB9C_EJUhggcaElhsGF7YQ/view?usp=sharing",
-				rules: ["There are 6 categories for event mention in the rulebook", "Entries are required to be submitted online via mail moments.mnit23@gmail.com", "Each entry must consist of a minimum of 4 and a maximum of 12 photos.", "Each category can have a maximum of 2 photos only.", "Please visit the above mention link for further rules of submission and prize distribution."],
-				judging: ["Creativity and Innovation", "Technical Skills", "Composition and Frame", "Light", "Theme", "Message depicted"],
-				image: "PHOTOGRAPHYCLUB/moments.webp"
+				rules: [
+					"There are 6 categories for event mention in the rulebook",
+					"Entries are required to be submitted online via mail moments.mnit23@gmail.com",
+					"Each entry must consist of a minimum of 4 and a maximum of 12 photos.",
+					"Each category can have a maximum of 2 photos only.",
+					"Please visit the above mention link for further rules of submission and prize distribution.",
+				],
+				judging: [
+					"Creativity and Innovation",
+					"Technical Skills",
+					"Composition and Frame",
+					"Light",
+					"Theme",
+					"Message depicted",
+				],
+				image: "PHOTOGRAPHYCLUB/moments.webp",
 			},
 			{
 				id: 1,
 				name: "Bhaavna",
+				day: [1, 2, 3],
 				description:
 					"Bhavana is a photography competition that is based on capturing emotions during the whole fest. The photography club will organize this event.",
-				rules: ["The BHAVNA’23 competition is open to MNIT students only.", "Each Participant can submit a maximum of 5 Photos only.", " Photos should be from Blitzschlag 2023 only., otherwise, Participants will be disqualified.", "Entries are required to be submitted by Google form.", "Participant has to upload images on Google Drive or any other similar cloud storage and has to share the drive link on Google form.Link For Submission: https://docs.google.com/forms/d/e/1FAIpQLSe3HwYAH7JZNr_4a8IZ782awUnDzLM3 VWKlp8b7bFMdSQZcjQ/viewform?usp=sf_link", "Each entrant is allowed to submit no more than one entry.", "Excessive Post Processed Photos will not be accepted.", "The photos must be taken by the entrant himself/ herself, otherwise, the Participant will be deprived of the right to win the award in the contest.", "Any watermark or photographer’s name on the photo will not be accepted.", "Theme: Pictures must depict Emotions of Blitzschlag (for example: happiness,Amusement, Joy, etc.)."],
-				judging: ["Relevance to Theme 40%", "Composition 35%", "Creativity and Uniqueness 25%"],
+				rules: [
+					"The BHAVNA’23 competition is open to MNIT students only.",
+					"Each Participant can submit a maximum of 5 Photos only.",
+					" Photos should be from Blitzschlag 2023 only., otherwise, Participants will be disqualified.",
+					"Entries are required to be submitted by Google form.",
+					"Participant has to upload images on Google Drive or any other similar cloud storage and has to share the drive link on Google form.Link For Submission: https://docs.google.com/forms/d/e/1FAIpQLSe3HwYAH7JZNr_4a8IZ782awUnDzLM3 VWKlp8b7bFMdSQZcjQ/viewform?usp=sf_link",
+					"Each entrant is allowed to submit no more than one entry.",
+					"Excessive Post Processed Photos will not be accepted.",
+					"The photos must be taken by the entrant himself/ herself, otherwise, the Participant will be deprived of the right to win the award in the contest.",
+					"Any watermark or photographer’s name on the photo will not be accepted.",
+					"Theme: Pictures must depict Emotions of Blitzschlag (for example: happiness,Amusement, Joy, etc.).",
+				],
+				judging: [
+					"Relevance to Theme 40%",
+					"Composition 35%",
+					"Creativity and Uniqueness 25%",
+				],
 				price: 200,
 				image: "PHOTOGRAPHYCLUB/bhaavna.webp",
 			},
 			{
 				id: 2,
 				name: "PicSaga",
+				day: [2],
 				description:
 					"It is a competition in which participants will depict a story from the set of images clicked, which will be arranged in chronological order and organized by the photography club.",
-				rules: [" The PIC-SAGA’23 is open to all college students.", "Each entry must consist of a minimum of 6 and a maximum of 10 photos.", "Entries are required to be submitted by google form.", "Participant has to Upload images on google drive or any other similar cloud  storage and has to share the drive link on google form.", "Images should be renamed in ascending order and submitted in chronological order. Otherwise, the participant will be eliminated.", "Participant has to write the caption for his/her story", "Each entrant is allowed to submit no more than one entry.", "The photos must be taken by the entrant himself/herself, otherwise the entrant will be deprived of the right to win the award in the contest.", "Photos entered jointly by two or more than two participants will not be accepted.And may be disqualified.", "All photographs must be in .jpeg/.jpg and each photo should not be more than 4 MB in size.", "Photos with frames, special backgrounds or other decorative effects will not be accepted.", "To keep the authenticity of the record, composite, splicing and trick photos will not be judged.", "Any watermark or photographer’s name on photo will not be accepted.", "All entrants will be deemed to have accepted the Guidelines of PIC-SAGA’23", "All the submitted images should be free from plagiarism, if found participant will be disqualified.", "Final winners list will be declared on our Instagram page and same will updated through email on 12 th February 202"],
+				rules: [
+					" The PIC-SAGA’23 is open to all college students.",
+					"Each entry must consist of a minimum of 6 and a maximum of 10 photos.",
+					"Entries are required to be submitted by google form.",
+					"Participant has to Upload images on google drive or any other similar cloud  storage and has to share the drive link on google form.",
+					"Images should be renamed in ascending order and submitted in chronological order. Otherwise, the participant will be eliminated.",
+					"Participant has to write the caption for his/her story",
+					"Each entrant is allowed to submit no more than one entry.",
+					"The photos must be taken by the entrant himself/herself, otherwise the entrant will be deprived of the right to win the award in the contest.",
+					"Photos entered jointly by two or more than two participants will not be accepted.And may be disqualified.",
+					"All photographs must be in .jpeg/.jpg and each photo should not be more than 4 MB in size.",
+					"Photos with frames, special backgrounds or other decorative effects will not be accepted.",
+					"To keep the authenticity of the record, composite, splicing and trick photos will not be judged.",
+					"Any watermark or photographer’s name on photo will not be accepted.",
+					"All entrants will be deemed to have accepted the Guidelines of PIC-SAGA’23",
+					"All the submitted images should be free from plagiarism, if found participant will be disqualified.",
+					"Final winners list will be declared on our Instagram page and same will updated through email on 12 th February 202",
+				],
 				judging: [],
 				image: "PHOTOGRAPHYCLUB/PicSaga.webp",
 			},
 			{
 				id: 3,
 				name: "Snip & Stitch",
+				day: [3],
 				description:
 					"You will be given 4-5 photos, and using Adobe Photoshop, you have to make one singular meaningful photo, merging all the given photos. It is organized by the Photography Club.",
-				rules: ["Sarticipants will be provided with 10 stock images, which they have to manipulate and compose to create a unique and creative image in any version of Adobe Photoshop (use of all 10 photos is compulsory).", "The stock images will be provided through a google drive link on the WhatsApp group and also through email.", "Participants would be given 24-hrs time to create the image. The image received after the deadline would be disqualified.", "The participants have to submit both PSD as well as JPEG of the final image.", "The PSD must contain all the images in different layers.", "The final PSD and JPEG must be uploaded on a link given by the Organisers' Judgement will be based on creativity as well as originality.", "Any vulgar, offensive or explicit content would be disqualified.", "The decision of the judges would be final and binding.", "The organizers reserve the right to modify the rules at any point in time By submitting the entry, participants acknowledge that they have read and understood the rules and are willing to abide by them.", "Violation of rules or use of any copyrighted content or any sexual, violent content would be disqualified."],
+				rules: [
+					"Sarticipants will be provided with 10 stock images, which they have to manipulate and compose to create a unique and creative image in any version of Adobe Photoshop (use of all 10 photos is compulsory).",
+					"The stock images will be provided through a google drive link on the WhatsApp group and also through email.",
+					"Participants would be given 24-hrs time to create the image. The image received after the deadline would be disqualified.",
+					"The participants have to submit both PSD as well as JPEG of the final image.",
+					"The PSD must contain all the images in different layers.",
+					"The final PSD and JPEG must be uploaded on a link given by the Organisers' Judgement will be based on creativity as well as originality.",
+					"Any vulgar, offensive or explicit content would be disqualified.",
+					"The decision of the judges would be final and binding.",
+					"The organizers reserve the right to modify the rules at any point in time By submitting the entry, participants acknowledge that they have read and understood the rules and are willing to abide by them.",
+					"Violation of rules or use of any copyrighted content or any sexual, violent content would be disqualified.",
+				],
 				judging: [],
 				image: "PHOTOGRAPHYCLUB/SnipStitch.webp",
 			},
 			{
 				id: 4,
 				name: "Photography Workshop",
-				description: "We've always felt like our images are missing something, don't we? The wait is ended because the MNIT Jaipur Photography Club is hosting a session that will teach you how to shoot excellent photos. Tania Chatterjee, a well-known photographer, will assist you by offering photography advice and outlining her career path that led to her appointment as a Nikon representative.                                                                                                               Ready to be inspired? Sign up right now for the workshop.",
-				rules: ["Two Renowned Photographers would be invited to the workshop and will share their experience in the field and some basics of Photography.", "Participants will receive a confirmation mail for registration and venue details a day prior to the event.", "The organizers reserve the right to modify the rules at any point in time.", "By submitting the entry, the participant acknowledges that they have read and understood the guidelines and are willing to abide by them."],
+				day: [1],
+				description:
+					"We've always felt like our images are missing something, don't we? The wait is ended because the MNIT Jaipur Photography Club is hosting a session that will teach you how to shoot excellent photos. Tania Chatterjee, a well-known photographer, will assist you by offering photography advice and outlining her career path that led to her appointment as a Nikon representative.                                                                                                               Ready to be inspired? Sign up right now for the workshop.",
+				rules: [
+					"Two Renowned Photographers would be invited to the workshop and will share their experience in the field and some basics of Photography.",
+					"Participants will receive a confirmation mail for registration and venue details a day prior to the event.",
+					"The organizers reserve the right to modify the rules at any point in time.",
+					"By submitting the entry, the participant acknowledges that they have read and understood the guidelines and are willing to abide by them.",
+				],
 				judging: [],
 				image: "PHOTOGRAPHYCLUB/PhotographyWorkshop.webp",
 			},
@@ -659,7 +865,9 @@ export default [
 			{
 				id: 0,
 				name: "Arz kiya hai",
-				description: "In a world full of chaos and noise, let's awaken the writer in us and boost the aura of the cosmos. One of the most intriguing, endearing, and brilliant poetry competitions,'Arz Kia Hai' is being organized by the Poetry Club of MNIT Jaipur.Come up with creative, distinctive writeups and 'BRING UP THE WRITER INSIDE YOU'",
+				day: [3],
+				description:
+					"In a world full of chaos and noise, let's awaken the writer in us and boost the aura of the cosmos. One of the most intriguing, endearing, and brilliant poetry competitions,'Arz Kia Hai' is being organized by the Poetry Club of MNIT Jaipur.Come up with creative, distinctive writeups and 'BRING UP THE WRITER INSIDE YOU'",
 				rules: ["For entries mail us to at poetryclub605@gmail.com"],
 				judging: [],
 				image: "POETRYCLUB/ArzKiyaHai.webp",
@@ -676,7 +884,9 @@ export default [
 			{
 				id: 0,
 				name: "Exploring India Through a Dart",
-				description: "Life without cultural and historical heritage would be like a blank page. The travel and heritage club of MNIT Jaipur presents you a fun event : 'Exploring India through a Dart' to test your knowledge about heritage through a fun quiz. But there's a catch, instead of conventional quiz game the questions your are going to answer will be decided by a dart game. So Get ready to have fun and win exciting prizes along with it. Mark your presence and make the event successful , remarkable and memorable.Meet you all on 10th Feb.",
+				day: [1],
+				description:
+					"Life without cultural and historical heritage would be like a blank page. The travel and heritage club of MNIT Jaipur presents you a fun event : 'Exploring India through a Dart' to test your knowledge about heritage through a fun quiz. But there's a catch, instead of conventional quiz game the questions your are going to answer will be decided by a dart game. So Get ready to have fun and win exciting prizes along with it. Mark your presence and make the event successful , remarkable and memorable.Meet you all on 10th Feb.",
 				rules: [
 					"A dart will be given to participants and they will be told to shoot that on India’s map blindfolded.",
 					"Participants had to tell several things about the state where the dart landed.",
@@ -684,7 +894,7 @@ export default [
 					"In the end, if the participant fulfilled 6/6 objectives, then he/she will be given a bar of chocolate as a token of appreciation and if he/she failed to do so then he/she will be given a toffee. ",
 				],
 				judging: [],
-				image: "TRAVEL/exploring.webp"
+				image: "TRAVEL/exploring.webp",
 			},
 		],
 	},
@@ -697,6 +907,7 @@ export default [
 			{
 				id: 0,
 				name: "Youth Parliament",
+				day: [2, 3],
 				description:
 					"Replica of parliament as done by the government. It is a debating contest organized by the Electoral Literacy Club.",
 				rules: [],
@@ -704,7 +915,7 @@ export default [
 				image: "ELA/YouthParliament.webp",
 			},
 		],
-		image: "electoral.webp"
+		image: "electoral.webp",
 	},
 	{
 		id: 13,
@@ -716,6 +927,7 @@ export default [
 			{
 				id: 0,
 				name: "Qryptic Quest",
+				day: [1],
 				description:
 					"Unlock your inner Sherlock to solve puzzles, answer riddles, find the hidden objects, and more of the like in this event.",
 				rules: [],
@@ -725,6 +937,7 @@ export default [
 			{
 				id: 1,
 				name: "22 Yards",
+				day: [3],
 				description:
 					"This competition comprises 2 rounds, Round 1 is a quiz based on IPL. Teams clearing this round will proceed to round 2, Round 2 is an auction round that mimics the actual IPL Auction that is held on the next day.",
 				rules: [],
@@ -734,6 +947,7 @@ export default [
 			{
 				id: 2,
 				name: "Bharat Darshan",
+				day: [1],
 				description:
 					"Quiz competition based on the intangible and tangible heritage of India. The questions would encompass built heritage, performing arts, crafts, and natural heritage of India.",
 				rules: [],
@@ -743,6 +957,7 @@ export default [
 			{
 				id: 3,
 				name: "Flix & Chill",
+				day: [1],
 				description:
 					"A fun and unconventional quiz competition based on web series, TV shows, Hollywood, Bollywood, and regional cinema.",
 				rules: [],
@@ -752,6 +967,7 @@ export default [
 			{
 				id: 4,
 				name: "Quiz Pro Quo",
+				day: [2],
 				description:
 					"A pot-pourri of everyone’s favourite trivia shows like Bournvita Quiz Contest, Kaun Banega Crorepati, and Jeopardy, this event is a multi-round general knowledge quiz competition.",
 				rules: [],
@@ -761,6 +977,7 @@ export default [
 			{
 				id: 5,
 				name: "What's on your bookshelf ?",
+				day: [2],
 				description:
 					"Quiz competition based on all-time works of literature from Shakespeare to JK Rowling and everything in between.",
 				rules: [],
@@ -770,6 +987,7 @@ export default [
 			{
 				id: 6,
 				name: "Around the world in 80 questions",
+				day: [3],
 				description: "A world tour masquerading as a travel quiz.",
 				rules: [],
 				judging: [],
@@ -778,6 +996,7 @@ export default [
 			{
 				id: 7,
 				name: "Hello Mr.Musk",
+				day: [2],
 				description:
 					"A quiz that tests your knowledge from the world of Business. Questions will be based on business news and events, trade, commerce, and finance.",
 				rules: [],
@@ -796,7 +1015,9 @@ export default [
 			{
 				id: 0,
 				name: "Acta Diurna",
-				description: "ACTA DIURNA is back to take you amidst all suspense and thrill. In this event, you are served with a mind-tossing murder mystery with all its characters and hints. You, being a journalist/detective, are trying to solve the mystery by asking your queries from the characters of the plot enacted by us.",
+				day: [2],
+				description:
+					"ACTA DIURNA is back to take you amidst all suspense and thrill. In this event, you are served with a mind-tossing murder mystery with all its characters and hints. You, being a journalist/detective, are trying to solve the mystery by asking your queries from the characters of the plot enacted by us.",
 				rules: [
 					"Team Size-(up to 3 members)",
 					"Language-English and Hindi",
@@ -816,7 +1037,9 @@ export default [
 			{
 				id: 1,
 				name: "Bolti Tasveere",
-				description: "Bring on your creativity and spun a story or a poem around a set of pictures given to you.Participants will have a couple of pictures to start with and will be given a couple more in between the clock to weave them together with their already written write-up. Judgment will be based on your creativity and out-of-the-box thinking.",
+				day: [2],
+				description:
+					"Bring on your creativity and spun a story or a poem around a set of pictures given to you.Participants will have a couple of pictures to start with and will be given a couple more in between the clock to weave them together with their already written write-up. Judgment will be based on your creativity and out-of-the-box thinking.",
 				rules: [
 					"Team Size-(Solo)",
 					"Language- Hindi",
@@ -830,12 +1053,14 @@ export default [
 					"strength in the language(Vocabulary)",
 					"thinking(perspective)",
 				],
-				image: "THEMAVERICKS/boltitasveere.webp"
+				image: "THEMAVERICKS/boltitasveere.webp",
 			},
 			{
 				id: 2,
 				name: "Family Feud",
-				description: "Join us for an evening overloaded with fun and excitement with our very own version of the popular game show 'Family Feud'! Just like on the show, two families take turns trying to guess the most popular answers to survey questions.  The host presents a survey question, such as 'Name something you put on your pancakes,' The first family has a set amount of time to come up with as many answers as possible. Each answer is worth a certain number of points. The family with the most points at the end of the game wins. But wait, there’s more! In addition to the main event, we will also have exciting prizes for the audience. Whether you're competing or just spectating, there's something for everyone to enjoy. So gather your friends, team up, and get ready to feud! This event will be a memorable evening filled with laughter and friendly competition. Don't miss out - we hope to see you there",
+				day: [1],
+				description:
+					"Join us for an evening overloaded with fun and excitement with our very own version of the popular game show 'Family Feud'! Just like on the show, two families take turns trying to guess the most popular answers to survey questions.  The host presents a survey question, such as 'Name something you put on your pancakes,' The first family has a set amount of time to come up with as many answers as possible. Each answer is worth a certain number of points. The family with the most points at the end of the game wins. But wait, there’s more! In addition to the main event, we will also have exciting prizes for the audience. Whether you're competing or just spectating, there's something for everyone to enjoy. So gather your friends, team up, and get ready to feud! This event will be a memorable evening filled with laughter and friendly competition. Don't miss out - we hope to see you there",
 				rules: [
 					"Team Size-(up to 5 members)",
 					"Language- English",

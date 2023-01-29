@@ -1,0 +1,65 @@
+.day-selection-container {
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #333333;
+	gap: 30px;
+}
+.day-selection-options {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+}
+.nav-tile-inactive {
+	font-size: 1rem;
+	color: white;
+	font-family: "Inter";
+	font-weight: 500;
+	background-color: black;
+	padding: 10px;
+	border-radius: 20px;
+	cursor: pointer;
+	width: max-content;
+	border: 1px solid grey;
+}
+.nav-tile-inactive:hover {
+	transition: ease-in;
+	color: #d0d0d0;
+}
+.nav-tile-active {
+	font-size: 1rem;
+	color: black;
+	font-family: "Inter";
+	font-weight: 500;
+	background-color: white;
+	padding: 10px;
+	border-radius: 20px;
+	cursor: pointer;
+	width: max-content;
+	border: 1px solid grey;
+}
+.day-selection-btn {
+	text-decoration: none;
+	outline: none;
+	font-family: "Inter";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 1.2rem;
+	color: #ffffff;
+	padding: 5px;
+	padding-right: 10px;
+	padding-left: 10px;
+	border: 1px solid #ffffff;
+	background-color: black;
+	cursor: pointer;
+}
+.day-selection-btn:hover {
+	transition: 0.5s ease-in-out;
+	background-color: #555555;
+	color: white;
+}
