@@ -20,13 +20,14 @@
     margin-top: 270px;
     height: 200px;
     min-height: 200px;
-    width: 200px;
+    width: 800px;
     background-size: 200px 200px;
     align-items: center;
     color: white;
-    font-size: 18px;
-    font-weight: 800;
-    font-family: "Henny Penny";
+    font-size: 15px;
+    font-weight: 300;
+    font-family: "Inter";
+    text-align: justify;
 }
 
 .utr {

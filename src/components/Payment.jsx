@@ -24,10 +24,15 @@ export default function Payment(props) {
     function close() {
         props.setDispPayment(false)
     }
+    // style={{ backgroundImage: `url(${props.path})` }}
     return (
         <div className="payment">
             {
-                props.qrcode ? <div className="qrcode" style={{ backgroundImage: `url(${props.path})` }}></div> : <div className="qrcode">{props.data}</div>
+                props.qrcode ? <div className="qrcode">
+                    <div>Account Holder Name:   MALAVIYA NATIONAL INSTITUTE OF TECHNOLOGY JAIPUR</div>
+                    <div>Account Number:   676801701790</div>
+                    <div>IFSC CODE:   ICIC0006768</div>
+                </div> : <div className="qrcode">{props.data}</div>
             }
             <div className="utrtext">UPI TRANSACTION ID (UTR ID)</div>
             <input type="text" value={utr} onChange={(e) => setUtr(e.target.value)} />
@@ -37,7 +42,8 @@ export default function Payment(props) {
             <div className="paymentinstructions">
                 <div className="paymentintructionshead">Instructions</div>
                 <ul className="paymentinstructionstext">
-                    <li className="payinspoint">Note: Payment will be done by either PhonePay or Google Pay.</li>
+                    {/* <li className="payinspoint">Note: Payment will be done by either PhonePay or Google Pay.</li> */}
+                    {/* <li className="payinspoint">Note: Payment will be done by either PhonePay or Google Pay.</li> */}
                     <li className="payinspoint">After the Transaction, UTR ID will be generated and can be seen in your Transaction History. Enter your UTR ID Carefully as the Transaction will only be verified through this UTR ID. No Replicates of UTR ID will be Entertained. The Entry will be Discarded Automatically.</li>
                 </ul>
                 <div className="plst">
