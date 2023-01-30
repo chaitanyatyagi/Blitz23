@@ -330,6 +330,8 @@ export default function Events(props) {
 						teamLeader={formData.teamLeader}
 						register={register}
 						InstitudeId={formData.InstitudeId}
+						name={props.userInfo.name}
+						blitzId={props.userInfo.blitzID}
 					/>
 				)}
 			</div>

@@ -13,25 +13,36 @@ export default function Payment(props) {
                 if (response.data.status === "error")
                     window.alert(response.data.message)
                 else {
+                    // registration slip
+                    console.log("chetan")
+                    // axios.post(`${process.env.REACT_APP_SERVER}/rulebook/create-registeration-slip/${props.eventName}-${props.userId}`, {
+                    //     name: props.name, blitzId: props.blitzId, eventName: props.eventName
+                    // }).then(() => {
+                    //     console.log("slip send", 1)
+                    // }).catch((error) => {
+                    //     console.log(error, 2)
+                    // })
                     window.alert("registration successfull");
                 }
             })
             .catch(function (error) {
                 console.log(error);
             });
+
         props.setDispPayment(false)
     }
+
     function close() {
         props.setDispPayment(false)
     }
-    // style={{ backgroundImage: `url(${props.path})` }}
+
     return (
         <div className="payment">
             {
                 props.qrcode ? <div className="qrcode">
-                    <div>Account Holder Name:   MALAVIYA NATIONAL INSTITUTE OF TECHNOLOGY JAIPUR</div>
-                    <div>Account Number:   676801701790</div>
-                    <div>IFSC CODE:   ICIC0006768</div>
+                    <div className="accinsone">Account Holder Name:   MALAVIYA NATIONAL INSTITUTE OF TECHNOLOGY JAIPUR</div>
+                    <div className="accins">Account Number:   676801701790</div>
+                    <div className="accins">IFSC CODE:   ICIC0006768</div>
                 </div> : <div className="qrcode">{props.data}</div>
             }
             <div className="utrtext">UPI TRANSACTION ID (UTR ID)</div>

@@ -18,16 +18,38 @@
 
 .qrcode {
     margin-top: 270px;
-    height: 200px;
+    height: 40%;
     min-height: 200px;
-    width: 800px;
+    width: 75%;
     background-size: 200px 200px;
     align-items: center;
     color: white;
     font-size: 15px;
     font-weight: 300;
     font-family: "Inter";
-    text-align: justify;
+    /* text-align: justify; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.accins {
+    border-bottom: 2px solid white;
+    height: 27%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.accinsone {
+    border-bottom: 2px solid white;
+    height: 46%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .utr {
