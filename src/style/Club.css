@@ -135,6 +135,7 @@
 	flex-direction: column;
 	align-items: center;
 	margin-top: 10px;
+	cursor: pointer;
 }
 
 .club-bar-card-name {

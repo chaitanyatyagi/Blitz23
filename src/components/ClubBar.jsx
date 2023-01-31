@@ -2,12 +2,11 @@ import React from "react";
 import "../style/Club.css";
 import clubData from "../TestData/clubData";
 import ClubBarCards from "./ClubBarCards";
-import Popup from "reactjs-popup";
 
 export default function ClubBar(props) {
 	let i = 1;
 	let arr = [];
-	while (i <= clubData.length - 1) {
+	while (i <= clubData.length - 2) {
 		arr.push(i);
 		i += 1;
 	}
