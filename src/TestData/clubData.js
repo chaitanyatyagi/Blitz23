@@ -1027,12 +1027,12 @@ export default [
 		events: [
 			{
 				id: 0,
-				name: "MNIT Radio",
+				name: "Trade War",
 				description:
-					'"TV gives everyone an image, but Radio gives million images in zillion brains" If you are a visionary, self-assured, passionate, energetic,and a captivating performer then this is your time to shine.MNIT brings up a platform for you to exhibit your talent ,to showcase your stage presence,to awaken the artist within you, to make your talent come out with flying colours and to open up new horizons for your creativity. The "MNIT Radio" undoubtedly is going to open up opportunities and an arena for you to showcase your out your talent. Register to  "Bring Up the Artist Within You."',
+					'The cultural team presents you "trade war" an online stocks competition. A platform to showcase your trading talent,So open your horses and explore the field to  become master of trading also win exciting cash prize of 30,000 and a total prize of 50,000 and lot other prizes.',
 				rules: [],
 				judging: [],
-				image: "rambaSamba.webp",
+				image: "CULTURAL/Trade-War.webp",
 			},
 			{
 				id: 1,
@@ -1041,7 +1041,7 @@ export default [
 					"An event which celebrates food and is a treat for all foodies,  Appetite is a feast for all . It will contain various rounds and the one who knows best about the food cuisines and food culture will be rewarded with exciting prizes .",
 				rules: [],
 				judging: [],
-				image: "rambaSamba.webp",
+				// image: "rambaSamba.webp",
 			},
 			{
 				id: 2,
@@ -1050,7 +1050,7 @@ export default [
 					'"A good advertisement is one which sells the product without drawing attention to it", AD MAD is an Advertisement Making Competition to showcase the creativity in marketing products and services.  A potpourri of creativity and talent ADMad seeks to find the best advertisement that is fun, witiful and unique in equal measure .',
 				rules: [],
 				judging: [],
-				image: "rambaSamba.webp",
+				// image: "rambaSamba.webp",
 			},
 			{
 				id: 3,
@@ -1059,7 +1059,7 @@ export default [
 					"Treasure hunt is a game in which each team attempts to be the first in finding something that has been hidden all across the campus using clues.Guessing the first clue leads to the next spot as the game continues, and the final clue leads to the ultimate hidden treasure. The winning team will be awarded with alluring rewards.The game for the Sherlocks amongst the crowd, Treasure Hunt is for all the Mystery solvers out there .",
 				rules: [],
 				judging: [],
-				image: "rambaSamba.webp",
+				// image: "rambaSamba.webp",
 			},
 			{
 				id: 4,
@@ -1068,7 +1068,7 @@ export default [
 					"Escape room is for braves, in which people are locked up in enclosures wherein they play a game involving to solve a series of puzzles and riddles.Within a certain amount of time the goal of each team is to be out of that closed compartment , after solving the riddles one by one to find the key to unlock the room.The first one to be out will be given exciting prizes and goodies.",
 				rules: [],
 				judging: [],
-				image: "rambaSamba.webp",
+				// image: "rambaSamba.webp",
 			},
 			{
 				id: 5,
@@ -1077,7 +1077,7 @@ export default [
 					"The ultimate automotive extravaganza ,”AutoExpo” is an exhibition of automobiles showcasing exciting automotive concepts of top car makers and significant newcomers in the industry.The star attraction of the show being Electric Vehicles (EVs), get ready to get the wheels rolling in this spectacular show of automobiles!",
 				rules: [],
 				judging: [],
-				image: "rambaSamba.webp",
+				// image: "rambaSamba.webp",
 			},
 			{
 				id: 6,
@@ -1086,7 +1086,7 @@ export default [
 					"“Success is best envisioned through stories “- TedX is an event that aims to connect the audience with their idols through their own stories and lessons learnt in life’s drama. Get ready for a whirlwind experience as renowned speakers grace the stage, and fill your minds with interesting and thought provoking anecdotes of their lives !",
 				rules: [],
 				judging: [],
-				image: "rambaSamba.webp",
+				// image: "rambaSamba.webp",
 			},
 			{
 				id: 7,
@@ -1095,7 +1095,7 @@ export default [
 					"Bourgeois Apparel is an illustrious event showcasing the beauty of varied cultures of India through apparels. Embrace your individuality in this stellar event of gracefulness and style. The State dress Competition organized by the Cultural Society, get ready to be wowed by the wonders of this wondrous country through the ultimate mashup of elegance, beauty and charm!",
 				rules: [],
 				judging: [],
-				image: "rambaSamba.webp",
+				// image: "rambaSamba.webp",
 			},
 			{
 				id: 8,
@@ -1104,7 +1104,16 @@ export default [
 					'Metaverse is the new chapter which is going to add up in the world soon. The same may be said for the virtual avatars, assets and currencies. Crypto !  It alone speaks volumes about its ability and potential to alter the course of the universe. For all the aspirant souls in this field, MNIT is currently bringing forward the incredibly thrilling and futuristic event "CRYPTO WAR" for all the cryptpmaniacs out there .',
 				rules: [],
 				judging: [],
-				image: "rambaSamba.webp",
+				// image: "rambaSamba.webp",
+			},
+			{
+				id: 9,
+				name: "MNIT Radio",
+				description:
+					'"TV gives everyone an image, but Radio gives million images in zillion brains" If you are a visionary, self-assured, passionate, energetic,and a captivating performer then this is your time to shine.MNIT brings up a platform for you to exhibit your talent ,to showcase your stage presence,to awaken the artist within you, to make your talent come out with flying colours and to open up new horizons for your creativity. The "MNIT Radio" undoubtedly is going to open up opportunities and an arena for you to showcase your out your talent. Register to  "Bring Up the Artist Within You."',
+				rules: [],
+				judging: [],
+				// image: "rambaSamba.webp",
 			},
 		],
 	},
