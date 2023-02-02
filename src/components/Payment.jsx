@@ -14,14 +14,13 @@ export default function Payment(props) {
                     window.alert(response.data.message)
                 else {
                     // registration slip
-                    console.log("chetan")
-                    // axios.post(`${process.env.REACT_APP_SERVER}/rulebook/create-registeration-slip/${props.eventName}-${props.userId}`, {
-                    //     name: props.name, blitzId: props.blitzId, eventName: props.eventName
-                    // }).then(() => {
-                    //     console.log("slip send", 1)
-                    // }).catch((error) => {
-                    //     console.log(error, 2)
-                    // })
+                    axios.post(`${process.env.REACT_APP_SERVER}/rulebook/create-registeration-slip/${props.eventName}-${props.userId}`, {
+                        name: props.name, blitzId: props.blitzId, eventName: props.eventName
+                    }).then(() => {
+                        console.log("slip send", 1)
+                    }).catch((error) => {
+                        console.log(error, 2)
+                    })
                     window.alert("registration successfull");
                 }
             })

@@ -533,6 +533,7 @@ export default [
 				description:
 					"The participants have to raise the curtain on their news report writing skills by recounting an event in their life from a first or third person point of view and report it in the form of news. Eg: reporting about the time they fell down in a running race from their mother's point of view; reporting about the time they recieved their JEE results, etc.",
 				rules: [
+					"Submit your enteries at epcmnit@gmail.com",
 					"Team Size-(Solo)Language-English Rounds-1 (Online)",
 					"Deadline for Submission-3rd Feb",
 					"Participants will have to write a report in not more than 250-300 words.",
@@ -786,7 +787,7 @@ export default [
 				description:
 					"You will be given 4-5 photos, and using Adobe Photoshop, you have to make one singular meaningful photo, merging all the given photos. It is organized by the Photography Club.",
 				rules: [
-					"Sarticipants will be provided with 10 stock images, which they have to manipulate and compose to create a unique and creative image in any version of Adobe Photoshop (use of all 10 photos is compulsory).",
+					"Participants will be provided with 10 stock images, which they have to manipulate and compose to create a unique and creative image in any version of Adobe Photoshop (use of all 10 photos is compulsory).",
 					"The stock images will be provided through a google drive link on the WhatsApp group and also through email.",
 					"Participants would be given 24-hrs time to create the image. The image received after the deadline would be disqualified.",
 					"The participants have to submit both PSD as well as JPEG of the final image.",
@@ -1063,7 +1064,7 @@ export default [
 			},
 			{
 				id: 4,
-				name: "Escape room",
+				name: "Escape Room",
 				description:
 					"Escape room is for braves, in which people are locked up in enclosures wherein they play a game involving to solve a series of puzzles and riddles.Within a certain amount of time the goal of each team is to be out of that closed compartment , after solving the riddles one by one to find the key to unlock the room.The first one to be out will be given exciting prizes and goodies.",
 				rules: [],
@@ -1072,15 +1073,6 @@ export default [
 			},
 			{
 				id: 5,
-				name: "AutoExpo",
-				description:
-					"The ultimate automotive extravaganza ,”AutoExpo” is an exhibition of automobiles showcasing exciting automotive concepts of top car makers and significant newcomers in the industry.The star attraction of the show being Electric Vehicles (EVs), get ready to get the wheels rolling in this spectacular show of automobiles!",
-				rules: [],
-				judging: [],
-				// image: "rambaSamba.webp",
-			},
-			{
-				id: 6,
 				name: "TedX/Blitz talks",
 				description:
 					"“Success is best envisioned through stories “- TedX is an event that aims to connect the audience with their idols through their own stories and lessons learnt in life’s drama. Get ready for a whirlwind experience as renowned speakers grace the stage, and fill your minds with interesting and thought provoking anecdotes of their lives !",
@@ -1089,16 +1081,7 @@ export default [
 				// image: "rambaSamba.webp",
 			},
 			{
-				id: 7,
-				name: "Bourgeois Apparel",
-				description:
-					"Bourgeois Apparel is an illustrious event showcasing the beauty of varied cultures of India through apparels. Embrace your individuality in this stellar event of gracefulness and style. The State dress Competition organized by the Cultural Society, get ready to be wowed by the wonders of this wondrous country through the ultimate mashup of elegance, beauty and charm!",
-				rules: [],
-				judging: [],
-				// image: "rambaSamba.webp",
-			},
-			{
-				id: 8,
+				id: 6,
 				name: "Crypto War",
 				description:
 					'Metaverse is the new chapter which is going to add up in the world soon. The same may be said for the virtual avatars, assets and currencies. Crypto !  It alone speaks volumes about its ability and potential to alter the course of the universe. For all the aspirant souls in this field, MNIT is currently bringing forward the incredibly thrilling and futuristic event "CRYPTO WAR" for all the cryptpmaniacs out there .',
@@ -1107,7 +1090,7 @@ export default [
 				// image: "rambaSamba.webp",
 			},
 			{
-				id: 9,
+				id: 7,
 				name: "MNIT Radio",
 				description:
 					'"TV gives everyone an image, but Radio gives million images in zillion brains" If you are a visionary, self-assured, passionate, energetic,and a captivating performer then this is your time to shine.MNIT brings up a platform for you to exhibit your talent ,to showcase your stage presence,to awaken the artist within you, to make your talent come out with flying colours and to open up new horizons for your creativity. The "MNIT Radio" undoubtedly is going to open up opportunities and an arena for you to showcase your out your talent. Register to  "Bring Up the Artist Within You."',
