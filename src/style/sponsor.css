@@ -3,19 +3,19 @@
 
 .sponsor {
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	justify-content: center;
 	align-items: center;
 	height: 100vh;
-	width: 100vw;
+	width: 100%;
 	background-image: url("../images/sponsorBG.webp");
 	background-size: 100% 100%;
 	background-position: contain;
 }
 
 .sponsorhead {
-	height: 19%;
-	width: 85%;
+	height: 10%;
+	width: 100%;
 	font-family: "Henny Penny";
 	font-style: normal;
 	font-weight: 400;
@@ -28,85 +28,143 @@
 }
 
 .sponsorcontent {
-	height: 15%;
-	width: 85%;
+	height: 90%;
+	width: 95%;
 	font-family: "Inter";
 	font-style: normal;
 	font-weight: 400;
-	font-size: 19px;
+	font-size: 15px;
 	color: white;
 	display: flex;
-	align-items: center;
+	align-items: flex-start;
 	text-align: justify;
 }
 
-.sponsormain {
-	height: 66%;
-	width: 85vw;
+.sponsormainleft {
+	height: 100%;
+	width: 30%;
 	display: flex;
-	overflow-y: auto;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	padding-top: 8%;
+}
+
+.sponsormainright {
+	padding-top: 8%;
+	height: 100%;
+	width: 70%;
+	display: flex;
+	overflow-y: scroll;
 	justify-content: center;
 	flex-wrap: wrap;
 }
 
-.sponsormainins {
-	width: 21vw;
-	height: 30vh;
-	background-size: 50% 50%;
-	background-repeat: no-repeat;
-	background-position: center;
+.sponsorrightins {
+	width: 260px;
+	height: 200px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
-@media (max-width: 1000px) {
+.sponsormainins {
+	height: 75%;
+	width: 75%;
+	background-size: 85% 70%;
+	background-repeat: no-repeat;
+	background-position: center;
+	flex-wrap: wrap;
+}
+
+.sponsormaininsname {
+	height: 25%;
+	width: 100%;
+	color: white;
+	font-family: "Inter";
+	font-style: normal;
+	font-weight: 800;
+	font-size: 18px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+@media (max-width: 1100px) {
 	.sponsorhead {
 		font-weight: 400;
-		font-size: 40px;
+		font-size: 30px;
 	}
 
 	.sponsorcontent {
 		font-weight: 400;
-		font-size: 16px;
+		font-size: 14px;
 	}
 }
 
 @media (max-width: 800px) {
 	.sponsorhead {
-		font-weight: 350;
-		font-size: 35px;
-		height: 26%;
-	}
-
-	.sponsorcontent {
-		font-weight: 350;
-		font-size: 13px;
-		height: 18%;
-	}
-}
-
-@media (max-width: 500px) {
-	.sponsorhead {
-		font-weight: 300;
-		font-size: 30px;
-		height: 30%;
-	}
-
-	.sponsorcontent {
-		font-weight: 300;
-		font-size: 12px;
-		height: 24%;
-	}
-}
-
-@media (max-width: 300px) {
-	.sponsorhead {
-		font-weight: 250;
+		font-weight: 400;
 		font-size: 25px;
-		height: 36%;
 	}
 
 	.sponsorcontent {
-		font-weight: 250;
-		font-size: 9px;
-		height: 28%;
+		font-weight: 400;
+		font-size: 14px;
+	}
+}
+
+@media (max-width: 800px) {
+	.sponsor {
+		flex-direction: column;
+	}
+
+	.sponsormainleft {
+		width: 95%;
+		margin-top: 10%;
+	}
+
+	.sponsormainright {
+		width: 95%;
+	}
+}
+
+@media (max-width:500px) {
+	.sponsormainins {
+		background-size: 65% 55%;
+	}
+}
+
+@media (max-width: 350px) {
+	.sponsormainleft {
+		margin-top: 15%;
+	}
+
+	.sponsorhead {
+		font-weight: 400;
+		font-size: 15px;
+	}
+
+	.sponsorcontent {
+		font-weight: 400;
+		font-size: 10px;
+	}
+}
+
+@media (max-width: 230px) {
+	.sponsormainleft {
+		margin-top: 20%;
+	}
+
+	.sponsorhead {
+		font-weight: 400;
+		font-size: 12px;
+	}
+
+	.sponsorcontent {
+		font-weight: 400;
+		font-size: 8px;
 	}
 }

@@ -43,6 +43,7 @@ function Navbar({ isLoggedIn }) {
                         <Link to="/flagship-events" className="centertabs" onClick={() => hideNav()} onBlur={() => hideNav()}>FLAGSHIP EVENTS</Link>
                         <Link to="/accomodation" className="centertabs" onClick={() => hideNav()} onBlur={() => hideNav()}>HOSPITALITY</Link>
                         <Link to="/cultural-events" className="centertabs" onClick={() => hideNav()} onBlur={() => hideNav()}>CULTURAL EVENTS</Link>
+                        <Link to="/sponsors" className="centertabs" onClick={() => hideNav()} onBlur={() => hideNav()}>SPONSORS</Link>
                         <div>
                             <NavDropdown
                                 id="nav-dropdown-dark-example"
@@ -52,7 +53,6 @@ function Navbar({ isLoggedIn }) {
                             >
                                 <NavDropdown.Item><Link to="/campus-ambassador" className="text-white" onClick={() => hideNav()} onBlur={() => hideNav()}>CAMPUS-AMBASSADOR</Link></NavDropdown.Item>
                                 <NavDropdown.Item><Link to="/rulebook" className="text-white" onClick={() => hideNav()} onBlur={() => hideNav()}>RULEBOOK</Link></NavDropdown.Item>
-                                {/* <NavDropdown.Item><Link className="text-white">HOSPITALITY</Link></NavDropdown.Item> */}
                                 <NavDropdown.Item><Link to="/contactus" className="text-white" onClick={() => hideNav()} onBlur={() => hideNav()}>OUR TEAM</Link></NavDropdown.Item>
                                 <NavDropdown.Item><Link to="/how-to-register" className="text-white" onClick={() => hideNav()} onBlur={() => hideNav()}>HOW TO REGISTER?</Link></NavDropdown.Item>
                             </NavDropdown>
