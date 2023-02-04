@@ -11,7 +11,13 @@ export default function EventCard(props) {
 					<h1 className="title-text">No. of Members</h1> */}
 				</div>
 				<div className="detail">
-					<h1 className="detail-text">: {props.name}</h1>
+					
+					<h1 className="detail-text">:
+					{props.name?props.name:""}
+					{(props.package1&&props.package1.register)?" - (Envision)":""}
+					{(props.package2&&props.package2.register)?" - (Optica)":""}
+					{(props.package3&&props.package3.register)?" - (Mirage)":""}
+					 </h1>
 					{/* <h1 className="detail-text">: {props.teamName}</h1>
 					<h1 className="detail-text">: {props.nMembers}</h1> */}
 				</div>
