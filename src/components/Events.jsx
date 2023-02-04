@@ -147,7 +147,6 @@ export default function Events(props) {
 							{event.description !== "" && (
 								<div className="event-card-text-breif">{event.description}</div>
 							)}
-							{/* {event.rules.length !== 0 && event.judging.length !== 0 && ( */}
 							<div className="event-card-text-list">
 								{event.rules.length !== 0 ? (
 									<div className="event-card-text-rules">
@@ -162,7 +161,7 @@ export default function Events(props) {
 								) : ""}
 							</div>
 							{
-								event.name === "Moments" ? <Link to="/rulebook" className="event-link-remover event-card-register-link">Refer to Moments rulebook.</Link> : event.name === "Family Feud" ? <Link className="event-link-remover event-card-register-link">No more registration.</Link> : event.name === "Trade War" ? <a href="http://www.stocksy.app/" className="event-link-remover event-card-register-link">Register.</a> : <Link
+								event.name === "Moments" ? <Link to="/rulebook" className="event-link-remover event-card-register-link">Refer to Moments rulebook.</Link> : event.name === "Trade War" ? <a href="http://www.stocksy.app/" className="event-link-remover event-card-register-link">Register.</a> : <Link
 									className="event-link-remover event-card-register-link"
 									onClick={() => {
 										login();
