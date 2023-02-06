@@ -1,6 +1,7 @@
 import "../style/mainpage.css"
 import { useRef } from "react"
 import React from "react"
+import SponsorFlash from "./SponsorFlash";
 
 function MainPage() {
     // const scrollToRef = useRef()
@@ -12,6 +13,7 @@ function MainPage() {
 
     return (
         <div className="mainpage">
+            <SponsorFlash />
             <section className="landingPg1" data-aos='fade-up-right' ref={landingPg1}>
                 <div className="landingPg1ins">
                 </div>

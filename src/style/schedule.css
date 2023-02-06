@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css?family=Inter");
+@import url("https://fonts.googleapis.com/css?family=Henny+Penny");
+
+.schedule {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url("../images/scheduleimg.png");
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+}
+
+.schedule-head {
+    margin-top: 9%;
+    width: 90%;
+    height: 10vh;
+    font-family: 'Henny Penny';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 16px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.scheduledaytabs {
+    width: 90%;
+    /* height: 10%; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.eachdaytab {
+    width: 153px;
+    height: 40px;
+    border: 2px solid white;
+    color: white;
+    font-family: "Inter";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.eachdaytabnew {
+    width: 153px;
+    height: 40px;
+    border: 2px solid white;
+    color: black;
+    font-family: "Inter";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: white;
+}
+
+.scheduleseparateline {
+    width: 90%;
+    height: 4vh;
+    border-bottom: 2px solid white;
+}
+
+.schedulemaincontent {
+    width: 90%;
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    overflow-y: scroll;
+}
+
+.scheduleevent {
+    width: 33.333%;
+    display: flex;
+    flex-direction: column;
+}
+
+.schedule-ins-head {
+    width: 100%;
+    height: 10%;
+    font-family: 'Henny Penny';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.schedule-ins-content {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+.schedule-data {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight:
+        150;
+    font-size: 15px;
+    color: white;
+    width: 100%;
+    height: 4vh;
+}
+
+@media(max-width:800px) {
+    .schedule-head {
+        margin-top: 12%;
+        font-weight: 380;
+        font-size: 35px;
+    }
+
+    .eachdaytab {
+        width: 133px;
+        height: 33px;
+    }
+
+    .eachdaytabnew {
+        width: 133px;
+        height: 33px;
+    }
+}
+
+@media (max-width:600px) {
+    .schedule-head {
+        margin-top: 15%;
+        font-weight: 350;
+        font-size: 30px;
+    }
+
+    .schedule-ins-head {
+        font-weight: 350;
+        font-size: 20px;
+    }
+
+    .schedule-data {
+        font-size: 12px;
+    }
+
+    .eachdaytab {
+        width: 113px;
+        height: 25px;
+        font-size: 12px;
+    }
+
+    .eachdaytabnew {
+        width: 113px;
+        height: 25px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width:400px) {
+    .schedule-head {
+        margin-top: 18%;
+        font-weight: 300;
+        font-size: 25px;
+    }
+
+    .schedule-ins-head {
+        font-weight: 300;
+        font-size: 16px;
+    }
+
+    .schedule-data {
+        font-size: 10px;
+    }
+
+    .eachdaytab {
+        width: 100px;
+        height: 20px;
+        font-size: 10px;
+    }
+
+    .eachdaytabnew {
+        width: 100px;
+        height: 20px;
+        font-size: 10px;
+    }
+}
+
+@media (max-width:400px) {
+    .schedule-head {
+        margin-top: 21%;
+        font-weight: 250;
+        font-size: 20px;
+    }
+
+    .schedule-ins-head {
+        font-weight: 250;
+        font-size: 13px;
+    }
+
+    .schedule-data {
+        font-size: 8px;
+    }
+
+    .eachdaytab {
+        width: 85px;
+        height: 15px;
+        font-size: 8px;
+    }
+
+    .eachdaytabnew {
+        width: 85px;
+        height: 15px;
+        font-size: 8px;
+    }
+}

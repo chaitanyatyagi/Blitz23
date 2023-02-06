@@ -805,7 +805,7 @@ export default [
 				id: 4,
 				name: "Photography Workshop",
 				description:
-					"We've always felt like our images are missing something, don't we? The wait is ended because the MNIT Jaipur Photography Club is hosting a session that will teach you how to shoot excellent photos. Tania Chatterjee, a well-known photographer, will assist you by offering photography advice and outlining her career path that led to her appointment as a Nikon representative.                                                                                                               Ready to be inspired? Sign up right now for the workshop.",
+					"We always felt after clicking picture that something is missing in picture, isn't it? Learn it from PROFESSIONAL How to click a perfect Picture!Photography club presents 'Photography Workshop' for you. In collaboration with professional street photographer & Cinematographer Vinay Rachhewar aka 'gareebtraveller', an internet sensation with more than 80k followers. Learn from his Experiences & Journey. He will assist you by offering photography advice and outlining of his career path that led to him a successful photographer. Sign up right now for the workshop.",
 				rules: [
 					"Two Renowned Photographers would be invited to the workshop and will share their experience in the field and some basics of Photography.",
 					"Participants will receive a confirmation mail for registration and venue details a day prior to the event.",
@@ -1035,68 +1035,77 @@ export default [
 				judging: [],
 				image: "CULTURAL/Trade-War.webp",
 			},
+			// {
+			// id: 1,
+			// name: "Appetite",
+			// description:
+			// 	"An event which celebrates food and is a treat for all foodies,  Appetite is a feast for all . It will contain various rounds and the one who knows best about the food cuisines and food culture will be rewarded with exciting prizes .",
+			// rules: [],
+			// judging: [],
+			// image: "rambaSamba.webp",
+			// },
+			// {
+			// id: 2,
+			// name: "Ad Mad",
+			// description:
+			// 	'"A good advertisement is one which sells the product without drawing attention to it", AD MAD is an Advertisement Making Competition to showcase the creativity in marketing products and services.  A potpourri of creativity and talent ADMad seeks to find the best advertisement that is fun, witiful and unique in equal measure .',
+			// rules: [],
+			// judging: [],
+			// image: "rambaSamba.webp",
+			// },
 			{
 				id: 1,
-				name: "Appetite",
-				description:
-					"An event which celebrates food and is a treat for all foodies,  Appetite is a feast for all . It will contain various rounds and the one who knows best about the food cuisines and food culture will be rewarded with exciting prizes .",
-				rules: [],
-				judging: [],
-				// image: "rambaSamba.webp",
-			},
-			{
-				id: 2,
-				name: "Ad Mad",
-				description:
-					'"A good advertisement is one which sells the product without drawing attention to it", AD MAD is an Advertisement Making Competition to showcase the creativity in marketing products and services.  A potpourri of creativity and talent ADMad seeks to find the best advertisement that is fun, witiful and unique in equal measure .',
-				rules: [],
-				judging: [],
-				// image: "rambaSamba.webp",
-			},
-			{
-				id: 3,
 				name: "Treasure Hunt",
 				description:
 					"Treasure hunt is a game in which each team attempts to be the first in finding something that has been hidden all across the campus using clues.Guessing the first clue leads to the next spot as the game continues, and the final clue leads to the ultimate hidden treasure. The winning team will be awarded with alluring rewards.The game for the Sherlocks amongst the crowd, Treasure Hunt is for all the Mystery solvers out there .",
 				rules: [],
 				judging: [],
-				// image: "rambaSamba.webp",
+				image: "CULTURAL/treasure-hunt.webp",
 			},
 			{
-				id: 4,
+				id: 2,
 				name: "Escape Room",
 				description:
 					"Escape room is for braves, in which people are locked up in enclosures wherein they play a game involving to solve a series of puzzles and riddles.Within a certain amount of time the goal of each team is to be out of that closed compartment , after solving the riddles one by one to find the key to unlock the room.The first one to be out will be given exciting prizes and goodies.",
 				rules: [],
 				judging: [],
-				// image: "rambaSamba.webp",
+				image: "CULTURAL/escape-room.webp",
 			},
+			// {
+			// 	id: 5,
+			// 	name: "TedX/Blitz talks",
+			// 	description:
+			// 		"“Success is best envisioned through stories “- TedX is an event that aims to connect the audience with their idols through their own stories and lessons learnt in life’s drama. Get ready for a whirlwind experience as renowned speakers grace the stage, and fill your minds with interesting and thought provoking anecdotes of their lives !",
+			// 	rules: [],
+			// 	judging: [],
+			// image: "rambaSamba.webp",
+			// },
+			// {
+			// id: 6,
+			// name: "Crypto War",
+			// description:
+			// 	'Metaverse is the new chapter which is going to add up in the world soon. The same may be said for the virtual avatars, assets and currencies. Crypto !  It alone speaks volumes about its ability and potential to alter the course of the universe. For all the aspirant souls in this field, MNIT is currently bringing forward the incredibly thrilling and futuristic event "CRYPTO WAR" for all the cryptpmaniacs out there .',
+			// rules: [],
+			// judging: [],
+			// image: "rambaSamba.webp",
+			// },
 			{
-				id: 5,
-				name: "TedX/Blitz talks",
-				description:
-					"“Success is best envisioned through stories “- TedX is an event that aims to connect the audience with their idols through their own stories and lessons learnt in life’s drama. Get ready for a whirlwind experience as renowned speakers grace the stage, and fill your minds with interesting and thought provoking anecdotes of their lives !",
-				rules: [],
-				judging: [],
-				// image: "rambaSamba.webp",
-			},
-			{
-				id: 6,
-				name: "Crypto War",
-				description:
-					'Metaverse is the new chapter which is going to add up in the world soon. The same may be said for the virtual avatars, assets and currencies. Crypto !  It alone speaks volumes about its ability and potential to alter the course of the universe. For all the aspirant souls in this field, MNIT is currently bringing forward the incredibly thrilling and futuristic event "CRYPTO WAR" for all the cryptpmaniacs out there .',
-				rules: [],
-				judging: [],
-				// image: "rambaSamba.webp",
-			},
-			{
-				id: 7,
+				id: 3,
 				name: "MNIT Radio",
 				description:
 					'"TV gives everyone an image, but Radio gives million images in zillion brains" If you are a visionary, self-assured, passionate, energetic,and a captivating performer then this is your time to shine.MNIT brings up a platform for you to exhibit your talent ,to showcase your stage presence,to awaken the artist within you, to make your talent come out with flying colours and to open up new horizons for your creativity. The "MNIT Radio" undoubtedly is going to open up opportunities and an arena for you to showcase your out your talent. Register to  "Bring Up the Artist Within You."',
 				rules: [],
 				judging: [],
-				// image: "rambaSamba.webp",
+				image: "CULTURAL/radio-mnit.webp",
+			},
+			{
+				id: 4,
+				name: "Talk Show",
+				description:
+					'',
+				rules: [],
+				judging: [],
+				image: "CULTURAL/talkshow.webp",
 			},
 		],
 	},

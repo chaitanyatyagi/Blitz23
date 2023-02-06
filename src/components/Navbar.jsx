@@ -51,6 +51,7 @@ function Navbar({ isLoggedIn }) {
                                 menuVariant="dark"
                                 className="navdrop"
                             >
+                                <NavDropdown.Item><Link to="/schedule" className="text-white" onClick={() => hideNav()} onBlur={() => hideNav()}>SCHEDULE</Link></NavDropdown.Item>
                                 <NavDropdown.Item><Link to="/campus-ambassador" className="text-white" onClick={() => hideNav()} onBlur={() => hideNav()}>CAMPUS-AMBASSADOR</Link></NavDropdown.Item>
                                 <NavDropdown.Item><Link to="/rulebook" className="text-white" onClick={() => hideNav()} onBlur={() => hideNav()}>RULEBOOK</Link></NavDropdown.Item>
                                 <NavDropdown.Item><Link to="/contactus" className="text-white" onClick={() => hideNav()} onBlur={() => hideNav()}>OUR TEAM</Link></NavDropdown.Item>

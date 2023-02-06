@@ -280,10 +280,7 @@ export default function Events(props) {
 									Individual Event and 1 as number of Team Members.
 								</div>
 								<div className="events-form-check-row">
-									Note: Choose your Package wisely. We'll Suggest you to take a
-									glimpse at our combo packages(Optica and Mirage) to avail
-									exciting discounts. For reference visit:
-									blitzschlag.co.in/accomodation .
+									Note:*** To participate in Club Events, Non MNIT Jaipur & Non IIIT Kota participants are supposed to purchase Envision paas, if they are not carrying any other package's or flagship event's passes. Visit: blitzschlag.co.in *** .
 								</div>
 								<div className="events-form-check-row">
 									Note: If it is a team event, then all team members are requested to register for this event.

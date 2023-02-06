@@ -21,6 +21,7 @@ import Accomodation from "./components/Accomodation";
 import Preloader from "./components/Preloader";
 import BrandAmbassador from "./components/BrandAmbassador";
 import HowToRegister from "./components/HowToRegister";
+import Schedule from "./components/Schedule";
 import axios from "axios";
 
 function App() {
@@ -136,6 +137,7 @@ function App() {
 						/>
 						<Route path="/campus-ambassador" element={<BrandAmbassador />} />
 						<Route path="/how-to-register" element={<HowToRegister />} />
+						<Route path="/schedule" element={<Schedule />} />
 					</Routes>
 				</div>
 			)}

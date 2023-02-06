@@ -5,14 +5,7 @@ export default function SponsorFlash() {
     return (
         <div className='containerspon'>
             <div className="contentspon">
-                <h1 className='spnsr'>sponsers1</h1>
-                <h1 className='spnsr'>sponsers2</h1>
-                <h1 className='spnsr'>sponsers3</h1>
-                <h1 className='spnsr'>sponsers4</h1>
-                <h1 className='spnsr'>sponsers5</h1>
-                <h1 className='spnsr'>sponsers6</h1>
-                <h1 className='spnsr'>sponsers7</h1>
-                <h1 className='spnsr'>sponsers8</h1>
+                <h1 className='spnsr'>*** To participate in Club Events, Non MNIT Jaipur & Non IIIT Kota participants are supposed to purchase Envision paas, if they are not carrying any other package's or flagship event's passes.Visit: blitzschlag.co.in ***</h1>
             </div>
         </div>
     )
