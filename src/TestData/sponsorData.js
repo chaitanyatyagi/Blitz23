@@ -3,6 +3,10 @@ export default [
         clubEvents: "Flagship Events",
         events: ["Panache", "Ramba Samba", "Blitz Got Talent", "Battle of Bands"]
     }, {
+        clubEvents: "Cultural Events",
+        events: ["Treasure Hunt"]
+    },
+    {
         clubEvents: "Mavericks",
         events: ["Acta Diurna", "Family Feud", "Bolti Tasveere"]
     }, {

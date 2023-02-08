@@ -257,6 +257,13 @@ const Contactdetails = [
 		title: "Finance",
 		team: [
 			{
+				name: "Vipul",
+				phone: 7999933339,
+				email: "2019umt1669@mnit.ac.in",
+				position: "Advisor to Finance Secretary",
+				memimg: "contimg/Vipul.webp",
+			},
+			{
 				name: "Akshat Mantri",
 				phone: 7049744843,
 				email: "2020uch1289@mnit.ac.in",

@@ -58,21 +58,6 @@ function Navbar({ isLoggedIn }) {
                                 <NavDropdown.Item><Link to="/how-to-register" className="text-white" onClick={() => hideNav()} onBlur={() => hideNav()}>HOW TO REGISTER?</Link></NavDropdown.Item>
                             </NavDropdown>
                         </div>
-                        {/* <div>
-                            <NavDropdown
-                                id="nav-dropdown-dark-example"
-                                title="EVENTS"
-                                menuVariant="dark"
-                                className="navdrop"
-                            >
-                                <NavDropdown.Item>
-                                    <Link to="flagship-events" className="text-white">FLAGSHIP EVENTS</Link>
-                                </NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.3"><Link to="events" className="text-white">EVENTS</Link></NavDropdown.Item>
-                            </NavDropdown>
-                        </div> */}
-                        {/* <div> */}
-                        {/* <Link to="/register" className="register">REGISTER</Link> */}
                         {
                             isLoggedIn ? <Link to="/register" className="register" onClick={() => {
                                 cookies.remove('jwt', { path: '/' }); cookies.remove('userId'); window.location.reload();
