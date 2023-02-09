@@ -48,5 +48,8 @@ export default [
     }, {
         clubEvents: "Travel and Heritage Club",
         events: ["Exploring India Through A Dart"]
+    }, {
+        clubEvents: "The English Language Activities Club",
+        events: ["loveliterarily", "twistatable"]
     }
 ]
