@@ -4,7 +4,7 @@ export default [
         events: ["Panache", "Ramba Samba", "Blitz Got Talent", "Battle of Bands"]
     }, {
         clubEvents: "Cultural Events",
-        events: ["Treasure Hunt"]
+        events: ["Treasure Hunt", "Escape Room"]
     },
     {
         clubEvents: "Mavericks",

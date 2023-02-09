@@ -1,67 +1,60 @@
 export default [
     {
+        name: "Allen",
+        image: "sponsors/allen.png"
+    },
+    {
+        name: "Allen-Ace",
+        image: "sponsors/allen-ace.png"
+    },
+
+    {
+        name: "ISRPL",
+        image: "sponsors/isrpl.jpg"
+    },
+    {
         name: "Baskin Robbin",
-        image: "sponsors/baskin-robbins.png"
+        image: "sponsors/baskin-robbins.jpg"
     },
     {
         name: "Relaince Trends",
-        image: "sponsors/reliance-trends.jpg"
+        image: "sponsors/reliance-trends.webp"
     },
     {
         name: "Coffee Cartel",
-        image: "sponsors/the-coffee-cartel.jpg"
+        image: "sponsors/tcc.png"
     },
     {
         name: "Sambhar Sa",
-        image: "sponsors/sambar-sa.jpeg"
+        image: "sponsors/sambar-sa.jpg"
     },
     {
-        name: "Jaipuri Tikka and Lovely Creations",
-        image: "sponsors/tikka-jaipuri.jpg"
+        name: "Jaipuri Tikka",
+        image: "sponsors/tikka-jaipuri.webp"
     },
     {
         name: "Shyam steel industries limited",
-        image: "sponsors/shyam-steels.png"
+        image: "sponsors/shyam.jpg"
     },
-    // {
-    //     name: "The vintage food co.",
-    //     image: "sponsors/"
-    // },
     {
         name: "Mollis natura",
-        image: "sponsors/mollis-natura.jpeg"
+        image: "sponsors/mollis-natura.webp"
     },
     {
         name: "IBWC wealth",
-        image: "sponsors/ibwc.webp"
+        image: "sponsors/ibwc.jpg"
     },
     {
         name: "Kathi Rolls Express",
         image: "sponsors/kathi-roll.jpg"
     },
     {
-        name: "Allen & Allen Ace",
-        image: "sponsors/allen.jpg"
-    },
-    {
         name: "Hyderabadi Dum Biriyani",
-        image: "sponsors/dum-briyani.jpeg"
+        image: "sponsors/dum-briyani.jpg"
     },
-    // {
-    //     name: "The Momos Story",
-    //     image: "sponsors/"
-    // },
-    // {
-    //     name: "Fest Carnival",
-    //     image:
-    // },
-    // {
-    //     name: "Mukesh Vasani",
-    //     image: "sponsors/"
-    // },
     {
-        name: "ISRPL",
-        image: "sponsors/isrpl.jpg"
+        name: "The Momos Story",
+        image: "sponsors/momo-story.webp"
     },
     {
         name: "VLCC",
@@ -81,27 +74,31 @@ export default [
     },
     {
         name: "Book My Show",
-        image: "sponsors/book-my-show.png"
+        image: "sponsors/book-my-show.jpg"
     },
     {
         name: "Red Chief",
-        image: "sponsors/red-chief.png"
+        image: "sponsors/red.png"
     },
     {
         name: "Sun Burn",
-        image: "sponsors/sunburn.jpg"
+        image: "sponsors/sunburn.png"
     },
     {
         name: "RedBull",
-        image: "sponsors/redbull.jpg"
+        image: "sponsors/rebull.png"
     },
     {
         name: "Red FM",
-        image: "sponsors/redfm.png"
+        image: "sponsors/red_fm.png"
     },
     {
         name: "Coding Ninjas",
         image: "sponsors/coding-ninjas.svg"
+    },
+    {
+        name: "UDB",
+        image: "sponsors/udb.webp"
     },
     {
         name: "Tea Affairs & It's Waffle",
@@ -110,6 +107,21 @@ export default [
     {
         name: "Fatfatia",
         image: "sponsors/fatfatiya.png"
+    },
+    {
+        name: "Vintage Co. Food",
+        image: "sponsors/vintage.png"
+    },
+    {
+        name: "Chai Wala",
+        image: "sponsors/chai_wala.jpeg"
+    },
+    {
+        name: "ItsWafl",
+        image: "sponsors/its-wafl.jpeg"
+    },
+    {
+        name: "Lovely Creations",
+        image: "sponsors/lovely-creations.jpg"
     }
-
 ]

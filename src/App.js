@@ -97,7 +97,7 @@ function App() {
 							element={
 								<Events
 									userInfo={userInfo}
-									club={15}
+									club={16}
 									setpaytmFinalUrl={setpaytmFinalUrl}
 									setresultData={setresultData}
 									isLoggedIn={isLoggedIn}

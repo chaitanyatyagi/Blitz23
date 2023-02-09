@@ -1024,6 +1024,38 @@ export default [
 	},
 	{
 		id: 15,
+		title: "The English Language Activities Club",
+		description: "Literature is the mirror of society and the power of imagination makes us infinite.Our club is dedicated to promoting a love for the English language and providing a space for members to share their knowledge and skills with others. We welcome members of all levels, from beginners to native speakers. Whether you're looking to improve your language skills for personal or professional reasons, our club offers a supportive and inclusive environment for growth and development.Don't miss out on the opportunity to enhance your English language abilities and make new friends who share your passion. Register for The English Language Enthusiasts Club today!",
+		image: "elc.png",
+		events: [
+			{
+				id: 0,
+				name: "Love Literarily",
+				description: "",
+				rules: ["Registration Link:- https://docs.google.com/forms/d/e/1FAIpQLSc8jETsVfFG55jTd-SiCUQqOONMr9QNdHM9g8zvPLsIJAjz5g/viewform?usp=sf_link"],
+				judging: [],
+				image: "ELC/1.png"
+			},
+			{
+				id: 1,
+				name: "Twist A Table",
+				description: "Join us for a unique and captivating evening as we bring classic tales to life with a twist! Come ready to recite or enact your favorite fairytales with an astonishing twist, and get ready to be transported into a world of imagination and wonder. Whether it's a fresh take on 'Cinderella' or a new spin on 'The Three Little Pigs,' the possibilities are endless. Show off your creative flair and bring your favorite characters to life as you take to the stage and wow the audience with your surprising retelling. So, grab your script, brush up on your acting skills, and get ready for an unforgettable night of storytelling. Register now to secure your spot and become a part of this exciting and imaginative event!",
+				rules: ["Registration Link:- https://docs.google.com/forms/d/e/1FAIpQLSfzF-R0J05xCysv1y4T-qGEKQErVb18qRtzVYRfs5EhoQdfIg/viewform?usp=sf_link"],
+				judging: [],
+				image: "ELC/2.png"
+			},
+			{
+				id: 2,
+				name: "Coffee with ELAC",
+				description: "",
+				rules: [],
+				judging: [],
+				image: "ELC/3.png"
+			},
+		],
+	},
+	{
+		id: 15,
 		title: "Cultural Events",
 		events: [
 			{
@@ -1035,24 +1067,6 @@ export default [
 				judging: [],
 				image: "CULTURAL/Trade-War.webp",
 			},
-			// {
-			// id: 1,
-			// name: "Appetite",
-			// description:
-			// 	"An event which celebrates food and is a treat for all foodies,  Appetite is a feast for all . It will contain various rounds and the one who knows best about the food cuisines and food culture will be rewarded with exciting prizes .",
-			// rules: [],
-			// judging: [],
-			// image: "rambaSamba.webp",
-			// },
-			// {
-			// id: 2,
-			// name: "Ad Mad",
-			// description:
-			// 	'"A good advertisement is one which sells the product without drawing attention to it", AD MAD is an Advertisement Making Competition to showcase the creativity in marketing products and services.  A potpourri of creativity and talent ADMad seeks to find the best advertisement that is fun, witiful and unique in equal measure .',
-			// rules: [],
-			// judging: [],
-			// image: "rambaSamba.webp",
-			// },
 			{
 				id: 1,
 				name: "Treasure Hunt",
@@ -1071,24 +1085,6 @@ export default [
 				judging: [],
 				image: "CULTURAL/escape-room.webp",
 			},
-			// {
-			// 	id: 5,
-			// 	name: "TedX/Blitz talks",
-			// 	description:
-			// 		"“Success is best envisioned through stories “- TedX is an event that aims to connect the audience with their idols through their own stories and lessons learnt in life’s drama. Get ready for a whirlwind experience as renowned speakers grace the stage, and fill your minds with interesting and thought provoking anecdotes of their lives !",
-			// 	rules: [],
-			// 	judging: [],
-			// image: "rambaSamba.webp",
-			// },
-			// {
-			// id: 6,
-			// name: "Crypto War",
-			// description:
-			// 	'Metaverse is the new chapter which is going to add up in the world soon. The same may be said for the virtual avatars, assets and currencies. Crypto !  It alone speaks volumes about its ability and potential to alter the course of the universe. For all the aspirant souls in this field, MNIT is currently bringing forward the incredibly thrilling and futuristic event "CRYPTO WAR" for all the cryptpmaniacs out there .',
-			// rules: [],
-			// judging: [],
-			// image: "rambaSamba.webp",
-			// },
 			{
 				id: 3,
 				name: "MNIT Radio",

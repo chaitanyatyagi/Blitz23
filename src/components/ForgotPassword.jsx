@@ -20,7 +20,7 @@ export default function ForgotPassword() {
                     window.alert(response.data.message)
                 else {
                     window.alert(response.data.message)
-                    navigate("/");
+                    navigate("/resetpassword");
                 }
             })
             .catch(function (error) {
