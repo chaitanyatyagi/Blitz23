@@ -10,7 +10,7 @@ export default [
 					"It is a grand inter-college dance competition which is one of the main events being organized in Blitzschlag year after year. The dance competition invites the best dancing troops across the country to flaunt their moves. It is open for all dance forms.",
 				rules: [
 					"Maximum 2 entries per college.",
-					"The time limit is 6-8 minutes for each performance.",
+					"The time limit is 15 minutes for each performance.",
 					"Negative marking for exceeding the time limit.",
 					"Maximum 15 members can perform on stage at a given point of time.",
 					"Each team may consist of 40 members at max, including the coordinators.",
